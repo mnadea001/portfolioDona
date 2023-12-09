@@ -1,13 +1,11 @@
 /* SliderSection.css */
 
 /* General styles */
-body {
-    background-color: #C996FF;
-  }
+
   
   /* Slider section styles */
   .slider-section {
-    background-color: #333333;
+
     padding-top: 50px;
     padding-bottom: 40px;
     padding-left: 50px;
@@ -19,11 +17,7 @@ body {
     text-transform: uppercase;
     margin-left: 10px;
   }
-  
-  @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-250px * 7)); }
-  }
+
   
   .slider {
     height: 100px;

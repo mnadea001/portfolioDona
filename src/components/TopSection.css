@@ -13,6 +13,7 @@
   color: white;
 }
 
+
 .colored-circle {
   position: absolute;
   border-radius: 50%;
@@ -22,7 +23,7 @@
   width: 300px;
   height: 300px;
   top: 20%;
-  left: 50%;
+  left: 0%;
   background-color: #1501FF;
 }
 
@@ -30,8 +31,23 @@
   width: 300px;
   height: 300px;
   top: 20%;
-  left: 50%;
+  left: 0%;
   background-color: #4aeb31;
 }
 
 
+#homeImg {
+    transform: translate(0%, 100%);
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    object-fit: cover;
+    z-index: 999;
+  }
+
+  .spinner {
+    background-color: #0f2e0a;
+  }
