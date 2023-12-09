@@ -5,16 +5,20 @@ import SliderSection from './components/SliderSection'
 import ProjectsSection from './components/ProjectsSection'
 import ExperiencesSection from './components/ExperiencesSection'
 import TopSection from './components/TopSection'
+import { ParallaxProvider } from 'react-scroll-parallax'
 // import Footer from './components/Footer'
 
 function App() {
 
 
   return (
-    <>
+    <>    
+    <ParallaxProvider>
       <Routes>
         <Route path='/' element={<Header />}>
+    
           <Route index element={<TopSection />} />
+  
           <Route path="/slider" element={<SliderSection />} />
           {/* <Route path="*" element={<NotFound />} /> */}
           <Route path="/projets" element={<ProjectsSection />} />
@@ -22,7 +26,7 @@ function App() {
           {/* <Footer /> */}
         </Route>
       </Routes>
-
+      </ParallaxProvider>
     </>
   )
 }

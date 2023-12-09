@@ -1,117 +1,80 @@
 import './TopSection.css'
-import { useEffect } from 'react';
-
+import { useParallax } from "react-scroll-parallax";
 const TopSection: React.FC = () => {
-  useEffect(() => {
-    const homeImg = document.getElementById('homeImg');
-    const firstCircle = document.getElementById('firstCircle');
-    const secondCircle = document.getElementById('secondCircle');
-
-    const firstCircleText = document.createElement('div');
-    const secondCircleText = document.createElement('div');
-    firstCircleText.className = 'circle-text';
-    secondCircleText.className = 'circle-text';
-    firstCircle.appendChild(firstCircleText);
-    secondCircle.appendChild(secondCircleText);
-
-    const handleScroll = () => {
-      let value = window.scrollY;
-      let threshold = 300;
-
-      let windowHeight = window.innerHeight;
-      let windowCenter = windowHeight / 2;
-
-      if (value < threshold) {
-        firstCircle.style.marginLeft = value * 0.75 + 'px';
-        firstCircle.style.marginTop = value * 1.25 + 'px';
-        secondCircle.style.marginLeft = value * -0.75 + 'px';
-        secondCircle.style.marginTop = value * 1.25 + 'px';
-        homeImg.style.marginTop = value * 1.25 + 'px';
-
-        firstCircleText.style.display = 'none';
-        secondCircleText.style.display = 'none';
-      } else {
-        firstCircle.style.marginLeft = threshold * 0.75 + 'px';
-        firstCircle.style.marginTop = threshold * 1.75 + 'px';
-        secondCircle.style.marginLeft = -threshold * 0.75 + 'px';
-        secondCircle.style.marginTop = threshold * 1.75 + 'px';
-        homeImg.style.marginTop = threshold * 1.75 + 'px';
-
-        firstCircleText.style.display = 'block';
-        secondCircleText.style.display = 'block';
-        firstCircleText.style.marginLeft = 50 + 'px';
-
-        firstCircleText.textContent = 'Solution\nOriented';
-        secondCircleText.textContent = 'Digital\nCreator';
-
-        firstCircleText.classList.add('custom-font1');
-        secondCircleText.classList.add('custom-font2');
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      // Cleanup event listener on component unmount
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
+  // const scaleCParallax = useParallax({
+  //   scaleX: [0, 3, "easeInQuad"],
+  // });
+  // const parallaxRotateY = useParallax({
+  //   rotateY: [0, 360],
+  // });
+  // const parallaxRotateY2 = useParallax({
+  //   rotateY: [0, 360],
+  // });
+  // const parallaxRotateY3 = useParallax({
+  //   rotateY: [0, 360],
+  // });
+  const parallaxEasing = useParallax({
+    easing: "easeOutQuad",
+    translateX: [-340, 100],
+  });
+  const parallaxEasingLeft = useParallax({
+    easing: [1, -0.75, 0.5, 1.34],
+    translateX: [0, -260],
+    translateY: [1100],
+  });
   return (
-    <div className={divImg}>
-      <div id="firstCircle" className={firstCircle}></div>
-      <img className={homeImg} id="homeImg" src="./assets/MN.png" alt="Mathilde Nadeau" />
-      <div className={secondCircle} id="secondCircle"></div>
+    <div>
+      <section className="bg-container">
+        <img
+          // ref={parallaxRotateY.ref}
+          src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        />
+        <div className="absolute-text">
+          <h1 ref={parallaxEasing.ref}>MEMBERSHIP WEBSITE</h1>
+          <h2 ref={parallaxEasingLeft.ref}>For members only non profitable</h2>
+        </div>
+      </section>
+      <br />
+      {/* <section className="card-container" ref={scaleCParallax.ref}>
+        <div className="card">
+          <img src="https://images.pexels.com/photos/2422294/pexels-photo-2422294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+        </div>
+        <div className="card">
+          <img src="https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+        </div>
+      </section> */}
+
+      <br />
+      <br />
+      <br />
+      <br />      <br />
+      <br />      <br />
+      <br />      <br />
+      <br />      <br />
+      <br />      <br />
+      <br />      <br />
+      <br />      <br />
+      <br />      <br />
+      <br />
+      {/* <section className="card-container">
+        <div className="card" ref={parallaxRotateY2.ref}>
+          <img src="https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=800" />
+        </div>
+        <div ref={parallaxRotateY3.ref} className="card">
+          <img src="https://images.pexels.com/photos/1181438/pexels-photo-1181438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+        </div>
+      </section> */}
+      <br />
+
+      {/* <section className="subscribe">
+        <h1>Subscribe to our news letter</h1>
+        <br />
+        <input type="email" placeholder="youremail@gmail.com" />
+        <button>Subscribe</button>
+      </section> */}
     </div>
   );
 };
 
 
-const divImg: React.CSSProperties = {
-  display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'center',
-  alignItems: 'center',
-  textAlign: 'center',
-  height: '100vh',
-  width: '100%',
-  marginTop: '75px',
-  paddingBottom: '250px',
-  marginBottom: '250px',
-  position: 'relative',
-  overflow: 'hidden',
-};
-
-const secondCircle: React.CSSProperties = {
-  borderRadius: '50%',
-  height: '300px',
-  width: '300px',
-  backgroundColor: '#D5FF3C',
-  position: 'absolute',
-  top: '20',
-  left: '40%',
-  // object-fit: cover;
-};
-
-const firstCircle: React.CSSProperties = {
-  borderRadius: '50%',
-  height: '300px',
-  width: '300px',
-  backgroundColor: '#1501FF',
-  position: 'absolute',
-  top: '20',
-  left: '40%',
-  // object-fit: cover,
-};
-const homeImg: React.CSSProperties = {
-  borderRadius: '50%',
-  height: '300px',
-  width: '300px',
-  position: 'absolute',
-  top: '20',
-  left: '40%',
-  // objectFit: 'cover',
-  // z-index: 999,s
-};
-  
   export default TopSection;
