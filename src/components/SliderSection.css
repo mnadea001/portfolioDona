@@ -1,0 +1,46 @@
+/* SliderSection.css */
+
+/* General styles */
+body {
+    background-color: #C996FF;
+  }
+  
+  /* Slider section styles */
+  .slider-section {
+    background-color: #333333;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+  }
+  
+  .slider-section h2 {
+    padding-bottom: 40px;
+    color: #FFE7C2;
+    text-transform: uppercase;
+    margin-left: 10px;
+  }
+  
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 7)); }
+  }
+  
+  .slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+  }
+  
+  .slider .slide-track {
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+  
+  .slider .slide {
+    height: 100px;
+    width: 250px;
+  }
+  
