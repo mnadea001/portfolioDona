@@ -33,8 +33,11 @@
     width: calc(250px * 14);
   }
   
-  .slider .slide {
+  .slide {
     height: 100px;
     width: 250px;
+    margin: 5px;
+    padding: 5px;
+    
   }
   
