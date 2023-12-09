@@ -23,8 +23,9 @@ function App() {
           {/* <Route path="*" element={<NotFound />} /> */}
           <Route path="/projets" element={<ProjectsSection />} />
           <Route path="/experiences" element={<ExperiencesSection />} />
+          
           {/* <Footer /> */}
-        </Route>
+        </Route >
       </Routes>
       </ParallaxProvider>
     </>
