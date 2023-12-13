@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: #333;
+  background-color: #1501FF;
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -16,6 +16,8 @@
   list-style: none;
   display: flex;
   gap: 20px;
+  flex-direction: column;
+  text-align: start;
 }
 
 .footer-links a {
