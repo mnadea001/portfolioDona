@@ -12,8 +12,8 @@ body {
     width: 100%;
     padding: 30px 100px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between;
+    align-items: center; */
     z-index: 1000;
   }
   
