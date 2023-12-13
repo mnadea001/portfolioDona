@@ -37,14 +37,11 @@ const ExperiencesSection: React.FC = () => {
     translateY: [150, 0],
   });
   const parallaxEasingThird = useParallax({
-    // easing: [1, -0.75, 0.5, 1.34],
     easing: "easeInQuad",
     translateX: [300, -150],
     translateY: [100, 0],
     speed: -20
   });
-
-  
   
   return (
     <div>

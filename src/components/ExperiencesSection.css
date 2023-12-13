@@ -1,9 +1,6 @@
-/* TopSection.css */
-
 .bg-container {
   position: relative;
   height: 100vh;
-  background-color: #C996FF; /* Your desired purple color */
 }
 
 .absolute-text {

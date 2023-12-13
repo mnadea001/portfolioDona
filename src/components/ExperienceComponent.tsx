@@ -1,12 +1,10 @@
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Modal from './Modal';
 import { useState } from 'react';
-
+import './ExperienceSection.css';
 interface ExperienceComponentProps {
   imgSrc: string;
   title: string;
@@ -27,23 +25,18 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = ({ imgSrc, title
 
   return (
     <>
-      <Card sx={{ display: 'flex' }}>
+      <Card className='card' sx={{ display: 'flex', justifyContent: 'center'}}>
         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-          <CardContent sx={{ flex: '1 0 auto' }}>
-            <Typography component="div" variant="h5">
-              {title}
-            </Typography>
-          </CardContent>
-          <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
-            <Button onClick={handleOpenModal}>View Details</Button>
+          <CardMedia
+            component="img"
+            sx={{ flex: '1 0 auto', width: 200 }}
+            src={imgSrc}
+            alt={`Image for ${title}`}
+          />
+          <Box sx={{ display: 'flex', alignItems: 'center',justifyContent: 'center', pl: 1, pb: 1 }}>
+            <Button className='btn' onClick={handleOpenModal}>VIEW</Button>
           </Box>
         </Box>
-        <CardMedia
-          component="img"
-          sx={{ width: 151 }}
-          src={imgSrc}
-          alt={`Image for ${title}`}
-        />
       </Card>
 
       <Modal
