@@ -23,6 +23,7 @@ const ExperiencesSection: React.FC = () => {
   });
   return (
     <div>
+      <h1>EXPERIENCES</h1>
       <section className="bg-container">
         <div className="absolute-text">
 
