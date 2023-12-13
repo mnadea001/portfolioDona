@@ -1,6 +1,7 @@
 import './TopSection.css'
 import '../assets/MN.png'
 import { useParallax } from "react-scroll-parallax";
+
 const TopSection: React.FC = () => {
   const parallaxEasing = useParallax({
     easing: "easeOutQuad",

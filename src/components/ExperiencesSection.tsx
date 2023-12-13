@@ -1,17 +1,29 @@
-import './ExperiencesSection.css'
+import './ExperiencesSection.css';
+
+import { useParallax } from "react-scroll-parallax";
+import ExperienceComponent from './ExperienceComponent';
 
 const ExperiencesSection: React.FC = () => {
+  const parallaxEasing = useParallax({
+    easing: [1, -0.75, 0.5, 1.34],
+    translateX: [300, -200],
+    translateY: [200, 0],
+  });
   return (
-    <section className="experiences-section">
-      <span className="d-flex">
-        <img src="assets/WORK.png" height="40" alt="" />
-        <h2>Expériences</h2>
-      </span>
-      <div className="experiences">
-        {/* Your experiences content goes here */}
-      </div>
-    </section>
+    <div>
+      <section className="bg-container">
+        <div className="absolute-text">
+
+          <div className="colored-circle first-circle" ref={parallaxEasing.ref}>
+            <ExperienceComponent />
+          </div>
+
+        </div>
+      </section>
+
+    </div>
   );
 };
+
 
 export default ExperiencesSection;
