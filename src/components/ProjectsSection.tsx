@@ -1,4 +1,10 @@
 import './ProjectsSection.css'
+import AccordionList from './AccordionList';
+
+const projectsData = [
+  { title: 'MSPR', content: 'Project 1 details...' },
+  { title: 'Séniorissime', content: 'Project 2 details...' },
+];
 
 const ProjectsSection: React.FC = () => {
   return (
@@ -8,12 +14,11 @@ const ProjectsSection: React.FC = () => {
         <h2>Projets</h2>
       </span>
       <section className="projets">
-        <ul className="list-group list-group-flush">
-          {/* List of projects goes here */}
-        </ul>
+        <AccordionList projects={projectsData} />
       </section>
     </section>
   );
 };
+
 
 export default ProjectsSection;
