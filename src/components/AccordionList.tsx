@@ -1,5 +1,3 @@
-// AccordionList.tsx
-import React from 'react';
 import AccordionItem from './AccordionItem';
 
 interface AccordionListProps {

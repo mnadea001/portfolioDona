@@ -19,8 +19,9 @@ const SliderSection: React.FC = () => {
 
   return (
     <>
-      <h1>Mes compétences</h1>
-      <p>Voici les langages que je maitrise</p>
+    <div className="slider-section">
+      <h1>SKILLS</h1>
+      <p>Mastered languages</p>
       <ScrollCarousel
         autoplay
         autoplaySpeed={8}
@@ -37,6 +38,7 @@ const SliderSection: React.FC = () => {
           </div>
         ))}
       </ScrollCarousel>
+      </div>
     </>
   );
 };

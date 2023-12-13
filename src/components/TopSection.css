@@ -1,3 +1,4 @@
+
 .bg-container {
   position: relative;
   height: 100vh;
@@ -28,14 +29,36 @@
   background-color: #1501FF;
 }
 
+.first-circle::after {
+  content: attr(data-text); /* Set the content dynamically */
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  font-size: 16px; /* Set your desired font size */
+  font-weight: bold; /* Set your desired font weight */
+  color: #FFE7C2; /* Set your desired text color */
+  text-align: center; /* Align text to center */
+}
+
 .second-circle {
   width: 300px;
   height: 300px;
   top: 20%;
   left: 0%;
-  background-color: #4aeb31;
+  background-color: #D5FF3C;
 }
-
+.second-circle::after {
+  content: attr(data-text); /* Set the content dynamically */
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  font-size: 16px; /* Set your desired font size */
+  font-weight: bold; /* Set your desired font weight */
+  color: #333333; /* Set your desired text color */
+  text-align: center; /* Align text to center */
+}
 
 #homeImg {
   transform: translate(0%, 100%);
@@ -59,10 +82,15 @@
 
 }
 
+
 .spinner::after {
-  content: 'SCROLL DOWN';
+  content: attr(data-text); /* Set the content dynamically */
   position: absolute; 
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);
+  font-size: 16px; /* Set your desired font size */
+  font-weight: bold; /* Set your desired font weight */
+  color: #D5FF3C; /* Set your desired text color */
+  text-align: center; /* Align text to center */
 }

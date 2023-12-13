@@ -1,23 +1,20 @@
-/* ProjectsSection.css */
 
-/* ProjectsSection.css */
 .projets-section {
   height: 100%;
-  
+  width:100%;
+  margin: 0;
+  padding: 0;
 }
 
 .projets {
   width: 100%;
   margin-top: 50px;
-  /* Add any additional styling for the height or other properties */
 }
 
-/* Add any additional styles as needed */
 
-  
-  .projets-section h2 {
+  .projets-section h1 {
     padding-bottom: 40px;
-    color: black;
+    color: #FFE7C2;
     text-transform: uppercase;
     margin-left: 10px;
   }

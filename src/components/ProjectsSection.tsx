@@ -1,5 +1,5 @@
 import AccordionList from './AccordionList';
-import SliderSection from './SliderSection'; // Import the SliderSection component
+import SliderSection from './SliderSection'; 
 import './ProjectsSection.css';
 
 const projectsData = [
@@ -11,12 +11,15 @@ const projectsData = [
 
 const ProjectsSection: React.FC = () => {
   return (
+    <>
     <section className="projets-section">
       <SliderSection />
       <section className="projets">
+      <h1>PROJECTS</h1>
         <AccordionList projects={projectsData} />
       </section>
     </section>
+    </>
   );
 };
 

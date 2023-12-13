@@ -13,7 +13,9 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content, imageSrc 
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <Accordion>
+    <Accordion
+    style={{backgroundColor: 'transparent'}}
+    >
       <AccordionSummary
         expandIcon={<IconDown />}
         aria-controls="panel1a-content"

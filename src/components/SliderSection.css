@@ -1,43 +1,28 @@
-/* SliderSection.css */
 
 /* General styles */
 
-  
+ .container {
+  margin-top: 50px;
+  margin-bottom: 150px;
+ } 
   /* Slider section styles */
   .slider-section {
-
     padding-top: 50px;
     padding-bottom: 40px;
     padding-left: 50px;
   }
   
-  .slider-section h2 {
+  .slider-section h1 {
     padding-bottom: 40px;
     color: #FFE7C2;
     text-transform: uppercase;
     margin-left: 10px;
-  }
-
-  
-  .slider {
-    height: 100px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    width: auto;
-  }
-  
-  .slider .slide-track {
-    animation: scroll 20s linear infinite;
-    display: flex;
-    width: calc(250px * 14);
   }
   
   .slide {
     height: 100px;
     width: 250px;
     margin: 5px;
-    padding: 5px;
-    
+    padding: 15px;
   }
   

@@ -28,14 +28,14 @@ const TopSection: React.FC = () => {
   });
   return (
     <div>
-      <div ref={parallax.ref} className="spinner" />
+      <div ref={parallax.ref} className="spinner" data-text="SCROLL DOWN" />
       <section className="bg-container">
         <div className="absolute-text">
           <img ref={parallaxEasingTop.ref} id="homeImg" src={logo} />
-          <div className="colored-circle first-circle" ref={parallaxEasing.ref} />
-          <div className="colored-circle second-circle" ref={parallaxEasingLeft.ref} />
+          <div className="colored-circle first-circle" ref={parallaxEasing.ref} data-text="CREATIVE DEVELOPER"/>
+          <div className="colored-circle second-circle" ref={parallaxEasingLeft.ref} data-text="DIGITAL CREATOR"/>
         </div>
-      </section>‚
+      </section>
 
       <ProjectsSection />
       <ExperiencesSection />
