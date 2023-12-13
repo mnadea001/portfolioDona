@@ -1,6 +1,8 @@
 import './TopSection.css'
 import '../assets/MN.png'
 import { useParallax } from "react-scroll-parallax";
+import ProjectsSection from './ProjectsSection';
+import ExperiencesSection from './ExperiencesSection';
 
 const TopSection: React.FC = () => {
   const parallaxEasing = useParallax({
@@ -52,6 +54,8 @@ const TopSection: React.FC = () => {
  
       <br />      <br />
       <br />
+      <ProjectsSection /> 
+      <ExperiencesSection/>
     </div>
   );
 };

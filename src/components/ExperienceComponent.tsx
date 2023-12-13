@@ -3,6 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import TransitionsModal from './TransitionsModal';
 
 export default function ExperienceComponent() {
 
@@ -16,6 +17,7 @@ export default function ExperienceComponent() {
           <Typography variant="subtitle1" color="text.secondary" component="div">
             Mac Miller
           </Typography>
+          <TransitionsModal/>
         </CardContent>
         <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
 
