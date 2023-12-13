@@ -9,6 +9,8 @@ import './Header.css';
 import IconMenu from '../assets/IconMenu';
 import CloseIcon from '../assets/CloseIcon';
 import { Dialog, DialogContent, DialogTitle } from '@mui/material';
+import CustomHomeLink from './CustomHomeLink';
+import ByeComponent from './ByeComponent';
 
 const Header: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,9 +30,10 @@ const Header: React.FC = () => {
             <CloseIcon />
           </IconButton>
         </DialogTitle>
+        <ByeComponent />
         <DialogContent>
-          <List>
-            <ListItem button component={NavLink} to="/" onClick={toggleModal}>
+          <List style={{display:'flex'}}>
+          <ListItem button component={NavLink} to="/" onClick={toggleModal}>
               <ListItemText primary="Home" />
             </ListItem>
             <ListItem button component={NavLink} to="/slider" onClick={toggleModal}>

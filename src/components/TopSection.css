@@ -72,7 +72,7 @@
   z-index: 999;
 }
 
-.spinner {
+.spinner-style {
   background-image: url('../assets/Vector.png');
   height: 200px;
   width: 200px;
@@ -83,7 +83,7 @@
 }
 
 
-.spinner::after {
+.spinner-style::after {
   content: attr(data-text); /* Set the content dynamically */
   position: absolute; 
   top: 50%; 

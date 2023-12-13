@@ -29,7 +29,7 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = ({ imgSrc, title
   return (
     <>
       <Card className='card' sx={{ display: 'flex', justifyContent: 'center'}}>
-        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <CardMedia
             component="img"
             sx={{ flex: '1 0 auto', width: 200 }}

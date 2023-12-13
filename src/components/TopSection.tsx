@@ -4,6 +4,8 @@ import { useParallax } from "react-scroll-parallax";
 import ProjectsSection from './ProjectsSection';
 import ExperiencesSection from './ExperiencesSection';
 import Footer from './Footer';
+import ByeComponent from './ByeComponent';
+import DiplomaComponent from './DiplomaComponent';
 
 const TopSection: React.FC = () => {
   const parallaxEasing = useParallax({
@@ -29,18 +31,19 @@ const TopSection: React.FC = () => {
   });
   return (
     <div>
-      <div ref={parallax.ref} className="spinner" data-text="SCROLL DOWN" />
+      <div ref={parallax.ref} className="spinner spinner-style" data-text="SCROLL DOWN" />
       <section className="bg-container">
         <div className="absolute-text">
           <img ref={parallaxEasingTop.ref} id="homeImg" src={logo} />
-          <div className="colored-circle first-circle" ref={parallaxEasing.ref} data-text="CREATIVE DEVELOPER"/>
-          <div className="colored-circle second-circle" ref={parallaxEasingLeft.ref} data-text="DIGITAL CREATOR"/>
+          <div className="colored-circle first-circle" ref={parallaxEasing.ref} data-text="CREATIVE DEVELOPER" />
+          <div className="colored-circle second-circle" ref={parallaxEasingLeft.ref} data-text="DIGITAL CREATOR" />
         </div>
       </section>
 
       <ProjectsSection />
       <ExperiencesSection />
-      <Footer/>
+      <DiplomaComponent />
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,17 @@
+.section {
+    min-height: 500px;
+}
+
+h1 {
+    color: #FFE7C2;
+  }
+
+
+.licence-style {
+    font-size: 700;
+    color: 'red'
+  }
+/* .frog, .mage {
+width: 200px;
+height: 200px;
+} */
