@@ -14,15 +14,15 @@ const Footer: React.FC = () => {
       <div className="footer-content">
         <ul className="footer-links">
           <li>CONTACT</li>
-          <li>
+          <li> 
+            <MailIcon />
             <a href="/about">
-              <MailIcon />
               Mail
             </a>
           </li>
-          <li>
+          <li>      
+            <IconGithub />
             <a href="/contact">
-              <IconGithub />
               Github
             </a>
           </li>

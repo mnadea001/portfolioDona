@@ -1,6 +1,6 @@
 .footer-container {
   background-color: #1501FF;
-  color: white;
+  color: '#FFE7C2';  
   padding: 20px 0;
   text-align: center;
 }
@@ -8,7 +8,9 @@
 .footer-content {
   display: flex;
   justify-content: space-between;
+  align-items: center; 
   max-width: 1200px;
+  color: '#FFE7C2';
   margin: 0 auto;
 }
 
@@ -16,11 +18,24 @@
   list-style: none;
   display: flex;
   gap: 20px;
-  flex-direction: column;
   text-align: start;
 }
 
+.footer-links li {
+  display: flex; 
+  align-items: center; 
+}
+
 .footer-links a {
-  color: white;
+  color: '#FFE7C2';
   text-decoration: none;
+  padding-right: 4px;
+}
+
+.footer-links svg {
+  margin-right: 4px; 
+}
+
+.footer-links p {
+  cursor: pointer;
 }
