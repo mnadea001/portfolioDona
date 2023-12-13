@@ -1,5 +1,5 @@
 import './TopSection.css'
-import '../assets/MN.png'
+import logo from '../assets/MN.png'
 import { useParallax } from "react-scroll-parallax";
 import ProjectsSection from './ProjectsSection';
 import ExperiencesSection from './ExperiencesSection';
@@ -27,7 +27,7 @@ const TopSection: React.FC = () => {
     <div>
       <section className="bg-container">
         <div className="absolute-text">
-          <img ref={parallaxEasingTop.ref} id="homeImg" src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+          <img ref={parallaxEasingTop.ref} id="homeImg" src={logo} />
 
           <div className="colored-circle first-circle" ref={parallaxEasing.ref} />
 
