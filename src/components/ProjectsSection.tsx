@@ -1,24 +1,22 @@
-import './ProjectsSection.css'
 import AccordionList from './AccordionList';
+import SliderSection from './SliderSection'; // Import the SliderSection component
+import './ProjectsSection.css';
 
 const projectsData = [
-  { title: 'MSPR', content: 'Project 1 details...' },
-  { title: 'Séniorissime', content: 'Project 2 details...' },
+  { title: 'Project 1', content: 'Project 1 details...', imageSrc: 'https://images.unsplash.com/photo-1702234577513-151004f4cb44?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+  { title: 'Project 2', content: 'Project 2 details...' , imageSrc: '' },
+  // Add more projects as needed
 ];
 
 const ProjectsSection: React.FC = () => {
   return (
     <section className="projets-section">
-      <span className="d-flex">
-        {/* <img src="assets/PC.png" height="40" alt="" /> */}
-        <h2>Projets</h2>
-      </span>
+      <SliderSection />
       <section className="projets">
         <AccordionList projects={projectsData} />
       </section>
     </section>
   );
 };
-
 
 export default ProjectsSection;

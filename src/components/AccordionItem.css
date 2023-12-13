@@ -1,0 +1,11 @@
+.accordion {
+    width: 100%;
+  }
+
+  .hovered-image {
+    display: block !important;
+    max-width: 100px !important;
+    height: 100px !important;
+    max-height: 100px !important;
+    margin-top: 10px !important;
+  }

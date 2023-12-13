@@ -1,21 +1,19 @@
 /* ProjectsSection.css */
 
-/* General styles */
-body {
-    background-color: #C996FF;
-  }
+/* ProjectsSection.css */
+.projets-section {
+  height: 100%;
   
-  /* Projects section styles */
-  .projets-section {
-    background-color: #D5FF3C;
-    padding-top: 50px;
-    padding-bottom: 40px;
-    padding-left: 50px;
-  }
-  
-  .projets {
-    width: 80%;
-  }
+}
+
+.projets {
+  width: 100%;
+  margin-top: 50px;
+  /* Add any additional styling for the height or other properties */
+}
+
+/* Add any additional styles as needed */
+
   
   .projets-section h2 {
     padding-bottom: 40px;
