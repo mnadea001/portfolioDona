@@ -1,7 +1,7 @@
 // AccordionItem.tsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material';
-import IconDown from '../assets/IconDown.tsx';
+import IconDown from '../assets/IconDown';
 
 interface AccordionItemProps {
   title: string;
@@ -27,7 +27,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content, imageSrc 
           src={imageSrc}
           alt={`Image for ${title}`}
           className="hovered-image"
-          style={{ maxWidth: '100%', height: 'auto', maxHeight: '100px', marginTop: '10px', marginLeft:'500px' }}
+          style={{ maxWidth: '100%', height: 'auto', maxHeight: '100px', marginTop: '10px', marginLeft:'auto' }}
         />
       )}
       </AccordionSummary>
