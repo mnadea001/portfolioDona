@@ -5,18 +5,18 @@ import ExperienceComponent from './ExperienceComponent';
 
 const ExperiencesSection: React.FC = () => {
   const parallaxEasingFirst = useParallax({
-    easing: [1, -0.75, 0.5, 1.34],
-    translateX: [300, -200],
-    translateY: [200, 0],
-    speed: -20
+    easing: "easeOutQuad",
+    translateX: [300, -100],
+    translateY: [0, 100],
   });
   const parallaxEasingSecond = useParallax({
-    easing: [1, -0.75, 0.5, 1.34],
+    easing: "easeOutQuad",
     translateX: [300, -250],
     translateY: [150, 0],
   });
   const parallaxEasingThird = useParallax({
-    easing: [1, -0.75, 0.5, 1.34],
+    // easing: [1, -0.75, 0.5, 1.34],
+    easing: "easeInQuad",
     translateX: [300, -150],
     translateY: [100, 0],
     speed: -20
