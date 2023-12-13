@@ -1,30 +1,18 @@
-import './Footer.css'
+import './Footer.css'; 
 
 const Footer: React.FC = () => {
-    return (
-      <header>
-        <a className="logo" href="/">
-          Logo
-        </a>
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/">Compétences</a>
-          </li>
-          <li>
-            <a href="/">Projets</a>
-          </li>
-          <li>
-            <a href="/">Expériences</a>
-          </li>
-          <li>
-            <a href="/">Contact</a>
-          </li>
+  return (
+    <footer className="footer-container">
+      <div className="footer-content">
+        <p>&copy; 2023 Your Company</p>
+        <ul className="footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
-      </header>
-    );
-  };
-  
-  export default Footer;
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

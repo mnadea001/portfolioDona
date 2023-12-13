@@ -3,6 +3,7 @@ import logo from '../assets/MN.png'
 import { useParallax } from "react-scroll-parallax";
 import ProjectsSection from './ProjectsSection';
 import ExperiencesSection from './ExperiencesSection';
+import Footer from './Footer';
 
 const TopSection: React.FC = () => {
   const parallaxEasing = useParallax({
@@ -39,6 +40,7 @@ const TopSection: React.FC = () => {
 
       <ProjectsSection />
       <ExperiencesSection />
+      <Footer/>
     </div>
   );
 };
