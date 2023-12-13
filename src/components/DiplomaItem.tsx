@@ -1,30 +1,28 @@
 
-import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-  >
-    •
-  </Box>
-);
+interface DiplomaItemProps {
+    data: {
+      school: string;
+      diploma: string;
+      year: string;
+    };
+  }
 
-const DiplomaItem: React.FC = () => {
+const DiplomaItem: React.FC<DiplomaItemProps> = ({ data }) => {
   return (
-    <Card sx={{ minWidth: 275 }}>
+    <Card sx={{ minWidth: 175, backgroundColor: '#333333' }}>
       <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-      LIcence
+        <Typography component="div" sx={{ fontSize: 14 }} color="#D5FF3C">
+        {data.diploma}
         </Typography>
-        <Typography variant="h5" component="div">
-          2022
+        <Typography sx={{ fontSize: 14 }} color="white">
+        {data.school}
         </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-      Ecole
+        <Typography sx={{ fontSize: 14 }} color="white">
+        {data.year}
         </Typography>
 
       </CardContent>

@@ -2,6 +2,13 @@ import './DiplomaComponent.css';
 import { useParallax } from "react-scroll-parallax";
 import DiplomaItem from './DiplomaItem';
 
+const diplomaData = [
+    { school: 'Université de Bordeaux', diploma: 'Licence Economie Gestion', year: '2015' },
+    { school: 'IA Bordeaux', diploma: 'Mastr Management International', year: '2018' },
+    { school: 'EPSI Bordeaux', diploma: 'Licence Développement web', year: '2023' },
+    { school: 'Ynov Bordeaux', diploma: 'Master Expert en développement web', year: '2025' },
+  ];
+
 const DiplomaComponent: React.FC = () => {
 
     const licenceEco = useParallax<HTMLDivElement>({
@@ -9,31 +16,35 @@ const DiplomaComponent: React.FC = () => {
     });
 
     const MasterEco = useParallax<HTMLDivElement>({
-        scaleX: [1, 0, 'easeInQuad'],
+        scaleX: [1, 0.5, 'easeInQuad'],
     });
 
     const LicenceDev = useParallax<HTMLDivElement>({
         easing: "easeInQuad",
-        scaleX: [0.5, 1],
+        scaleX: [0.5, 0.9],
 
+    });
+    const MasterDev = useParallax<HTMLDivElement>({
+        scaleX: [1, 0.7, 'easeInQuad'],
     });
     return (
         <>
             <section>
                 <div>
-                    <h1>DIPLOMA</h1>
+                    <h1>DIPLOMES</h1>
                     <div className="spinner">
                         <div className="licenceEco" ref={licenceEco.ref}>
-                            <DiplomaItem/>
-                          
+                        <DiplomaItem data={diplomaData[0]} />
                         </div>
-                        <div className="MasterEco" ref={MasterEco.ref} style={{height: '200px'}}>
-                        <DiplomaItem/>
+                        <div className="MasterEco" ref={MasterEco.ref}>
+                        <DiplomaItem data={diplomaData[1]} />
                         </div>
                         <div className="LicenceDev" ref={LicenceDev.ref} >
-                        <DiplomaItem/>
+                        <DiplomaItem data={diplomaData[2]} />
                         </div>
-                    
+                        <div className="MasterDev" ref={MasterDev.ref} >
+                        <DiplomaItem data={diplomaData[3]} />
+                        </div>
                     </div>
                 
                 </div>
