@@ -43,6 +43,7 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = ({ imgSrc, title
         open={modalOpen}
         onClose={handleCloseModal}
         title={title}
+        imgSrc={imgSrc}
         description={description}
         skills={skills}
       />
