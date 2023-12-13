@@ -9,7 +9,6 @@ import './Header.css';
 import IconMenu from '../assets/IconMenu';
 import CloseIcon from '../assets/CloseIcon';
 import { Dialog, DialogContent, DialogTitle } from '@mui/material';
-import CustomHomeLink from './CustomHomeLink';
 import ByeComponent from './ByeComponent';
 
 const Header: React.FC = () => {
@@ -33,16 +32,16 @@ const Header: React.FC = () => {
         <ByeComponent />
         <DialogContent>
           <List style={{display:'flex'}}>
-          <ListItem button component={NavLink} to="/" onClick={toggleModal}>
+          <ListItem component={NavLink} to="/" onClick={toggleModal}>
               <ListItemText primary="Home" />
             </ListItem>
-            <ListItem button component={NavLink} to="/slider" onClick={toggleModal}>
+            <ListItem component={NavLink} to="/slider" onClick={toggleModal}>
               <ListItemText primary="Compétences" />
             </ListItem>
-            <ListItem button component={NavLink} to="/projets" onClick={toggleModal}>
+            <ListItem component={NavLink} to="/projets" onClick={toggleModal}>
               <ListItemText primary="Projets" />
             </ListItem>
-            <ListItem button component={NavLink} to="/experiences" onClick={toggleModal}>
+            <ListItem component={NavLink} to="/experiences" onClick={toggleModal}>
               <ListItemText primary="Expériences" />
             </ListItem>
             {/* Add more links as needed */}

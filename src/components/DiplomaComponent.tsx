@@ -4,7 +4,7 @@ import DiplomaItem from './DiplomaItem';
 
 const diplomaData = [
     { school: 'Université de Bordeaux', diploma: 'Licence Economie Gestion', year: '2015' },
-    { school: 'IA Bordeaux', diploma: 'Mastr Management International', year: '2018' },
+    { school: 'IAE Bordeaux / Allemagne / Chine / Pays Bas', diploma: 'Master Management International', year: '2018' },
     { school: 'EPSI Bordeaux', diploma: 'Licence Développement web', year: '2023' },
     { school: 'Ynov Bordeaux', diploma: 'Master Expert en développement web', year: '2025' },
   ];
@@ -12,11 +12,11 @@ const diplomaData = [
 const DiplomaComponent: React.FC = () => {
 
     const licenceEco = useParallax<HTMLDivElement>({
-        scale: [0.5, 1, 'easeInQuad'],
+        scale: [0.7, 1, 'easeInQuad'],
     });
 
     const MasterEco = useParallax<HTMLDivElement>({
-        scaleX: [1, 0.5, 'easeInQuad'],
+        scaleX: [1, 0.7, 'easeInQuad'],
     });
 
     const LicenceDev = useParallax<HTMLDivElement>({
@@ -30,7 +30,7 @@ const DiplomaComponent: React.FC = () => {
     return (
         <>
             <section>
-                <div>
+                <div className="container">
                     <h1>DIPLOMES</h1>
                     <div className="spinner">
                         <div className="licenceEco" ref={licenceEco.ref}>

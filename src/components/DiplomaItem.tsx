@@ -13,7 +13,7 @@ interface DiplomaItemProps {
 
 const DiplomaItem: React.FC<DiplomaItemProps> = ({ data }) => {
   return (
-    <Card sx={{ minWidth: 175, backgroundColor: '#333333' }}>
+    <Card variant="outlined" sx={{ width: 350, backgroundColor: '#333333', margin: 'auto', marginTop: 2 }}>
       <CardContent>
         <Typography component="div" sx={{ fontSize: 14 }} color="#D5FF3C">
         {data.diploma}
