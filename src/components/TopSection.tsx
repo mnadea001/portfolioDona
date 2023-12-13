@@ -20,8 +20,11 @@ const TopSection: React.FC = () => {
     translateY: [30, 100],
   });
   const parallax = useParallax<HTMLDivElement>({
+    easing: "ease",
+    translateX: [-300, 100],
+    translateY: [300, 100],
     rotate: [0, 360],
-    translateY: [30, 100],
+    speed: -20
   });
   return (
     <div>

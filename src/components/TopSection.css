@@ -51,19 +51,18 @@
 
 .spinner {
   background-image: url('../assets/Vector.png');
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   background-size: cover;
   background-position: center;
- /* Adjust the top value to position it from the top */
-  left: 40px; 
-  top: 20px;
-  position: fixed;
+  position: absolute;
+
 }
 
-.spinner::before {
+.spinner::after {
   content: 'SCROLL DOWN';
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
 }
