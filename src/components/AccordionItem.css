@@ -9,3 +9,14 @@
     max-height: 100px !important;
     margin-top: 10px !important;
   }
+
+  .title {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .content {
+
+    font-size: larger;
+  }

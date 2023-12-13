@@ -1,7 +1,8 @@
 import AccordionItem from './AccordionItem';
 
 interface AccordionListProps {
-  projects: { title: string; content: string; imageSrc: string }[];
+  projects: { title: string; content: string; imageSrc: string, description: string,languages: [string],
+    number: number }[];
 }
 
 const AccordionList: React.FC<AccordionListProps> = ({ projects }) => {
@@ -13,6 +14,9 @@ const AccordionList: React.FC<AccordionListProps> = ({ projects }) => {
           title={project.title}
           content={project.content}
           imageSrc={project.imageSrc}
+          description={project.description}
+          languages={project.languages}
+          number={project.number}
         />
       ))}
     </div>
