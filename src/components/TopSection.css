@@ -34,17 +34,29 @@
 
 
 #homeImg {
-    transform: translate(0%, 100%);
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
-    position: absolute;
-    top: 20%;
-    left: 0%;
-    object-fit: cover;
-    z-index: 999;
-  }
+  transform: translate(0%, 100%);
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  object-fit: cover;
+  z-index: 999;
+}
 
-  .spinner {
-    background-color: #0f2e0a;
-  }
+.spinner {
+  background-image: url('../assets/Vector.png');
+  /* Replace with the path to your background image */
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  background-position: center;
+}
+
+.spinner::before {
+  content: 'SCROLL DOWN';
+  position: fixed;
+  top: 0;
+  left: 0;
+}

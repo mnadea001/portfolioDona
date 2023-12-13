@@ -1,5 +1,6 @@
 import './TopSection.css'
 import logo from '../assets/MN.png'
+import vector from '../assets/Vector.png'
 import { useParallax } from "react-scroll-parallax";
 import ProjectsSection from './ProjectsSection';
 import ExperiencesSection from './ExperiencesSection';
@@ -34,10 +35,7 @@ const TopSection: React.FC = () => {
           <div className="colored-circle second-circle" ref={parallaxEasingLeft.ref} />
         </div>
       </section>
-      <div ref={parallax.ref} className="spinner">
-        SCROLL DOWN
- 
-      </div>
+      <div ref={parallax.ref} className="spinner" />
       <br />
 
       <br />
