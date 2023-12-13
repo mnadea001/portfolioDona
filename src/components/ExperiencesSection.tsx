@@ -1,28 +1,29 @@
 import './ExperiencesSection.css';
-
 import { useParallax } from "react-scroll-parallax";
 import ExperienceComponent from './ExperienceComponent';
+import thekub from '../assets/THEKUB.png';
+import elemate from '../assets/ELEMATE.png';
+import worldcast from '../assets/WORLDCAST.png';
 
 const experiencesData = [
   {
-    imgSrc: 'https://images.unsplash.com/photo-1682686580003-22d3d65399a8?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    title: 'Experience 1',
-    description: 'Description of experience 1.',
-    skills: ['Skill 1', 'Skill 2', 'Skill 3'],
+    imgSrc: thekub,
+    title: 'THE KUB',
+    description: 'Développeuse web',
+    skills: ['SCSS', 'Javascript', 'WordPress'],
   },
   {
-    imgSrc: 'path-to-image-2.jpg',
-    title: 'Experience 2',
-    description: 'Description of experience 2.',
-    skills: ['Skill 4', 'Skill 5', 'Skill 6'],
+    imgSrc: elemate,
+    title: 'ELEMATE',
+    description: 'Développement de nouvelles fonctionnalités et refactorisation',
+    skills: ['Symfony', 'API', 'Docker'],
   },
   {
-    imgSrc: 'path-to-image-3.jpg',
-    title: 'Experience 3',
-    description: 'Description of experience 3.',
-    skills: ['Skill 7', 'Skill 8', 'Skill 9'],
-  },
-  // Add more experiences as needed
+    imgSrc: worldcast,
+    title: 'WORDLCAST',
+    description: 'Développement de nouvelles fonctionnalités et support client',
+    skills: ['Vue', 'Javascript', 'Node'],
+  }
 ];
 const ExperiencesSection: React.FC = () => {
   const parallaxEasingFirst = useParallax({
