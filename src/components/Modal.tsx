@@ -15,9 +15,12 @@ interface ModalProps {
   title: string;
   description: string;
   skills: string[];
+  context: string, 
+  date: string,
+  position: string
 }
 
-const Modal: React.FC<ModalProps> = ({ open, onClose, imgSrc, title, description, skills }) => {
+const Modal: React.FC<ModalProps> = ({ open, onClose, imgSrc, title, description, skills, context, date, position }) => {
   return (
     <Dialog open={open} onClose={onClose} maxWidth="md" fullWidth>
     <DialogTitle>
@@ -33,6 +36,9 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, imgSrc, title, description
     <DialogContent dividers>
       <img src={imgSrc} alt={`Image for ${title}`} className="modal-image" />
       <DialogTitle>{title}</DialogTitle>
+      <DialogContentText>{context}</DialogContentText>
+      <DialogContentText>{position}</DialogContentText>
+      <DialogContentText>{date}</DialogContentText>
       <DialogContentText>{description}</DialogContentText>
       <DialogContentText>Skills:</DialogContentText>
         <div>

@@ -9,18 +9,27 @@ const experiencesData = [
   {
     imgSrc: thekub,
     title: 'THE KUB',
-    description: 'Développeuse web',
-    skills: ['SCSS', 'Javascript', 'WordPress'],
+    context: 'Agence de communication et évènementiel',
+    position:'Développeuse web',
+    date: 'Janvier - Septembre 2022',
+    description: 'Développement et maintenance de sites pour des clients',
+    skills: ['SCSS', 'Javascript', 'WordPress', 'PrestaShop', 'PHP'],
   },
   {
     imgSrc: elemate,
     title: 'ELEMATE',
+    context: 'Start up - édition logiciel',
+    position:'Développeuse FulStack Symfony',
+    date: 'Septembre 2022 - Septembre 2023',
     description: 'Développement de nouvelles fonctionnalités et refactorisation',
     skills: ['Symfony', 'API', 'Docker'],
   },
   {
     imgSrc: worldcast,
     title: 'WORDLCAST',
+    context: 'Logiciel de surveillance / Monitoring',
+    position:'Développeuse Javascript + Support client',
+    date: 'Septembre 2023 - ',
     description: 'Développement de nouvelles fonctionnalités et support client',
     skills: ['Vue', 'Javascript', 'Node'],
   }
@@ -56,6 +65,9 @@ const ExperiencesSection: React.FC = () => {
                 title={experience.title}
                 description={experience.description}
                 skills={experience.skills}
+                context={experience.context}
+                position={experience.position}
+                date={experience.date}
               />
             </div>
           ))}
