@@ -3,11 +3,10 @@ import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
-import DialogActions from '@mui/material/DialogActions';
-import Button from '@mui/material/Button';
 import CloseIcon from '../assets/CloseIcon';
 import IconButton from '@mui/material/IconButton';
 import './Modal.css';
+import Chip from '@mui/material/Chip';
 
 interface ModalProps {
   open: boolean;
@@ -21,26 +20,28 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({ open, onClose, imgSrc, title, description, skills }) => {
   return (
     <Dialog open={open} onClose={onClose} maxWidth="md" fullWidth>
-      <DialogTitle>
-        <IconButton
-          edge="end"
-          color="inherit"
-          onClick={onClose}
-          aria-label="close"
-        >
-          <CloseIcon />
-        </IconButton>
-        {title}
-      </DialogTitle>
-      <DialogContent dividers>
-        <img src={imgSrc} alt={`Image for ${title}`} className="modal-image" />
-        <DialogContentText>{description}</DialogContentText>
-        <DialogContentText>Skills: {skills.join(', ')}</DialogContentText>
-      </DialogContent>
-      <DialogActions>
-        <Button onClick={onClose}>Close</Button>
-      </DialogActions>
-    </Dialog>
+    <DialogTitle>
+      <IconButton
+        edge="end"
+        color="inherit"
+        onClick={onClose}
+        aria-label="close"
+      >
+        <CloseIcon />
+      </IconButton>
+    </DialogTitle>
+    <DialogContent dividers>
+      <img src={imgSrc} alt={`Image for ${title}`} className="modal-image" />
+      <DialogTitle>{title}</DialogTitle>
+      <DialogContentText>{description}</DialogContentText>
+      <DialogContentText>Skills:</DialogContentText>
+        <div>
+          {skills.map((skill, index) => (
+            <Chip key={index} label={skill} style={{ margin: '0.5em' }} />
+          ))}
+        </div>
+    </DialogContent>
+  </Dialog>
   );
 };
 
