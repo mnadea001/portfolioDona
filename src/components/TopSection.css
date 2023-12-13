@@ -1,6 +1,9 @@
 .bg-container {
   position: relative;
   height: 100vh;
+  top: 40%; /* Center vertically */
+  left: 40%; /* Center horizontally */
+  margin-bottom: 100px;
 }
 
 .absolute-text {
@@ -8,8 +11,9 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-}
 
+
+}
 
 .colored-circle {
   position: absolute;
@@ -47,11 +51,14 @@
 
 .spinner {
   background-image: url('../assets/Vector.png');
-  /* Replace with the path to your background image */
   height: 100px;
   width: 100px;
   background-size: cover;
   background-position: center;
+ /* Adjust the top value to position it from the top */
+  left: 40px; 
+  top: 20px;
+  position: fixed;
 }
 
 .spinner::before {

@@ -1,6 +1,5 @@
 import './TopSection.css'
 import logo from '../assets/MN.png'
-import vector from '../assets/Vector.png'
 import { useParallax } from "react-scroll-parallax";
 import ProjectsSection from './ProjectsSection';
 import ExperiencesSection from './ExperiencesSection';
@@ -26,34 +25,17 @@ const TopSection: React.FC = () => {
   });
   return (
     <div>
+      <div ref={parallax.ref} className="spinner" />
       <section className="bg-container">
         <div className="absolute-text">
           <img ref={parallaxEasingTop.ref} id="homeImg" src={logo} />
-
           <div className="colored-circle first-circle" ref={parallaxEasing.ref} />
-
           <div className="colored-circle second-circle" ref={parallaxEasingLeft.ref} />
         </div>
-      </section>
-      <div ref={parallax.ref} className="spinner" />
-      <br />
+      </section>‚
 
-      <br />
-      <br />
-      <br />
-      <br />      <br />
-      <br />      <br />
-      <br />      <br />
-      <br />
-      <br />
-      <br />
-      <br />      <br />
-
- 
-      <br />      <br />
-      <br />
-      <ProjectsSection /> 
-      <ExperiencesSection/>
+      <ProjectsSection />
+      <ExperiencesSection />
     </div>
   );
 };
