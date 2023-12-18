@@ -10,3 +10,7 @@ yarn run dev -> lancemenet du serveur de dev
 
 ** Carousel / Slider
 https://reactjsexample.com/a-beautiful-scroll-triggered-carousel-with-react/
+
+
+Animations 
+https://motion.ant.design/api/tween-one

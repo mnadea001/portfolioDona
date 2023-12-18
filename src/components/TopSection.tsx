@@ -4,7 +4,6 @@ import { useParallax } from "react-scroll-parallax";
 import ProjectsSection from './ProjectsSection';
 import ExperiencesSection from './ExperiencesSection';
 import Footer from './Footer';
-import ByeComponent from './ByeComponent';
 import DiplomaComponent from './DiplomaComponent';
 
 const TopSection: React.FC = () => {

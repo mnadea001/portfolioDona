@@ -14,3 +14,63 @@ h1 {
   }
 
 
+  .bg-container {
+    position: relative;
+    height: 100vh;
+    top: 40%; /* Center vertically */
+    left: 40%; /* Center horizontally */
+    margin-bottom: 100px;
+  }
+  
+  .absolute-text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  
+  
+  }
+  
+  .colored-circle {
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .first-circle {
+    width: 300px;
+    height: 300px;
+    top: 20%;
+    left: 0%;
+    background-color: #1501FF;
+  }
+  
+  .first-circle::after {
+    content: attr(data-text); /* Set the content dynamically */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 16px; /* Set your desired font size */
+    font-weight: bold; /* Set your desired font weight */
+    color: #FFE7C2; /* Set your desired text color */
+    text-align: center; /* Align text to center */
+  }
+  
+  .second-circle {
+    width: 300px;
+    height: 300px;
+    top: 20%;
+    left: 40%;
+    background-color: #D5FF3C;
+  }
+  .second-circle::after {
+    content: attr(data-text); /* Set the content dynamically */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 16px; /* Set your desired font size */
+    font-weight: bold; /* Set your desired font weight */
+    color: #333333; /* Set your desired text color */
+    text-align: center; /* Align text to center */
+  }
