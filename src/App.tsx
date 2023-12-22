@@ -1,12 +1,12 @@
 import './App.css'
-import { Route, Routes } from 'react-router'
-import Header from './components/Header'
-import SliderSection from './components/SliderSection'
 import ProjectsSection from './components/ProjectsSection'
 import ExperiencesSection from './components/ExperiencesSection'
 import TopSection from './components/TopSection'
 import { ParallaxProvider } from 'react-scroll-parallax'
-// import Footer from './components/Footer'
+import Header from './components/Header'
+import { Route, Routes } from 'react-router'
+import SliderSection from './components/SliderSection'
+
 
 function App() {
 
@@ -27,6 +27,7 @@ function App() {
           {/* <Footer /> */}
         </Route >
       </Routes>
+
       </ParallaxProvider>
     </>
   )
