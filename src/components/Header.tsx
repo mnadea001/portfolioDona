@@ -8,7 +8,7 @@ import ListItemText from '@mui/material/ListItemText';
 import './Header.css';
 import IconMenu from '../assets/icons/IconMenu';
 import CloseIcon from '../assets/icons/CloseIcon';
-import { Dialog, DialogContent, DialogTitle } from '@mui/material';
+import { Button, Dialog, DialogContent } from '@mui/material';
 import ByeComponent from './ByeComponent';
 import IconSunFill from '../assets/icons/IconSunFill';
 import IconMoon from '../assets/icons/IconMoon';
@@ -23,40 +23,33 @@ const Header: React.FC = () => {
 
   return (
     <>
-    <div className="icons">
-    <button onClick={toggleDarkMode} color="red">
-        {darkMode ? <IconSunFill /> : <IconMoon />}
-      </button>
-      <IconButton onClick={toggleModal} style={{ color: '#fff' }}>
-        <IconMenu />
-      </IconButton>
-    </div>
-
+      <div className="icons">
+        <button onClick={toggleDarkMode} color="red">
+          {darkMode ? <IconSunFill /> : <IconMoon />}
+        </button>
+        <h3>PORTFOLIO MATHILDE NADEAU</h3>
+        <IconButton onClick={toggleModal} style={{ color: '#fff' }}>
+          <IconMenu />
+        </IconButton>
+      </div>
       <Dialog open={isModalOpen} onClose={toggleModal} fullScreen>
-        <DialogTitle>
-          <IconButton edge="end" color="inherit" onClick={toggleModal} aria-label="close">
-            <CloseIcon />
-          </IconButton>
-        </DialogTitle>
+        <IconButton edge="end" color="inherit" onClick={toggleModal} aria-label="close">
+          <CloseIcon />  FERMER
+        </IconButton>
         <ByeComponent />
         <DialogContent>
-          <List style={{ display: 'flex' }}>
-            <ListItem component={NavLink} to="/" onClick={toggleModal}>
-              <ListItemText primary="Home" />
-            </ListItem>
-            <ListItem component={NavLink} to="/slider" onClick={toggleModal}>
-              <ListItemText primary="Compétences" />
-            </ListItem>
-            <ListItem component={NavLink} to="/projects" onClick={toggleModal}>
-              <ListItemText primary="Projets" />
-            </ListItem>
-            <ListItem component={NavLink} to="/experiences" onClick={toggleModal}>
-              <ListItemText primary="Expériences" />
-            </ListItem>
-            <ListItem component={NavLink} to="/NotFound" onClick={toggleModal}>
-              <ListItemText primary="Not Found" />
-            </ListItem>
-            {/* Add more links as needed */}
+          <List style={{ display: 'flex', justifyContent: 'center' }}>
+            <Button component={NavLink} to="/" onClick={toggleModal}>Home
+            </Button>
+            <Button component={NavLink} to="/slider" onClick={toggleModal}>
+              Compétences
+            </Button>
+            <Button component={NavLink} to="/projects" onClick={toggleModal}>
+              Projets
+            </Button>
+            <Button component={NavLink} to="/experiences" onClick={toggleModal}>
+              Expériences
+            </Button>
           </List>
         </DialogContent>
       </Dialog>

@@ -31,6 +31,7 @@ const TopSection: React.FC = () => {
   });
   return (
     <div>
+
       <div ref={parallax.ref} className="spinner spinner-style" data-text="SCROLL DOWN" />
       <section className="bg-container">
         <div className="absolute-text">
