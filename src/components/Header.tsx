@@ -38,7 +38,7 @@ const Header: React.FC = () => {
             <ListItem component={NavLink} to="/slider" onClick={toggleModal}>
               <ListItemText primary="Compétences" />
             </ListItem>
-            <ListItem component={NavLink} to="/projets" onClick={toggleModal}>
+            <ListItem component={NavLink} to="/projects" onClick={toggleModal}>
               <ListItemText primary="Projets" />
             </ListItem>
             <ListItem component={NavLink} to="/experiences" onClick={toggleModal}>

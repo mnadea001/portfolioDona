@@ -5,6 +5,7 @@ import ProjectsSection from './ProjectsSection';
 import ExperiencesSection from './ExperiencesSection';
 import Footer from './Footer';
 import DiplomaComponent from './DiplomaComponent';
+import SliderSection from './SliderSection';
 
 const TopSection: React.FC = () => {
   const parallaxEasing = useParallax({
@@ -38,7 +39,7 @@ const TopSection: React.FC = () => {
           <div className="colored-circle second-circle" ref={parallaxEasingLeft.ref} data-text="DIGITAL CREATOR" />
         </div>
       </section>
-
+      <SliderSection />
       <ProjectsSection />
       <ExperiencesSection />
       <DiplomaComponent />

@@ -21,7 +21,7 @@ function App() {
   
           <Route path="/slider" element={<SliderSection />} />
           {/* <Route path="*" element={<NotFound />} /> */}
-          <Route path="/projets" element={<ProjectsSection />} />
+          <Route path="/projects" element={<ProjectsSection />} />
           <Route path="/experiences" element={<ExperiencesSection />} />
           
           {/* <Footer /> */}

@@ -1,5 +1,5 @@
 import AccordionList from './AccordionList';
-import SliderSection from './SliderSection';
+// import SliderSection from './SliderSection';
 import './ProjectsSection.css';
 import { Zoom } from "react-awesome-reveal";
 
@@ -17,7 +17,7 @@ const ProjectsSection: React.FC = () => {
   return (
     <>
       <section className="projets-section">
-        <SliderSection />
+        {/* <SliderSection /> */}
         <section className="projets">
           <Zoom>
          <h1>PROJECTS</h1>
