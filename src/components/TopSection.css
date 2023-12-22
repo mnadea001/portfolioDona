@@ -30,15 +30,15 @@
 }
 
 .first-circle::after {
-  content: attr(data-text); /* Set the content dynamically */
+  content: attr(data-text);
   position: absolute; 
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);
-  font-size: 16px; /* Set your desired font size */
-  font-weight: bold; /* Set your desired font weight */
-  color: #FFE7C2; /* Set your desired text color */
-  text-align: center; /* Align text to center */
+  font-size: 16px; 
+  font-weight: bold;
+  color: #FFE7C2;
+  text-align: center;
 }
 
 .second-circle {
@@ -49,15 +49,15 @@
   background-color: #D5FF3C;
 }
 .second-circle::after {
-  content: attr(data-text); /* Set the content dynamically */
+  content: attr(data-text); 
   position: absolute; 
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);
-  font-size: 16px; /* Set your desired font size */
-  font-weight: bold; /* Set your desired font weight */
-  color: #333333; /* Set your desired text color */
-  text-align: center; /* Align text to center */
+  font-size: 16px; 
+  font-weight: bold; 
+  color: #333333;
+  text-align: center; 
 }
 
 #homeImg {
@@ -84,13 +84,13 @@
 
 
 .spinner-style::after {
-  content: attr(data-text); /* Set the content dynamically */
+  content: attr(data-text); 
   position: absolute; 
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);
-  font-size: 16px; /* Set your desired font size */
-  font-weight: bold; /* Set your desired font weight */
-  color: #D5FF3C; /* Set your desired text color */
-  text-align: center; /* Align text to center */
+  font-size: 16px; 
+  font-weight: bold; 
+  color: #D5FF3C; 
+  text-align: center;
 }
