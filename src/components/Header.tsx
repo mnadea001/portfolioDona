@@ -44,6 +44,9 @@ const Header: React.FC = () => {
             <ListItem component={NavLink} to="/experiences" onClick={toggleModal}>
               <ListItemText primary="Expériences" />
             </ListItem>
+            <ListItem component={NavLink} to="/NotFound" onClick={toggleModal}>
+              <ListItemText primary="Not Found" />
+            </ListItem>
             {/* Add more links as needed */}
           </List>
         </DialogContent>

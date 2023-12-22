@@ -6,6 +6,7 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 import Header from './components/Header'
 import { Route, Routes } from 'react-router'
 import SliderSection from './components/SliderSection'
+import NotFound from './components/NotFound'
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
           {/* <Route path="*" element={<NotFound />} /> */}
           <Route path="/projects" element={<ProjectsSection />} />
           <Route path="/experiences" element={<ExperiencesSection />} />
-          
+          <Route path="/NotFound" element={<NotFound />} />
           {/* <Footer /> */}
         </Route >
       </Routes>
