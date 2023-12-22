@@ -1,20 +1,20 @@
-/* Header.css */
 
 /* General styles */
-body {
-    background-color: #C996FF;
-  }
-  
+
   header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 30px 50px;
     display: flex;
-    /* justify-content: space-between;
-    align-items: center; */
     z-index: 9000;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   header .logo {

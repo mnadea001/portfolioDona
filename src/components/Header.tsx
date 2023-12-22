@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Outlet } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import IconButton from '@mui/material/IconButton';
@@ -10,19 +10,28 @@ import IconMenu from '../assets/icons/IconMenu';
 import CloseIcon from '../assets/icons/CloseIcon';
 import { Dialog, DialogContent, DialogTitle } from '@mui/material';
 import ByeComponent from './ByeComponent';
+import IconSunFill from '../assets/icons/IconSunFill';
+import IconMoon from '../assets/icons/IconMoon';
+import { DarkModeContext, DarkModeContextProps } from '../providers/DarkModeProvider';
 
 const Header: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const { darkMode, toggleDarkMode } = useContext<DarkModeContextProps>(DarkModeContext);
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
 
   return (
     <>
+    <div className="icons">
+    <button onClick={toggleDarkMode} color="red">
+        {darkMode ? <IconSunFill /> : <IconMoon />}
+      </button>
       <IconButton onClick={toggleModal} style={{ color: '#fff' }}>
         <IconMenu />
       </IconButton>
+    </div>
+
       <Dialog open={isModalOpen} onClose={toggleModal} fullScreen>
         <DialogTitle>
           <IconButton edge="end" color="inherit" onClick={toggleModal} aria-label="close">
@@ -31,8 +40,8 @@ const Header: React.FC = () => {
         </DialogTitle>
         <ByeComponent />
         <DialogContent>
-          <List style={{display:'flex'}}>
-          <ListItem component={NavLink} to="/" onClick={toggleModal}>
+          <List style={{ display: 'flex' }}>
+            <ListItem component={NavLink} to="/" onClick={toggleModal}>
               <ListItemText primary="Home" />
             </ListItem>
             <ListItem component={NavLink} to="/slider" onClick={toggleModal}>
