@@ -27,7 +27,7 @@ svg {
     fill: #ddd;
 }
 
-h1 {
+h2 {
     background: linear-gradient(30deg, #C996FF, #D5FF3C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

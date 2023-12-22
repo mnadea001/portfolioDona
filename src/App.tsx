@@ -21,11 +21,9 @@ function App() {
           <Route index element={<TopSection />} />
   
           <Route path="/slider" element={<SliderSection />} />
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="*" element={<NotFound />} />
           <Route path="/projects" element={<ProjectsSection />} />
           <Route path="/experiences" element={<ExperiencesSection />} />
-          <Route path="/NotFound" element={<NotFound />} />
-          {/* <Footer /> */}
         </Route >
       </Routes>
 
