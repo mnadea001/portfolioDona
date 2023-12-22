@@ -2,8 +2,8 @@
 .bg-container {
   position: relative;
   height: 100vh;
-  top: 40%; /* Center vertically */
-  left: 40%; /* Center horizontally */
+  top: 40%; 
+  left: 40%; 
   margin-bottom: 100px;
 }
 

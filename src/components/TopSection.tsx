@@ -1,10 +1,6 @@
 import './TopSection.css'
 import logo from '../assets/MN.png'
 import { useParallax } from "react-scroll-parallax";
-import ProjectsSection from './ProjectsSection';
-import ExperiencesSection from './ExperiencesSection';
-import Footer from './Footer';
-import DiplomaComponent from './DiplomaComponent';
 
 const TopSection: React.FC = () => {
   const parallaxEasing = useParallax({
@@ -38,11 +34,6 @@ const TopSection: React.FC = () => {
           <div className="colored-circle second-circle" ref={parallaxEasingLeft.ref} data-text="DIGITAL CREATOR" />
         </div>
       </section>
-
-      <ProjectsSection />
-      <ExperiencesSection />
-      <DiplomaComponent />
-      <Footer />
     </div>
   );
 };
