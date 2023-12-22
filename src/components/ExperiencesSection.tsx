@@ -5,12 +5,14 @@ import thekub from '../assets/THEKUB.png';
 import elemate from '../assets/ELEMATE.png';
 import worldcast from '../assets/WORLDCAST.png';
 
+import { Zoom } from "react-awesome-reveal";
+
 const experiencesData = [
   {
     imgSrc: thekub,
     title: 'THE KUB',
     context: 'Agence de communication et évènementiel',
-    position:'Développeuse web',
+    position: 'Développeuse web',
     date: 'Janvier - Septembre 2022',
     description: 'Développement et maintenance de sites pour des clients',
     skills: ['SCSS', 'Javascript', 'WordPress', 'PrestaShop', 'PHP'],
@@ -19,7 +21,7 @@ const experiencesData = [
     imgSrc: elemate,
     title: 'ELEMATE',
     context: 'Start up - édition logiciel',
-    position:'Développeuse FulStack Symfony',
+    position: 'Développeuse FulStack Symfony',
     date: 'Septembre 2022 - Septembre 2023',
     description: 'Développement de nouvelles fonctionnalités et refactorisation',
     skills: ['Symfony', 'API', 'Docker'],
@@ -28,7 +30,7 @@ const experiencesData = [
     imgSrc: worldcast,
     title: 'WORDLCAST',
     context: 'Logiciel de surveillance / Monitoring',
-    position:'Développeuse Javascript + Support client',
+    position: 'Développeuse Javascript + Support client',
     date: 'Septembre 2023 - ',
     description: 'Développement de nouvelles fonctionnalités et support client',
     skills: ['Vue', 'Javascript', 'Node'],
@@ -51,14 +53,16 @@ const ExperiencesSection: React.FC = () => {
     translateY: [100, 0],
     speed: -20
   });
-  
+
   return (
     <div>
-      <h1>EXPERIENCES</h1>
+      <Zoom>
+        <h1>EXPERIENCES</h1>
+      </Zoom>
       <section className="bg-container">
         <div className="absolute-text">
 
-        {experiencesData.map((experience, index) => (
+          {experiencesData.map((experience, index) => (
             <div className="colored-circle img" key={index} ref={index === 0 ? parallaxEasingFirst.ref : index === 1 ? parallaxEasingSecond.ref : parallaxEasingThird.ref}>
               <ExperienceComponent
                 imgSrc={experience.imgSrc}

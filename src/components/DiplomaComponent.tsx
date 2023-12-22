@@ -1,6 +1,8 @@
 import './DiplomaComponent.css';
 import { useParallax } from "react-scroll-parallax";
 
+import { Zoom } from "react-awesome-reveal";
+
 const DiplomaComponent: React.FC = () => {
 
     const BtsDev = useParallax<HTMLDivElement>({
@@ -26,7 +28,9 @@ const DiplomaComponent: React.FC = () => {
         <>
             <section>
                 <div className="container-diplom">
-                    <h1>DIPLOMES</h1>
+                    <Zoom>
+                        <h1>DIPLOMES</h1>
+                    </Zoom>
                     <section className="diplom-container">
                         <div className="absolute-diplom">
                             <div ref={BtsDev.ref} className="spinner buble-style" data-text="TITRE PRO DEV WEB ET MOBILE (2022)" />
