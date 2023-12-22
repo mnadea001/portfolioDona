@@ -1,9 +1,9 @@
 import './ExperiencesSection.css';
 import { useParallax } from "react-scroll-parallax";
 import ExperienceComponent from './ExperienceComponent';
-import thekub from '../assets/THEKUB.png';
-import elemate from '../assets/ELEMATE.png';
-import worldcast from '../assets/WORLDCAST.png';
+import thekub from '../assets/images/THEKUB.png';
+import elemate from '../assets/images/ELEMATE.png';
+import worldcast from '../assets/images/WORLDCAST.png';
 
 import { Zoom } from "react-awesome-reveal";
 

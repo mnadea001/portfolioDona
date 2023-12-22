@@ -1,4 +1,3 @@
-// icon:envelope-fill | Bootstrap https://icons.getbootstrap.com/ | Bootstrap
 import * as React from "react";
 
 function MailIcon(props: React.SVGProps<SVGSVGElement>) {

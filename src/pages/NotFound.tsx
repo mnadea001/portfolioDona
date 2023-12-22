@@ -4,9 +4,8 @@ import { JSX } from 'react/jsx-runtime'
 import { Points, PointMaterial } from '@react-three/drei'
 import * as random from 'maath/random/dist/maath-random.esm'
 import './NotFound.css';
-import Header from './Header'
+import Header from '../components/Header'
 import { useNavigate } from "react-router";
-import { Link } from 'react-router-dom'
 
 function Stars(props: JSX.IntrinsicAttributes) {
     const ref = useRef()
@@ -46,9 +45,6 @@ const NotFound: React.FC = () => {
             <Canvas camera={{ position: [0, 0, 1] }}>
                 <Stars />
             </Canvas>
-            {/* <Link to="/"  style={{ textDecoration: "none", position: 'absolute', top: 0, left: 0, pointerEvents: 'none', width: '100%', height: '100%' }}>
-                <button>Voir détail</button>
-            </Link> */}
             <Overlay />
             <Header />
         </div>

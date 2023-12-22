@@ -3,7 +3,7 @@ import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
-import CloseIcon from '../assets/CloseIcon';
+import CloseIcon from '../assets/icons/CloseIcon';
 import IconButton from '@mui/material/IconButton';
 import './Modal.css';
 import Chip from '@mui/material/Chip';

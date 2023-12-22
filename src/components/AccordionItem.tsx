@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material';
-import IconDown from '../assets/IconDown';
+import IconDown from '../assets/icons/IconDown';
 import './AccordionItem.css';
 
 interface AccordionItemProps {

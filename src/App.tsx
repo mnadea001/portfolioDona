@@ -1,12 +1,12 @@
 import './App.css'
 import ProjectsSection from './components/ProjectsSection'
 import ExperiencesSection from './components/ExperiencesSection'
-import TopSection from './components/TopSection'
+import TopSection from './pages/TopSection'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import Header from './components/Header'
 import { Route, Routes } from 'react-router'
 import SliderSection from './components/SliderSection'
-import NotFound from './components/NotFound'
+import NotFound from './pages/NotFound'
 
 
 function App() {

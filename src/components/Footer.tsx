@@ -1,8 +1,7 @@
 
 import './Footer.css';
-import '../assets/MailIcon.tsx';
-import MailIcon from '../assets/MailIcon';
-import IconGithub from '../assets/IconGithub';
+import IconGithub from '../assets/icons/IconGithub';
+import MailIcon from '../assets/icons/MailIcon';
 
 const Footer: React.FC = () => {
   const handleBackToTop = () => {

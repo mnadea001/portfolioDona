@@ -6,8 +6,8 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import './Header.css';
-import IconMenu from '../assets/IconMenu';
-import CloseIcon from '../assets/CloseIcon';
+import IconMenu from '../assets/icons/IconMenu';
+import CloseIcon from '../assets/icons/CloseIcon';
 import { Dialog, DialogContent, DialogTitle } from '@mui/material';
 import ByeComponent from './ByeComponent';
 

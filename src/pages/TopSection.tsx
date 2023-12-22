@@ -1,11 +1,11 @@
 import './TopSection.css'
-import logo from '../assets/MN.png'
+import logo from '../assets/images/MN.png'
 import { useParallax } from "react-scroll-parallax";
-import ProjectsSection from './ProjectsSection';
-import ExperiencesSection from './ExperiencesSection';
-import Footer from './Footer';
-import DiplomaComponent from './DiplomaComponent';
-import SliderSection from './SliderSection';
+import ProjectsSection from '../components/ProjectsSection';
+import ExperiencesSection from '../components/ExperiencesSection';
+import Footer from '../components/Footer';
+import DiplomaComponent from '../components/DiplomaComponent';
+import SliderSection from '../components/SliderSection';
 
 const TopSection: React.FC = () => {
   const parallaxEasing = useParallax({
