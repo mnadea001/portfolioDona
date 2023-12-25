@@ -6,8 +6,13 @@ import ExperiencesSection from '../components/ExperiencesSection';
 import Footer from '../components/Footer';
 import DiplomaComponent from '../components/DiplomaComponent';
 import SliderSection from '../components/SliderSection';
+import { DarkModeContext } from '../providers/DarkModeProvider';
+import { useContext } from 'react';
 
 const TopSection: React.FC = () => {
+  const darkModeContext = useContext(DarkModeContext);
+  const darkMode = darkModeContext?.darkMode || false;
+
   const parallaxEasing = useParallax({
     easing: "easeOutQuad",
     translateX: [-300, 110],
@@ -32,7 +37,7 @@ const TopSection: React.FC = () => {
   return (
     <div>
 
-      <div ref={parallax.ref} className="spinner spinner-style" data-text="SCROLL DOWN" />
+      <div ref={parallax.ref} className={darkMode ? 'spinner spinner-style-dark' : 'spinner spinner-style'} data-text="SCROLL DOWN" />
       <section className="bg-container">
         <div className="absolute-text">
           <img ref={parallaxEasingTop.ref} id="homeImg" src={logo} />
