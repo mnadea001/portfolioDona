@@ -6,6 +6,8 @@ interface AccordionListProps {
 }
 
 const AccordionList: React.FC<AccordionListProps> = ({ projects }) => {
+
+
   return (
     <div>
       {projects.map((project, index) => (

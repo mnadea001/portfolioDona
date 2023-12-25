@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material';
 import IconDown from '../assets/icons/IconDown';
 import './AccordionItem.css';
-
+import { DarkModeContext } from '../providers/DarkModeProvider';
+import { useContext } from 'react';
 interface AccordionItemProps {
   title: string;
   content: string;
@@ -14,20 +15,25 @@ interface AccordionItemProps {
 
 const AccordionItem: React.FC<AccordionItemProps> = ({ title, content, imageSrc, description, languages, number }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const darkModeContext = useContext(DarkModeContext);
+  const darkMode = darkModeContext?.darkMode || false;
+  const textStyle: React.CSSProperties = {
+    color: darkMode === true ? '#D5FF3C' : '#333333',
 
+};
   return (
     <Accordion
       style={{ backgroundColor: 'transparent' }}
     >
       <AccordionSummary
-        expandIcon={<IconDown />}
+        expandIcon={<IconDown className={darkMode ? 'iconDown' : 'iconDowndark'}  />}
         aria-controls="panel1a-content"
         id="panel1a-header"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         className="title"
       >
-        <Typography>{title}</Typography>
+        <Typography style={textStyle}>{title}</Typography>
         {isHovered && (
           <img
             src={imageSrc}
@@ -38,7 +44,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content, imageSrc,
         )}
       </AccordionSummary>
       <AccordionDetails>
-        <Typography>
+        <Typography  style={textStyle}>
           {content}
         </Typography>
         <Typography>

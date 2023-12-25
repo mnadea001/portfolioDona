@@ -20,3 +20,11 @@
 
     font-size: larger;
   }
+
+  .iconDown {
+    fill: #D5FF3C;
+  }
+
+  .iconDowndark  {
+    fill: #333333;
+  }
