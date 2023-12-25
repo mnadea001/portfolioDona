@@ -15,4 +15,5 @@ function IconMenu(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
+
 export default IconMenu;

@@ -9,3 +9,12 @@
   .link {
     color: 'red'!important;
   }
+
+
+  .menu {
+    fill: rgb(255, 255, 255)
+  }
+
+  .menudark  {
+    fill: #333333;
+  }

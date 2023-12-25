@@ -19,6 +19,7 @@ const Header: React.FC = () => {
     setIsModalOpen(!isModalOpen);
   };
 
+
   return (
     <>
       <div className="icons">
@@ -26,8 +27,8 @@ const Header: React.FC = () => {
           {darkMode ? <IconSunFill /> : <IconMoon />}
         </button>
         <h3>PORTFOLIO MATHILDE NADEAU</h3>
-        <IconButton onClick={toggleModal} style={{ color: '#333333' }}>
-          <IconMenu />
+        <IconButton onClick={toggleModal} >
+          <IconMenu className={darkMode ? 'menu' : 'menudark'} />
         </IconButton>
       </div>
       <Dialog open={isModalOpen} onClose={toggleModal} fullScreen>
