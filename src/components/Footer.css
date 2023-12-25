@@ -19,28 +19,45 @@
   display: flex;
   gap: 20px;
   text-align: start;
+  flex-direction: column;
 }
 
 .footer-links li {
   display: flex; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: start; 
   color: '#FFE7C2';
 
 }
 
-.footer-links a {
-  color: '#FFE7C2';
+.footer-links li a {
   text-decoration: none;
   padding-right: 4px;
+}
+
+.footer-link {
+  color: '#D5FF3C' !important;
+  font-size: xx-large;
 }
 
 .footer-links svg {
   margin-right: 4px; 
 }
 
-.footer-links p {
+.footer-content button {
   cursor: pointer;
-  color: '#FFE7C2 !important';
+  padding: 50px;
+  background: #D5FF3C;
+  color: black;
+  font-weight: bold;
+}
+
+svg {
+  overflow: hidden;
+  height: 80%;
+  /* Fix Safari rendering bug */
+  transform: translateZ(0);
+  fill: transparent
 }
 
 .ball {
@@ -53,3 +70,6 @@ left: 0;
 border-radius: 50%;
 mix-blend-mode: difference;
 }
+
+
+
