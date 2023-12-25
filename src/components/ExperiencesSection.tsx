@@ -6,6 +6,8 @@ import elemate from '../assets/images/ELEMATE.png';
 import worldcast from '../assets/images/WORLDCAST.png';
 
 import { Zoom } from "react-awesome-reveal";
+import { useContext } from 'react';
+import { DarkModeContext } from '../providers/DarkModeProvider';
 
 const experiencesData = [
   {
@@ -37,6 +39,13 @@ const experiencesData = [
   }
 ];
 const ExperiencesSection: React.FC = () => {
+  const darkModeContext = useContext(DarkModeContext);
+  const darkMode = darkModeContext?.darkMode || false;
+  const textStyle: React.CSSProperties = {
+    color: darkMode === true ? '#C996FF' : '#FFE7C2',
+
+};
+
   const parallaxEasingFirst = useParallax({
     easing: "easeOutQuad",
     translateX: [300, -100],
@@ -57,7 +66,7 @@ const ExperiencesSection: React.FC = () => {
   return (
     <div>
       <Zoom>
-        <h1>EXPERIENCES</h1>
+        <h1 style={textStyle}>EXPERIENCES</h1>
       </Zoom>
       <section className="bg-container">
         <div className="absolute-text">

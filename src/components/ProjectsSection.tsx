@@ -1,7 +1,8 @@
 import AccordionList from './AccordionList';
-// import SliderSection from './SliderSection';
 import './ProjectsSection.css';
 import { Zoom } from "react-awesome-reveal";
+import { useContext } from 'react';
+import { DarkModeContext } from '../providers/DarkModeProvider';
 
 const projectsData = [
   { title: 'Run Up Asso', content: 'Projet Symfony en binome', imageSrc: '', description: 'Projet Symfony en binome', languages: ['Symfony'], number: 2 },
@@ -14,13 +15,19 @@ const projectsData = [
 ];
 
 const ProjectsSection: React.FC = () => {
+    const darkModeContext = useContext(DarkModeContext);
+  const darkMode = darkModeContext?.darkMode || false;
+  const textStyle: React.CSSProperties = {
+    color: darkMode === true ? '#C996FF' : '#FFE7C2',
+
+};
   return (
     <>
       <section className="projets-section">
         {/* <SliderSection /> */}
         <section className="projets">
           <Zoom>
-         <h1>PROJECTS</h1>
+         <h1 style={textStyle}>PROJECTS</h1>
           </Zoom>
           <p>Main projects</p>
           <AccordionList projects={projectsData} />

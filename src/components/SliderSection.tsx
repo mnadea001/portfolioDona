@@ -11,17 +11,24 @@ import icon8 from '../assets/images/icon8.png';
 import icon9 from '../assets/images/icon9.png';
 import icon10 from '../assets/images/icon10.png';
 import { Zoom } from "react-awesome-reveal";
+import { useContext } from 'react';
+import { DarkModeContext } from '../providers/DarkModeProvider';
 
 const iconArray = [icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9, icon10];
 
 const SliderSection: React.FC = () => {
   const itemArray = Array.from({ length: 10 }, (_, index) => index + 1); // Array [1, 2, 3, ..., 11]
+  const darkModeContext = useContext(DarkModeContext);
+  const darkMode = darkModeContext?.darkMode || false;
+  const textStyle: React.CSSProperties = {
+    color: darkMode === true ? '#C996FF' : '#FFE7C2',
 
+};
   return (
     <>
       <div className="slider-section">
       <Zoom>
-         <h1>SKILLS</h1>
+         <h1 style={textStyle}>SKILLS</h1>
           </Zoom>
         <p>Mastered languages</p>
         <ScrollCarousel

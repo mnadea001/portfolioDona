@@ -2,8 +2,16 @@ import './DiplomaComponent.css';
 import { useParallax } from "react-scroll-parallax";
 
 import { Zoom } from "react-awesome-reveal";
+import { useContext } from 'react';
+import { DarkModeContext } from '../providers/DarkModeProvider';
 
 const DiplomaComponent: React.FC = () => {
+  const darkModeContext = useContext(DarkModeContext);
+  const darkMode = darkModeContext?.darkMode || false;
+  const textStyle: React.CSSProperties = {
+    color: darkMode === true ? '#C996FF' : '#FFE7C2',
+
+};
 
     const BtsDev = useParallax<HTMLDivElement>({
         easing: "easeOutQuad",
@@ -29,7 +37,7 @@ const DiplomaComponent: React.FC = () => {
             <section>
                 <div className="container-diplom">
                     <Zoom>
-                        <h1>DIPLOMES</h1>
+                        <h1 style={textStyle}>DIPLOMES</h1>
                     </Zoom>
                     <section className="diplom-container">
                         <div className="absolute-diplom">
