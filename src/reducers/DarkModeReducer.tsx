@@ -3,7 +3,7 @@ export interface DarkModeState {
   }
   
   export const initState: DarkModeState = {
-    darkMode: true,
+    darkMode: false,
   };
   
   export const DARK = 'DARK';

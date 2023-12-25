@@ -10,12 +10,12 @@ import SliderSection from '../components/SliderSection';
 const TopSection: React.FC = () => {
   const parallaxEasing = useParallax({
     easing: "easeOutQuad",
-    translateX: [-300, 100],
+    translateX: [-300, 110],
     translateY: [0, 100],
   });
   const parallaxEasingLeft = useParallax({
     easing: "easeOutQuad",
-    translateX: [300, -100],
+    translateX: [300, -110],
     translateY: [0, 100],
   });
   const parallaxEasingTop = useParallax({
