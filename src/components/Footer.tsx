@@ -28,12 +28,7 @@ const Footer: React.FC = () => {
         </ul>
         <p onClick={handleBackToTop}>Back to top</p>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />      <br />
-      <br />      <br />
-      <br />
+
     </footer>
   );
 };

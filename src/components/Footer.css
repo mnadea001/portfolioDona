@@ -11,7 +11,7 @@
   align-items: center; 
   max-width: 1200px;
   color: '#FFE7C2';
-  margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .footer-links {
@@ -24,6 +24,8 @@
 .footer-links li {
   display: flex; 
   align-items: center; 
+  color: '#FFE7C2';
+
 }
 
 .footer-links a {
@@ -38,4 +40,5 @@
 
 .footer-links p {
   cursor: pointer;
+  color: '#FFE7C2 !important';
 }
