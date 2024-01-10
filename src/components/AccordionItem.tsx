@@ -4,6 +4,7 @@ import IconDown from '../assets/icons/IconDown';
 import './AccordionItem.css';
 import { DarkModeContext } from '../providers/DarkModeProvider';
 import { useContext } from 'react';
+
 interface AccordionItemProps {
   title: string;
   content: string;
@@ -39,9 +40,10 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content, imageSrc,
             src={imageSrc}
             alt={`Image for ${title}`}
             className="hovered-image"
-            style={{ maxWidth: '100%', height: 'auto', maxHeight: '100px', marginTop: '10px', marginLeft: 'auto' }}
+            style={{ maxWidth: '100%', height: 'auto', maxHeight: '350px', marginTop: '10px', marginLeft: 'auto' }}
           />
         )}
+
       </AccordionSummary>
       <AccordionDetails>
         <Typography  style={textStyle}>

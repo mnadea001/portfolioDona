@@ -1,10 +1,9 @@
 
 import './Footer.css';
-import IconGithub from '../assets/icons/IconGithub';
-import MailIcon from '../assets/icons/MailIcon';
 import { useEffect } from 'react';
 import gsap from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import ArrowUpIcon from '../assets/icons/ArrowUpIcon';
 
 gsap.registerPlugin(MotionPathPlugin);
 const Footer: React.FC = () => {
@@ -68,7 +67,11 @@ const Footer: React.FC = () => {
             </a>
           </li>
         </ul>
-        <button onClick={handleBackToTop}>Back to top</button>
+        <div className="btn-up" onClick={handleBackToTop}>
+          <ArrowUpIcon className='arrow' />
+          Back to top
+        </div>
+ 
       </div>
     </footer>
   );

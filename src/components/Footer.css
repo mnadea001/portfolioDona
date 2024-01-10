@@ -47,9 +47,11 @@
 .footer-content button {
   cursor: pointer;
   padding: 50px;
-  background: #D5FF3C;
+  background: transparent;
   color: black;
   font-weight: bold;
+  justify-content: center;
+  align-items: center; 
 }
 
 svg {
@@ -71,5 +73,18 @@ border-radius: 50%;
 mix-blend-mode: difference;
 }
 
+.arrow {
+  fill :black
+}
 
-
+.btn-up {
+  width: 150px;
+  height: 150px;
+  background-color: #D5FF3C;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
