@@ -4,15 +4,17 @@ import { Zoom } from "react-awesome-reveal";
 import { useContext } from 'react';
 import { DarkModeContext } from '../providers/DarkModeProvider';
 import beers from '../assets/images/beers.png';
-import elemate from '../assets/images/ELEMATE.png';
+import senio from '../assets/images/senio.png';
+import runup from '../assets/images/runup.png';
+import takeme from '../assets/images/takeme.png';
 
 const projectsData = [
-  { title: 'Run Up Asso', content: 'Projet Symfony en binome', imageSrc: '', description: 'Projet Symfony en binome', languages: ['Symfony'], number: 2 },
-  { title: 'Séniorissime', content: 'Projet Symfony + API OpenWeather', imageSrc: '', languages: ['Symfony', 'API'], number: 3 },
+  { title: 'Run Up Asso', content: 'Projet Symfony en binome', imageSrc: runup, description: 'Projet Symfony en binome', languages: ['Symfony'], number: 2 },
+  { title: 'Séniorissime', content: 'Projet Symfony + API OpenWeather', imageSrc: senio, languages: ['Symfony', 'API'], number: 3 },
   { title: 'Vinyl du Coin', content: 'Projet Symfony en autonomie', imageSrc: '', languages: ['Symfony'], number: 1 },
   { title: 'API Movie', content: 'Project Next.Js + API dbmovie', imageSrc: '', languages: ['Next.Js', 'API'], number: 4 },
   { title: 'Chinese Year', content: 'Project Java Spring en autonomie', imageSrc: '', languages: ['Java', 'Spring'], number: 2 },
-  { title: 'TakeMe', content: 'Project React Native', imageSrc: '', languages: ['React Native'], number: 3 },
+  { title: 'TakeMe', content: 'Project React Native', imageSrc: takeme, languages: ['React Native'], number: 3 },
   { title: 'Beers Notation', content: 'Project React.JS', imageSrc: beers, languages: ['React'], number: 1 },
 ];
 

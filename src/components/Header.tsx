@@ -23,7 +23,7 @@ const Header: React.FC = () => {
   return (
     <>
       <div className="icons">
-        <button onClick={toggleDarkMode} color="red">
+        <button onClick={toggleDarkMode}>
           {darkMode ? <IconSunFill /> : <IconMoon />}
         </button>
         <h3>PORTFOLIO MATHILDE NADEAU</h3>
@@ -32,21 +32,29 @@ const Header: React.FC = () => {
         </IconButton>
       </div>
       <Dialog open={isModalOpen} onClose={toggleModal} fullScreen>
-        <IconButton edge="end" color="inherit" onClick={toggleModal} aria-label="close">
-          <CloseIcon />  FERMER
-        </IconButton>
+      <IconButton
+              edge="start"
+              color="inherit"
+              onClick={toggleModal}
+              aria-label="close"
+            >
+              <CloseIcon />
+            </IconButton>
+        {/* <IconButton edge="end" onClick={toggleModal} aria-label="close">
+          <CloseIcon /> 
+        </IconButton> */}
         <ByeComponent />
-        <DialogContent>
+        <DialogContent  sx={{ backgroundColor: '#BEA4C7' }}>
           <List style={{ display: 'flex', justifyContent: 'center' }}>
-            <Button component={NavLink} to="/" onClick={toggleModal}>Home
+            <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/" onClick={toggleModal}>Home
             </Button>
-            <Button component={NavLink} to="/slider" onClick={toggleModal}>
+            <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/slider" onClick={toggleModal}>
               Compétences
             </Button>
-            <Button component={NavLink} to="/projects" onClick={toggleModal}>
+            <Button style={{ margin: '2px' }}  variant="outlined" color="secondary" size="large" component={NavLink} to="/projects" onClick={toggleModal}>
               Projets
             </Button>
-            <Button component={NavLink} to="/experiences" onClick={toggleModal}>
+            <Button style={{ margin: '2px' }}  variant="outlined" color="secondary" size="large" component={NavLink} to="/experiences" onClick={toggleModal}>
               Expériences
             </Button>
           </List>
