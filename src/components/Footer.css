@@ -65,10 +65,12 @@ svg {
 
 .footer-link1:hover {
   transform: scale(2.5) rotate(20deg);
+  transform-origin: -10% 90%;
 }
 
 .footer-link2:hover {
   transform: scale(2.5) rotate(-20deg);
+  transform-origin: -10% 40%;
 }
 
 .ball {
