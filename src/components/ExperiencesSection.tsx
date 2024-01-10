@@ -64,6 +64,7 @@ const ExperiencesSection: React.FC = () => {
   });
 
   return (
+    <>
     <div>
       <Zoom>
         <h1 style={textStyle}>EXPERIENCES</h1>
@@ -88,6 +89,7 @@ const ExperiencesSection: React.FC = () => {
       </section>
 
     </div>
+    </>
   );
 };
 
