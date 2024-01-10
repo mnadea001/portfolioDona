@@ -70,8 +70,9 @@ const Footer: React.FC = () => {
           </li>
         </ul>
         <div className="btn-up" onClick={handleBackToTop}>
-          <ArrowUpIcon className='arrow' />
-          Back to top
+        <ArrowUpIcon className='arrow' />
+          <span>
+        BACK TO TOP</span>
         </div>
  
       </div>

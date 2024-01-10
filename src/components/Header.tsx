@@ -38,7 +38,7 @@ const Header: React.FC = () => {
               color="inherit"
               onClick={toggleModal}
               aria-label="close"
-            >
+            > FERMER
               <CloseIcon />
             </IconButton>
             </span>
