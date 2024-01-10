@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import gsap from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import ArrowUpIcon from '../assets/icons/ArrowUpIcon';
+import MailIcon from '../assets/icons/MailIcon';
+import IconGithub from '../assets/icons/IconGithub';
 
 gsap.registerPlugin(MotionPathPlugin);
 const Footer: React.FC = () => {
@@ -57,13 +59,13 @@ const Footer: React.FC = () => {
       <div className="footer-content">
         <ul className="footer-links">
           <li>
-            <a className="footer-link" href="/about">
-              MAIL
+            <a className="footer-link footer-link1" href="/about">
+              MAIL <MailIcon className='mail'/>
             </a>
           </li>
           <li>
-            <a className="footer-link" href="/contact">
-              GITHUB
+            <a className="footer-link footer-link2" href="/contact">
+              GITHUB <IconGithub className='github'/>
             </a>
           </li>
         </ul>

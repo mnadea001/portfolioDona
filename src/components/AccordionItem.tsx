@@ -24,7 +24,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content, imageSrc,
 };
   return (
     <Accordion
-      style={{ backgroundColor: 'transparent' }}
+      style={{ backgroundColor: 'transparent', border: 'none' }}
     >
       <AccordionSummary
         expandIcon={<IconDown className={darkMode ? 'iconDown' : 'iconDowndark'}  />}

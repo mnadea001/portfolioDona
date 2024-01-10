@@ -32,6 +32,7 @@ const Header: React.FC = () => {
         </IconButton>
       </div>
       <Dialog open={isModalOpen} onClose={toggleModal} fullScreen>
+        <span style={{display: 'flex', justifyContent: 'center' }}>
       <IconButton
               edge="start"
               color="inherit"
@@ -40,6 +41,7 @@ const Header: React.FC = () => {
             >
               <CloseIcon />
             </IconButton>
+            </span>
         {/* <IconButton edge="end" onClick={toggleModal} aria-label="close">
           <CloseIcon /> 
         </IconButton> */}

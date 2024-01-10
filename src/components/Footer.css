@@ -36,8 +36,9 @@
 }
 
 .footer-link {
-  color: '#D5FF3C' !important;
+  color: #D5FF3C !important;
   font-size: xx-large;
+  align-items: center;
 }
 
 .footer-links svg {
@@ -60,6 +61,14 @@ svg {
   /* Fix Safari rendering bug */
   transform: translateZ(0);
   fill: transparent
+}
+
+.footer-link1:hover {
+  transform: scale(2.5) rotate(20deg);
+}
+
+.footer-link2:hover {
+  transform: scale(2.5) rotate(-20deg);
 }
 
 .ball {
@@ -87,4 +96,13 @@ mix-blend-mode: difference;
   justify-content: center;
   align-items: center;
   color: black;
+  cursor: pointer;
+}
+
+.mail {
+  fill :#D5FF3C;
+  margin-top: 20px;
+}
+.github {
+  fill :#D5FF3C;
 }
