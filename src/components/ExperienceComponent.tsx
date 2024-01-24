@@ -5,12 +5,13 @@ import Button from '@mui/material/Button';
 import Modal from './Modal';
 import { useState } from 'react';
 import './ExperienceSection.css';
+import { Typography } from '@mui/material';
 interface ExperienceComponentProps {
   imgSrc: string;
   title: string;
   description: string;
   skills: string[];
-  context: string, 
+  context: string,
   date: string,
   position: string
 }
@@ -28,7 +29,7 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = ({ imgSrc, title
 
   return (
     <>
-      <Card className='card' sx={{ display: 'flex', justifyContent: 'center'}}>
+      <Card className='card' sx={{ display: 'flex', justifyContent: 'center' }}>
         <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <CardMedia
             component="img"
@@ -36,7 +37,10 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = ({ imgSrc, title
             src={imgSrc}
             alt={`Image for ${title}`}
           />
-          <Box sx={{ display: 'flex', alignItems: 'center',justifyContent: 'center', pl: 1, pb: 1 }}>
+          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+          {title}
+          </Typography>
+          <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pl: 1, pb: 1 }}>
             <Button className='btn' onClick={handleOpenModal}>VOIR</Button>
           </Box>
         </Box>

@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import DiplomaComponent from '../components/DiplomaComponent';
 import SliderSection from '../components/SliderSection';
 import { DarkModeContext } from '../providers/DarkModeProvider';
-import { useContext } from 'react';
+import { useContext, Suspense } from 'react';
 
 const TopSection: React.FC = () => {
   const darkModeContext = useContext(DarkModeContext);
@@ -34,23 +34,33 @@ const TopSection: React.FC = () => {
     rotate: [0, 360],
     speed: -20
   });
-  return (
-    <div>
 
-      <div ref={parallax.ref} className={darkMode ? 'spinner spinner-style-dark' : 'spinner spinner-style'} data-text="SCROLL DOWN" />
-      <section className="bg-container">
-        <div className="absolute-text">
-          <img ref={parallaxEasingTop.ref} id="homeImg" src={logo} />
-          <div className="colored-circle first-circle" ref={parallaxEasing.ref} data-text="CREATIVE DEVELOPER" />
-          <div className="colored-circle second-circle" ref={parallaxEasingLeft.ref} data-text="DIGITAL CREATOR" />
-        </div>
-      </section>
-      <SliderSection />
-      <ProjectsSection />
-      <ExperiencesSection />
-      <DiplomaComponent />
-      <Footer />
-    </div>
+  // function Loading() {
+  //   return <h2>🌀 Loading...</h2>;
+  // }
+
+  return (
+
+      <div>
+        <div ref={parallax.ref} className={darkMode ? 'spinner spinner-style-dark' : 'spinner spinner-style'} data-text="SCROLL DOWN" />
+        
+    <Suspense fallback={<h2>Loading...</h2>}>
+        <section className="bg-container">
+          <div className="absolute-text">
+            <img ref={parallaxEasingTop.ref} id="homeImg" src={logo} />
+            <div className="colored-circle first-circle" ref={parallaxEasing.ref} data-text="CREATIVE DEVELOPER" />
+            <div className="colored-circle second-circle" ref={parallaxEasingLeft.ref} data-text="DIGITAL CREATOR" />
+          </div>
+        </section>
+
+    </Suspense>
+        <SliderSection />
+        <ProjectsSection />
+        <ExperiencesSection />
+        <DiplomaComponent />
+        {/* <Footer /> */}
+      </div>
+
   );
 };
 

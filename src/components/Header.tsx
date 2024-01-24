@@ -42,13 +42,10 @@ const Header: React.FC = () => {
               <CloseIcon />
             </IconButton>
             </span>
-        {/* <IconButton edge="end" onClick={toggleModal} aria-label="close">
-          <CloseIcon /> 
-        </IconButton> */}
         <ByeComponent />
         <DialogContent  sx={{ backgroundColor: '#BEA4C7' }}>
           <List style={{ display: 'flex', justifyContent: 'center' }}>
-            <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/" onClick={toggleModal}>Home
+            <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/" onClick={toggleModal}>Accueil
             </Button>
             <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/slider" onClick={toggleModal}>
               Compétences

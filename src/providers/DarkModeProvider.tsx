@@ -11,7 +11,7 @@ interface DarkModeProviderProps {
 }
 
 export const DarkModeContext = createContext<DarkModeContextProps>({
-  darkMode: false,
+  darkMode: true,
   toggleDarkMode: () => {},
 });
 

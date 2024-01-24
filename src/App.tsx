@@ -4,6 +4,7 @@ import ExperiencesSection from './components/ExperiencesSection'
 import TopSection from './pages/TopSection'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import { Route, Routes } from 'react-router'
 import SliderSection from './components/SliderSection'
 import NotFound from './pages/NotFound'
@@ -26,6 +27,7 @@ function App() {
               <Route path="/experiences" element={<ExperiencesSection />} />
             </Route >
           </Routes>
+          <Footer />
         </ParallaxProvider>
       </DarkModeProvider>
     </>
