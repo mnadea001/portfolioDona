@@ -41,6 +41,7 @@ const NotFound: React.FC = () => {
         )
     }
     return (
+        <>
         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: '#12071f' }}>
             <Canvas camera={{ position: [0, 0, 1] }}>
                 <Stars />
@@ -48,6 +49,7 @@ const NotFound: React.FC = () => {
             <Overlay />
             <Header />
         </div>
+        </>
     );
 };
 
