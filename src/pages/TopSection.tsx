@@ -3,11 +3,10 @@ import logo from '../assets/images/MN.png'
 import { useParallax } from "react-scroll-parallax";
 import ProjectsSection from '../components/ProjectsSection';
 import ExperiencesSection from '../components/ExperiencesSection';
-import Footer from '../components/Footer';
 import DiplomaComponent from '../components/DiplomaComponent';
 import SliderSection from '../components/SliderSection';
 import { DarkModeContext } from '../providers/DarkModeProvider';
-import { useContext, Suspense } from 'react';
+import { useContext } from 'react';
 
 const TopSection: React.FC = () => {
   const darkModeContext = useContext(DarkModeContext);
@@ -41,7 +40,6 @@ const TopSection: React.FC = () => {
       <div>
         <div ref={parallax.ref} className={darkMode ? 'spinner spinner-style-dark' : 'spinner spinner-style'} data-text="SCROLL DOWN" />
         
-    <Suspense fallback={<h2>Loading...</h2>}>
         <section className="bg-container">
           <div className="absolute-text">
             <img ref={parallaxEasingTop.ref} id="homeImg" src={logo} />
@@ -50,12 +48,10 @@ const TopSection: React.FC = () => {
           </div>
         </section>
 
-    </Suspense>
         <SliderSection />
         <ProjectsSection />
         <ExperiencesSection />
         <DiplomaComponent />
-        {/* <Footer /> */}
       </div>
 
   );
