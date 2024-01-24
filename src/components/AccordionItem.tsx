@@ -4,6 +4,7 @@ import IconDown from '../assets/icons/IconDown';
 import './AccordionItem.css';
 import { DarkModeContext } from '../providers/DarkModeProvider';
 import { useContext } from 'react';
+import Chip from '@mui/material/Chip';
 
 interface AccordionItemProps {
   title: string;
@@ -20,6 +21,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content, imageSrc,
   const darkMode = darkModeContext?.darkMode || false;
   const textStyle: React.CSSProperties = {
     color: darkMode === true ? '#D5FF3C' : '#333333',
+    fontWeight: 'bold'
 
 };
   return (
@@ -53,15 +55,15 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content, imageSrc,
           {description}
         </Typography>
         <Typography>
-          Number of People: {number}
+          Taille équipe: {number}
         </Typography>
-        <Typography>
-          Languages: {languages.map((language, index) => (
-            <span key={index}>{language}{index !== languages.length - 1 ? ', ' : ''}</span>
+        <Typography>Skills:</Typography>
+        <div>
+          {languages.map((language, index) => (
+            <Chip key={index} label={language} style={{ margin: '0.5em' }} />
           ))}
-        </Typography>
+        </div>
       </AccordionDetails>
-
     </Accordion>
   );
 };
