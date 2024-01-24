@@ -2,6 +2,7 @@ import './ExperiencesSection.css';
 import { useParallax } from "react-scroll-parallax";
 import ExperienceComponent from './ExperienceComponent';
 import thekub from '../assets/images/THEKUB.png';
+import kub from '../assets/images/kub.png';
 import elemate from '../assets/images/ELEMATE.png';
 import worldcast from '../assets/images/WORLDCAST.png';
 
@@ -18,6 +19,7 @@ const experiencesData = [
     date: 'Janvier - Septembre 2022',
     description: 'Développement et maintenance de sites pour des clients',
     skills: ['SCSS', 'Javascript', 'WordPress', 'PrestaShop', 'PHP'],
+    expImg: kub,
   },
   {
     imgSrc: elemate,
@@ -27,6 +29,7 @@ const experiencesData = [
     date: 'Septembre 2022 - Septembre 2023',
     description: 'Développement de nouvelles fonctionnalités et refactorisation',
     skills: ['Symfony', 'API', 'Docker'],
+    expImg: thekub,
   },
   {
     imgSrc: worldcast,
@@ -36,6 +39,7 @@ const experiencesData = [
     date: 'Septembre 2023 - ',
     description: 'Développement de nouvelles fonctionnalités et support client',
     skills: ['Vue', 'Javascript', 'Node'],
+    expImg: thekub,
   }
 ];
 const ExperiencesSection: React.FC = () => {
@@ -82,6 +86,7 @@ const ExperiencesSection: React.FC = () => {
                 context={experience.context}
                 position={experience.position}
                 date={experience.date}
+                expImg={experience.expImg}
               />
             </div>
           ))}

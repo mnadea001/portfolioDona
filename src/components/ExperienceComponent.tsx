@@ -13,10 +13,11 @@ interface ExperienceComponentProps {
   skills: string[];
   context: string,
   date: string,
-  position: string
+  position: string,
+  expImg: string
 }
 
-const ExperienceComponent: React.FC<ExperienceComponentProps> = ({ imgSrc, title, description, skills, context, date, position }) => {
+const ExperienceComponent: React.FC<ExperienceComponentProps> = ({ imgSrc, title, description, skills, context, date, position, expImg }) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const handleOpenModal = () => {
@@ -56,6 +57,7 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = ({ imgSrc, title
         context={context}
         date={date}
         position={position}
+        expImg={expImg}  
       />
     </>
   );
