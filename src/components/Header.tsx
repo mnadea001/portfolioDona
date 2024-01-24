@@ -50,12 +50,12 @@ const Header: React.FC = () => {
               </Button>
             </Zoom>
             <JackInTheBox>
-              <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/slider" onClick={toggleModal}>
+              <Button style={{ margin: '2px' }} variant="outlined" color="primary" size="large" component={NavLink} to="/slider" onClick={toggleModal}>
                 Compétences
               </Button>
             </JackInTheBox>
             <Bounce>
-            <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/projects" onClick={toggleModal}>
+            <Button style={{ margin: '2px' }} variant="outlined" size="large" component={NavLink} to="/projects" onClick={toggleModal}>
               Projets
             </Button>
             </Bounce>

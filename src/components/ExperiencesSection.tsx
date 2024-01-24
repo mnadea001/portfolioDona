@@ -73,6 +73,7 @@ const ExperiencesSection: React.FC = () => {
       <Zoom>
         <h1 style={textStyle}>EXPERIENCES</h1>
       </Zoom>
+      <p>en Développement</p>
       <section className="bg-container">
         <div className="absolute-text">
 
