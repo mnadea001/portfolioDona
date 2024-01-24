@@ -31,3 +31,18 @@
   }
 
 
+  .flex-container {
+    display: flex;
+    flex-direction: column; /* Change to column layout for small screens */
+  }
+  
+  .flex-item {
+    flex: 1;
+    padding: 10px; /* adjust as needed */
+  }
+  
+  @media screen and (min-width: 768px) {
+    .flex-container {
+      flex-direction: row; /* Change to row layout for screens wider than 767px */
+    }
+  }
