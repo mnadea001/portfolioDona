@@ -4,11 +4,19 @@ import { Zoom } from "react-awesome-reveal";
 import { useContext } from 'react';
 import { DarkModeContext } from '../providers/DarkModeProvider';
 import beers from '../assets/images/beers.png';
+import beers2 from '../assets/images/beers2.png';
+import beers3 from '../assets/images/beers3.png';
+import beers4 from '../assets/images/beers4.png'
+import beers5 from '../assets/images/beers5.png';
 import senio from '../assets/images/senio.png';
 import runup from '../assets/images/runup.png';
 import takeme from '../assets/images/takeme.png';
 import chinesejava from '../assets/images/chinesejava.webp';
+import chineseproject2 from '../assets/images/chineseproject2.webp';
 import vdc from '../assets/images/vdc.png';
+import vdc1 from '../assets/images/vdc1.png';
+import vdc3 from '../assets/images/vdc3.png';
+import vdc4 from '../assets/images/vdc4.png';
 import icon4 from '../assets/images/icon4.png';
 import icon7 from '../assets/images/icon7.png';
 import icon8 from '../assets/images/icon8.png';
@@ -65,8 +73,15 @@ const projectsData = [
       },
       {
         label: 'Image 4',
-        imgPath: vdc,
+        imgPath: vdc1,
+      },      {
+        label: 'Image 4',
+        imgPath: vdc3,
       },
+      {
+        label: 'Image 4',
+        imgPath: vdc4,
+      }
     ],
   },
   {
@@ -83,7 +98,7 @@ const projectsData = [
       },
       {
         label: 'Image 4',
-        imgPath: chinesejava,
+        imgPath: chineseproject2,
       },
     ],
   },
@@ -108,9 +123,9 @@ const projectsData = [
   {
     title: 'Beers Notation',
     content: 'Project React.JS',
-    description: 'Fonctionnalités: inscription/ connexion, Liste / détail bière, commentaires, notation',
+    description: 'Fonctionnalités: inscription/ connexion, Liste / détail bière, commentaires, notation, déploiement sur Vercel',
     languages: ['React', 'FireBase', 'API', 'Vercel'],
-    number: 3,
+    number: 1,
     imageSrc: icon7,
     images: [
       {
@@ -119,8 +134,20 @@ const projectsData = [
       },
       {
         label: 'Image 4',
-        imgPath: beers,
+        imgPath: beers2,
       },
+      {
+        label: 'Image 3',
+        imgPath: beers3,
+      },
+      {
+        label: 'Image 4',
+        imgPath: beers4,
+      },
+      {
+        label: 'Image 4',
+        imgPath: beers5,
+      }
     ],
   }
 ];
