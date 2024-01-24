@@ -12,12 +12,11 @@ import vdc from '../assets/images/vdc.png';
 
 const projectsData = [
   { title: 'Run Up Asso', content: 'Projet Symfony en binome', imageSrc: runup, description: 'Fonctionnalités: inscription/ connexion, CRUD profil associations, commentaires, favoris', languages: ['Symfony'], number: 2 },
-  { title: 'Séniorissime', content: 'Projet Symfony + API OpenWeather', imageSrc: senio, description: 'Affichage des activités en fonction de la météo dune ville', languages: ['Symfony', 'API', 'OpenWeather'], number: 3 },
-  { title: 'Vinyl du Coin', content: 'Projet Symfony en autonomie', description: 'Projet Symfony en autonomie. ', imageSrc: vdc, languages: ['Symfony'], number: 1 },
-  // { title: 'API Movie', content: 'Project Next.Js + API dbmovie', imageSrc: '', languages: ['Next.Js', 'API'], number: 4 },
-  { title: 'Chinese Year', content: 'Project Java Spring en autonomie', description: 'Projet Symfony en autonomie. ', imageSrc: chinesejava, languages: ['Java Spring', 'ThymeLeaf'], number: 2 },
-  { title: 'TakeMe', content: 'Project React Native', description: 'Affichage carte, détail annonce, formulaire de création dannonce', imageSrc: takeme, languages: ['React Native'], number: 3 },
-  { title: 'Beers Notation', content: 'Project React.JS', description: 'Fonctionnalités: inscription/ connexion, Liste / détail bière, commentaires, notation', imageSrc: beers, languages: ['React', 'FireBase', 'API'], number: 1 },
+  { title: 'Séniorissime', content: 'Projet Symfony + API OpenWeather', imageSrc: senio, description: 'Affichage des activités en fonction de la météo d\'une ville', languages: ['Symfony', 'API', 'OpenWeather', 'Heroku'], number: 3 },
+  { title: 'Vinyl du Coin', content: 'Projet Symfony en autonomie', description: 'Fonctionnalités: inscription/ connexion, CRUD profil associations, commentaires, favoris, messagerie, filtres, pagination, barre de recherche, panel administrateur', imageSrc: vdc, languages: ['Symfony'], number: 1 },
+  { title: 'Chinese Year', content: 'Project Java Spring en autonomie', description: 'Fonctionnalités: affichage de proverbes aléatoires, définition du signe chinois en fonction de l\'age, réduction en fonction du prix du panier, liste des articles, panier d\'achat', imageSrc: chinesejava, languages: ['Java Spring', 'ThymeLeaf'], number: 2 },
+  { title: 'TakeMe', content: 'Project React Native', description: 'Affichage carte, détail annonce, formulaire de création d\'annonce', imageSrc: takeme, languages: ['React Native', 'Leaflet'], number: 3 },
+  { title: 'Beers Notation', content: 'Project React.JS', description: 'Fonctionnalités: inscription/ connexion, Liste / détail bière, commentaires, notation', imageSrc: beers, languages: ['React', 'FireBase', 'API', 'Vercel'], number: 1 },
 ];
 
 const ProjectsSection: React.FC = () => {
