@@ -7,7 +7,6 @@ import './Header.css';
 import IconMenu from '../assets/icons/IconMenu';
 import CloseIcon from '../assets/icons/CloseIcon';
 import { Button, Dialog, DialogContent } from '@mui/material';
-import ByeComponent from './ByeComponent';
 import IconSunFill from '../assets/icons/IconSunFill';
 import IconMoon from '../assets/icons/IconMoon';
 import { DarkModeContext, DarkModeContextProps } from '../providers/DarkModeProvider';
@@ -33,6 +32,14 @@ const Header: React.FC = () => {
       </div>
       <Dialog open={isModalOpen} onClose={toggleModal} fullScreen>
         <span style={{display: 'flex', justifyContent: 'center' }}>
+        <ul className="hidden lg:flex lg:items-center gap-5 text-sm">
+          <li>
+          <a
+              href="#"
+              className="flex items-center gap-1 hover:text-neutral-400 transition-all"
+            />
+              </li>
+              </ul>
       <IconButton
               edge="start"
               color="inherit"
@@ -42,7 +49,6 @@ const Header: React.FC = () => {
               <CloseIcon />
             </IconButton>
             </span>
-        <ByeComponent />
         <DialogContent  sx={{ backgroundColor: '#BEA4C7' }}>
           <List style={{ display: 'flex', justifyContent: 'center' }}>
             <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/" onClick={toggleModal}>Accueil
