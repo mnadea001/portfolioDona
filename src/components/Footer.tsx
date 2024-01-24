@@ -3,6 +3,7 @@ import ArrowUpIcon from '../assets/icons/ArrowUpIcon';
 import MailIcon from '../assets/icons/MailIcon';
 import IconGithub from '../assets/icons/IconGithub';
 
+import { Blob } from 'react-interactive-blob'
 
 const Footer: React.FC = () => {
   const handleBackToTop = () => {
@@ -33,6 +34,7 @@ const Footer: React.FC = () => {
  
       </div>
       <hr className="footer-hr"/>
+      <Blob color="red" sensitivity="0.5" height={500} radius={150}   image='https://source.unsplash.com/random/600x600/?plants' />
       <p>2024 - © Mathilde Nadeau</p>
     </footer>
   );
