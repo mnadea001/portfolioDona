@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 import { Route, Routes } from 'react-router'
 import SliderSection from './components/SliderSection'
 import NotFound from './pages/NotFound'
-
+// import { AnimatePresence } from "framer-motion";
 import DarkModeProvider from './providers/DarkModeProvider';
 
 function App() {
@@ -24,21 +24,23 @@ function App() {
   }, []);
   return (
     <>
-      <DarkModeProvider>
-        <ParallaxProvider>
-          <Routes>
-            <Route path='/' element={<Header />}>
-              {/* <Route index element={<TopSection />} /> */}
-              <Route index element={loading ? <Loading /> : <TopSection />} />
-              <Route path="/slider" element={<SliderSection />} />
-              <Route path="*" element={<NotFound />} />
-              <Route path="/projects" element={<ProjectsSection />} />
-              <Route path="/experiences" element={<ExperiencesSection />} />
-            </Route >
-          </Routes>
-          <Footer />
-        </ParallaxProvider>
-      </DarkModeProvider>
+      {/* <AnimatePresence> */}
+        <DarkModeProvider>
+          <ParallaxProvider>
+            <Routes>
+              <Route path='/' element={<Header />}>
+                {/* <Route index element={<TopSection />} /> */}
+                <Route index element={loading ? <Loading /> : <TopSection />} />
+                <Route path="/slider" element={<SliderSection />} />
+                <Route path="*" element={<NotFound />} />
+                <Route path="/projects" element={<ProjectsSection />} />
+                <Route path="/experiences" element={<ExperiencesSection />} />
+              </Route >
+            </Routes>
+            <Footer />
+          </ParallaxProvider>
+        </DarkModeProvider>
+      {/* </AnimatePresence> */}
     </>
   )
 }

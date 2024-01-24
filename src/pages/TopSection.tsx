@@ -35,9 +35,6 @@ const TopSection: React.FC = () => {
     speed: -20
   });
 
-  // function Loading() {
-  //   return <h2>🌀 Loading...</h2>;
-  // }
 
   return (
 
