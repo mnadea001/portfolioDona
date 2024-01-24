@@ -1,6 +1,5 @@
 import './DiplomaComponent.css';
 import { useParallax } from "react-scroll-parallax";
-
 import { Zoom } from "react-awesome-reveal";
 import { useContext } from 'react';
 import { DarkModeContext } from '../providers/DarkModeProvider';
@@ -49,6 +48,7 @@ const DiplomaComponent: React.FC = () => {
                             <div ref={MasterDev.ref} className="spinner buble-style" data-text="MASTER EXPERT DEV WEB (2025)" />
                         </div>
                     </section>
+                
                 </div>
             </section>
         </>

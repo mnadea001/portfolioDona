@@ -16,7 +16,7 @@ const experiencesData = [
     images: [
       {
         label: 'Image 3',
-        imgPath: thekub,
+        imgPath: kub,
       },
       {
         label: 'Image 4',
