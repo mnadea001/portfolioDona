@@ -28,7 +28,6 @@ const ProjectsSection: React.FC = () => {
   return (
     <>
       <section className="projets-section">
-        {/* <SliderSection /> */}
         <section className="projets">
           <Zoom>
             <h1 style={textStyle}>PROJETS</h1>

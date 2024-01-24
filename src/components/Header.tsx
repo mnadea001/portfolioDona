@@ -11,6 +11,8 @@ import IconSunFill from '../assets/icons/IconSunFill';
 import IconMoon from '../assets/icons/IconMoon';
 import { DarkModeContext, DarkModeContextProps } from '../providers/DarkModeProvider';
 
+import { Zoom, JackInTheBox, Slide, Bounce } from "react-awesome-reveal";
+
 const Header: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { darkMode, toggleDarkMode } = useContext<DarkModeContextProps>(DarkModeContext);
@@ -31,37 +33,37 @@ const Header: React.FC = () => {
         </IconButton>
       </div>
       <Dialog open={isModalOpen} onClose={toggleModal} fullScreen>
-        <span style={{display: 'flex', justifyContent: 'center' }}>
-        <ul className="hidden lg:flex lg:items-center gap-5 text-sm">
-          <li>
-          <a
-              href="#"
-              className="flex items-center gap-1 hover:text-neutral-400 transition-all"
-            />
-              </li>
-              </ul>
-      <IconButton
-              edge="start"
-              color="inherit"
-              onClick={toggleModal}
-              aria-label="close"
-            > FERMER
-              <CloseIcon />
-            </IconButton>
-            </span>
-        <DialogContent  sx={{ backgroundColor: '#BEA4C7' }}>
-          <List style={{ display: 'flex', justifyContent: 'center' }}>
-            <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/" onClick={toggleModal}>Accueil
-            </Button>
-            <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/slider" onClick={toggleModal}>
-              Compétences
-            </Button>
-            <Button style={{ margin: '2px' }}  variant="outlined" color="secondary" size="large" component={NavLink} to="/projects" onClick={toggleModal}>
+        <span style={{ display: 'flex', justifyContent: 'center'}}>
+          <IconButton
+            edge="start"
+            color="inherit"
+            onClick={toggleModal}
+            aria-label="close"
+          > FERMER
+            <CloseIcon />
+          </IconButton>
+        </span>
+        <DialogContent sx={{ backgroundColor: '#BEA4C7' }}>
+          <List style={{ display: 'flex', textAlign: 'center', flexDirection: 'column'  }}>
+            <Zoom>
+              <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/" onClick={toggleModal}>Accueil
+              </Button>
+            </Zoom>
+            <JackInTheBox>
+              <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/slider" onClick={toggleModal}>
+                Compétences
+              </Button>
+            </JackInTheBox>
+            <Bounce>
+            <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/projects" onClick={toggleModal}>
               Projets
             </Button>
-            <Button style={{ margin: '2px' }}  variant="outlined" color="secondary" size="large" component={NavLink} to="/experiences" onClick={toggleModal}>
+            </Bounce>
+            <Slide>
+            <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/experiences" onClick={toggleModal}>
               Expériences
             </Button>
+            </Slide>
           </List>
         </DialogContent>
       </Dialog>
