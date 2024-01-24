@@ -1,21 +1,20 @@
-
-  .icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-
-  .menu {
-    fill: rgb(255, 255, 255);
-  }
-
-  .menudark  {
-    fill: #333333;
-  }
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
-.btn-link {
-  color: 'black' !important;
-  background-color: blue;
+.menu {
+  fill: rgb(255, 255, 255);
+}
+
+.menudark {
+  fill: #333333;
+}
+
+.selected {
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: 'Calistoga', cursive;
 }

@@ -31,7 +31,7 @@ const SliderSection: React.FC = () => {
     <>
       <div className="slider-section">
         <Zoom>
-          <h1 style={textStyle}>COMPETENCES</h1>
+          <h1 style={textStyle}>Compétences</h1>
         </Zoom>
 
         <h3 style={calistogaStyle} className="calistoga">Langages maitrisés</h3>

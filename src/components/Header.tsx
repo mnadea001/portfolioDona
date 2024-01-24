@@ -6,7 +6,7 @@ import List from '@mui/material/List';
 import './Header.css';
 import IconMenu from '../assets/icons/IconMenu';
 import CloseIcon from '../assets/icons/CloseIcon';
-import { Button, Dialog, DialogContent } from '@mui/material';
+import { Dialog, DialogContent } from '@mui/material';
 import IconSunFill from '../assets/icons/IconSunFill';
 import IconMoon from '../assets/icons/IconMoon';
 import { DarkModeContext, DarkModeContextProps } from '../providers/DarkModeProvider';
@@ -33,7 +33,7 @@ const Header: React.FC = () => {
         </IconButton>
       </div>
       <Dialog open={isModalOpen} onClose={toggleModal} fullScreen >
-        <span style={{ display: 'flex', justifyContent: 'center', backgroundColor: '#333333', paddingTop: '50px'}}>
+        <span style={{ display: 'flex', justifyContent: 'center', backgroundColor: '#333333', paddingTop: '50px' }}>
           <IconButton
             edge="start"
             color="inherit"
@@ -44,31 +44,32 @@ const Header: React.FC = () => {
           </IconButton>
         </span>
         <DialogContent sx={{ backgroundColor: '#333333' }}>
-          <List style={{ display: 'flex', textAlign: 'center', flexDirection: 'column'  }}>
+          <List style={{ display: 'flex', textAlign: 'center', flexDirection: 'column' }}>
             <Zoom>
-              <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/" onClick={toggleModal}>Accueil
-              </Button>
+              <NavLink to="/" className="selected" onClick={toggleModal}>
+                Accueil
+              </NavLink>
             </Zoom>
             <JackInTheBox>
-              <Button style={{ margin: '2px' }} variant="outlined" color="primary" size="large" component={NavLink} to="/slider" onClick={toggleModal}>
+              <NavLink to="/slider" className="selected" onClick={toggleModal}>
                 Compétences
-              </Button>
+              </NavLink>
             </JackInTheBox>
             <Bounce>
-            <Button style={{ margin: '2px' }} variant="outlined" size="large" component={NavLink} to="/projects" onClick={toggleModal}>
-              Projets
-            </Button>
+              <NavLink to="/projects" className="selected" onClick={toggleModal}>
+                Projets
+              </NavLink>
             </Bounce>
             <Slide>
-            <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/experiences" onClick={toggleModal}>
-              Expériences
-            </Button>
+              <NavLink to="/experiences" className="selected" onClick={toggleModal}>
+                Expériences
+              </NavLink>
             </Slide>
-            <Slide>
-            <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/diplomes" onClick={toggleModal}>
-              Diplomes
-            </Button>
-            </Slide>
+            <Zoom>
+              <NavLink to="/diplomes" className="selected" onClick={toggleModal}>
+                Diplomes
+              </NavLink>
+            </Zoom>
           </List>
         </DialogContent>
       </Dialog>
