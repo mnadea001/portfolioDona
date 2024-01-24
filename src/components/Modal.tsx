@@ -72,7 +72,7 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
             <DialogContentText>{position}</DialogContentText>
             <DialogContentText>{date}</DialogContentText>
             <DialogContentText>{description}</DialogContentText>
-            <DialogContentText>Skills:</DialogContentText>
+            <DialogContentText>Compétences:</DialogContentText>
             <div>
               {skills.map((skill, index) => (
                 <Chip key={index} label={skill} style={{ margin: '0.5em' }} />
