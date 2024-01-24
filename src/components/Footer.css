@@ -1,8 +1,10 @@
 .footer-container {
-  background-color: #1501FF;
+  background: rgb(21, 1, 255);
+  background: linear-gradient(90deg, rgba(21, 1, 255, 1) 35%, rgba(201, 150, 255, 1) 100%);
   color: '#FFE7C2';
   padding: 20px 0;
   text-align: center;
+  border-radius: 20px;
 }
 
 .footer-content {
@@ -41,9 +43,6 @@
   align-items: center;
 }
 
-.footer-links svg {
-  margin-right: 4px;
-}
 
 .footer-content button {
   cursor: pointer;
@@ -55,34 +54,6 @@
   align-items: center;
 }
 
-svg {
-  overflow: hidden;
-  height: 80%;
-  /* Fix Safari rendering bug */
-  transform: translateZ(0);
-  fill: transparent
-}
-
-.footer-link1:hover {
-  transform: scale(2.5) rotate(20deg);
-  transform-origin: -10% 90%;
-}
-
-.footer-link2:hover {
-  transform: scale(2.5) rotate(-20deg);
-  transform-origin: -10% 40%;
-}
-
-.ball {
-  background-color: #D5FF3C;
-  width: 40px;
-  height: 40px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  mix-blend-mode: difference;
-}
 
 .arrow {
   fill: #1501FF;
@@ -121,4 +92,22 @@ svg {
 
 .github {
   fill: #D5FF3C;
+}
+
+.footer-links .mail,
+.footer-links .github,
+.btn-up .arrow {
+  visibility: hidden;
+}
+
+.footer-links li:hover .mail {
+  visibility: visible;
+}
+
+.footer-links li:hover .github {
+  visibility: visible;
+}
+
+.btn-up:hover .arrow {
+  visibility: visible;
 }
