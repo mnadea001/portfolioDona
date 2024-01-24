@@ -32,8 +32,8 @@ const Header: React.FC = () => {
           <IconMenu className={darkMode ? 'menu' : 'menudark'} />
         </IconButton>
       </div>
-      <Dialog open={isModalOpen} onClose={toggleModal} fullScreen>
-        <span style={{ display: 'flex', justifyContent: 'center'}}>
+      <Dialog open={isModalOpen} onClose={toggleModal} fullScreen >
+        <span style={{ display: 'flex', justifyContent: 'center', backgroundColor: '#333333', paddingTop: '50px'}}>
           <IconButton
             edge="start"
             color="inherit"
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
             <CloseIcon />
           </IconButton>
         </span>
-        <DialogContent sx={{ backgroundColor: '#BEA4C7' }}>
+        <DialogContent sx={{ backgroundColor: '#333333' }}>
           <List style={{ display: 'flex', textAlign: 'center', flexDirection: 'column'  }}>
             <Zoom>
               <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/" onClick={toggleModal}>Accueil
