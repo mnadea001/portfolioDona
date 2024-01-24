@@ -23,14 +23,18 @@ const SliderSection: React.FC = () => {
   const textStyle: React.CSSProperties = {
     color: darkMode === true ? '#C996FF' : '#FFE7C2',
 
-};
+  };
+  const calistogaStyle: React.CSSProperties = {
+    color: darkMode === true ? '#FFE7C2' : '#333333',
+  };
   return (
     <>
       <div className="slider-section">
-      <Zoom>
-         <h1 style={textStyle}>COMPETENCES</h1>
-          </Zoom>
-        <p>Langages maitrisés</p>
+        <Zoom>
+          <h1 style={textStyle}>COMPETENCES</h1>
+        </Zoom>
+
+        <h3 style={calistogaStyle} className="calistoga">Langages maitrisés</h3>
         <ScrollCarousel
           autoplay
           autoplaySpeed={8}

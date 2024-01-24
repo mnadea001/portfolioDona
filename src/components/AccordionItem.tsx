@@ -22,7 +22,6 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content, imageSrc,
   const textStyle: React.CSSProperties = {
     color: darkMode === true ? '#D5FF3C' : '#333333',
     fontWeight: 'bold'
-
 };
   return (
     <Accordion
@@ -36,7 +35,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content, imageSrc,
         onMouseLeave={() => setIsHovered(false)}
         className="title"
       >
-        <Typography style={textStyle}>{title}</Typography>
+        <Typography className='title' style={textStyle}>{title}</Typography>
         {isHovered && (
           <img
             src={imageSrc}
@@ -48,8 +47,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content, imageSrc,
 
       </AccordionSummary>
       <AccordionDetails style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)',}}>
-        <Typography  style={textStyle}>
-          {content}
+        <Typography  style={textStyle}>{content}
         </Typography>
         <Typography>
           {description}

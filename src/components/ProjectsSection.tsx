@@ -24,8 +24,11 @@ const ProjectsSection: React.FC = () => {
   const darkMode = darkModeContext?.darkMode || false;
   const textStyle: React.CSSProperties = {
     color: darkMode === true ? '#C996FF' : '#FFE7C2',
-
   };
+  const calistogaStyle: React.CSSProperties = {
+    color: darkMode === true ? '#FFE7C2' : '#333333',
+  };
+
   return (
     <>
       <section className="projets-section">
@@ -33,7 +36,7 @@ const ProjectsSection: React.FC = () => {
           <Zoom>
             <h1 style={textStyle}>PROJETS</h1>
           </Zoom>
-          <p>Principaux projets</p>
+          <h3 style={calistogaStyle} className="calistoga">Principaux projets</h3>
           <AccordionList projects={projectsData} />
         </section>
       </section>

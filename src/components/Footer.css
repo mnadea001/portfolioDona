@@ -100,8 +100,14 @@
 
 .footer-links .mail,
 .footer-links .github,
+.footer-links .lkd,
 .btn-up .arrow {
   visibility: hidden;
+}
+
+.footer-links li:hover  {
+  font-family: 'Calistoga', cursive;
+  text-transform: lowercase;
 }
 
 .footer-links li:hover .mail {
@@ -110,6 +116,15 @@
 
 .footer-links li:hover .github {
   visibility: visible;
+}
+
+.footer-links li:hover .lkd {
+  visibility: visible;
+}
+
+.btn-up:hover  {
+  font-family: 'Calistoga', cursive;
+  text-transform: lowercase;
 }
 
 .btn-up:hover .arrow {

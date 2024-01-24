@@ -11,8 +11,10 @@
 
   .title {
     text-transform: uppercase;
-    /* font-weight: bold; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .title:hover {
+    font-family: 'Calistoga'!important;
+    text-transform: lowercase;
   }
 
   .content {
@@ -27,3 +29,5 @@
   .iconDowndark  {
     fill: #333333;
   }
+
+

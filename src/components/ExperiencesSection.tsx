@@ -66,14 +66,16 @@ const ExperiencesSection: React.FC = () => {
     translateY: [100, 0],
     speed: -20
   });
-
+  const calistogaStyle: React.CSSProperties = {
+    color: darkMode === true ? '#FFE7C2' : '#333333',
+  };
   return (
     <>
     <div>
       <Zoom>
         <h1 style={textStyle}>EXPERIENCES</h1>
       </Zoom>
-      <p>en Développement</p>
+      <h3 style={calistogaStyle} className="calistoga">en Développement</h3>
       <section className="bg-container">
         <div className="absolute-text">
 

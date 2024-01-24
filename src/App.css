@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Rubik&display=swap');
+
 #root {
   width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  --background-color: #C996FF; /* Light mode background color */
-  --text-color: #000000; /* Light mode text color */
+  --background-color: #C996FF;
+  /* Light mode background color */
+  --text-color: #000000;
+  /* Light mode text color */
 }
 
 body {
@@ -14,8 +18,10 @@ body {
 }
 
 body.dark-mode {
-  --background-color: #333333; /* Dark mode background color */
-  --text-color: #ffffff; /* Dark mode text color */
+  --background-color: #333333;
+  /* Dark mode background color */
+  --text-color: #ffffff;
+  /* Dark mode text color */
 }
 
 .card {
@@ -31,24 +37,29 @@ body.dark-mode {
   background-color: #333333;
   overflow: hidden;
 }
+
 .loader-wrap {
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
+
 .loader-wrap h3 {
   font-size: 20px;
   font-weight: 100;
   font-family: "panchang";
 }
+
 .counter {
   position: absolute;
   top: 56%;
 }
+
 .loader-container p {
   font-size: 18px;
   font-family: "panchang", sans-serif;
 }
+
 .loader-bar {
   position: absolute;
   height: 5px;
@@ -57,17 +68,17 @@ body.dark-mode {
   border-radius: 100px;
   top: 55%;
 }
+
 @media screen and (maxx-width: 400px) {
   .loader-bar {
     top: 56%;
   }
+
   .counter {
     top: 57%;
   }
 }
 
-
-
-
-
-
+.calistoga {
+  font-family: 'Calistoga', cursive;
+}
