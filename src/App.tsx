@@ -1,6 +1,8 @@
 import './App.css'
+import { useState, useEffect } from "react";
 import ProjectsSection from './components/ProjectsSection'
 import ExperiencesSection from './components/ExperiencesSection'
+import Loading from './components/Loading'
 import TopSection from './pages/TopSection'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import Header from './components/Header'
@@ -13,14 +15,21 @@ import DarkModeProvider from './providers/DarkModeProvider';
 
 function App() {
 
+  const [loading, setLoding] = useState(true);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoding(false);
+    }, 2500);
+  }, []);
   return (
     <>
       <DarkModeProvider>
         <ParallaxProvider>
           <Routes>
             <Route path='/' element={<Header />}>
-              <Route index element={<TopSection />} />
+              {/* <Route index element={<TopSection />} /> */}
+              <Route index element={loading ? <Loading /> : <TopSection />} />
               <Route path="/slider" element={<SliderSection />} />
               <Route path="*" element={<NotFound />} />
               <Route path="/projects" element={<ProjectsSection />} />
