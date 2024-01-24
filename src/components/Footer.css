@@ -43,6 +43,9 @@
   align-items: center;
 }
 
+.footer-hr {
+  color: #D5FF3C !important;
+}
 
 .footer-content button {
   cursor: pointer;

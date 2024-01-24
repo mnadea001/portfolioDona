@@ -32,6 +32,8 @@ const Footer: React.FC = () => {
         </div>
  
       </div>
+      <hr className="footer-hr"/>
+      <p>2024 - © Mathilde Nadeau</p>
     </footer>
   );
 };

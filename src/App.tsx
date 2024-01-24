@@ -10,7 +10,6 @@ import Footer from './components/Footer'
 import { Route, Routes } from 'react-router'
 import SliderSection from './components/SliderSection'
 import NotFound from './pages/NotFound'
-// import { AnimatePresence } from "framer-motion";
 import DarkModeProvider from './providers/DarkModeProvider';
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
   }, []);
   return (
     <>
-      {/* <AnimatePresence> */}
         <DarkModeProvider>
           <ParallaxProvider>
             <Routes>
@@ -40,7 +38,6 @@ function App() {
             <Footer />
           </ParallaxProvider>
         </DarkModeProvider>
-      {/* </AnimatePresence> */}
     </>
   )
 }
