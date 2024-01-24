@@ -40,14 +40,13 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = ({ imgSrc, title
             alt={`Image for ${title}`}
           />
           <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          {title}
+            {title}
           </Typography>
           <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pl: 1, pb: 1 }}>
             <Button className='btn' onClick={handleOpenModal}>VOIR</Button>
           </Box>
         </Box>
       </Card>
-
       <Modal
         open={modalOpen}
         onClose={handleCloseModal}
@@ -58,8 +57,8 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = ({ imgSrc, title
         context={context}
         date={date}
         position={position}
-        expImg={expImg}  
-        images={images}  
+        expImg={expImg}
+        images={images}
       />
     </>
   );

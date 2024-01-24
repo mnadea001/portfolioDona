@@ -6,8 +6,8 @@ import DialogContentText from '@mui/material/DialogContentText';
 import CloseIcon from '../assets/icons/CloseIcon';
 import IconButton from '@mui/material/IconButton';
 import './Modal.css';
-import { Box, Paper, Typography } from '@mui/material';
-import { useContext, useState } from 'react';
+import { Box } from '@mui/material';
+import { useState } from 'react';
 import Chip from '@mui/material/Chip'; 
 import MobileStepper from '@mui/material/MobileStepper';
 import Button from '@mui/material/Button';
@@ -82,19 +82,6 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
 
           <div className="flex-item">
           <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
-              <Paper
-                square
-                elevation={0}
-                sx={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  height: 50,
-                  pl: 2,
-                  bgcolor: 'background.default',
-                }}
-              >
-                <Typography>{images[activeStep].label}</Typography>
-              </Paper>
               <AutoPlaySwipeableViews
                 axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                 index={activeStep}
@@ -138,7 +125,6 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
                 }
               />
             </Box>
-            {/* <img src={expImg} alt={`Image for ${title}`} className="modal-image" /> */}
           </div>
         </div>
 
