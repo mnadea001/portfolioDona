@@ -64,6 +64,11 @@ const Header: React.FC = () => {
               Expériences
             </Button>
             </Slide>
+            <Slide>
+            <Button style={{ margin: '2px' }} variant="outlined" color="secondary" size="large" component={NavLink} to="/diplomes" onClick={toggleModal}>
+              Diplomes
+            </Button>
+            </Slide>
           </List>
         </DialogContent>
       </Dialog>

@@ -11,6 +11,7 @@ import { Route, Routes } from 'react-router'
 import SliderSection from './components/SliderSection'
 import NotFound from './pages/NotFound'
 import DarkModeProvider from './providers/DarkModeProvider';
+import DiplomaComponent from './components/DiplomaComponent';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
                 <Route path="*" element={<NotFound />} />
                 <Route path="/projects" element={<ProjectsSection />} />
                 <Route path="/experiences" element={<ExperiencesSection />} />
+                <Route path="/diplomes" element={<DiplomaComponent />} />
               </Route >
             </Routes>
             <Footer />

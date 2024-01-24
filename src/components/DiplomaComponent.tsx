@@ -48,6 +48,14 @@ const DiplomaComponent: React.FC = () => {
                         </div>
                     </section>
                     <p>autres diplomes</p>
+              <div className="d-flex">
+                <div className="d-block">
+                    Licence Economie Gestion
+                </div>
+                <div  className="d-block">
+                    Master Management International
+                </div>
+              </div>
                 </div>
             </section>
         </>
