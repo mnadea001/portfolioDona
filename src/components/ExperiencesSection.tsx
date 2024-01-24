@@ -13,6 +13,16 @@ import { DarkModeContext } from '../providers/DarkModeProvider';
 const experiencesData = [
   {
     imgSrc: thekub,
+    images: [
+      {
+        label: 'Image 3',
+        imgPath: thekub,
+      },
+      {
+        label: 'Image 4',
+        imgPath: thekub,
+      },
+    ],
     title: 'THE KUB',
     context: 'Agence de communication et évènementiel',
     position: 'Développeuse web',
@@ -23,6 +33,16 @@ const experiencesData = [
   },
   {
     imgSrc: elemate,
+    images: [
+      {
+        label: 'Image 3',
+        imgPath: thekub,
+      },
+      {
+        label: 'Image 4',
+        imgPath: thekub,
+      },
+    ],
     title: 'ELEMATE',
     context: 'Start up - édition logiciel',
     position: 'Développeuse FulStack Symfony',
@@ -33,6 +53,16 @@ const experiencesData = [
   },
   {
     imgSrc: worldcast,
+    images: [
+      {
+        label: 'Image 3',
+        imgPath: thekub,
+      },
+      {
+        label: 'Image 4',
+        imgPath: thekub,
+      },
+    ],
     title: 'WORDLCAST',
     context: 'Logiciel de surveillance / Monitoring',
     position: 'Développeuse Javascript + Support client',
@@ -90,6 +120,7 @@ const ExperiencesSection: React.FC = () => {
                 position={experience.position}
                 date={experience.date}
                 expImg={experience.expImg}
+                images={experience.images}
               />
             </div>
           ))}

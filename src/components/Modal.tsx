@@ -15,40 +15,49 @@ interface ModalProps {
   title: string;
   description: string;
   skills: string[];
-  context: string, 
+  context: string,
   date: string,
   position: string,
-  expImg: string
+  expImg: string,
+  images: string[];
 }
 
-const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills, context, date, position, expImg }) => {
+const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills, context, date, position, expImg, images }) => {
   return (
     <Dialog open={open} onClose={onClose} maxWidth="md" fullWidth>
-    <DialogTitle>
-      <IconButton
-        edge="end"
-        color="inherit"
-        onClick={onClose}
-        aria-label="close"
-      >
-        <CloseIcon />
-      </IconButton>
-    </DialogTitle>
-    <DialogContent dividers>
-      <img src={expImg} alt={`Image for ${title}`} className="modal-image" />
-      <DialogTitle>{title}</DialogTitle>
-      <DialogContentText>{context}</DialogContentText>
-      <DialogContentText>{position}</DialogContentText>
-      <DialogContentText>{date}</DialogContentText>
-      <DialogContentText>{description}</DialogContentText>
-      <DialogContentText>Skills:</DialogContentText>
-        <div>
-          {skills.map((skill, index) => (
-            <Chip key={index} label={skill} style={{ margin: '0.5em' }} />
-          ))}
+      <DialogTitle>
+        <IconButton
+          edge="end"
+          color="inherit"
+          onClick={onClose}
+          aria-label="close"
+        >
+          <CloseIcon />
+        </IconButton>
+      </DialogTitle>
+      <DialogContent dividers>
+        <div className="flex-container">
+          <div className="flex-item">
+            <DialogTitle>{title}</DialogTitle>
+            <DialogContentText>{context}</DialogContentText>
+            <DialogContentText>{position}</DialogContentText>
+            <DialogContentText>{date}</DialogContentText>
+            <DialogContentText>{description}</DialogContentText>
+            <DialogContentText>Skills:</DialogContentText>
+            <div>
+              {skills.map((skill, index) => (
+                <Chip key={index} label={skill} style={{ margin: '0.5em' }} />
+              ))}
+            </div>
+          </div>
+
+          <div className="flex-item">
+            <img src={expImg} alt={`Image for ${title}`} className="modal-image" />
+          </div>
         </div>
-    </DialogContent>
-  </Dialog>
+
+      </DialogContent>
+    </Dialog >
   );
 };
 
