@@ -47,7 +47,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content, imageSrc,
         )}
 
       </AccordionSummary>
-      <AccordionDetails>
+      <AccordionDetails style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)',}}>
         <Typography  style={textStyle}>
           {content}
         </Typography>
