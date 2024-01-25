@@ -14,6 +14,7 @@
   color: transparent !important;
   text-transform: lowercase;
   font-size: 1.6rem !important;
+  margin-left: 50px !important;
 }
 
 .title:hover .titleText{
@@ -43,6 +44,7 @@
 .flex-item {
   flex: 1;
   padding: 10px;
+  text-align: start;
 }
 
 @media screen and (min-width: 768px) {
@@ -74,6 +76,11 @@
 }
 
 .accordion-content:hover {
+  background-color: rgba(87, 87, 87, 0.748) !important;
+  border: none
+}
+
+.accordion-expanded {
   background-color: rgba(87, 87, 87, 0.748) !important;
   border: none
 }

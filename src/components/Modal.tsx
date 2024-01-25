@@ -29,11 +29,10 @@ interface ModalProps {
   context: string,
   date: string,
   position: string,
-  expImg: string,
   images: string[];
 }
 
-const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills, context, date, position, expImg, images }) => {
+const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills, context, date, position, images }) => {
   const theme = useTheme();
   const [activeStep, setActiveStep] = useState(0);
   const maxSteps = images.length;
@@ -54,6 +53,7 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
 
   return (
     <Dialog open={open} onClose={onClose} maxWidth="md" fullWidth  >
+      <div className="dialog-item">
       <DialogTitle>
         <IconButton
           edge="end"
@@ -64,6 +64,7 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
           <CloseIcon />
         </IconButton>
       </DialogTitle>
+      </div>
       <DialogContent dividers className="modal-container">
         <div className="flex-container">
           <div className="flex-item">
@@ -124,15 +125,15 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
                 }}
                 activeStep={activeStep}
                 nextButton={
-                  <Button size="small" style={{ color: '#333333' }} onClick={handleNext} disabled={activeStep === maxSteps - 1}>
-                    Next
+                  <Button style={{ color: '#D5FF3C' }} onClick={handleNext} disabled={activeStep === maxSteps - 1}>
+                    Suivant
                     {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
                   </Button>
                 }
                 backButton={
-                  <Button style={{ color: '#333333' }} size="small" onClick={handleBack} disabled={activeStep === 0}>
+                  <Button style={{ color: '#D5FF3C' }} onClick={handleBack} disabled={activeStep === 0}>
                     {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
-                    Back
+                    Préc.
                   </Button>
                 }
               />

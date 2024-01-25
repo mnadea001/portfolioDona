@@ -1,5 +1,5 @@
-import { useContext } from 'react';
-import { Accordion } from '@mui/material';
+import { useState, useContext } from 'react';
+import { Accordion, AccordionDetails } from '@mui/material';
 import AccordionHeader from './AccordionHeader';
 import AccordionContent from './AccordionContent';
 import ImageCarousel from './ImageCarousel';
@@ -17,20 +17,44 @@ interface AccordionItemProps {
   number: number;
 }
 
-const AccordionItem: React.FC<AccordionItemProps> = ({ title, content, imageSrc, images, description, languages, number }) => {
-
+const AccordionItem: React.FC<AccordionItemProps> = ({
+  title,
+  content,
+  imageSrc,
+  images,
+  description,
+  languages,
+  number,
+}) => {
   const darkModeContext = useContext(DarkModeContext);
   const darkMode = darkModeContext?.darkMode || false;
 
   const theme = useTheme();
 
+  const [expanded, setExpanded] = useState(false);
+
+  const handleAccordionChange = () => {
+    setExpanded(!expanded);
+  };
+
   return (
-    <Accordion className="accordion-content">
+    <Accordion
+      className={`accordion-content ${expanded ? 'accordion-expanded' : ''}`}
+      expanded={expanded}
+      onChange={handleAccordionChange}
+    >
       <AccordionHeader title={title} imageSrc={imageSrc} darkMode={darkMode} />
-      <div className="flex-container">
-      <AccordionContent content={content} description={description} number={number} languages={languages} />
-      <ImageCarousel images={images} theme={theme} />
-      </div>
+      <AccordionDetails>
+        <div className="flex-container">
+          <AccordionContent
+            content={content}
+            description={description}
+            number={number}
+            languages={languages}
+          />
+          <ImageCarousel images={images} theme={theme} />
+        </div>
+      </AccordionDetails>
     </Accordion>
   );
 };

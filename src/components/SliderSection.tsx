@@ -17,7 +17,7 @@ import { DarkModeContext } from '../providers/DarkModeProvider';
 const iconArray = [icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9, icon10];
 
 const SliderSection: React.FC = () => {
-  const itemArray = Array.from({ length: 10 }, (_, index) => index + 1); // Array [1, 2, 3, ..., 11]
+  const itemArray = Array.from({ length: 10 }, (_, index) => index + 1);
   const darkModeContext = useContext(DarkModeContext);
   const darkMode = darkModeContext?.darkMode || false;
   const textStyle: React.CSSProperties = {
@@ -25,7 +25,7 @@ const SliderSection: React.FC = () => {
 
   };
   const calistogaStyle: React.CSSProperties = {
-    color: darkMode === true ? '#FFE7C2' : '#333333',
+    color: darkMode === true ? '#FFE7C2' : '#333333'
   };
   return (
     <>

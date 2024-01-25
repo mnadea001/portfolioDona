@@ -48,6 +48,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, theme }) => {
                     maxWidth: 400,
                     overflow: 'hidden',
                     width: '100%',
+                    borderRadius: '5px'
                   }}
                   src={step.imgPath}
                   alt={step.label}
@@ -64,15 +65,15 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, theme }) => {
           }}
           activeStep={activeStep}
           nextButton={
-            <Button size="small" onClick={handleNext} disabled={activeStep === maxSteps - 1}>
-              Next
+            <Button size="small" style={{ color: '#D5FF3C' }}  onClick={handleNext} disabled={activeStep === maxSteps - 1}>
+              Suivant
               {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
             </Button>
           }
           backButton={
-            <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+            <Button size="small" style={{ color: '#D5FF3C' }} onClick={handleBack} disabled={activeStep === 0}>
               {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
-              Back
+              Préc.
             </Button>
           }
         />

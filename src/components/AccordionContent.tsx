@@ -14,7 +14,8 @@ const AccordionContent: React.FC<AccordionContentProps> = ({ content, descriptio
     const darkMode = darkModeContext?.darkMode || false;
     const textStyle: React.CSSProperties = {
         color: darkMode === true ? '#D5FF3C' : '#333333',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        textTransform: 'uppercase'
     };
 
     return (

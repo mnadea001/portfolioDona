@@ -6,6 +6,7 @@ import Modal from './Modal';
 import { useState } from 'react';
 import './ExperienceSection.css';
 import { Typography } from '@mui/material';
+
 interface ExperienceComponentProps {
   imgSrc: string;
   title: string;
@@ -57,7 +58,6 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = ({ imgSrc, title
         context={context}
         date={date}
         position={position}
-        expImg={expImg}
         images={images}
       />
     </>

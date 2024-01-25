@@ -6,14 +6,18 @@
 }
 
 .modal-container {
-  background-color: #C996FF !important;
+  background-color: rgba(87, 87, 87, 0.748) !important;
 }
 
 .modal-title {
   font-family: Inter;
-  -webkit-text-stroke: 1px rgb(5, 5, 5);
+  -webkit-text-stroke: 1px #D5FF3C;
   color: #C996FF !important;
   background-color: #C996FF !important;
   text-transform: lowercase;
   font-size: 2.2rem !important;
+}
+
+.dialog-item {
+  background-color: rgba(87, 87, 87, 0.748) !important;
 }

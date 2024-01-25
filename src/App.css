@@ -24,12 +24,22 @@ body.dark-mode {
   /* Dark mode text color */
 }
 
-h1 {
+h1.dark-mode {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
   text-transform: lowercase;
   font-family: Inter;
-  -webkit-text-stroke: 0.5px #D5FF3C;
+  -webkit-text-stroke: 0.5px #D5FF3C !important;
+  color: transparent !important;
+  text-shadow: -5px -5px #C996FF;
+}
+
+h1  {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  text-transform: lowercase;
+  font-family: Inter;
+  -webkit-text-stroke: 0.5px #000000;
   color: transparent !important;
   text-shadow: -5px -5px #C996FF;
 }
@@ -89,6 +99,6 @@ h1 {
   }
 }
 
-.calistoga {
-  font-family: 'Calistoga', cursive;
-}
+
+
+
