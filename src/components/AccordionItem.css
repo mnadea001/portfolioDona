@@ -72,15 +72,25 @@
 
 .accordion-content {
   background-color: transparent !important;
-  border: none
+  border: none;
 }
 
 .accordion-content:hover {
+  background-color: #b269ff !important;
+  border: none;
+}
+
+.dark-mode .accordion-content:hover {
+  background-color: rgba(87, 87, 87, 0.748) !important;
+  border: none;
+}
+
+
+.accordion-expanded.dark-mode {
   background-color: rgba(87, 87, 87, 0.748) !important;
   border: none
 }
 
 .accordion-expanded {
-  background-color: rgba(87, 87, 87, 0.748) !important;
-  border: none
+  background-color: #b269ff !important;
 }

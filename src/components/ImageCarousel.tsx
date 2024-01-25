@@ -65,13 +65,13 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, theme }) => {
           }}
           activeStep={activeStep}
           nextButton={
-            <Button size="small" style={{ color: '#D5FF3C' }}  onClick={handleNext} disabled={activeStep === maxSteps - 1}>
+            <Button size="small" style={{ color: '#333333' }}  onClick={handleNext} disabled={activeStep === maxSteps - 1}>
               Suivant
               {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
             </Button>
           }
           backButton={
-            <Button size="small" style={{ color: '#D5FF3C' }} onClick={handleBack} disabled={activeStep === 0}>
+            <Button size="small" style={{ color: '#333333' }} onClick={handleBack} disabled={activeStep === 0}>
               {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
               Préc.
             </Button>

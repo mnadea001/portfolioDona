@@ -26,7 +26,7 @@ return (
     <>
     <div className="loader-container">
       <div className="loader-wrap">
-        <p>Chargement en cours</p>
+        <p className="calistoga">Chargement en cours</p>
         <motion.div
           className="loader-bar"
           variants={LoaderVariant}

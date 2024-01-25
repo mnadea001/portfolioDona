@@ -26,3 +26,12 @@
   color: #D5FF3C !important;
   text-shadow: 5px 5px #C996FF;
 }
+
+.header-title {
+  font-family: Inter;
+  -webkit-text-stroke: 1px rgb(5, 5, 5);
+  color: transparent !important;
+  text-transform: lowercase;
+  font-size: 2rem;
+  margin-top: 0 !important
+}

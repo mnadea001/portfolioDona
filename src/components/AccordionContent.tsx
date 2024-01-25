@@ -25,11 +25,11 @@ const AccordionContent: React.FC<AccordionContentProps> = ({ content, descriptio
                     <div className="flex-item">
                         <Typography style={textStyle}>{content}</Typography>
                         <br></br>
-                        <Typography>{description}</Typography>
+                        <Typography className="calistoga">{description}</Typography>
                         <br></br>
-                        <Typography>Taille équipe: {number}</Typography>
+                        <Typography className="calistoga">Taille équipe: {number}</Typography>
                         <br></br>
-                        <Typography>
+                        <Typography className="calistoga">
                             <strong>Compétences:</strong>
                         </Typography>
                         <div>

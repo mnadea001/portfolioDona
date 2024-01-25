@@ -39,7 +39,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
 
   return (
     <Accordion
-      className={`accordion-content ${expanded ? 'accordion-expanded' : ''}`}
+    className={`accordion-content ${expanded ? 'accordion-expanded' : ''} ${darkMode ? 'dark-mode' : ''}`}
       expanded={expanded}
       onChange={handleAccordionChange}
     >

@@ -125,13 +125,13 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
                 }}
                 activeStep={activeStep}
                 nextButton={
-                  <Button style={{ color: '#D5FF3C' }} onClick={handleNext} disabled={activeStep === maxSteps - 1}>
+                  <Button style={{ color: '#000000' }} onClick={handleNext} disabled={activeStep === maxSteps - 1}>
                     Suivant
                     {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
                   </Button>
                 }
                 backButton={
-                  <Button style={{ color: '#D5FF3C' }} onClick={handleBack} disabled={activeStep === 0}>
+                  <Button style={{ color: '#000000' }} onClick={handleBack} disabled={activeStep === 0}>
                     {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
                     Préc.
                   </Button>
