@@ -110,3 +110,31 @@
   color: #333333;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .bg-container {
+    top: 50%;  /* Adjust the value as needed */
+    left: 50%;  /* Adjust the value as needed */
+    height: 50vh;
+  }
+
+  .absolute-text {
+    top: 90%;
+    left: 50%;
+    transform: translate(50%, 50%);
+  }
+
+  .first-circle,
+  .second-circle {
+    width: 150px; /* Adjust the value as needed */
+    height: 150px; /* Adjust the value as needed */
+    top: 10%;
+    left:0% /* Adjust the value as needed */
+  }
+
+  #homeImg {
+    height: 150px; /* Adjust the value as needed */
+    width: 150px; /* Adjust the value as needed */
+    top: 10%; /* Adjust the value as needed */
+  }
+}
