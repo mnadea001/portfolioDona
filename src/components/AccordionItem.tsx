@@ -75,9 +75,14 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content, imageSrc,
         <div className="flex-container">
           <div className="flex-item">
             <Typography style={textStyle}>{content}</Typography>
+            <br></br>
             <Typography>{description}</Typography>
+            <br></br>
             <Typography>Taille équipe: {number}</Typography>
-            <Typography>Compétences:</Typography>
+            <br></br>
+            <Typography>
+              <strong>
+              Compétences:</strong></Typography>
             <div>
               {languages.map((language, index) => (
                 <Chip key={index} label={language} style={{ margin: '0.5em' }} />

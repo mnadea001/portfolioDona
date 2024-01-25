@@ -3,8 +3,16 @@ import { useParallax } from "react-scroll-parallax";
 import ExperienceComponent from './ExperienceComponent';
 import thekub from '../assets/images/THEKUB.png';
 import kub from '../assets/images/kub.png';
+import kub2 from '../assets/images/kub2.png';
+import kub3 from '../assets/images/kub3.png';
+import kub4 from '../assets/images/kub4.png';
 import elemate from '../assets/images/ELEMATE.png';
+import elemate2 from '../assets/images/elemate2.png';
+import elemate3 from '../assets/images/elemate3.png';
+import elemate4 from '../assets/images/elemate4.png';
 import worldcast from '../assets/images/WORLDCAST.png';
+import wdc2 from '../assets/images/wdc2.png';
+import wdc3 from '../assets/images/wdc3.png';
 
 import { Zoom } from "react-awesome-reveal";
 import { useContext } from 'react';
@@ -16,12 +24,16 @@ const experiencesData = [
     images: [
       {
         label: 'Image 3',
-        imgPath: kub,
+        imgPath: kub2,
       },
       {
         label: 'Image 4',
-        imgPath: thekub,
+        imgPath: kub3,
       },
+      {
+        label: 'Image 4',
+        imgPath: kub4,
+      }
     ],
     title: 'THE KUB',
     context: 'Agence de communication et évènementiel',
@@ -36,12 +48,16 @@ const experiencesData = [
     images: [
       {
         label: 'Image 3',
-        imgPath: thekub,
+        imgPath: elemate2,
       },
       {
         label: 'Image 4',
-        imgPath: thekub,
+        imgPath: elemate3,
       },
+      {
+        label: 'Image 4',
+        imgPath: elemate4,
+      }
     ],
     title: 'ELEMATE',
     context: 'Start up - édition logiciel',
@@ -56,11 +72,11 @@ const experiencesData = [
     images: [
       {
         label: 'Image 3',
-        imgPath: thekub,
+        imgPath: wdc2,
       },
       {
         label: 'Image 4',
-        imgPath: thekub,
+        imgPath: wdc3,
       },
     ],
     title: 'WORDLCAST',

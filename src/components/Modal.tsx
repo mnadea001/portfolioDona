@@ -68,10 +68,17 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
         <div className="flex-container">
           <div className="flex-item">
             <DialogTitle>{title}</DialogTitle>
-            <DialogContentText>{context}</DialogContentText>
-            <DialogContentText>{position}</DialogContentText>
-            <DialogContentText>{date}</DialogContentText>
+            <DialogContentText>
+              <i>{context}</i>
+              </DialogContentText>
+            <DialogContentText>
+              <strong>
+              {position}</strong></DialogContentText>
+            <DialogContentText>
+              <small>
+              {date}</small></DialogContentText>
             <DialogContentText>{description}</DialogContentText>
+            <br></br>
             <DialogContentText>Compétences:</DialogContentText>
             <div>
               {skills.map((skill, index) => (
@@ -112,7 +119,7 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
                 position="static"
                 activeStep={activeStep}
                 nextButton={
-                  <Button size="small" onClick={handleNext} disabled={activeStep === maxSteps - 1}>
+                  <Button size="small" style={{ color: '#333333' }} onClick={handleNext} disabled={activeStep === maxSteps - 1}>
                     Next
                     {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
                   </Button>
