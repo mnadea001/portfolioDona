@@ -9,8 +9,12 @@ import beers3 from '../assets/images/beers3.png';
 import beers4 from '../assets/images/beers4.png'
 import beers5 from '../assets/images/beers5.png';
 import senio from '../assets/images/senio.png';
+import senio2 from '../assets/images/senio2.png';
 import runup from '../assets/images/runup.png';
+import runup2 from '../assets/images/runup2.png';
+import runup3 from '../assets/images/runup3.png';
 import takeme from '../assets/images/takeme.png';
+import takeme2 from '../assets/images/takeme2.png';
 import chinesejava from '../assets/images/chinesejava.webp';
 import chineseproject2 from '../assets/images/chineseproject2.webp';
 import vdc from '../assets/images/vdc.png';
@@ -37,15 +41,19 @@ const projectsData = [
       },
       {
         label: 'Image 2',
-        imgPath: icon8,
+        imgPath: runup2,
       },
+      {
+        label: 'Image 2',
+        imgPath: runup3,
+      }
     ],
   },
   {
     title: 'Séniorissime',
     content: 'Projet Symfony + API OpenWeather',
     description: 'Affichage des activités en fonction de la météo d\'une ville',
-    languages: ['Symfony', 'API', 'OpenWeather', 'Heroku'],
+    languages: ['Symfony', 'API', 'OpenWeather', 'Heroku', 'Adobe XD'],
     number: 3,
     imageSrc: icon8,
     images: [
@@ -55,7 +63,7 @@ const projectsData = [
       },
       {
         label: 'Image 4',
-        imgPath: senio,
+        imgPath: senio2,
       },
     ],
   },
@@ -116,7 +124,7 @@ const projectsData = [
       },
       {
         label: 'Image 4',
-        imgPath: takeme,
+        imgPath: takeme2,
       },
     ],
   },
