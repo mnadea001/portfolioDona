@@ -27,7 +27,7 @@ const Header: React.FC = () => {
         <button onClick={toggleDarkMode}>
           {darkMode ? <IconSunFill /> : <IconMoon />}
         </button>
-        <h3 className="header-title">PORTFOLIO MATHILDE NADEAU</h3>
+        <h3 className={darkMode ? 'header-title-dark' : 'header-title'}>PORTFOLIO MATHILDE NADEAU</h3>
         <IconButton onClick={toggleModal} >
           <IconMenu className={darkMode ? 'menu' : 'menudark'} />
         </IconButton>

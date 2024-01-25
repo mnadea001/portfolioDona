@@ -35,3 +35,12 @@
   font-size: 2rem;
   margin-top: 0 !important
 }
+
+.header-title-dark {
+  font-family: Inter;
+  -webkit-text-stroke: 1px #ffffff;
+  color: transparent !important;
+  text-transform: lowercase;
+  font-size: 2rem;
+  margin-top: 0 !important
+}
