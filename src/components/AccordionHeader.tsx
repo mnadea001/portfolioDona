@@ -1,4 +1,3 @@
-// AccordionHeader.tsx
 import { useState } from 'react';
 import { AccordionSummary, Typography } from '@mui/material';
 import IconDown from '../assets/icons/IconDown';

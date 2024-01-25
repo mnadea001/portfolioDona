@@ -1,4 +1,3 @@
-// AccordionContent.tsx
 import { AccordionDetails, Typography, Chip } from '@mui/material';
 import { DarkModeContext } from '../providers/DarkModeProvider';
 import { useContext } from 'react';
@@ -38,7 +37,6 @@ const AccordionContent: React.FC<AccordionContentProps> = ({ content, descriptio
                             ))}
                         </div>
                     </div>
-                    {/* Add other content components here */}
                 </div>
             </AccordionDetails>
         </div>

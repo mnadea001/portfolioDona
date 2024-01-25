@@ -24,7 +24,6 @@ const DiplomaItem: React.FC<DiplomaItemProps> = ({ data }) => {
         <Typography sx={{ fontSize: 16 }} color="white">
         {data.year}
         </Typography>
-
       </CardContent>
     </Card>
   );

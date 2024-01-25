@@ -1,4 +1,3 @@
-// ImageCarousel.tsx
 import { useState } from 'react';
 import { Box, MobileStepper, Button } from '@mui/material';
 import SwipeableViews from 'react-swipeable-views';
