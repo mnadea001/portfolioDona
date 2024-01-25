@@ -57,6 +57,7 @@ h1 {
   background-color: #D5FF3C;
   overflow: hidden;
   z-index: 1;
+  transform: rotate(-2deg);
 }
 
 .m-scroll__title {
@@ -74,12 +75,12 @@ h1 {
 
 .m-scroll__title > div {
   display: flex;
-  animation: scrollText 13s infinite linear;
+  animation: scrollText 8s infinite linear;
 }
 
 .m-scroll__title p {
   margin: 0;
-  font-size: 140px;
+  font-size: 40px;
   color: rgba(255, 255, 255, 1);
   transition: all 2s ease;
 }
