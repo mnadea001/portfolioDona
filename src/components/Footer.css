@@ -6,12 +6,14 @@
   text-align: center;
   border-radius: 20px;
   margin-top: 100px;
+  position: relative;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   max-width: 1200px;
   color: '#FFE7C2';
   margin-bottom: 100px;
@@ -23,6 +25,8 @@
   gap: 20px;
   text-align: start;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-links li {
@@ -117,7 +121,7 @@
   visibility: visible;
 }
 
-.footer-link:hover  {
+.footer-link:hover {
   font-family: Inter;
   -webkit-text-stroke: 1px #333333;
   color: transparent !important;
@@ -135,7 +139,7 @@
   visibility: hidden;
 }
 
-.btn-up:hover  {
+.btn-up:hover {
   font-family: 'Calistoga', cursive;
   text-transform: lowercase;
 }
@@ -143,11 +147,25 @@
 .ball {
   background-color: #D5FF3C;
   width: 40px;
-  height: 40px; 
+  height: 40px;
   position: fixed;
   top: 0;
   left: 0;
   border-radius: 50%;
   mix-blend-mode: difference;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
   }
 
+  .footer-link {
+    margin: 10px 0;
+  }
+
+  .btn-up {
+    margin-top: 10px;
+  }
+}

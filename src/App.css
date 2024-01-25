@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Rubik&display=swap');
 
 #root {
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -88,7 +88,7 @@ h1  {
   top: 55%;
 }
 
-@media screen and (maxx-width: 400px) {
+@media screen and (max-width: 400px) {
   .loader-bar {
     top: 56%;
   }
