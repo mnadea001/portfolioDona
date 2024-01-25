@@ -100,8 +100,7 @@
 
 .footer-links .mail,
 .footer-links .github,
-.footer-links .lkd,
-.btn-up .arrow {
+.footer-links .lkd {
   visibility: hidden;
 }
 
@@ -127,6 +126,3 @@
   text-transform: lowercase;
 }
 
-.btn-up:hover .arrow {
-  visibility: visible;
-}

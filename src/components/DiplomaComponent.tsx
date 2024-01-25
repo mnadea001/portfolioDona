@@ -39,8 +39,8 @@ const DiplomaComponent: React.FC = () => {
                 <div className="container-diplom">
                     <Zoom>
                         <h1 style={textStyle}>DIPLOMES</h1>
+                        <h3 style={calistogaStyle} className="calistoga">en Développement</h3>
                     </Zoom>
-                    <h3 style={calistogaStyle} className="calistoga">en Développement</h3>
                     <section className="diplom-container">
                         <div className="absolute-diplom">
                             <div ref={BtsDev.ref} className="spinner buble-style" data-text="TITRE PRO DEV WEB ET MOBILE (2022)" />

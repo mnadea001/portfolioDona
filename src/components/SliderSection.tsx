@@ -32,9 +32,8 @@ const SliderSection: React.FC = () => {
       <div className="slider-section">
         <Zoom>
           <h1 style={textStyle}>Compétences</h1>
+          <h3 style={calistogaStyle} className="calistoga">Langages maitrisés</h3>
         </Zoom>
-
-        <h3 style={calistogaStyle} className="calistoga">Langages maitrisés</h3>
         <ScrollCarousel
           autoplay
           autoplaySpeed={8}

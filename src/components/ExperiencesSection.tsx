@@ -120,8 +120,9 @@ const ExperiencesSection: React.FC = () => {
     <div>
       <Zoom>
         <h1 style={textStyle}>EXPERIENCES</h1>
+        <h3 style={calistogaStyle} className="calistoga">en Développement</h3>
+
       </Zoom>
-      <h3 style={calistogaStyle} className="calistoga">en Développement</h3>
       <section className="bg-container">
         <div className="absolute-text">
 

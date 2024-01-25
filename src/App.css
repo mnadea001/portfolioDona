@@ -24,7 +24,10 @@ body.dark-mode {
   /* Dark mode text color */
 }
 
-
+h1 {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
 .card {
   padding: 2em;
 }
