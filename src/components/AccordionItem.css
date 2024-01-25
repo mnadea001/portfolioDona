@@ -9,17 +9,27 @@
   margin-top: 10px !important;
 }
 
-.titleText {
+.titleText{
+  -webkit-text-stroke: 1px #333333;
+  color: transparent !important;
+  text-transform: lowercase;
+  font-size: 1.6rem !important;
+  margin-left: 50px !important;
+}
+.titleText-dark {
   -webkit-text-stroke: 1px #D5FF3C;
   color: transparent !important;
   text-transform: lowercase;
   font-size: 1.6rem !important;
   margin-left: 50px !important;
 }
+.title-dark:hover .titleText-dark{
+  color: #D5FF3C !important;
+}
+
 
 .title:hover .titleText{
-  color: #D5FF3C !important;
-  text-transform: uppercase;
+  color: #333333 !important;
 }
 
 .content {
@@ -32,7 +42,7 @@
 }
 
 .iconDowndark {
-  fill: #333333;
+  fill: #333333 !important;
 }
 
 

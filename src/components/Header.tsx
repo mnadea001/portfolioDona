@@ -27,24 +27,32 @@ const Header: React.FC = () => {
         <button onClick={toggleDarkMode}>
           {darkMode ? <IconSunFill /> : <IconMoon />}
         </button>
-        <h3 className="header-title">PORTFOLIO MATHILDE NADEAU</h3>
+        <h3>PORTFOLIO MATHILDE NADEAU</h3>
         <IconButton onClick={toggleModal} >
           <IconMenu className={darkMode ? 'menu' : 'menudark'} />
         </IconButton>
       </div>
       <Dialog open={isModalOpen} onClose={toggleModal} fullScreen >
-        <span style={{ display: 'flex', justifyContent: 'center', backgroundColor: '#333333', color:'#fff', paddingTop: '50px' }}>
+        <span
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            backgroundColor: darkMode ? '#333333' : '#C996FF',
+            color: '#fff',
+            paddingTop: '50px',
+          }}
+        >
           <IconButton
             edge="start"
             color="inherit"
             onClick={toggleModal}
             aria-label="close"
           > FERMER
-             <CloseIcon 
-            style={{ paddingRight: '5px' }} />
+            <CloseIcon
+              style={{ paddingRight: '15px' }} />
           </IconButton>
         </span>
-        <DialogContent sx={{ backgroundColor: '#333333' }}>
+        <DialogContent sx={{   backgroundColor: darkMode ? '#333333' : '#C996FF', }}>
           <List style={{ display: 'flex', textAlign: 'center', flexDirection: 'column' }}>
             <Zoom>
               <NavLink to="/" className="selected" onClick={toggleModal}>

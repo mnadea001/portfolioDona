@@ -22,9 +22,9 @@ const AccordionHeader: React.FC<AccordionHeaderProps> = ({ title, imageSrc, dark
       id="panel1a-header"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="title"
+      className={darkMode ? 'title-dark' : 'title'}
     >
-      <Typography className='titleText' style={textStyle}>{title}</Typography>
+      <Typography className={darkMode ? 'titleText-dark' : 'titleText'} style={textStyle}>{title}</Typography>
       {isHovered && (
         <img
           src={imageSrc}
