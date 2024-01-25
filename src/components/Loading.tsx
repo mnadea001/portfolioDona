@@ -26,7 +26,7 @@ return (
     <>
     <div className="loader-container">
       <div className="loader-wrap">
-        <p className="calistoga">Chargement en cours</p>
+        <p className="loader-text">Chargement en cours</p>
         <motion.div
           className="loader-bar"
           variants={LoaderVariant}
@@ -40,7 +40,8 @@ return (
           animate={{ left: "93%" }}
           transition={{ duration: 2.3, ease: "linear" }}
         >
-          <h3>{test && count}%</h3>
+          <p className="loader-text">
+            {test && count}%</p>
         </motion.div>
       </div>
     </div>

@@ -98,10 +98,13 @@ h1  {
   }
 }
 
-
-
-
-.calistoga {
-  font-family: 'Calistoga' !important;
-  font-weight: normal;
+.loader-text {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  text-transform: lowercase;
+  font-family: Inter;
+  color: #D5FF3C !important;
+  text-shadow: -3px -3px #C996FF !important;
+  font-size: 4.5rem !important;
+  font-weight: 900;
 }
