@@ -116,19 +116,19 @@ const ExperiencesSection: React.FC = () => {
     };
   }, []);
 
-  const parallaxEasingFirst = useParallax({
+  const parallaxEasingSecond = useParallax({
     easing: 'easeOutQuad',
-    translateX: isMobile ? [-100, -300] : [300, -100],
+    translateX: isMobile ? [-100, -300] : [300, -150],
     translateY: isMobile ? [0, 50] : [0, 100],
   });
-  const parallaxEasingSecond = useParallax({
+  const parallaxEasingFirst = useParallax({
     easing: "easeOutQuad",
     translateX: isMobile ? [-100, -300] : [300, -250],
     translateY: isMobile ? [0, 50] :[150, 0],
   });
   const parallaxEasingThird = useParallax({
     easing: "easeInQuad",
-    translateX: isMobile ? [-100, -300] : [300, -150],
+    translateX: isMobile ? [-100, -300] : [300, -100],
     translateY: isMobile ? [0, 50] :[100, 0],
     speed: -20
   });
