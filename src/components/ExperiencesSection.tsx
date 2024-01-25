@@ -15,7 +15,7 @@ import wdc2 from '../assets/images/wdc2.png';
 import wdc3 from '../assets/images/wdc3.png';
 
 import { Zoom } from "react-awesome-reveal";
-import { useContext } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { DarkModeContext } from '../providers/DarkModeProvider';
 
 const experiencesData = [
@@ -97,20 +97,39 @@ const ExperiencesSection: React.FC = () => {
 
   };
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    // Initial check on mount
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const parallaxEasingFirst = useParallax({
-    easing: "easeOutQuad",
-    translateX: [300, -100],
-    translateY: [0, 100],
+    easing: 'easeOutQuad',
+    translateX: isMobile ? [-100, -300] : [300, -100],
+    translateY: isMobile ? [0, 50] : [0, 100],
   });
   const parallaxEasingSecond = useParallax({
     easing: "easeOutQuad",
-    translateX: [300, -250],
-    translateY: [150, 0],
+    translateX: isMobile ? [-100, -300] : [300, -250],
+    translateY: isMobile ? [0, 50] :[150, 0],
   });
   const parallaxEasingThird = useParallax({
     easing: "easeInQuad",
-    translateX: [300, -150],
-    translateY: [100, 0],
+    translateX: isMobile ? [-100, -300] : [300, -150],
+    translateY: isMobile ? [0, 50] :[100, 0],
     speed: -20
   });
   const calistogaStyle: React.CSSProperties = {
@@ -118,7 +137,7 @@ const ExperiencesSection: React.FC = () => {
   };
   return (
     <>
-      <div>
+    <div className="experiences-section">
         <Zoom>
           <h1 style={textStyle}>EXPERIENCES</h1>
           <h3 style={calistogaStyle}>en développement</h3>
@@ -144,7 +163,6 @@ const ExperiencesSection: React.FC = () => {
             ))}
           </div>
         </section>
-
       </div>
     </>
   );

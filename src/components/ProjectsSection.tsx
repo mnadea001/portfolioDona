@@ -36,15 +36,12 @@ const projectsData = [
     imageSrc: icon8,
     images: [
       {
-        label: 'Image 1',
         imgPath: runup,
       },
       {
-        label: 'Image 2',
         imgPath: runup2,
       },
       {
-        label: 'Image 2',
         imgPath: runup3,
       }
     ],
@@ -58,11 +55,9 @@ const projectsData = [
     imageSrc: icon8,
     images: [
       {
-        label: 'Image 3',
         imgPath: senio,
       },
       {
-        label: 'Image 4',
         imgPath: senio2,
       },
     ],
@@ -76,18 +71,15 @@ const projectsData = [
     imageSrc: icon8,
     images: [
       {
-        label: 'Image 3',
         imgPath: vdc,
       },
       {
-        label: 'Image 4',
         imgPath: vdc1,
-      },      {
-        label: 'Image 4',
+      },      
+      {
         imgPath: vdc3,
       },
       {
-        label: 'Image 4',
         imgPath: vdc4,
       }
     ],

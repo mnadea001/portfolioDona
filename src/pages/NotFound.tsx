@@ -5,7 +5,6 @@ import { Points, PointMaterial } from '@react-three/drei'
 import * as random from 'maath/random/dist/maath-random.esm'
 import './NotFound.css';
 import Header from '../components/Header'
-import { useNavigate } from "react-router";
 
 function Stars(props: JSX.IntrinsicAttributes) {
     const ref = useRef()
@@ -25,7 +24,6 @@ function Stars(props: JSX.IntrinsicAttributes) {
 
 
 const NotFound: React.FC = () => {
-    const navigate = useNavigate();
 
     function Overlay() {
         return (

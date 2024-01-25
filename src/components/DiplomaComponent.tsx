@@ -35,7 +35,7 @@ const DiplomaComponent: React.FC = () => {
     });
     return (
         <>
-            <section>
+            <section className="diplomes-section">
                 <div className="container-diplom">
                     <Zoom>
                         <h1 style={textStyle}>DIPLOMES</h1>
