@@ -2,10 +2,12 @@
     background-image: linear-gradient(to top, #1501FF, #BEA4C7, #a8eb12);  
 }
 
-.btn {
+.btnVoir {
     margin-top: 30px !important;
     background-color: black !important;
     color: #a8eb12 !important;
     font-weight: bold !important;
     padding: 5px !important;
+    font-family: 'Calistoga' !important;
+    text-transform: lowercase !important;
 }

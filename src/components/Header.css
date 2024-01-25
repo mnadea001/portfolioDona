@@ -16,6 +16,13 @@
 .selected {
   font-size: 3rem;
   font-weight: 100;
-  font-family: 'Calistoga', cursive;
-  color: #C996FF;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, cursive;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+
+.selected:hover {
+  color: #D5FF3C !important;
+  text-shadow: 5px 5px #C996FF;
 }

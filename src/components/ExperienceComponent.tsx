@@ -39,11 +39,11 @@ const ExperienceComponent: React.FC<ExperienceComponentProps> = ({ imgSrc, title
             src={imgSrc}
             alt={`Image for ${title}`}
           />
-          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+          <Typography sx={{ fontSize: 14, fontWeight: 'bold' }} color="text.secondary" gutterBottom>
             {title}
           </Typography>
           <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pl: 1, pb: 1 }}>
-            <Button className='btn' onClick={handleOpenModal}>VOIR</Button>
+            <Button className='btnVoir' onClick={handleOpenModal}>voir</Button>
           </Box>
         </Box>
       </Card>

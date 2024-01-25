@@ -1,48 +1,79 @@
 .accordion {
-    width: 100%;
-  }
+  width: 100%;
+}
 
-  .hovered-image {
-    display: block !important;
-    height: 50px !important;
-    max-height: 300px !important;
-    margin-top: 10px !important;
-  }
+.hovered-image {
+  display: block !important;
+  height: 50px !important;
+  max-height: 300px !important;
+  margin-top: 10px !important;
+}
 
-  .title {
-    text-transform: uppercase;
-  }
-  .title:hover {
-    font-family: 'Calistoga'!important;
-    text-transform: lowercase;
-  }
+.titleText {
+  -webkit-text-stroke: 1px #D5FF3C;
+  color: transparent !important;
+  text-transform: lowercase;
+  font-size: 1.6rem !important;
+}
 
-  .content {
+.title:hover .titleText{
+  color: #D5FF3C !important;
+  text-transform: uppercase;
+}
 
-    font-size: larger;
-  }
+.content {
 
-  .iconDown {
-    fill: #D5FF3C;
-  }
+  font-size: larger;
+}
 
-  .iconDowndark  {
-    fill: #333333;
-  }
+.iconDown {
+  fill: #D5FF3C;
+}
+
+.iconDowndark {
+  fill: #333333;
+}
 
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item {
+  flex: 1;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
   .flex-container {
-    display: flex;
-    flex-direction: column; /* Change to column layout for small screens */
+    flex-direction: row;
   }
-  
-  .flex-item {
-    flex: 1;
-    padding: 10px; /* adjust as needed */
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
-  
-  @media screen and (min-width: 768px) {
-    .flex-container {
-      flex-direction: row; /* Change to row layout for screens wider than 767px */
-    }
+}
+
+.carousel-container {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 50%; /* Adjust as needed */
   }
+}
+
+.accordion-content {
+  background-color: transparent !important;
+  border: none
+}
+
+.accordion-content:hover {
+  background-color: rgba(87, 87, 87, 0.748) !important;
+  border: none
+}

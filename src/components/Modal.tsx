@@ -8,7 +8,7 @@ import IconButton from '@mui/material/IconButton';
 import './Modal.css';
 import { Box } from '@mui/material';
 import { useState } from 'react';
-import Chip from '@mui/material/Chip'; 
+import Chip from '@mui/material/Chip';
 import MobileStepper from '@mui/material/MobileStepper';
 import Button from '@mui/material/Button';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
@@ -37,8 +37,8 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
   const theme = useTheme();
   const [activeStep, setActiveStep] = useState(0);
   const maxSteps = images.length;
-  
-  
+
+
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
@@ -53,7 +53,7 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
 
 
   return (
-    <Dialog open={open} onClose={onClose} maxWidth="md" fullWidth>
+    <Dialog open={open} onClose={onClose} maxWidth="md" fullWidth  >
       <DialogTitle>
         <IconButton
           edge="end"
@@ -64,31 +64,32 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
           <CloseIcon />
         </IconButton>
       </DialogTitle>
-      <DialogContent dividers>
+      <DialogContent dividers className="modal-container">
         <div className="flex-container">
           <div className="flex-item">
-            <DialogTitle>{title}</DialogTitle>
+            <DialogTitle className="modal-title"><strong>{title}</strong></DialogTitle>
             <DialogContentText>
               <i>{context}</i>
-              </DialogContentText>
+            </DialogContentText>
             <DialogContentText>
               <strong>
-              {position}</strong></DialogContentText>
+                {position}</strong></DialogContentText>
             <DialogContentText>
               <small>
-              {date}</small></DialogContentText>
+                {date}</small></DialogContentText>
+            <br></br>
             <DialogContentText>{description}</DialogContentText>
             <br></br>
-            <DialogContentText>Compétences:</DialogContentText>
+            <DialogContentText>
+              <strong>Compétences:</strong></DialogContentText>
             <div>
               {skills.map((skill, index) => (
                 <Chip key={index} label={skill} style={{ margin: '0.5em' }} />
               ))}
             </div>
           </div>
-
           <div className="flex-item">
-          <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+            <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
               <AutoPlaySwipeableViews
                 axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                 index={activeStep}
@@ -106,6 +107,7 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
                           maxWidth: 400,
                           overflow: 'hidden',
                           width: '100%',
+                          borderRadius: '5px'
                         }}
                         src={step.imgPath}
                         alt={step.label}
@@ -117,6 +119,9 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
               <MobileStepper
                 steps={maxSteps}
                 position="static"
+                sx={{
+                  backgroundColor: 'transparent'
+                }}
                 activeStep={activeStep}
                 nextButton={
                   <Button size="small" style={{ color: '#333333' }} onClick={handleNext} disabled={activeStep === maxSteps - 1}>
@@ -125,7 +130,7 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
                   </Button>
                 }
                 backButton={
-                  <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+                  <Button style={{ color: '#333333' }} size="small" onClick={handleBack} disabled={activeStep === 0}>
                     {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
                     Back
                   </Button>

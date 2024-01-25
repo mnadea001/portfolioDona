@@ -79,22 +79,23 @@ const experiencesData = [
         imgPath: wdc3,
       },
     ],
-    title: 'WORDLCAST',
+    title: 'WORLDCAST',
     context: 'Logiciel de surveillance / Monitoring',
     position: 'Développeuse Javascript + Support client',
-    date: 'Septembre 2023 - ',
+    date: 'Septembre 2023 - actuellement',
     description: 'Développement de nouvelles fonctionnalités et support client',
     skills: ['Vue', 'Javascript', 'Node'],
     expImg: thekub,
   }
 ];
+
 const ExperiencesSection: React.FC = () => {
   const darkModeContext = useContext(DarkModeContext);
   const darkMode = darkModeContext?.darkMode || false;
   const textStyle: React.CSSProperties = {
     color: darkMode === true ? '#C996FF' : '#FFE7C2',
 
-};
+  };
 
   const parallaxEasingFirst = useParallax({
     easing: "easeOutQuad",
@@ -117,34 +118,34 @@ const ExperiencesSection: React.FC = () => {
   };
   return (
     <>
-    <div>
-      <Zoom>
-        <h1 style={textStyle}>EXPERIENCES</h1>
-        <h3 style={calistogaStyle} className="calistoga">en Développement</h3>
+      <div>
+        <Zoom>
+          <h1 style={textStyle}>EXPERIENCES</h1>
+          <h3 style={calistogaStyle}>en développement</h3>
 
-      </Zoom>
-      <section className="bg-container">
-        <div className="absolute-text">
+        </Zoom>
+        <section className="bg-container">
+          <div className="absolute-text">
 
-          {experiencesData.map((experience, index) => (
-            <div className="colored-circle img" key={index} ref={index === 0 ? parallaxEasingFirst.ref : index === 1 ? parallaxEasingSecond.ref : parallaxEasingThird.ref}>
-              <ExperienceComponent
-                imgSrc={experience.imgSrc}
-                title={experience.title}
-                description={experience.description}
-                skills={experience.skills}
-                context={experience.context}
-                position={experience.position}
-                date={experience.date}
-                expImg={experience.expImg}
-                images={experience.images}
-              />
-            </div>
-          ))}
-        </div>
-      </section>
+            {experiencesData.map((experience, index) => (
+              <div className="colored-circle img" key={index} ref={index === 0 ? parallaxEasingFirst.ref : index === 1 ? parallaxEasingSecond.ref : parallaxEasingThird.ref}>
+                <ExperienceComponent
+                  imgSrc={experience.imgSrc}
+                  title={experience.title}
+                  description={experience.description}
+                  skills={experience.skills}
+                  context={experience.context}
+                  position={experience.position}
+                  date={experience.date}
+                  expImg={experience.expImg}
+                  images={experience.images}
+                />
+              </div>
+            ))}
+          </div>
+        </section>
 
-    </div>
+      </div>
     </>
   );
 };

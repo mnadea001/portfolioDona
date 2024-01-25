@@ -175,7 +175,7 @@ const ProjectsSection: React.FC = () => {
         <section className="projets">
           <Zoom>
             <h1 style={textStyle}>PROJETS</h1>
-            <h3 style={calistogaStyle} className="calistoga">Principaux projets</h3>
+            <h3 style={calistogaStyle}>principaux projets</h3>
           </Zoom>
           <AccordionList projects={projectsData} />
         </section>

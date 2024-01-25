@@ -1,7 +1,6 @@
-
 .projets-section {
   height: 100%;
-  width:100%;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -12,10 +11,8 @@
 }
 
 
-  .projets-section h1 {
-    padding-bottom: 40px;
-    color: #FFE7C2;
-    text-transform: uppercase;
-    margin-left: 10px;
-  }
-  
+.projets-section h1 {
+  padding-bottom: 40px;
+  color: #FFE7C2;
+  margin-left: 10px;
+}

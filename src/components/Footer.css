@@ -40,11 +40,17 @@
 
 .footer-link {
   color: #D5FF3C !important;
-  font-size: xx-large;
+  font-size: 4rem;
   align-items: center;
+  font-family: 'Calistoga', cursive;
+  text-transform: lowercase;
 }
 
 .footer-hr {
+  border: 1px solid #D5FF3C;
+}
+
+.footer-text {
   color: #D5FF3C !important;
 }
 
@@ -79,6 +85,9 @@
   color: black;
   cursor: pointer;
   position: relative;
+  font-family: Inter;
+  text-transform: lowercase;
+  font-size: 1.4rem;
 }
 
 .btn-up span {
@@ -98,31 +107,47 @@
   fill: #D5FF3C;
 }
 
+.lkd {
+  fill: #D5FF3C;
+}
+
 .footer-links .mail,
 .footer-links .github,
 .footer-links .lkd {
-  visibility: hidden;
+  visibility: visible;
 }
 
-.footer-links li:hover  {
-  font-family: 'Calistoga', cursive;
-  text-transform: lowercase;
+.footer-link:hover  {
+  font-family: Inter;
+  -webkit-text-stroke: 1px rgb(5, 5, 5);
+  color: transparent !important;
 }
 
 .footer-links li:hover .mail {
-  visibility: visible;
+  visibility: hidden;
 }
 
 .footer-links li:hover .github {
-  visibility: visible;
+  visibility: hidden;
 }
 
 .footer-links li:hover .lkd {
-  visibility: visible;
+  visibility: hidden;
 }
 
 .btn-up:hover  {
   font-family: 'Calistoga', cursive;
   text-transform: lowercase;
 }
+
+.ball {
+  background-color: #D5FF3C;
+  width: 40px;
+  height: 40px; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  }
 

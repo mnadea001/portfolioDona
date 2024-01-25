@@ -33,14 +33,15 @@ const Header: React.FC = () => {
         </IconButton>
       </div>
       <Dialog open={isModalOpen} onClose={toggleModal} fullScreen >
-        <span style={{ display: 'flex', justifyContent: 'center', backgroundColor: '#333333', paddingTop: '50px' }}>
+        <span style={{ display: 'flex', justifyContent: 'center', backgroundColor: '#333333', color:'#fff', paddingTop: '50px' }}>
           <IconButton
             edge="start"
             color="inherit"
             onClick={toggleModal}
             aria-label="close"
           > FERMER
-            <CloseIcon />
+             <CloseIcon 
+            style={{ paddingRight: '5px' }} />
           </IconButton>
         </span>
         <DialogContent sx={{ backgroundColor: '#333333' }}>

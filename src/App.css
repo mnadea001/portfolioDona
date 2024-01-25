@@ -20,14 +20,20 @@ body {
 body.dark-mode {
   --background-color: #333333;
   /* Dark mode background color */
-  --text-color: #ffffff;
+  --text-color: #FFE7C2;
   /* Dark mode text color */
 }
 
 h1 {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
+  text-transform: lowercase;
+  font-family: Inter;
+  -webkit-text-stroke: 0.5px #D5FF3C;
+  color: transparent !important;
+  text-shadow: -5px -5px #C996FF;
 }
+
 .card {
   padding: 2em;
 }
@@ -51,7 +57,7 @@ h1 {
 .loader-wrap h3 {
   font-size: 20px;
   font-weight: 100;
-  font-family: "panchang";
+  font-family: "Inter";
 }
 
 .counter {
@@ -61,7 +67,7 @@ h1 {
 
 .loader-container p {
   font-size: 18px;
-  font-family: "panchang", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .loader-bar {

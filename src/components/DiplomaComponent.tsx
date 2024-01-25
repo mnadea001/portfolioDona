@@ -39,7 +39,7 @@ const DiplomaComponent: React.FC = () => {
                 <div className="container-diplom">
                     <Zoom>
                         <h1 style={textStyle}>DIPLOMES</h1>
-                        <h3 style={calistogaStyle} className="calistoga">en Développement</h3>
+                        <h3 style={calistogaStyle}>en développement</h3>
                     </Zoom>
                     <section className="diplom-container">
                         <div className="absolute-diplom">

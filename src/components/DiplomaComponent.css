@@ -7,7 +7,6 @@
 }
 
 h1 {
-  color: #FFE7C2;
   padding-top: 100px;
 }
 
@@ -20,12 +19,7 @@ h1 {
   margin-top: 180px;
 }
 
-.absolute-diplom {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-}
+
 
 .buble-style {
   background-image: url('../assets/buble.svg');
@@ -45,7 +39,7 @@ h1 {
   transform: translate(-50%, -50%);
   font-size: 16px;
   font-weight: bold;
-  color: #1c1d1c;
+  color: #1d1c1c;
   text-align: center;
 }
 
@@ -80,7 +74,8 @@ h1 {
 
 .m-scroll__title p {
   margin: 0;
-  font-size: 40px;
+  font-size: 60px;
+  font-weight: 800;
   color: rgba(255, 255, 255, 1);
   transition: all 2s ease;
 }
@@ -91,7 +86,7 @@ h1 {
 }
 
 .m-scroll__title a:hover {
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 1px rgb(5, 5, 5);
   color: transparent;
 }
 
