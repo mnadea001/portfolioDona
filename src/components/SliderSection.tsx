@@ -34,7 +34,7 @@ const SliderSection: React.FC = () => {
           <h1 style={textStyle}>compétences</h1>
           <h3 style={calistogaStyle}>langages maitrisés</h3>
         </Zoom>
-        <ScrollCarousel>
+        <ScrollCarousel >
           {itemArray.map((item) => (
             <div key={item} className='slide'>
               <img

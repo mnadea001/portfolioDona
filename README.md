@@ -6,6 +6,8 @@ yarn install -> installation des dépendances
 yarn run dev -> lancemenet du serveur de dev
 
 
+yarn cache clean
+
 # Documentation 
 
 React

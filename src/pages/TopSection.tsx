@@ -72,7 +72,6 @@ const TopSection: React.FC = () => {
             <div className="colored-circle second-circle" ref={parallaxEasingLeft.ref} data-text="DIGITAL CREATOR" />
           </div>
         </section>
-
         <SliderSection />
         <ProjectsSection />
         <ExperiencesSection />
