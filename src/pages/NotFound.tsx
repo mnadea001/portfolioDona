@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react'
+import * as THREE from '@react-three';
 import { Canvas, useFrame } from '@react-three/fiber'
 import { JSX } from 'react/jsx-runtime'
 import { Points, PointMaterial } from '@react-three/drei'
@@ -7,19 +8,24 @@ import './NotFound.css';
 import Header from '../components/Header'
 
 function Stars(props: JSX.IntrinsicAttributes) {
-    const ref = useRef()
-    const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.5 }))
+    const ref = useRef<THREE.Points>(); // Explicitly typing ref as React.MutableRefObject<THREE.Points>
+
+    const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.5 }));
+
     useFrame((state, delta) => {
-        ref.current.rotation.x -= delta / 10
-        ref.current.rotation.y -= delta / 15
-    })
+        if (ref.current) {
+            ref.current.rotation.x -= delta / 10;
+            ref.current.rotation.y -= delta / 15;
+        }
+    });
+
     return (
         <group rotation={[0, 0, Math.PI / 4]}>
             <Points ref={ref} positions={sphere} stride={3} frustumCulled={false} {...props}>
                 <PointMaterial transparent color="#ffa0e0" size={0.005} sizeAttenuation={true} depthWrite={false} />
             </Points>
         </group>
-    )
+    );
 }
 
 
