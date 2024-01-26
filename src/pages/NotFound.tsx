@@ -1,14 +1,15 @@
 import { useRef, useState } from 'react'
-import * as THREE from '@react-three';
+import * as THREE from '@react-three/fiber';
 import { Canvas, useFrame } from '@react-three/fiber'
 import { JSX } from 'react/jsx-runtime'
-import { Points, PointMaterial } from '@react-three/drei'
+// import { Points, PointMaterial } from '@react-three/fiber'
 import * as random from 'maath/random/dist/maath-random.esm'
 import './NotFound.css';
 import Header from '../components/Header'
+import { PointMaterial, Points } from '@react-three/drei';
 
 function Stars(props: JSX.IntrinsicAttributes) {
-    const ref = useRef<THREE.Points>(); // Explicitly typing ref as React.MutableRefObject<THREE.Points>
+    const ref = useRef(); // Explicitly typing ref as React.MutableRefObject<THREE.Points>
 
     const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.5 }));
 

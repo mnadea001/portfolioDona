@@ -33,19 +33,19 @@ const TopSection: React.FC = () => {
   }, []);
 
   // Use parallax settings based on screen size
-  const parallaxEasing = useParallax({
+  const parallaxEasing = useParallax<HTMLDivElement>({
     easing: "easeOutQuad",
     translateX: isMobile ? [-300, -100] : [-300, 110],
     translateY: isMobile ? [0, 50] : [0, 100],
   });
 
-  const parallaxEasingLeft = useParallax({
+  const parallaxEasingLeft = useParallax<HTMLDivElement>({
     easing: "easeOutQuad",
     translateX: isMobile ? [-100, -300] : [300, -110],
     translateY: isMobile ? [0, 50] : [0, 100],
   });
 
-  const parallaxEasingTop = useParallax({
+  const parallaxEasingTop = useParallax<HTMLDivElement>({
     easing: "easeOutQuad",
     translateX: isMobile ? [-200, -200] : '',
     translateY: isMobile ? [10, 70] : [30, 100],
