@@ -47,7 +47,7 @@ const TopSection: React.FC = () => {
 
   const parallaxEasingTop = useParallax<HTMLDivElement>({
     easing: "easeOutQuad",
-    translateX: isMobile ? [-200, -200] : '',
+    translateX: isMobile ? [-200, -200] : [0, 0],
     translateY: isMobile ? [10, 70] : [30, 100],
   });
 
@@ -67,7 +67,7 @@ const TopSection: React.FC = () => {
         
         <section className="bg-container">
           <div className="absolute-text">
-            <img ref={parallaxEasingTop.ref} id="homeImg" src={logo} />
+            <img ref={parallaxEasingTop.ref as React.RefObject<HTMLImageElement>} id="homeImg" src={logo} />
             <div className="colored-circle first-circle" ref={parallaxEasing.ref} data-text="CREATIVE DEVELOPER" />
             <div className="colored-circle second-circle" ref={parallaxEasingLeft.ref} data-text="DIGITAL CREATOR" />
           </div>

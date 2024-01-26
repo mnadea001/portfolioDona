@@ -11,7 +11,7 @@ interface AccordionItemProps {
   title: string;
   content: string;
   imageSrc: string;
-  images: { label: string; imgPath: string }[]; // Update this line
+  images: { imgPath: string }[]; // Update this line
   description: string;
   languages: string[]; // Update this line
   number: number;

@@ -8,7 +8,7 @@ import { SxProps, Theme } from '@mui/material/styles';
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 interface ImageCarouselProps {
-  images: { label: string; imgPath: string }[];
+  images: { imgPath: string }[];
   theme: Theme; // Add a proper type for theme
 }
 
@@ -43,7 +43,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, theme }) => {
           enableMouseEvents
         >
           {images.map((step, index) => (
-            <div key={step.label}>
+            <div key={index}>
               {Math.abs(activeStep - index) <= 2 ? (
                 <Box
                   component="img"
