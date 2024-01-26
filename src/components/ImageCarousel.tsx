@@ -4,12 +4,12 @@ import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import { KeyboardArrowRight } from '@mui/icons-material';
-
+import { SxProps, Theme } from '@mui/material/styles';
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 interface ImageCarouselProps {
   images: { label: string; imgPath: string }[];
-  theme: any; // Add a proper type for theme
+  theme: Theme; // Add a proper type for theme
 }
 
 const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, theme }) => {
@@ -28,9 +28,14 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, theme }) => {
     setActiveStep(step);
   };
 
+  const carouselStyle: SxProps = {
+    maxWidth: 400,
+    flexGrow: 1,
+  };
+
   return (
     <div className="flex-item">
-      <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+      <Box sx={carouselStyle}>
         <AutoPlaySwipeableViews
           axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
           index={activeStep}
@@ -51,7 +56,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, theme }) => {
                     borderRadius: '5px'
                   }}
                   src={step.imgPath}
-                  alt={step.label}
+                  alt='image illustrant expérience'
                 />
               ) : null}
             </div>

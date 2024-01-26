@@ -29,7 +29,7 @@ interface ModalProps {
   context: string,
   date: string,
   position: string,
-  images: string[];
+  images: { imgPath: string }[];
 }
 
 const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills, context, date, position, images }) => {
@@ -98,7 +98,7 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
                 enableMouseEvents
               >
                 {images.map((step, index) => (
-                  <div key={step.label}>
+                  <div key={index}>
                     {Math.abs(activeStep - index) <= 2 ? (
                       <Box
                         component="img"
@@ -111,7 +111,7 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
                           borderRadius: '5px'
                         }}
                         src={step.imgPath}
-                        alt={step.label}
+                        alt='image illustrant expérience'
                       />
                     ) : null}
                   </div>

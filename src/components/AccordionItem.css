@@ -45,6 +45,10 @@
   fill: #333333 !important;
 }
 
+.carouselstyle {
+  max-width: 400;
+  flex-grow: 1;
+}
 
 .flex-container {
   display: flex;

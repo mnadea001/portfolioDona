@@ -1,5 +1,6 @@
 import './ExperiencesSection.css';
 import { useParallax } from "react-scroll-parallax";
+
 import ExperienceComponent from './ExperienceComponent';
 import thekub from '../assets/images/THEKUB.png';
 import kub from '../assets/images/kub.png';
@@ -23,15 +24,12 @@ const experiencesData = [
     imgSrc: thekub,
     images: [
       {
-        label: 'Image 3',
         imgPath: kub2,
       },
       {
-        label: 'Image 4',
         imgPath: kub3,
       },
       {
-        label: 'Image 4',
         imgPath: kub4,
       }
     ],
@@ -47,15 +45,12 @@ const experiencesData = [
     imgSrc: elemate,
     images: [
       {
-        label: 'Image 3',
         imgPath: elemate2,
       },
       {
-        label: 'Image 4',
         imgPath: elemate3,
       },
       {
-        label: 'Image 4',
         imgPath: elemate4,
       }
     ],
@@ -71,11 +66,9 @@ const experiencesData = [
     imgSrc: worldcast,
     images: [
       {
-        label: 'Image 3',
         imgPath: wdc2,
       },
       {
-        label: 'Image 4',
         imgPath: wdc3,
       },
     ],
@@ -116,17 +109,17 @@ const ExperiencesSection: React.FC = () => {
     };
   }, []);
 
-  const parallaxEasingSecond = useParallax({
+  const parallaxEasingSecond = useParallax<HTMLDivElement>({
     easing: 'easeOutQuad',
     translateX: isMobile ? [-100, -300] : [300, -150],
     translateY: isMobile ? [0, 50] : [0, 100],
   });
-  const parallaxEasingFirst = useParallax({
+  const parallaxEasingFirst = useParallax<HTMLDivElement>({
     easing: "easeOutQuad",
     translateX: isMobile ? [-100, -300] : [300, -250],
     translateY: isMobile ? [0, 50] :[150, 0],
   });
-  const parallaxEasingThird = useParallax({
+  const parallaxEasingThird = useParallax<HTMLDivElement>({
     easing: "easeInQuad",
     translateX: isMobile ? [-100, -300] : [300, -100],
     translateY: isMobile ? [0, 50] :[100, 0],
