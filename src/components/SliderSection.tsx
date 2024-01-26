@@ -44,7 +44,7 @@ const SliderSection: React.FC = () => {
             <div key={item} className='slide'>
               <img
                 src={iconArray[item - 1]}
-                alt={`Icon ${item}`}
+                alt='image illustrant compétences'
                 className='slide-image'
               />
             </div>

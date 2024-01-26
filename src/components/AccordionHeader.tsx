@@ -28,7 +28,7 @@ const AccordionHeader: React.FC<AccordionHeaderProps> = ({ title, imageSrc, dark
       {isHovered && (
         <img
           src={imageSrc}
-          alt={`Image for ${title}`}
+          alt={`Image pour ${title}`}
           className="hovered-image"
           style={{ maxWidth: '100%', height: 'auto', maxHeight: '350px', marginTop: '10px', marginLeft: 'auto' }}
         />
