@@ -38,7 +38,7 @@ const experiencesData = [
     position: 'Développeuse web',
     date: 'Janvier - Septembre 2022',
     description: 'Développement et maintenance de sites pour des clients',
-    skills: ['SCSS', 'Javascript', 'WordPress', 'PrestaShop', 'PHP'],
+    skills: ['SCSS', 'Javascript', 'WordPress', 'PrestaShop', 'PHP', 'AWS', 'Filezila'],
     expImg: kub,
   },
   {
@@ -59,7 +59,7 @@ const experiencesData = [
     position: 'Développeuse FulStack Symfony',
     date: 'Septembre 2022 - Septembre 2023',
     description: 'Développement de nouvelles fonctionnalités et refactorisation',
-    skills: ['Symfony', 'API', 'Docker'],
+    skills: ['Symfony', 'API', 'Docker', 'Tests', 'Git'],
     expImg: thekub,
   },
   {
@@ -77,7 +77,7 @@ const experiencesData = [
     position: 'Développeuse Javascript + Support client',
     date: 'Septembre 2023 - actuellement',
     description: 'Développement de nouvelles fonctionnalités et support client',
-    skills: ['Vue', 'Javascript', 'Node'],
+    skills: ['Vue', 'Javascript', 'Node', 'Git'],
     expImg: thekub,
   }
 ];

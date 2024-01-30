@@ -31,7 +31,7 @@ const projectsData = [
     title: 'Run Up Asso',
     content: 'Projet Symfony en binome',
     description: 'Fonctionnalités: inscription/ connexion, CRUD profil associations, commentaires, favoris',
-    languages: ['Symfony'],
+    languages: ['Symfony', 'SQL'],
     number: 2,
     imageSrc: icon8,
     images: [
@@ -50,7 +50,7 @@ const projectsData = [
     title: 'Séniorissime',
     content: 'Projet Symfony + API OpenWeather',
     description: 'Affichage des activités en fonction de la météo d\'une ville',
-    languages: ['Symfony', 'API', 'OpenWeather', 'Heroku', 'Adobe XD'],
+    languages: ['Symfony', 'API', 'OpenWeather', 'Heroku', 'Adobe XD', 'SQL'],
     number: 3,
     imageSrc: icon8,
     images: [
@@ -66,7 +66,7 @@ const projectsData = [
     title: 'Vinyl du Coin',
     content: 'Projet Symfony en autonomie',
     description: 'Fonctionnalités: inscription/ connexion, CRUD profil associations, commentaires, favoris, messagerie, filtres, pagination, barre de recherche, panel administrateur',
-    languages: ['Symfony'],
+    languages: ['Symfony', 'SQL'],
     number: 1,
     imageSrc: icon8,
     images: [
@@ -88,7 +88,7 @@ const projectsData = [
     title: 'Chinese Year',
     content: 'Project Java Spring en autonomie',
     description: 'Fonctionnalités: affichage de proverbes aléatoires, définition du signe chinois en fonction de l\'age, réduction en fonction du prix du panier, liste des articles, panier d\'achat',
-    languages: ['Java Spring', 'ThymeLeaf'],
+    languages: ['Java Spring', 'ThymeLeaf', 'SQL'],
     number: 1,
     imageSrc: icon4,
     images: [

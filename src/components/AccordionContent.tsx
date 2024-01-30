@@ -14,8 +14,7 @@ const AccordionContent: React.FC<AccordionContentProps> = ({ content, descriptio
     const darkMode = darkModeContext?.darkMode || false;
     const textStyle: React.CSSProperties = {
         color: darkMode === true ? '#D5FF3C' : '#333333',
-        fontWeight: 'bold',
-        textTransform: 'uppercase'
+        margin: '0.5em'
     };
 
     return (
@@ -23,18 +22,19 @@ const AccordionContent: React.FC<AccordionContentProps> = ({ content, descriptio
             <AccordionDetails>
                 <div className="content-container flex-container">
                     <div className="flex-item">
-                        <Typography style={textStyle}>{content}</Typography>
+                        <Typography style={textStyle}><strong>{content}</strong></Typography>
                         <br></br>
-                        <Typography>{description}</Typography>
+                        <Typography style={textStyle}>{description}</Typography>
                         <br></br>
-                        <Typography>Taille équipe: {number}</Typography>
+                        <Typography style={textStyle}>
+                        <strong>Taille équipe:</strong> {number}</Typography>
                         <br></br>
-                        <Typography>
+                        <Typography style={textStyle}>
                             <strong>Compétences:</strong>
                         </Typography>
                         <div>
                             {languages.map((language, index) => (
-                                <Chip key={index} label={language} style={{ margin: '0.5em' }} />
+                                <Chip key={index} label={language} style={textStyle} />
                             ))}
                         </div>
                     </div>

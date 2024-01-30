@@ -5,6 +5,8 @@ import { autoPlay } from 'react-swipeable-views-utils';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import { KeyboardArrowRight } from '@mui/icons-material';
 import { SxProps, Theme } from '@mui/material/styles';
+import { DarkModeContext } from '../providers/DarkModeProvider';
+import { useContext } from 'react';
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 interface ImageCarouselProps {
@@ -15,6 +17,13 @@ interface ImageCarouselProps {
 const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, theme }) => {
   const [activeStep, setActiveStep] = useState(0);
   const maxSteps = images.length;
+
+  const darkModeContext = useContext(DarkModeContext);
+  const darkMode = darkModeContext?.darkMode || false;
+  const textStyle: React.CSSProperties = {
+      color: darkMode === true ? '#D5FF3C' : '#333333'
+  };
+
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -70,13 +79,13 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, theme }) => {
           }}
           activeStep={activeStep}
           nextButton={
-            <Button size="small" style={{ color: '#333333' }}  onClick={handleNext} disabled={activeStep === maxSteps - 1}>
+            <Button size="small" style={textStyle}  onClick={handleNext} disabled={activeStep === maxSteps - 1}>
               Suivant
               {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
             </Button>
           }
           backButton={
-            <Button size="small" style={{ color: '#333333' }} onClick={handleBack} disabled={activeStep === 0}>
+            <Button size="small" style={textStyle} onClick={handleBack} disabled={activeStep === 0}>
               {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
               Préc.
             </Button>
