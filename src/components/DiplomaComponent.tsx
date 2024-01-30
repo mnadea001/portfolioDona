@@ -15,28 +15,25 @@ const DiplomaComponent: React.FC = () => {
     };
 
     const BtsDev = useParallax<HTMLDivElement>({
-        // easing: "easeOutQuad",
-        // translateX: [-100, 100],
-        // translateY: [-30, -50],
-        // rotate: [-150, 50]
         easing: "easeOutQuad",
-        translateX: [-50, 50], // Adjust for smaller screens
-        translateY: [-15, -25], // Adjust for smaller screens
-        rotate: [-75, 25],
+        translateX: [-100, 100],
+        translateY: [-30, -50],
+        rotate: [-150, 50]
     });
 
     const LicenceDev = useParallax<HTMLDivElement>({
         easing: "easeOutQuad",
-        translateX: [50, -50],
-        translateY: [25, 15],
+        translateX: [100, -100],
+        translateY: [50, 30],
         rotate: [-150, 50]
     });
 
     const MasterDev = useParallax<HTMLDivElement>({
         easing: "easeOutQuad",
-        translateY: [25, 50],
+        translateY: [70, 100],
         rotate: [-150, 50]
     });
+    
     return (
         <>
             <section className="diplomes-section">
