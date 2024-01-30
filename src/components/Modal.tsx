@@ -1,4 +1,3 @@
-
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
@@ -37,6 +36,10 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
   const [activeStep, setActiveStep] = useState(0);
   const maxSteps = images.length;
 
+  const contentStyle: React.CSSProperties = {
+      color: '#FFE7C2',
+      margin: '0.5em'
+  };
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -54,7 +57,7 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
   return (
     <Dialog open={open} onClose={onClose} maxWidth="md" fullWidth  >
       <div className="dialog-item">
-      <DialogTitle>
+      <DialogTitle style={contentStyle}>
         <IconButton
           edge="end"
           color="inherit"
@@ -69,23 +72,23 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
         <div className="flex-container">
           <div className="flex-item">
             <DialogTitle className="modal-title"><strong>{title}</strong></DialogTitle>
-            <DialogContentText>
+            <DialogContentText style={contentStyle} >
               <i>{context}</i>
             </DialogContentText>
-            <DialogContentText>
+            <DialogContentText style={contentStyle} >
               <strong>
                 {position}</strong></DialogContentText>
-            <DialogContentText>
+            <DialogContentText style={contentStyle} >
               <small>
                 {date}</small></DialogContentText>
             <br></br>
-            <DialogContentText>{description}</DialogContentText>
+            <DialogContentText style={contentStyle}>{description}</DialogContentText>
             <br></br>
-            <DialogContentText>
+            <DialogContentText style={contentStyle}>
               <strong>Compétences:</strong></DialogContentText>
             <div>
               {skills.map((skill, index) => (
-                <Chip key={index} label={skill} style={{ margin: '0.5em' }} />
+                <Chip key={index} label={skill} style={contentStyle} />
               ))}
             </div>
           </div>
@@ -125,13 +128,13 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
                 }}
                 activeStep={activeStep}
                 nextButton={
-                  <Button style={{ color: '#000000' }} onClick={handleNext} disabled={activeStep === maxSteps - 1}>
+                  <Button style={contentStyle} onClick={handleNext} disabled={activeStep === maxSteps - 1}>
                     Suivant
                     {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
                   </Button>
                 }
                 backButton={
-                  <Button style={{ color: '#000000' }} onClick={handleBack} disabled={activeStep === 0}>
+                  <Button style={contentStyle} onClick={handleBack} disabled={activeStep === 0}>
                     {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
                     Préc.
                   </Button>

@@ -7,6 +7,7 @@ import { KeyboardArrowRight } from '@mui/icons-material';
 import { SxProps, Theme } from '@mui/material/styles';
 import { DarkModeContext } from '../providers/DarkModeProvider';
 import { useContext } from 'react';
+
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 interface ImageCarouselProps {
