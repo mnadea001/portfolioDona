@@ -1,5 +1,5 @@
 import './ExperiencesSection.css';
-import { useParallax } from "react-scroll-parallax";
+
 
 import ExperienceComponent from './ExperienceComponent';
 import thekub from '../assets/images/THEKUB.png';
@@ -82,7 +82,7 @@ const experiencesData = [
   }
 ];
 
-const ExperiencesSection: React.FC = () => {
+const ExperiencesMobile: React.FC = () => {
   const darkModeContext = useContext(DarkModeContext);
   const darkMode = darkModeContext?.darkMode || false;
   const textStyle: React.CSSProperties = {
@@ -90,22 +90,7 @@ const ExperiencesSection: React.FC = () => {
 
   };
 
-  const parallaxEasingSecond = useParallax<HTMLDivElement>({
-    easing: 'easeOutQuad',
-    translateX: [300, -150],
-    translateY: [0, 100],
-  });
-  const parallaxEasingFirst = useParallax<HTMLDivElement>({
-    easing: "easeOutQuad",
-    translateX:  [300, -250],
-    translateY: [150, 0],
-  });
-  const parallaxEasingThird = useParallax<HTMLDivElement>({
-    easing: "easeInQuad",
-    translateX:  [300, -100],
-    translateY: [100, 0],
-    speed: -20
-  });
+
   const calistogaStyle: React.CSSProperties = {
     color: darkMode === true ? '#FFE7C2' : '#333333',
   };
@@ -121,7 +106,7 @@ const ExperiencesSection: React.FC = () => {
           <div className="absolute-text">
 
             {experiencesData.map((experience, index) => (
-              <div className="colored-circle img" key={index} ref={index === 0 ? parallaxEasingFirst.ref : index === 1 ? parallaxEasingSecond.ref : parallaxEasingThird.ref}>
+              <div className="colored-circle img" key={index} >
                 <ExperienceComponent
                   imgSrc={experience.imgSrc}
                   title={experience.title}
@@ -143,4 +128,4 @@ const ExperiencesSection: React.FC = () => {
 };
 
 
-export default ExperiencesSection;
+export default ExperiencesMobile;

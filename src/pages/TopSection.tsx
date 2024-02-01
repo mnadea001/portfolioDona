@@ -8,6 +8,7 @@ import SliderSection from '../components/SliderSection';
 import { DarkModeContext } from '../providers/DarkModeProvider';
 import { useEffect, useState, useContext } from 'react';
 import DiplomaMobileComponent from '../components/DiplomaMobileComponent';
+import ExperiencesMobile from '../components/ExperiencesMobile';
 
 const TopSection: React.FC = () => {
   const darkModeContext = useContext(DarkModeContext);
@@ -77,7 +78,7 @@ const TopSection: React.FC = () => {
         <>
           <SliderSection />
           <ProjectsSection />
-          <ExperiencesSection />
+          <ExperiencesMobile />
           <DiplomaMobileComponent />
         </>
       ) : (
