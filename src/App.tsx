@@ -12,34 +12,41 @@ import SliderSection from './components/SliderSection'
 import NotFound from './pages/NotFound'
 import DarkModeProvider from './providers/DarkModeProvider';
 import DiplomaComponent from './components/DiplomaComponent';
+import DiplomaMobileComponent from './components/DiplomaMobileComponent'; // import your mobile component
+
 
 function App() {
 
   const [loading, setLoding] = useState(true);
-
+ 
   useEffect(() => {
     setTimeout(() => {
       setLoding(false);
     }, 2500);
   }, []);
+
+
+
+
   return (
     <>
-        <DarkModeProvider>
-          <ParallaxProvider>
-            <Routes>
-              <Route path='/' element={<Header />}>
-                {/* <Route index element={<TopSection />} /> */}
-                <Route index element={loading ? <Loading /> : <TopSection />} />
-                <Route path="/slider" element={<SliderSection />} />
-                <Route path="*" element={<NotFound />} />
-                <Route path="/projects" element={<ProjectsSection />} />
-                <Route path="/experiences" element={<ExperiencesSection />} />
-                <Route path="/diplomes" element={<DiplomaComponent />} />
-              </Route >
-            </Routes>
-            <Footer />
-          </ParallaxProvider>
-        </DarkModeProvider>
+      <DarkModeProvider>
+        <ParallaxProvider>
+          <Routes>
+            <Route path='/' element={<Header />}>
+              <Route index element={loading ? <Loading /> : <TopSection />} />
+              <Route path="/slider" element={<SliderSection />} />
+              <Route path="*" element={<NotFound />} />
+              <Route path="/projects" element={<ProjectsSection />} />
+              <Route path="/experiences" element={<ExperiencesSection />} />
+              <Route path="/diplomes" element={<DiplomaComponent />} />
+              <Route path="/diplomes" element={<DiplomaComponent />} />
+              <Route path="/diplomes_mobile" element={<DiplomaMobileComponent />} />
+            </Route >
+          </Routes>
+          <Footer />
+        </ParallaxProvider>
+      </DarkModeProvider>
     </>
   )
 }

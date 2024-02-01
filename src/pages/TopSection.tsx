@@ -7,12 +7,13 @@ import DiplomaComponent from '../components/DiplomaComponent';
 import SliderSection from '../components/SliderSection';
 import { DarkModeContext } from '../providers/DarkModeProvider';
 import { useEffect, useState, useContext } from 'react';
+import DiplomaMobileComponent from '../components/DiplomaMobileComponent';
 
 const TopSection: React.FC = () => {
   const darkModeContext = useContext(DarkModeContext);
   const darkMode = darkModeContext?.darkMode || false;
 
-  const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 768); 
 
   useEffect(() => {
     // Check if the screen width is below a certain threshold for mobile
@@ -72,10 +73,21 @@ const TopSection: React.FC = () => {
             <div className="colored-circle second-circle" ref={parallaxEasingLeft.ref} data-text="DIGITAL CREATOR" />
           </div>
         </section>
-        <SliderSection />
-        <ProjectsSection />
-        <ExperiencesSection />
-        <DiplomaComponent />
+        {isMobile ? (
+        <>
+          <SliderSection />
+          <ProjectsSection />
+          <ExperiencesSection />
+          <DiplomaMobileComponent />
+        </>
+      ) : (
+        <>
+          <SliderSection />
+          <ProjectsSection />
+          <ExperiencesSection />
+          <DiplomaComponent />
+        </>
+      )}
       </div>
 
   );
