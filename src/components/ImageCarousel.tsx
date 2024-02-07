@@ -41,6 +41,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, theme }) => {
   const carouselStyle: SxProps = {
     maxWidth: 400,
     flexGrow: 1,
+    alignSelf: 'center'
   };
 
   return (

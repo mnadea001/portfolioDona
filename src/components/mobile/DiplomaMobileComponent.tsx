@@ -13,8 +13,6 @@ const DiplomaComponent: React.FC = () => {
         color: darkMode === true ? '#FFE7C2' : '#333333',
     };
 
-
-
     return (
         <>
             <section className="diplome-section">
@@ -23,10 +21,7 @@ const DiplomaComponent: React.FC = () => {
                         <h1 style={textStyle}>DIPLOMES</h1>
                         <h3 style={calistogaStyle}>en développement</h3>
                     </Zoom>
-    
-
                 </div>
-
             </section>
         </>
     );
