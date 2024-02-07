@@ -102,7 +102,7 @@ const ExperiencesMobile: React.FC = () => {
         <section className="bg-content-mobile">
           <div className="experience-container">
             {experiencesData.map((experience, index) => (
-              <div className="colored-circle img" key={index} >
+              <div className="experience-card" key={index} >
                 <ExperienceComponent
                   imgSrc={experience.imgSrc}
                   title={experience.title}

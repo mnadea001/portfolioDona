@@ -29,3 +29,6 @@
     position: relative;
     overflow: hidden;
 }
+.experience-card{
+    height: 100%;
+}
