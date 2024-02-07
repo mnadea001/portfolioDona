@@ -12,11 +12,8 @@
 }
 
 .bg-content {
-    /* position: relative;
-    height: 100vh;
-    top: 40%; 
-    left: 40%;  */
-    margin-bottom: 100px;
+display: flex;
+flex-direction: column;
   }
   
 .absolute-content {
