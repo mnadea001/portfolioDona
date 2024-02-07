@@ -101,7 +101,14 @@ const ExperiencesMobile: React.FC = () => {
         </Zoom>
         <section className="bg-content">
           <div className="experience-container">
-            {experiencesData.map((experience, index) => (
+            <p>Test</p>
+            <p>Test</p>
+
+            <p>Test</p>
+
+            <p>Test</p>
+
+            {/* {experiencesData.map((experience, index) => (
               <div className="colored-circle img" key={index} >
                 <ExperienceComponent
                   imgSrc={experience.imgSrc}
@@ -115,7 +122,7 @@ const ExperiencesMobile: React.FC = () => {
                   images={experience.images}
                 />
               </div>
-            ))}
+            ))} */}
           </div>
         </section>
       </div>
