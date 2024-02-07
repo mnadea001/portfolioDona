@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import ProjectsSection from './components/ProjectsSection'
 import ExperiencesSection from './components/ExperiencesSection'
 import Loading from './components/Loading'
-import TopSection from './pages/TopSection'
+import Home from './pages/Home'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -34,7 +34,7 @@ function App() {
         <ParallaxProvider>
           <Routes>
             <Route path='/' element={<Header />}>
-              <Route index element={loading ? <Loading /> : <TopSection />} />
+              <Route index element={loading ? <Loading /> : <Home />} />
               <Route path="/slider" element={<SliderSection />} />
               <Route path="*" element={<NotFound />} />
               <Route path="/projects" element={<ProjectsSection />} />
