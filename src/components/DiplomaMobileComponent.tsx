@@ -1,4 +1,4 @@
-import './DiplomaComponent.css';
+import './DiplomaMobile.css';
 import { Zoom } from "react-awesome-reveal";
 import { useContext } from 'react';
 import { DarkModeContext } from '../providers/DarkModeProvider';

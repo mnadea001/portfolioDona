@@ -1,0 +1,101 @@
+.diplomes-section {
+  width : 100vw;
+  height: 100vh;
+}
+
+.container-diplom {
+  margin-top: 80px;
+  width : 100vw;
+}
+
+.section {
+  min-height: 500px;
+}
+
+h1 {
+  padding-top: 100px;
+}
+
+
+.diplom-container {
+  position: relative;
+  height: 100vh;
+  top: 0%;
+  left: 40%;
+  margin-top: 180px;
+}
+
+
+
+.buble-style {
+  background-image: url('../assets/buble.svg');
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+
+
+.buble-style::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: bold;
+  color: #1d1c1c;
+  text-align: center;
+}
+
+.m-scroll {
+  display: flex;
+  position: relative;
+  height: 100px;
+  margin: auto;
+  background-color: #D5FF3C;
+  overflow: hidden;
+  z-index: 1;
+  transform: rotate(-2deg);
+}
+
+.m-scroll__title {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  transition: all 1s ease;
+}
+
+.m-scroll__title > div {
+  display: flex;
+  animation: scrollText 8s infinite linear;
+}
+
+.m-scroll__title p {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 800;
+  color: #333333;
+  transition: all 2s ease;
+}
+
+.m-scroll__title a {
+  -webkit-text-stroke: 1px #333333;
+  color: transparent;
+}
+
+.m-scroll__title a:hover {
+  color: #333333;
+}
+
+@keyframes scrollText {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-50%); }
+}
