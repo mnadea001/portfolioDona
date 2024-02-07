@@ -11,16 +11,13 @@
     text-transform: lowercase !important;
 }
 
-
-
 .experience-container {
     display: flex;
-    position: relative;
     flex-direction: column;
     align-items: center; /* Optional: Center the columns horizontally */
-  }
+}
 
-.bg-content{
-    position: absolute;
+.bg-content {
+    /* Remove the absolute positioning */
     height: 100vh;
 }
