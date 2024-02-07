@@ -17,8 +17,8 @@ const DiplomaComponent: React.FC = () => {
 
     return (
         <>
-            <section className="diplomes-section">
-                <div className="container-diplom">
+            <section className="diplome-section">
+                <div className="container-diploms">
                     <Zoom>
                         <h1 style={textStyle}>DIPLOMES</h1>
                         <h3 style={calistogaStyle}>en développement</h3>
