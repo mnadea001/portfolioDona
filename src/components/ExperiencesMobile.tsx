@@ -99,8 +99,8 @@ const ExperiencesMobile: React.FC = () => {
           <h3 style={calistogaStyle}>en développement</h3>
 
         </Zoom>
-        <section className="bg-container">
-          <div className="absolute-text">
+        <section className="bg-content">
+          <div className="absolute-content">
             {experiencesData.map((experience, index) => (
               <div className="colored-circle img" key={index} >
                 <ExperienceComponent
