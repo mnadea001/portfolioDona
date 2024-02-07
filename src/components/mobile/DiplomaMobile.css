@@ -1,7 +1,7 @@
 .diplome-section {
-  width : 100vw;
+  width: 100vw;
   height: 100vh !important;
-  position: relative; 
+  position: relative;
 }
 
 .container-diploms {
@@ -10,26 +10,13 @@
   position: relative;
   display: flex;
   flex-direction: column; /* Change to column */
+  align-items: center; /* Center the content horizontally */
 }
-
-.section {
-  min-height: 500px;
-}
-
-h1 {
-  padding-top: 100px;
-}
-
 
 .diplom-container {
   position: relative;
-  height: 100vh;
-  top: 0%;
-  left: 40%;
-  margin-top: 180px;
+  margin-top: 20px; /* Adjust the margin to create space between the heading and bubbles */
 }
-
-
 
 .buble-style {
   background-image: url('../assets/buble.svg');
@@ -37,9 +24,9 @@ h1 {
   width: 200px;
   background-size: cover;
   background-position: center;
-  position: absolute;
+  position: relative; /* Change to relative */
+  margin-bottom: 20px; /* Adjust the margin to create space between the bubbles */
 }
-
 
 .buble-style::after {
   content: attr(data-text);
@@ -52,7 +39,3 @@ h1 {
   color: #1d1c1c;
   text-align: center;
 }
-
-
-
-
