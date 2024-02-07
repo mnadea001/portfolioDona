@@ -1,6 +1,3 @@
-import './ExperiencesSection.css';
-
-
 import ExperienceComponent from './ExperienceComponent';
 import thekub from '../assets/images/THEKUB.png';
 import kub from '../assets/images/kub.png';
