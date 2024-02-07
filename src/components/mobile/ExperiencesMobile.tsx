@@ -93,13 +93,13 @@ const ExperiencesMobile: React.FC = () => {
   };
   return (
     <>
-    <div className="experiences-section">
+    <div className="experiences-section-mobile">
         <Zoom>
           <h1 style={textStyle}>EXPERIENCES</h1>
           <h3 style={calistogaStyle}>en développement</h3>
 
         </Zoom>
-        <section className="bg-content">
+        <section className="bg-content-mobile">
           <div className="experience-container">
             {experiencesData.map((experience, index) => (
               <div className="colored-circle img" key={index} >
