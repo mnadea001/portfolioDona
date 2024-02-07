@@ -15,13 +15,12 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    align-items: center; 
+    align-items: center; /* Optional: Center the columns horizontally */
   }
 
-.bg-content-mobile{
-    position: relative;
-    justify-content: center !important;
-    margin-top: 20px;
+.bg-content{
+    position: absolute;
+    height: 100vh;
 }
 
 .experiences-section-mobile {
