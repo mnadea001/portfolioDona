@@ -1,6 +1,6 @@
 .diplome-section {
   width: 100vw;
-  min-height: 100vh; /* Change height to min-height */
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -20,7 +20,7 @@
   margin-top: 20px;
 }
 
-.buble-style {
+.bubble-style {
   background-image: url('../assets/buble.svg');
   height: 200px;
   width: 200px;
@@ -30,7 +30,7 @@
   margin-bottom: 20px;
 }
 
-.buble-style::after {
+.bubble-style::after {
   content: attr(data-text);
   position: absolute;
   top: 50%;

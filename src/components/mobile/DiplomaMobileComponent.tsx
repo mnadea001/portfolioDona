@@ -23,9 +23,9 @@ const DiplomaComponent: React.FC = () => {
                     </Zoom>
                     <section className="diplom-container">
                         <div className="absolute-diplom">
-                            <div className="buble-style" data-text="TITRE PRO DEV WEB ET MOBILE (2022)" />
-                            <div className="buble-style" data-text="LICENCE CONCEPTEUR DEV. D'APP (2023)" />
-                            <div className="buble-style" data-text="MASTER EXPERT DEV WEB (2025)" />
+                            <div className="bubble-style" data-text="TITRE PRO DEV WEB ET MOBILE (2022)" />
+                            <div className="bubble-style" data-text="LICENCE CONCEPTEUR DEV. D'APP (2023)" />
+                            <div className="bubble-style" data-text="MASTER EXPERT DEV WEB (2025)" />
                         </div>
                     </section>
                 </div>
