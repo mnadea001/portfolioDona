@@ -15,10 +15,18 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    align-items: center; /* Optional: Center the columns horizontally */
+    align-items: center; 
   }
 
-.bg-content{
-    position: absolute;
-    height: 100vh;
+.bg-content-mobile{
+    position: relative;
+    justify-content: center !important;
+    margin-top: 20px;
+}
+
+.experiences-section-mobile {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
 }

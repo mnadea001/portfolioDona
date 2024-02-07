@@ -22,11 +22,9 @@ const DiplomaComponent: React.FC = () => {
                         <h3 style={calistogaStyle}>en développement</h3>
                     </Zoom>
                     <section className="diploms-container">
-                        <div className="absolute-diploms">
                             <div className="bubble-style" data-text="TITRE PRO DEV WEB ET MOBILE (2022)" />
                             <div className="bubble-style" data-text="LICENCE CONCEPTEUR DEV. D'APP (2023)" />
                             <div className="bubble-style" data-text="MASTER EXPERT DEV WEB (2025)" />
-                        </div>
                     </section>
                 </div>
             </section>
