@@ -7,7 +7,7 @@ const TopSectionMobile: React.FC = () => {
 
     const parallaxEasingTop = useParallax<HTMLDivElement>({
         easing: "easeOutQuad",
-        translateX: [-200, -200] ,
+        translateX: [0, 0] ,
         translateY: [70, 10] ,
         // translateX: isMobile ? [-200, -200] : [0, 0],
         // translateY: isMobile ? [10, 70] : [30, 100],
