@@ -57,6 +57,7 @@ h1 {
   overflow: hidden;
   z-index: 1;
   transform: rotate(-2deg);
+  margin-bottom: 50px;
 }
 
 .m-scroll__title {
