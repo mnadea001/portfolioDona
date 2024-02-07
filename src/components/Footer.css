@@ -7,6 +7,8 @@
   border-radius: 20px;
   margin-top: 100px;
   position: relative;
+  border: 1px solid;
+  box-shadow: 5px 10px #D5FF3C;
 }
 
 .footer-content {
@@ -92,6 +94,11 @@
   font-family: Inter;
   text-transform: lowercase;
   font-size: 1.4rem;
+}
+.btn-up:hover {
+  border: 1px solid;
+  border-color: #1501FF;
+  box-shadow: 5px 10px #1501FF;
 }
 
 .btn-up span {

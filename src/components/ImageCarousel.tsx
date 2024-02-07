@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Box, MobileStepper, Button } from '@mui/material';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import { KeyboardArrowRight } from '@mui/icons-material';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { SxProps, Theme } from '@mui/material/styles';
 import { DarkModeContext } from '../providers/DarkModeProvider';
 import { useContext } from 'react';
@@ -63,7 +63,8 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, theme }) => {
                     maxWidth: 400,
                     overflow: 'hidden',
                     width: '100%',
-                    borderRadius: '5px'
+                    borderRadius: '5px',
+                    objectFit: 'contain'
                   }}
                   src={step.imgPath}
                   alt='image illustrant expérience'
@@ -73,25 +74,23 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, theme }) => {
           ))}
         </AutoPlaySwipeableViews>
         <MobileStepper
-          steps={maxSteps}
-          position="static"
-          sx={{
-            backgroundColor: 'transparent'
-          }}
-          activeStep={activeStep}
-          nextButton={
-            <Button size="small" style={textStyle}  onClick={handleNext} disabled={activeStep === maxSteps - 1}>
-              Suivant
-              {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
-            </Button>
-          }
-          backButton={
-            <Button size="small" style={textStyle} onClick={handleBack} disabled={activeStep === 0}>
-              {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
-              Préc.
-            </Button>
-          }
-        />
+                steps={maxSteps}
+                position="static"
+                sx={{
+                  backgroundColor: 'transparent'
+                }}
+                activeStep={activeStep}
+                nextButton={
+                  <Button style={textStyle} onClick={handleNext} disabled={activeStep === maxSteps - 1}>
+                    {theme.direction === 'rtl' ? <ArrowBackIcon /> : <ArrowForwardIcon />}
+                  </Button>
+                }
+                backButton={
+                  <Button style={textStyle} onClick={handleBack} disabled={activeStep === 0}>
+                    {theme.direction === 'rtl' ? <ArrowForwardIcon /> : <ArrowBackIcon />}
+                  </Button>
+                }
+              />
       </Box>
     </div>
   );

@@ -112,7 +112,8 @@ h1  {
 }
 
 h2 {
-  background: linear-gradient(30deg, #C996FF, #D5FF3C);
+  background: linear-gradient(30deg, #333333, #D5FF3C);
+  padding: 0 !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

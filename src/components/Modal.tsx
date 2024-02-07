@@ -10,8 +10,8 @@ import { useState } from 'react';
 import Chip from '@mui/material/Chip';
 import MobileStepper from '@mui/material/MobileStepper';
 import Button from '@mui/material/Button';
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import { useTheme } from '@mui/material/styles';
@@ -37,7 +37,7 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
   const maxSteps = images.length;
 
   const contentStyle: React.CSSProperties = {
-      color: '#FFE7C2',
+      color: '#333333',
       margin: '0.5em'
   };
 
@@ -111,7 +111,8 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
                           maxWidth: 400,
                           overflow: 'hidden',
                           width: '100%',
-                          borderRadius: '5px'
+                          borderRadius: '15px',
+                          objectFit: 'contain'
                         }}
                         src={step.imgPath}
                         alt='image illustrant expérience'
@@ -129,14 +130,12 @@ const Modal: React.FC<ModalProps> = ({ open, onClose, title, description, skills
                 activeStep={activeStep}
                 nextButton={
                   <Button style={contentStyle} onClick={handleNext} disabled={activeStep === maxSteps - 1}>
-                    Suivant
-                    {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
+                    {theme.direction === 'rtl' ? <ArrowBackIcon /> : <ArrowForwardIcon />}
                   </Button>
                 }
                 backButton={
                   <Button style={contentStyle} onClick={handleBack} disabled={activeStep === 0}>
-                    {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
-                    Préc.
+                    {theme.direction === 'rtl' ? <ArrowForwardIcon /> : <ArrowBackIcon />}
                   </Button>
                 }
               />
