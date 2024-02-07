@@ -16,7 +16,7 @@
 
 .diplom-container {
   position: relative;
-  justify-content: center;
+  justify-content: center !important;
   margin-top: 20px;
 }
 
