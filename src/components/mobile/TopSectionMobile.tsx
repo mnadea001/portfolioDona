@@ -25,7 +25,9 @@ const TopSectionMobile: React.FC = () => {
 
     return (
         <section className="bg-container">
+               <div className="absolute-text">
                 <img ref={parallaxEasingTop.ref as React.RefObject<HTMLImageElement>} id="homeImg" src={logo} />
+                </div>
         </section>
     );
 };
