@@ -21,7 +21,7 @@
 }
 
 .bubble-style {
-  background-image: url('../../assets/buble.svg') !important;
+  background-image: url('../../assets/images/buble.svg') !important;
   height: 200px;
   width: 200px;
   background-size: cover;
