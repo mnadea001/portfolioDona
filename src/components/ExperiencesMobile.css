@@ -15,6 +15,11 @@
 
 .experience-container {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center; /* Optional: Center the columns horizontally */
   }
+
+.bg-content{
+    position: absolute;
+}
