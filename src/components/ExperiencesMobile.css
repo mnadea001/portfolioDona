@@ -13,11 +13,12 @@
 
 .experience-container {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center; /* Optional: Center the columns horizontally */
-}
+  }
 
-.bg-content {
-    /* Remove the absolute positioning */
+.bg-content{
+    position: absolute;
     height: 100vh;
 }
