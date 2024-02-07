@@ -11,7 +11,7 @@ import elemate4 from '../assets/images/elemate4.png';
 import worldcast from '../assets/images/WORLDCAST.png';
 import wdc2 from '../assets/images/wdc2.png';
 import wdc3 from '../assets/images/wdc3.png';
-// import './ExperiencesMobile.css';
+import './ExperiencesMobile.css';
 import { Zoom } from "react-awesome-reveal";
 import { useContext} from 'react';
 import { DarkModeContext } from '../providers/DarkModeProvider';
@@ -99,9 +99,8 @@ const ExperiencesMobile: React.FC = () => {
           <h3 style={calistogaStyle}>en développement</h3>
 
         </Zoom>
-        <section>
-          <div>
-
+        <section className="bg-container">
+          <div className="absolute-text">
             {experiencesData.map((experience, index) => (
               <div className="colored-circle img" key={index} >
                 <ExperienceComponent
