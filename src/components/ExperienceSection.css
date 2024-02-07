@@ -1,5 +1,7 @@
 .card {
     background-image: linear-gradient(to top, #1501FF, #BEA4C7, #a8eb12); 
+    border-color: #a8eb12 !important;
+    box-shadow: 5px 10px #a8eb12 !important;
 }
 
 .btnVoir {

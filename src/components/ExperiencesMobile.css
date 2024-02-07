@@ -1,5 +1,5 @@
 .card {
-    background-image: linear-gradient(to top, #1501FF, #BEA4C7, #a8eb12); 
+    background-image: linear-gradient(to top, #1501FF, #BEA4C7, #a8eb12);
 }
 
 .btnVoir {
@@ -11,14 +11,11 @@
     text-transform: lowercase !important;
 }
 
-.bg-content {
-display: flex;
-flex-direction: column;
-  }
-  
-.absolute-content {
-    /* position: absolute;
-    transform: translate(-50%, -50%); */
-    text-align: center;
-    color: #FFE7C2;
+
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Optional: Center the columns horizontally */
+    justify-content: center; /* Optional: Center the columns vertically */
   }

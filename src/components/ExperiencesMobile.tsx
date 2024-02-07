@@ -100,7 +100,7 @@ const ExperiencesMobile: React.FC = () => {
 
         </Zoom>
         <section className="bg-content">
-          <div className="absolute-content">
+          <div className="experience-container">
             {experiencesData.map((experience, index) => (
               <div className="colored-circle img" key={index} >
                 <ExperienceComponent
