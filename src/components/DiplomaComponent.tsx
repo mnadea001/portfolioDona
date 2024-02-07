@@ -49,7 +49,6 @@ const DiplomaComponent: React.FC = () => {
                             <div ref={MasterDev.ref} className="spinner buble-style" data-text="MASTER EXPERT DEV WEB (2025)" />
                         </div>
                     </section>
-
                 </div>
                 <div className="m-scroll">
                     <div className="m-scroll__title">
