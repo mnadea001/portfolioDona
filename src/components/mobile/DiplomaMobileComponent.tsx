@@ -1,7 +1,7 @@
 import './DiplomaMobile.css';
 import { Zoom } from "react-awesome-reveal";
 import { useContext } from 'react';
-import { DarkModeContext } from '../providers/DarkModeProvider';
+import { DarkModeContext } from '../../providers/DarkModeProvider';
 
 const DiplomaComponent: React.FC = () => {
     const darkModeContext = useContext(DarkModeContext);

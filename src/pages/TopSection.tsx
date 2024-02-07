@@ -7,8 +7,8 @@ import DiplomaComponent from '../components/DiplomaComponent';
 import SliderSection from '../components/SliderSection';
 import { DarkModeContext } from '../providers/DarkModeProvider';
 import { useEffect, useState, useContext } from 'react';
-import DiplomaMobileComponent from '../components/DiplomaMobileComponent';
-import ExperiencesMobile from '../components/ExperiencesMobile';
+import DiplomaMobileComponent from '../components/mobile/DiplomaMobileComponent';
+import ExperiencesMobile from '../components/mobile/ExperiencesMobile';
 
 const TopSection: React.FC = () => {
   const darkModeContext = useContext(DarkModeContext);

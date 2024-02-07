@@ -22,7 +22,21 @@
   color: transparent;
 }
 
+.selected-dark {
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, cursive;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+
 .selected:hover {
+  color: #D5FF3C !important;
+  text-shadow: 5px 5px #fcfcfc;
+}
+
+.selected-dark:hover {
   color: #D5FF3C !important;
   text-shadow: 5px 5px #C996FF;
 }

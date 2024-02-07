@@ -55,27 +55,27 @@ const Header: React.FC = () => {
         <DialogContent sx={{   backgroundColor: darkMode ? '#333333' : '#C996FF', }}>
           <List style={{ display: 'flex', textAlign: 'center', flexDirection: 'column' }}>
             <Zoom>
-              <NavLink to="/" className="selected" onClick={toggleModal}>
+              <NavLink to="/" className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
                 Accueil
               </NavLink>
             </Zoom>
             <JackInTheBox>
-              <NavLink to="/slider" className="selected" onClick={toggleModal}>
+              <NavLink to="/slider" className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
                 Compétences
               </NavLink>
             </JackInTheBox>
             <Bounce>
-              <NavLink to="/projects" className="selected" onClick={toggleModal}>
+              <NavLink to="/projects" className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
                 Projets
               </NavLink>
             </Bounce>
             <Slide>
-              <NavLink to="/experiences" className="selected" onClick={toggleModal}>
+              <NavLink to="/experiences" className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
                 Expériences
               </NavLink>
             </Slide>
             <Zoom>
-              <NavLink to="/diplomes" className="selected" onClick={toggleModal}>
+              <NavLink to="/diplomes" className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
                 Diplomes
               </NavLink>
             </Zoom>

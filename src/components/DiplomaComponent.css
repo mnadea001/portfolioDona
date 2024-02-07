@@ -27,7 +27,7 @@ h1 {
 
 
 .buble-style {
-  background-image: url('../assets/buble.svg');
+  background-image: url('../assets/images/buble.svg') !important;
   height: 200px;
   width: 200px;
   background-size: cover;
