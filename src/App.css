@@ -27,7 +27,7 @@ h1  {
   padding-bottom: 0 !important;
   text-transform: lowercase;
   font-family: Inter;
-  font-size: 1.8em !important;
+  font-size: 3em !important;
   -webkit-text-stroke: 1px #333333;
   color: transparent !important;
 }
@@ -62,7 +62,7 @@ h1  {
 }
 
 .loader-wrap h3 {
-  font-size: 2em;
+  font-size: 1.5em !important;
   font-weight: 100;
   font-family: "Inter";
 }
@@ -73,7 +73,7 @@ h1  {
 }
 
 .loader-container p {
-  font-size: 1em;
+  font-size: 1em !important;
   font-family: "Inter", sans-serif;
 }
 
@@ -103,7 +103,7 @@ h1  {
   font-family: Inter;
   color: #D5FF3C !important;
   text-shadow: -3px -3px #C996FF !important;
-  font-size: 4.5em !important;
+  font-size: 1.5em !important;
   font-weight: 900;
 }
 
@@ -115,5 +115,5 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8em !important;
+  font-size: 1.7em !important;
 }

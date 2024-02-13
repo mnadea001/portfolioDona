@@ -46,7 +46,7 @@
 
 .footer-link {
   color: #D5FF3C !important;
-  font-size: 4em;
+  font-size: 2em !important;
   align-items: center;
   font-family: 'Calistoga', cursive;
   text-transform: lowercase;
