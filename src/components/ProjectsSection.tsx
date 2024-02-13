@@ -161,13 +161,15 @@ const ProjectsSection: React.FC = () => {
     color: darkMode === true ? '#FFE7C2' : '#333333',
   };
 
+  const isMobile = window.innerWidth <= 768;
+
   return (
     <>
       <section className="projets-section">
         <section className="projets">
           <Zoom>
-            <h1 style={textStyle}>PROJETS</h1>
-            <h3 style={calistogaStyle}>principaux projets</h3>
+            <h1 className={isMobile ? 'not-centered' : ''}  style={textStyle}>PROJETS</h1>
+            <h3 className={isMobile ? 'not-centered' : ''}  style={calistogaStyle}>principaux projets</h3>
           </Zoom>
           <AccordionList projects={projectsData} />
         </section>
