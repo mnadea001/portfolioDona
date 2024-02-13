@@ -27,12 +27,15 @@ const SliderSection: React.FC = () => {
   const calistogaStyle: React.CSSProperties = {
     color: darkMode === true ? '#FFE7C2' : '#333333'
   };
+
+  const isMobile = window.innerWidth <= 768;
+
   return (
     <>
       <div className="slider-section">
         <Zoom>
-          <h1 style={textStyle}>compétences</h1>
-          <h3 style={calistogaStyle}>langages maitrisés</h3>
+          <h1 className={isMobile ? 'not-centered' : ''} style={textStyle}>Compétences</h1>
+          <h3 className={isMobile ? 'not-centered' : ''} style={calistogaStyle}>langages maitrisés</h3>
         </Zoom>
         <ScrollCarousel >
           {itemArray.map((item) => (
