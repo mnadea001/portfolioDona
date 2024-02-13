@@ -12,8 +12,7 @@ import SliderSection from './components/SliderSection'
 import NotFound from './pages/NotFound'
 import DarkModeProvider from './providers/DarkModeProvider';
 import DiplomaComponent from './components/DiplomaComponent';
-import DiplomaMobileComponent from './components/mobile/DiplomaMobileComponent'; // import your mobile component
-import TopSection from './components/TopSection';
+import DiplomaMobileComponent from './components/mobile/DiplomaMobileComponent'; 
 import ExperiencesMobile from './components/mobile/ExperiencesMobile';
 
 
