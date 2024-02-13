@@ -95,8 +95,8 @@ const ExperiencesMobile: React.FC = () => {
     <>
     <div className="experiences-section-mobile">
         <Zoom>
-          <h1 style={textStyle}>EXPERIENCES</h1>
-          <h3 style={calistogaStyle}>en développement</h3>
+          <h1 className='not-centered' style={textStyle}>EXPERIENCES</h1>
+          <h3 className='not-centered' style={calistogaStyle}>en développement</h3>
 
         </Zoom>
         <section className="bg-content-mobile">

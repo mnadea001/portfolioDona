@@ -18,22 +18,14 @@ const DiplomaMobileComponent: React.FC = () => {
 
 
     const BtsDev = useParallax<HTMLDivElement>({
-        // easing: "easeOutQuad",
-        // translateX: [-100, 100],
-        // translateY: [-30, -50],
         rotate: [-150, 50]
     });
 
     const LicenceDev = useParallax<HTMLDivElement>({
-        // easing: "easeOutQuad",
-        // translateX: [100, -100],
-        // translateY: [50, 30],
         rotate: [-150, 50]
     });
 
     const MasterDev = useParallax<HTMLDivElement>({
-        // easing: "easeOutQuad",
-        // translateY: [70, 100],
         rotate: [-150, 50]
     });
 
@@ -42,8 +34,8 @@ const DiplomaMobileComponent: React.FC = () => {
             <section className="diplome-section">
                 <div className="container-diploms">
                     <Zoom>
-                        <h1 style={textStyle}>DIPLOMES</h1>
-                        <h3 style={calistogaStyle}>en développement</h3>
+                        <h1 className='not-centered' style={textStyle}>DIPLOMES</h1>
+                        <h3 className='not-centered' style={calistogaStyle}>en développement</h3>
                     </Zoom>
                     <section className="diploms-container">
                             <div ref={BtsDev.ref} className="bubble-style" data-text="TITRE PRO DEV WEB ET MOBILE (2022)" />

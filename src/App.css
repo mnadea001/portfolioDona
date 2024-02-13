@@ -41,6 +41,11 @@ h1  {
   text-shadow: -3px -3px #C996FF !important;
 }
 
+
+.not-centered {
+  text-align: left !important;
+}
+
 .card {
   padding: 2em;
 }
