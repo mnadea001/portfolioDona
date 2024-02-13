@@ -43,6 +43,18 @@ const DiplomaMobileComponent: React.FC = () => {
                             <div ref={MasterDev.ref} className="bubble-style" data-text="MASTER EXPERT DEV WEB (2025)" />
                     </section>
                 </div>
+                <div className="m-scroll">
+                    <div className="m-scroll__title">
+                        <div>
+                            <p>
+                                <a href="#">Licence</a> <a href="#">Economie Gestion</a> &amp; <a href="#">Master </a>  <a href="#">Management International </a>&amp; &nbsp;
+                            </p>
+                            {/* <p>
+                                <a href="#">Licence</a> <a href="#">Economie Gestion</a> &amp; <a href="#">Master </a> <a href="#">Management International </a>&amp; &nbsp;
+                            </p> */}
+                        </div>
+                    </div>
+                </div>
             </section>
         </>
     );
