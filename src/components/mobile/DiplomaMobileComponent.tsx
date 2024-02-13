@@ -3,7 +3,10 @@ import { Zoom } from "react-awesome-reveal";
 import { useContext } from 'react';
 import { DarkModeContext } from '../../providers/DarkModeProvider';
 
-const DiplomaComponent: React.FC = () => {
+import { useParallax } from "react-scroll-parallax";
+
+
+const DiplomaMobileComponent: React.FC = () => {
     const darkModeContext = useContext(DarkModeContext);
     const darkMode = darkModeContext?.darkMode || false;
     const textStyle: React.CSSProperties = {
@@ -12,6 +15,27 @@ const DiplomaComponent: React.FC = () => {
     const calistogaStyle: React.CSSProperties = {
         color: darkMode === true ? '#FFE7C2' : '#333333',
     };
+
+
+    const BtsDev = useParallax<HTMLDivElement>({
+        // easing: "easeOutQuad",
+        // translateX: [-100, 100],
+        // translateY: [-30, -50],
+        rotate: [-150, 50]
+    });
+
+    const LicenceDev = useParallax<HTMLDivElement>({
+        // easing: "easeOutQuad",
+        // translateX: [100, -100],
+        // translateY: [50, 30],
+        rotate: [-150, 50]
+    });
+
+    const MasterDev = useParallax<HTMLDivElement>({
+        // easing: "easeOutQuad",
+        // translateY: [70, 100],
+        rotate: [-150, 50]
+    });
 
     return (
         <>
@@ -22,9 +46,9 @@ const DiplomaComponent: React.FC = () => {
                         <h3 style={calistogaStyle}>en développement</h3>
                     </Zoom>
                     <section className="diploms-container">
-                            <div className="bubble-style" data-text="TITRE PRO DEV WEB ET MOBILE (2022)" />
-                            <div className="bubble-style" data-text="LICENCE CONCEPTEUR DEV. D'APP (2023)" />
-                            <div className="bubble-style" data-text="MASTER EXPERT DEV WEB (2025)" />
+                            <div ref={BtsDev.ref} className="bubble-style" data-text="TITRE PRO DEV WEB ET MOBILE (2022)" />
+                            <div ref={LicenceDev.ref} className="bubble-style" data-text="LICENCE CONCEPTEUR DEV. D'APP (2023)" />
+                            <div ref={MasterDev.ref} className="bubble-style" data-text="MASTER EXPERT DEV WEB (2025)" />
                     </section>
                 </div>
             </section>
@@ -33,4 +57,4 @@ const DiplomaComponent: React.FC = () => {
 };
 
 
-export default DiplomaComponent;
+export default DiplomaMobileComponent;
