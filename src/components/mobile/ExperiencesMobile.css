@@ -15,10 +15,9 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    align-items: center; /* Optional: Center the columns horizontally */
-  }
+}
 
-.bg-content{
+.bg-content {
     position: absolute;
     height: 100vh;
 }
@@ -29,7 +28,9 @@
     position: relative;
     overflow: hidden;
 }
-.experience-card{
+
+.experience-card {
     height: 100%;
     margin-bottom: 15px;
+    max-width: 350px;
 }

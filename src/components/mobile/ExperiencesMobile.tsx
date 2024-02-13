@@ -12,7 +12,7 @@ import worldcast from '../../assets/images/WORLDCAST.png';
 import wdc2 from '../../assets/images/wdc2.png';
 import wdc3 from '../../assets/images/wdc3.png';
 import './ExperiencesMobile.css';
-import { Zoom } from "react-awesome-reveal";
+import { Roll, Zoom } from "react-awesome-reveal";
 import { useContext} from 'react';
 import { DarkModeContext } from '../../providers/DarkModeProvider';
 
@@ -102,6 +102,7 @@ const ExperiencesMobile: React.FC = () => {
           <div className="experience-container">
             {experiencesData.map((experience, index) => (
               <div className="experience-card" key={index} >
+                <Roll>
                 <ExperienceComponent
                   imgSrc={experience.imgSrc}
                   title={experience.title}
@@ -113,6 +114,7 @@ const ExperiencesMobile: React.FC = () => {
                   expImg={experience.expImg}
                   images={experience.images}
                 />
+                </Roll>
               </div>
             ))}
           </div>
