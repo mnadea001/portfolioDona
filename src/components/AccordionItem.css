@@ -13,14 +13,14 @@
   -webkit-text-stroke: 1px #333333;
   color: transparent !important;
   text-transform: lowercase;
-  font-size: 1.6rem !important;
+  font-size: 1.6em !important;
   margin-left: 50px !important;
 }
 .titleText-dark {
   -webkit-text-stroke: 1px #D5FF3C;
   color: transparent !important;
   text-transform: lowercase;
-  font-size: 1.6rem !important;
+  font-size: 1.6em !important;
   margin-left: 50px !important;
 }
 .title-dark:hover .titleText-dark{

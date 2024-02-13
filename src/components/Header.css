@@ -14,7 +14,7 @@
 }
 
 .selected {
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 100;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, cursive;
   text-transform: uppercase;
@@ -23,7 +23,7 @@
 }
 
 .selected-dark {
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 100;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, cursive;
   text-transform: uppercase;
@@ -46,7 +46,7 @@
   -webkit-text-stroke: 1px rgb(5, 5, 5);
   color: transparent !important;
   text-transform: lowercase;
-  font-size: 2rem;
+  font-size: 2em;
   margin-top: 0 !important
 }
 
@@ -55,6 +55,6 @@
   -webkit-text-stroke: 1px #ffffff;
   color: transparent !important;
   text-transform: lowercase;
-  font-size: 2rem;
+  font-size: 2em;
   margin-top: 0 !important
 }

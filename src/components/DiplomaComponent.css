@@ -42,7 +42,7 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
   color: #1d1c1c;
   text-align: center;
@@ -80,7 +80,7 @@ h1 {
 
 .m-scroll__title p {
   margin: 0;
-  font-size: 60px;
+  font-size: 3em;
   font-weight: 800;
   color: #333333;
   transition: all 2s ease;

@@ -66,7 +66,7 @@ const projectsData = [
     title: 'Vinyl du Coin',
     content: 'Projet Symfony en autonomie',
     description: 'Fonctionnalités: inscription/ connexion, CRUD profil associations, commentaires, favoris, messagerie, filtres, pagination, barre de recherche, panel administrateur',
-    languages: ['Symfony', 'SQL'],
+    languages: ['Symfony', 'SQL', 'GSAP'],
     number: 1,
     imageSrc: icon8,
     images: [
@@ -88,7 +88,7 @@ const projectsData = [
     title: 'Chinese Year',
     content: 'Project Java Spring en autonomie',
     description: 'Fonctionnalités: affichage de proverbes aléatoires, définition du signe chinois en fonction de l\'age, réduction en fonction du prix du panier, liste des articles, panier d\'achat',
-    languages: ['Java Spring', 'ThymeLeaf', 'SQL'],
+    languages: ['Java Spring', 'ThymeLeaf', 'MongoDB'],
     number: 1,
     imageSrc: icon4,
     images: [
@@ -122,7 +122,7 @@ const projectsData = [
   },
   {
     title: 'Beers Notation',
-    content: 'Project React.JS',
+    content: 'Project React.JS en autonomie',
     description: 'Fonctionnalités: inscription/ connexion, Liste / détail bière, commentaires, notation, déploiement sur Vercel',
     languages: ['React', 'FireBase', 'API', 'Vercel'],
     number: 1,

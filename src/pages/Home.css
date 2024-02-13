@@ -33,7 +33,7 @@
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);
-  font-size: 16px; 
+  font-size: 1em; 
   font-weight: bold;
   color: #FFE7C2;
   text-align: center;
@@ -52,7 +52,7 @@
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);
-  font-size: 16px; 
+  font-size: 1em; 
   font-weight: bold; 
   color: #333333;
   text-align: center; 
@@ -94,7 +94,7 @@
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);
-  font-size: 16px; 
+  font-size: 1em; 
   font-weight: bold; 
   color: #D5FF3C; 
   text-align: center;
@@ -105,7 +105,7 @@
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);
-  font-size: 16px; 
+  font-size: 1em; 
   font-weight: bold; 
   color: #333333;
   text-align: center;

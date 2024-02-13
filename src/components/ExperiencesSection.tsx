@@ -37,8 +37,8 @@ const experiencesData = [
     context: 'Agence de communication et évènementiel',
     position: 'Développeuse web',
     date: 'Janvier - Septembre 2022',
-    description: 'Développement et maintenance de sites pour des clients',
-    skills: ['SCSS', 'Javascript', 'WordPress', 'PrestaShop', 'PHP', 'AWS', 'Filezila'],
+    description: 'Développement et maintenance de sites pour des clients. Intégration à partir de maquettes.',
+    skills: ['SCSS', 'Javascript', 'WordPress', 'PrestaShop', 'PHP', 'AWS S3', 'Filezila'],
     expImg: kub,
   },
   {
@@ -56,9 +56,9 @@ const experiencesData = [
     ],
     title: 'ELEMATE',
     context: 'Start up - édition logiciel',
-    position: 'Développeuse FulStack Symfony',
+    position: 'Développeuse FullStack Symfony',
     date: 'Septembre 2022 - Septembre 2023',
-    description: 'Développement de nouvelles fonctionnalités et refactorisation',
+    description: 'Développement de nouvelles fonctionnalités et refactorisation.',
     skills: ['Symfony', 'API', 'Docker', 'Tests', 'Git'],
     expImg: thekub,
   },
@@ -76,8 +76,8 @@ const experiencesData = [
     context: 'Logiciel de surveillance / Monitoring',
     position: 'Développeuse Javascript + Support client',
     date: 'Septembre 2023 - actuellement',
-    description: 'Développement de nouvelles fonctionnalités et support client',
-    skills: ['Vue', 'Javascript', 'Node', 'Git'],
+    description: 'Développement de nouvelles fonctionnalités en Vue.JS, développement de drivers et support client.',
+    skills: ['Vue', 'Javascript', 'Node', 'Git', 'SSH', 'VPN'],
     expImg: thekub,
   }
 ];

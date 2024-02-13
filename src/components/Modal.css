@@ -13,7 +13,7 @@
 .modal-title {
   font-family: Inter;
   text-transform: lowercase;
-  font-size: 3.3rem !important;
+  font-size: 3.3em !important;
 }
 
 .dialog-item {
