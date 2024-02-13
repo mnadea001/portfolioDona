@@ -1,6 +1,40 @@
 .error-section {
     width: 100vw;
+    padding: 10%;
 }
+
 * {
     box-sizing: border-box;
+}
+
+.error-section svg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#textClip text {
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 5em;
+    line-height: 0.9;
+}
+
+#background use {
+    animation: pulse 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    transform-origin: left center;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: translateX(-100%);
+    }
+
+    35%,
+    65% {
+        transform: translateX(0%);
+    }
 }

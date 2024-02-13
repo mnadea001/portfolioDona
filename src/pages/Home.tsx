@@ -48,7 +48,6 @@ const Home: React.FC = () => {
         </>
       ) : (
         <>
-               {/* <TopSectionMobile /> */}
           <TopSection />
           <SliderSection />
           <ProjectsSection />

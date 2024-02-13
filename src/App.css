@@ -107,6 +107,16 @@ h1  {
   font-weight: 900;
 }
 
+.error-text {
+  padding-bottom: 0 !important;
+  text-transform: lowercase;
+  font-family: Inter;
+  color: #D5FF3C !important;
+  text-shadow: -3px -3px #C996FF !important;
+  font-size: 5em !important;
+  font-weight: 900;
+}
+
 h2 {
   background: linear-gradient(30deg, #848282, #000000);
   padding: 0 !important;
