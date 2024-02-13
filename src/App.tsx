@@ -13,6 +13,8 @@ import NotFound from './pages/NotFound'
 import DarkModeProvider from './providers/DarkModeProvider';
 import DiplomaComponent from './components/DiplomaComponent';
 import DiplomaMobileComponent from './components/mobile/DiplomaMobileComponent'; // import your mobile component
+import TopSection from './components/TopSection';
+import ExperiencesMobile from './components/mobile/ExperiencesMobile';
 
 
 function App() {
@@ -39,9 +41,10 @@ function App() {
               <Route path="*" element={<NotFound />} />
               <Route path="/projects" element={<ProjectsSection />} />
               <Route path="/experiences" element={<ExperiencesSection />} />
+              <Route path="/experiences-mobile" element={<ExperiencesMobile />} />
               <Route path="/diplomes" element={<DiplomaComponent />} />
-              <Route path="/diplomes" element={<DiplomaComponent />} />
-              <Route path="/diplomes_mobile" element={<DiplomaMobileComponent />} />
+              <Route path="/diplomes-mobile" element={<DiplomaMobileComponent />} />
+
             </Route >
           </Routes>
           <Footer />

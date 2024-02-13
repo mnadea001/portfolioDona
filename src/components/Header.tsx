@@ -64,33 +64,6 @@ const Header: React.FC = () => {
           </IconButton>
         </span>
         <DialogContent sx={{   backgroundColor: darkMode ? '#333333' : '#C996FF', }}>
-          {/* <List style={{ display: 'flex', textAlign: 'center', flexDirection: 'column' }}>
-            <Zoom>
-              <NavLink to="/" className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
-                Accueil
-              </NavLink>
-            </Zoom>
-            <JackInTheBox>
-              <NavLink to="/slider" className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
-                Compétences
-              </NavLink>
-            </JackInTheBox>
-            <Bounce>
-              <NavLink to="/projects" className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
-                Projets
-              </NavLink>
-            </Bounce>
-            <Slide>
-              <NavLink to="/experiences" className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
-                Expériences
-              </NavLink>
-            </Slide>
-            <Zoom>
-              <NavLink to="/diplomes" className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
-                Diplomes
-              </NavLink>
-            </Zoom>
-          </List> */}
            <List style={{ display: 'flex', textAlign: 'center', flexDirection: 'column' }}>
         <Zoom>
           <NavLink to="/" className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
@@ -99,7 +72,7 @@ const Header: React.FC = () => {
         </Zoom>
         <JackInTheBox>
           <NavLink
-            to={isMobile ? "/slider-mobile" : "/slider"}
+            to="/slider"
             className={darkMode ? 'selected-dark' : 'selected'}
             onClick={toggleModal}
           >
@@ -112,12 +85,12 @@ const Header: React.FC = () => {
           </NavLink>
         </Bounce>
         <Slide>
-          <NavLink to="/experiences" className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
+          <NavLink to={isMobile ? "/experiences-mobile" : "/experiences"} className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
             Expériences
           </NavLink>
         </Slide>
         <Zoom>
-          <NavLink to="/diplomes" className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
+          <NavLink to={isMobile ? "/diplomes-mobile" : "/diplomes"} className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
             Diplomes
           </NavLink>
         </Zoom>
