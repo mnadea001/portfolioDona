@@ -49,9 +49,9 @@ const DiplomaMobileComponent: React.FC = () => {
                             <p>
                                 <a href="#">Licence</a> <a href="#">Economie Gestion</a> &amp; <a href="#">Master </a>  <a href="#">Management International </a>&amp; &nbsp;
                             </p>
-                            {/* <p>
+                            <p>
                                 <a href="#">Licence</a> <a href="#">Economie Gestion</a> &amp; <a href="#">Master </a> <a href="#">Management International </a>&amp; &nbsp;
-                            </p> */}
+                            </p>
                         </div>
                     </div>
                 </div>
