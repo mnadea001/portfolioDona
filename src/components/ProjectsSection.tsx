@@ -88,7 +88,7 @@ const projectsData = [
     title: 'Chinese Year',
     content: 'Project Java Spring en autonomie',
     description: 'Fonctionnalités: affichage de proverbes aléatoires, définition du signe chinois en fonction de l\'age, réduction en fonction du prix du panier, liste des articles, panier d\'achat',
-    languages: ['Java Spring', 'ThymeLeaf', 'MongoDB'],
+    languages: ['Java Spring', 'ThymeLeaf', 'SQL'],
     number: 1,
     imageSrc: icon4,
     images: [
