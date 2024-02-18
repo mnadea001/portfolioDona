@@ -58,3 +58,7 @@
   font-size: 2em;
   margin-top: 0 !important
 }
+
+.btn-dark-mode {
+  z-index: 3;
+}

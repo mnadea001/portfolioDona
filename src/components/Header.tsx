@@ -35,7 +35,7 @@ const Header: React.FC = () => {
   return (
     <>
       <div className="icons">
-        <button onClick={toggleDarkMode}>
+        <button className="btn-dark-mode" onClick={toggleDarkMode}>
           {darkMode ? <IconSunFill /> : <IconMoon />}
         </button>
         <h3 className={darkMode ? 'header-title-dark' : 'header-title'}>PORTFOLIO MATHILDE NADEAU</h3>
