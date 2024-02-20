@@ -50,7 +50,7 @@ const Header: React.FC = () => {
             justifyContent: 'center',
             backgroundColor: darkMode ? '#333333' : '#C996FF',
             color: '#fff',
-            paddingTop: '50px',
+            paddingTop: '50px'
           }}
         >
           <IconButton
@@ -60,7 +60,7 @@ const Header: React.FC = () => {
             aria-label="close"
           > FERMER
             <CloseIcon
-              style={{ paddingRight: '15px' }} />
+              style={{ paddingLeft: '15px' }} />
           </IconButton>
         </span>
         <DialogContent sx={{   backgroundColor: darkMode ? '#333333' : '#C996FF', }}>
