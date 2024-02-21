@@ -68,7 +68,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, theme }) => {
                     objectFit: 'contain'
                   }}
                   src={step.imgPath}
-                  alt='image illustrant expérience'
+                  alt='image illustrant projet'
                 />
               ) : null}
             </div>
