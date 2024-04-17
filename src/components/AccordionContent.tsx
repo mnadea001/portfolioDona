@@ -10,7 +10,7 @@ interface AccordionContentProps {
     languages: string[];
 }
 
-const AccordionContent: React.FC<AccordionContentProps> = ({ content, description, number, languages }) => {
+const AccordionContent: React.FC<AccordionContentProps> = ({ content, description, link, number, languages }) => {
     const darkModeContext = useContext(DarkModeContext);
     const darkMode = darkModeContext?.darkMode || false;
     const textStyle: React.CSSProperties = {
