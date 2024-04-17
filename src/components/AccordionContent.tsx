@@ -4,11 +4,11 @@ import { useContext } from 'react'
 import './AccordionContent.css'
 
 interface AccordionContentProps {
-    content: string;
-      link: string;
-    description: string;
-    number: number;
-    languages: string[];
+  content: string
+  link: string
+  description: string
+  number: number
+  languages: string[]
 }
 
 const AccordionContent: React.FC<AccordionContentProps> = ({ content, description, link, number, languages }) => {
@@ -19,35 +19,38 @@ const AccordionContent: React.FC<AccordionContentProps> = ({ content, descriptio
     margin: '0.5em'
   }
 
-    return (
-        <div className="flex-item">
-            <AccordionDetails>
-                <div className="content-container flex-container">
-                    <div className="flex-item">
-                        <Typography style={textStyle}><strong>{content}</strong></Typography>
-                        <br></br>
-                        <Typography style={textStyle}>{description}</Typography>
-                        <br></br>
-                        <Typography style={textStyle}>
-                        <strong>Taille équipe:</strong> {number}</Typography>
-                        <br></br>
-                        <Typography style={textStyle}>
-                            <strong>Compétences:</strong>
-                        </Typography>
-                        <div>
-                            {languages.map((language, index) => (
-                                <Chip key={index} label={language} style={textStyle} />
-                            ))}
-                        </div>
-                                                <br></br>
-                        <Typography style={textStyle}>
-                        <strong>Lien:</strong> {link}</Typography>
-                    </div>
-                </div>
-            </AccordionDetails>
+  return (
+    <div className="flex-item">
+      <AccordionDetails>
+        <div className="content-container flex-container">
+          <div className="flex-item">
+            <Typography style={textStyle}>
+              <strong>{content}</strong>
+            </Typography>
+            <br></br>
+            <Typography style={textStyle}>{description}</Typography>
+            <br></br>
+            <Typography style={textStyle}>
+              <strong>Taille équipe:</strong> {number}
+            </Typography>
+            <br></br>
+            <Typography style={textStyle}>
+              <strong>Compétences:</strong>
+            </Typography>
+            <div>
+              {languages.map((language, index) => (
+                <Chip key={index} label={language} style={textStyle} />
+              ))}
+            </div>
+            <br></br>
+            <a className="project-link" href={link} target="_blank">
+              Lien vers le projet
+            </a>
+          </div>
         </div>
-    )
-        ;
-};
+      </AccordionDetails>
+    </div>
+  )
+}
 
 export default AccordionContent
