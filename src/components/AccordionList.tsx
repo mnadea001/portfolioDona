@@ -4,6 +4,7 @@ interface AccordionListProps {
   projects: {
   title: string;
   content: string;
+      link: string;
   imageSrc: string;
   images: { imgPath: string }[]; // Update this line
   description: string;
@@ -19,6 +20,8 @@ const AccordionList: React.FC<AccordionListProps> = ({ projects }) => {
         <AccordionItem
           key={index}
           title={project.title}
+          
+          link={project.link}
           content={project.content}
           imageSrc={project.imageSrc}
           images={project.images}
