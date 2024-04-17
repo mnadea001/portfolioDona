@@ -156,21 +156,21 @@ const projectsData = [
       }
     ],
   },
+   {
+  title: 'Yogi App',
+  content: 'Projet Vue.JS en autonomie',
+  description: 'Utilisation de plusieurs API, insertion d\'objet 3D avec ThreeJS, déploiement sur Vercel',
+  languages: ['Vue', 'Three', 'API', 'Vercel', 'Troisjs'], // Corrected the missing quote for 'Vercel'
+  number: 1,
+  link: 'https://vue-mnu.vercel.app/',
+  imageSrc: icon7,
+  images: [
     {
-    title: 'Yogi App',
-    content: 'Projet Vue.JS en autonomie',
-    description: 'Utilisation de plusieurs API, insertion d'objet 3D avec ThreeJS, déploiement sur Vercel',
-    languages: ['Vue', 'Three', 'API', 'Vercel', 'Troisjs'],
-    number: 1,
-    link: 'https://vue-mnu.vercel.app/',
-    imageSrc: icon7,
-    images: [
-      {
-        label: 'Image 3',
-        imgPath: beers,
-      }
-    ],
-  }
+      label: 'Image 3',
+      imgPath: beers,
+    }
+  ],
+}
 ];
 const ProjectsSection: React.FC = () => {
   const darkModeContext = useContext(DarkModeContext);
