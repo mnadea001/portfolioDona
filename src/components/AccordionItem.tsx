@@ -10,6 +10,7 @@ import './AccordionItem.css';
 interface AccordionItemProps {
   title: string;
   content: string;
+    link: string;
   imageSrc: string;
   images: { imgPath: string }[]; // Update this line
   description: string;
@@ -19,6 +20,7 @@ interface AccordionItemProps {
 
 const AccordionItem: React.FC<AccordionItemProps> = ({
   title,
+  link,
   content,
   imageSrc,
   images,
@@ -50,6 +52,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
             content={content}
             description={description}
             number={number}
+             link={link}
             languages={languages}
           />
           <ImageCarousel images={images} theme={theme} />
