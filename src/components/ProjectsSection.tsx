@@ -32,6 +32,7 @@ const projectsData = [
     content: 'Projet Symfony en binome',
     description: 'Fonctionnalités: inscription/ connexion, CRUD profil associations, commentaires, favoris',
     languages: ['Symfony', 'SQL'],
+    link: 'https://vue-mnu.vercel.app/',
     number: 2,
     imageSrc: icon8,
     images: [
@@ -52,6 +53,7 @@ const projectsData = [
     description: 'Affichage des activités en fonction de la météo d\'une ville',
     languages: ['Symfony', 'API', 'OpenWeather', 'Heroku', 'Adobe XD', 'SQL'],
     number: 3,
+         link: 'https://vue-mnu.vercel.app/',
     imageSrc: icon8,
     images: [
       {
@@ -68,6 +70,7 @@ const projectsData = [
     description: 'Fonctionnalités: inscription/ connexion, CRUD profil associations, commentaires, favoris, messagerie, filtres, pagination, barre de recherche, panel administrateur',
     languages: ['Symfony', 'SQL', 'GSAP'],
     number: 1,
+         link: 'https://vue-mnu.vercel.app/',
     imageSrc: icon8,
     images: [
       {
@@ -90,6 +93,7 @@ const projectsData = [
     description: 'Fonctionnalités: affichage de proverbes aléatoires, définition du signe chinois en fonction de l\'age, réduction en fonction du prix du panier, liste des articles, panier d\'achat',
     languages: ['Java Spring', 'ThymeLeaf', 'SQL'],
     number: 1,
+         link: 'https://vue-mnu.vercel.app/',
     imageSrc: icon4,
     images: [
       {
@@ -108,6 +112,7 @@ const projectsData = [
     description: 'Affichage carte, détail annonce, formulaire de création d\'annonce',
     languages: ['React Native', 'Leaflet'],
     number: 3,
+         link: 'https://vue-mnu.vercel.app/',
     imageSrc: icon7,
     images: [
       {
@@ -126,6 +131,7 @@ const projectsData = [
     description: 'Fonctionnalités: inscription/ connexion, Liste / détail bière, commentaires, notation, déploiement sur Vercel',
     languages: ['React', 'FireBase', 'API', 'Vercel'],
     number: 1,
+         link: 'https://vue-mnu.vercel.app/',
     imageSrc: icon7,
     images: [
       {
@@ -147,6 +153,21 @@ const projectsData = [
       {
         label: 'Image 4',
         imgPath: beers5,
+      }
+    ],
+  },
+    {
+    title: 'Yogi App',
+    content: 'Projet Vue.JS en autonomie',
+    description: 'Utilisation de plusieurs API, insertion d'objet 3D avec ThreeJS, déploiement sur Vercel',
+    languages: ['Vue', 'Three', 'API', 'Vercel, 'Troisjs'],
+    number: 1,
+    link: 'https://vue-mnu.vercel.app/',
+    imageSrc: icon7,
+    images: [
+      {
+        label: 'Image 3',
+        imgPath: beers,
       }
     ],
   }
