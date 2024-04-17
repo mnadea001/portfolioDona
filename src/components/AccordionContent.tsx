@@ -5,6 +5,7 @@ import { useContext } from 'react';
 interface AccordionContentProps {
     content: string;
     description: string;
+      link: string;
     number: number;
     languages: string[];
 }
@@ -37,6 +38,9 @@ const AccordionContent: React.FC<AccordionContentProps> = ({ content, descriptio
                                 <Chip key={index} label={language} style={textStyle} />
                             ))}
                         </div>
+                        <br></br>
+                        <Typography style={textStyle}>
+                        <strong>Lien:</strong> {link}</Typography>
                     </div>
                 </div>
             </AccordionDetails>
