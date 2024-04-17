@@ -58,7 +58,7 @@ const experiencesData = [
     context: 'Start up - édition logiciel',
     position: 'Développeuse FullStack Symfony',
     date: 'Septembre 2022 - Septembre 2023',
-    description: 'Développement de nouvelles fonctionnalités et refactorisation.',
+    description: 'Développement de nouvelles fonctionnalités, refonte et refactorisation du code.',
     skills: ['Symfony', 'API', 'Docker', 'Tests', 'Git'],
     expImg: thekub,
   },
@@ -76,7 +76,7 @@ const experiencesData = [
     context: 'Logiciel de surveillance / Monitoring',
     position: 'Développeuse Javascript + Support client',
     date: 'Septembre 2023 - actuellement',
-    description: 'Développement de nouvelles fonctionnalités en Vue.JS, développement de drivers et support client.',
+    description: 'Développement de nouvelles fonctionnalités en Vue.JS, développement de drivers et support client (déploiement du logiciel à distance, montée de versions, récupération de logs).',
     skills: ['Vue', 'Javascript', 'Node', 'Git', 'SSH', 'VPN'],
     expImg: thekub,
   }

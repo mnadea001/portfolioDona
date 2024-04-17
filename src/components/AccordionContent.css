@@ -1,0 +1,24 @@
+.project-link {
+    border-radius: 30px;
+    border: solid #333333 1px;
+    padding: 10px 15px;
+    color: #333333;
+}
+
+.project-link:hover {
+    border-radius: 30px;
+    background-color: #333333;
+    color: #C996FF;
+}
+
+.dark-mode .project-link {
+    border-radius: 30px;
+    border: 1px solid #D5FF3C;
+    color: #D5FF3C;
+}
+
+.dark-mode .project-link:hover {
+    border-radius: 30px;
+    background-color: #D5FF3C;
+    color: #333333;
+}

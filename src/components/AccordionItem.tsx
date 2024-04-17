@@ -11,6 +11,7 @@ interface AccordionItemProps {
   title: string;
   content: string;
     link: string;
+    link: string;
   imageSrc: string;
   images: { imgPath: string }[]; // Update this line
   description: string;
@@ -22,6 +23,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   title,
   link,
   content,
+  link,
   imageSrc,
   images,
   description,

@@ -1,6 +1,7 @@
-import { AccordionDetails, Typography, Chip } from '@mui/material';
-import { DarkModeContext } from '../providers/DarkModeProvider';
-import { useContext } from 'react';
+import { AccordionDetails, Typography, Chip } from '@mui/material'
+import { DarkModeContext } from '../providers/DarkModeProvider'
+import { useContext } from 'react'
+import './AccordionContent.css'
 
 interface AccordionContentProps {
     content: string;
@@ -10,13 +11,13 @@ interface AccordionContentProps {
     languages: string[];
 }
 
-const AccordionContent: React.FC<AccordionContentProps> = ({ content, description, number, languages }) => {
-    const darkModeContext = useContext(DarkModeContext);
-    const darkMode = darkModeContext?.darkMode || false;
-    const textStyle: React.CSSProperties = {
-        color: darkMode === true ? '#D5FF3C' : '#333333',
-        margin: '0.5em'
-    };
+const AccordionContent: React.FC<AccordionContentProps> = ({ content, description, link, number, languages }) => {
+  const darkModeContext = useContext(DarkModeContext)
+  const darkMode = darkModeContext?.darkMode || false
+  const textStyle: React.CSSProperties = {
+    color: darkMode === true ? '#D5FF3C' : '#333333',
+    margin: '0.5em'
+  }
 
     return (
         <div className="flex-item">
@@ -49,4 +50,4 @@ const AccordionContent: React.FC<AccordionContentProps> = ({ content, descriptio
         ;
 };
 
-export default AccordionContent;
+export default AccordionContent
