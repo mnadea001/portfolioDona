@@ -1,17 +1,16 @@
-import AccordionItem from './AccordionItem';
+import AccordionItem from './AccordionItem'
 
 interface AccordionListProps {
   projects: {
-  title: string;
-      link: string;
-  content: string;
-      link: string;
-  imageSrc: string;
-  images: { imgPath: string }[]; 
-  description: string;
-  languages:  string[]; 
-  number: number;
-}[];
+    title: string
+    content: string
+    link: string
+    imageSrc: string
+    images: { imgPath: string }[]
+    description: string
+    languages: string[]
+    number: number
+  }[]
 }
 
 const AccordionList: React.FC<AccordionListProps> = ({ projects }) => {
@@ -21,7 +20,6 @@ const AccordionList: React.FC<AccordionListProps> = ({ projects }) => {
         <AccordionItem
           key={index}
           title={project.title}
-          
           link={project.link}
           content={project.content}
           imageSrc={project.imageSrc}
@@ -32,7 +30,7 @@ const AccordionList: React.FC<AccordionListProps> = ({ projects }) => {
         />
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default AccordionList;
+export default AccordionList
