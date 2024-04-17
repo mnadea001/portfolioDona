@@ -164,7 +164,7 @@ const projectsData = [
   {
     title: 'Yogi App',
     content: 'Projet Vue.JS en autonomie',
-    description: "Utilisation de plusieurs API, insertion d'objet 3D avec ThreeJS, déploiement sur Vercel",
+    description: "Application sur le thème du yoga utilisant plusieurs API, insertion d'objet 3D avec ThreeJS, déploiement sur Vercel",
     languages: ['Vue', 'Three', 'API', 'Vercel', 'Troisjs'], // Corrected the missing quote for 'Vercel'
     number: 1,
     link: 'https://vue-mnu.vercel.app/',
