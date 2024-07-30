@@ -167,7 +167,7 @@ const projectsData = [
     description: "Application sur le thème du yoga utilisant plusieurs API, insertion d'objet 3D avec ThreeJS, déploiement sur Vercel",
     languages: ['Vue', 'Three', 'API', 'Vercel', 'Troisjs'], // Corrected the missing quote for 'Vercel'
     number: 1,
-    link: 'https://vue-mnu.vercel.app/',
+    link: 'https://yogi-app.vercel.app/',
     imageSrc: icon7,
     images: [
       {
