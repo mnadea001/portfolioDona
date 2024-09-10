@@ -99,6 +99,8 @@ h1  {
 .loader-text {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
+  margin-left: 20px;
+  margin-top: 40px;
   text-transform: lowercase;
   font-family: Inter;
   color: #D5FF3C !important;
