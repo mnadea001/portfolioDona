@@ -77,14 +77,33 @@ h1  {
   text-align: start !important;
 }
 
-.loader-bar {
+.loader-bar1 {
   position: absolute;
   height: 5px;
   width: 100vw;
-  background-color: #C996FF;
+  background-color: #f92a2a;
   border-radius: 100px;
   top: 55%;
 }
+
+.loader-bar2 {
+  position: absolute;
+  height: 5px;
+  width: 100vw;
+  background-color: #f9eb2a;
+  border-radius: 100px;
+  top: 50%;
+}
+
+.loader-bar3 {
+  position: absolute;
+  height: 5px;
+  width: 100vw;
+  background-color: #6ff92a;
+  border-radius: 100px;
+  top: 45%;
+}
+
 
 @media screen and (max-width: 400px) {
   .loader-bar {
@@ -104,7 +123,7 @@ h1  {
   text-transform: lowercase;
   font-family: Inter;
   color: #D5FF3C !important;
-  text-shadow: -3px -3px #C996FF !important;
+  /* text-shadow: -3px -3px #ff9696 !important; */
   font-size: 1.5em !important;
   font-weight: 900;
 }

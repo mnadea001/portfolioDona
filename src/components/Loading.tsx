@@ -1,52 +1,52 @@
-import { useState, useEffect } from "react";
-// import { motion } from "framer-motion";
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 
-// const LoaderVariant = {
-//   initial: { left: "-100vw" },
-//   animate: {
-//     left: "0",
-//     transition: { duration: 2.3, type: "tween", ease: "linear" },
-//   },
-// };
+const LoaderVariant = {
+  initial: { left: '-100vw' },
+  animate: {
+    left: '0',
+    transition: { duration: 2.3, type: 'tween', ease: 'linear' }
+  }
+}
 const Loading: React.FC = () => {
-    const [count, setCount] = useState(0);
-    const [test, setTest] = useState(true);
-  
-    useEffect(() => {
-      let counter = setInterval(() => {
-        setCount(count + 1);
-        if (count === 100) {
-          setCount(0);
-          setTest(false);
-        }
-      }, 20);
-      return () => clearInterval(counter);
-    });
-return (
+  const [count, setCount] = useState(0)
+  const [test, setTest] = useState(true)
+
+  useEffect(() => {
+    let counter = setInterval(() => {
+      setCount(count + 1)
+      if (count === 100) {
+        setCount(0)
+        setTest(false)
+      }
+    }, 20)
+    return () => clearInterval(counter)
+  })
+  return (
     <>
-    <div className="loader-container">
-      <div className="loader-wrap">
-        <p className="loader-text not-centered ">Chargement en cours</p>
-        {/* <motion.div
-          className="loader-bar"
+      <div className="loader-container">
+        <div className="loader-wrap">
+          <p className="loader-text not-centered ">Diffusion de good vibes en cours</p>
+          <motion.div className="loader-bar1" variants={LoaderVariant} initial="initial" animate="animate"></motion.div>
+          <motion.div className="loader-bar2" variants={LoaderVariant} initial="initial" animate="animate"></motion.div>
+          <motion.div
+          className="loader-bar3"
           variants={LoaderVariant}
           initial="initial"
           animate="animate"
-        ></motion.div> */}
-        {/* <motion.div
-          className="counter"
-          variants={LoaderVariant}
-          initial={{ left: 0 }}
-          animate={{ left: "93%" }}
-          transition={{ duration: 2.3, ease: "linear" }}
-        > */}
-          <p className="loader-text ms-5">
-            {test && count}%</p>
-        {/* </motion.div> */}
+        ></motion.div> 
+          {/* <motion.div
+            className="counter"
+            variants={LoaderVariant}
+            initial={{ left: 0 }}
+            animate={{ left: '93%' }}
+            transition={{ duration: 2.3, ease: 'linear' }}>
+            <p className="loader-text ms-5">{test && count}%</p>
+          </motion.div> */}
+        </div>
       </div>
-    </div>
-  </>
-);
-};
+    </>
+  )
+}
 
-export default Loading;
+export default Loading
