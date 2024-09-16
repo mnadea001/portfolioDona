@@ -1,16 +1,15 @@
-import { AccordionDetails, Typography, Chip } from '@mui/material'
+import { AccordionDetails, Typography } from '@mui/material'
 import { DarkModeContext } from '../providers/DarkModeProvider'
 import { useContext } from 'react'
 import './AccordionContent.css'
 
 interface AccordionContentProps {
   date: string
-  link: string
   lieu: string
-  artistes: string[]
+  imageSrc: string
 }
 
-const AccordionContent: React.FC<AccordionContentProps> = ({ date, lieu, link, artistes }) => {
+const AccordionContent: React.FC<AccordionContentProps> = ({ date, lieu, imageSrc }) => {
   const darkModeContext = useContext(DarkModeContext)
   const darkMode = darkModeContext?.darkMode || false
   const textStyle: React.CSSProperties = {
@@ -29,18 +28,16 @@ const AccordionContent: React.FC<AccordionContentProps> = ({ date, lieu, link, a
             <br></br>
             <Typography style={textStyle}>Lieu: {lieu}</Typography>
             <br></br>
-            <Typography style={textStyle}>
-              <strong>Artistes présents:</strong>
-            </Typography>
-            <div>
-              {artistes.map((language, index) => (
-                <Chip key={index} label={language} style={textStyle} />
-              ))}
-            </div>
+            <img
+              src={imageSrc}
+              alt={`Image pour event`}
+              className="hovered-image"
+              style={{ maxWidth: '100%', height: 'auto', maxHeight: '550px', marginTop: '10px', marginLeft: 'auto' }}
+            />
+
+
             <br></br>
-            <a className="project-link" href={link} target="_blank">
-              Lien vers l'évènement
-            </a>
+
           </div>
         </div>
       </AccordionDetails>

@@ -4,8 +4,8 @@
 
 .hovered-image {
   display: block !important;
-  height: 50px !important;
-  max-height: 300px !important;
+  /* height: 50px !important; */
+  max-height: 500px !important;
   margin-top: 10px !important;
 }
 
@@ -87,6 +87,7 @@
 .accordion-content {
   background-color: transparent !important;
   border: none;
+
 }
 
 .accordion-content:hover {
