@@ -70,48 +70,44 @@
   z-index: 999;
 }
 
+.turntable {
+  background-image: url('../assets/images/turnvinyl.png');
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 1; /* En dessous du vinyle */
+  top: 30%; 
+  left: 34%;
+  /* transform: rotate(40deg); */
+}
+
 .spinner-style {
-  background-image: url('../assets/images/Vector.png');
+  background-image: url('../assets/images/icon-vinyl.png');
   height: 200px;
   width: 200px;
   background-size: cover;
   background-position: center;
   position: absolute;
-  z-index: 2;
+  z-index: 2; /* Au-dessus de la platine */
+  top: 0%;
+  left: 40%;
 }
 
 .spinner-style-dark {
-  background-image: url('../assets/images/Vector2.png');
+  background-image: url('../assets/images/icon-vinyl.png');
   height: 200px;
   width: 200px;
   background-size: cover;
   background-position: center;
   position: absolute;
-  z-index: 2;
+  z-index: 2; /* Au-dessus de la platine */
+  top: 0%;
+  left: 40%;
 }
 
-.spinner-style::after {
-  content: attr(data-text); 
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%);
-  font-size: 1em; 
-  font-weight: bold; 
-  color: #D5FF3C; 
-  text-align: center;
-}
-.spinner-style-dark::after {
-  content: attr(data-text); 
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%);
-  font-size: 1em; 
-  font-weight: bold; 
-  color: #333333;
-  text-align: center;
-}
+
 
 @media screen and (max-width: 768px) {
   .bg-container {

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+
 .icons {
   display: flex;
   justify-content: space-between;
@@ -44,7 +47,8 @@
 }
 
 .header-title {
-  font-family: Inter;
+  font-family: "Calistoga", serif !important;
+
   -webkit-text-stroke: 1px rgb(5, 5, 5);
   color: transparent !important;
   text-transform: lowercase;
@@ -53,7 +57,8 @@
 }
 
 .header-title-dark {
-  font-family: Inter;
+  font-family: "Calistoga", serif !important;
+
   -webkit-text-stroke: 1px #ffffff;
   color: transparent !important;
   text-transform: lowercase;

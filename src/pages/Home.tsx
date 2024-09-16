@@ -28,16 +28,24 @@ const Home: React.FC = () => {
   }, []);
 
   const parallax = useParallax<HTMLDivElement>({
-    easing: "ease",
-    translateX: isMobile ? [-50, 50] : [-300, 100],
-    translateY: isMobile ? [150, 50] : [300, 100],
-    rotate: [0, 360],
-    speed: -20
+    easing: "easeOutQuad",
+    translateY: [70, 100],
+    rotate: [-150, 50]
   });
 
   return (
     <div>
-      <div ref={parallax.ref} className={darkMode ? 'spinner spinner-style-dark' : 'spinner spinner-style'} data-text="SCROLL DOWN" />
+
+<div className="bg-container mx-auto">
+    {/* Image de la platine */}
+    <div className="turntable" />
+    
+    {/* Vinyle qui tourne */}
+    <div ref={parallax.ref} className={darkMode ? 'spinner spinner-style-dark' : 'spinner spinner-style'} />
+  </div>
+
+
+      {/* <div ref={parallax.ref} className={darkMode ? 'spinner spinner-style-dark' : 'spinner spinner-style'} /> */}
       {isMobile ? (
         <>
           <TopSectionMobile />
