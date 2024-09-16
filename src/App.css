@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Rubik&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
 #root {
   max-width: 100%;
   margin: 0 auto;
@@ -79,7 +81,7 @@ h1  {
 
 .loader-bar1 {
   position: absolute;
-  height: 5px;
+  height: 15px;
   width: 100vw;
   background-color: #f92a2a;
   border-radius: 100px;
@@ -88,7 +90,7 @@ h1  {
 
 .loader-bar2 {
   position: absolute;
-  height: 5px;
+  height: 15px;
   width: 100vw;
   background-color: #f9eb2a;
   border-radius: 100px;
@@ -97,7 +99,7 @@ h1  {
 
 .loader-bar3 {
   position: absolute;
-  height: 5px;
+  height: 15px;
   width: 100vw;
   background-color: #6ff92a;
   border-radius: 100px;
@@ -120,12 +122,11 @@ h1  {
   padding-bottom: 0 !important;
   margin-left: 10px;
   margin-top: 40px;
-  text-transform: lowercase;
-  font-family: Inter;
-  color: #D5FF3C !important;
-  /* text-shadow: -3px -3px #ff9696 !important; */
+  color: #ffffff !important;
+  font-family: "Calistoga", serif !important;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1.5em !important;
-  font-weight: 900;
 }
 
 .error-text {
