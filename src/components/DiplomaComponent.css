@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+
+
 .diplomes-section {
   width : 100vw;
 }
@@ -25,35 +28,12 @@ h1 {
 }
 
 
-
-/* .buble-style {
-  background-image: url('../assets/images/buble.svg') !important;
-  height: 200px;
-  width: 200px;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-}
-
-
-.buble-style::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1em;
-  font-weight: bold;
-  color: #1d1c1c;
-  text-align: center;
-} */
-
 .m-scroll {
   display: flex;
   position: relative;
   height: 100px;
   margin: auto;
-  background-color: #D5FF3C;
+  background-color: #D78C00;
   overflow: hidden;
   z-index: 1;
   transform: rotate(-3deg);
@@ -84,6 +64,8 @@ h1 {
   font-weight: 800;
   color: #333333;
   transition: all 8s ease;
+  font-family: "Bagel Fat One", system-ui !important;
+
 }
 
 .m-scroll__title a {

@@ -21,7 +21,7 @@
 }
 
 .turntable-dark {
-  background-image: url('../assets/images/platine-dark.png');
+  background-image: url('../assets/images/turnvinyl.png');
   height: 400px;
   width: 400px;
   background-size: cover;
@@ -46,15 +46,15 @@
 }
 
 .spinner-style-dark {
-  background-image: url('../assets/images/icon-vinyl.png');
-  height: 200px;
-  width: 200px;
+  background-image: url('../assets/images/vinyl.png');
+  height: 300px;
+  width: 300px;
   background-size: cover;
   background-position: center;
   position: absolute;
   z-index: 2; /* Au-dessus de la platine */
-  top: 0%;
-  left: 40%;
+  top: 35%;
+  left: 35%;
 }
 
 

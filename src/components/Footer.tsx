@@ -38,12 +38,12 @@ const Footer: React.FC = () => {
           </li>
           <li>
             <a className="footer-link" href="https://www.linkedin.com/in/mathildenadeau" target="_blank">
-              LINKEDIN <IconLinkedin className='lkd' />
+              Facebook <IconLinkedin className='lkd' />
             </a>
           </li>
           <li>
             <a className="footer-link" href="https://github.com/mnadea001" target="_blank">
-              GITHUB <IconGithub className='github' />
+              Instagram <IconGithub className='github' />
             </a>
           </li>
         </ul>

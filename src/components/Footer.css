@@ -1,12 +1,12 @@
 .footer-container {
-  background: linear-gradient(90deg, rgba(21, 1, 255, 1) 35%, rgba(201, 150, 255, 1) 100%);
+  background: linear-gradient(90deg, #009D36 35%, #D5FF3C 100%);
   color: #FFE7C2;
   padding: 20px 20px;
   text-align: center;
   border-radius: 20px;
   margin-top: 20px; 
   position: relative;
-  border: 1px solid;
+  /* border: 1px solid; */
   box-shadow: 5px 10px #D5FF3C;
   z-index: 1;
 }
