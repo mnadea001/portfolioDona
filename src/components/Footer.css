@@ -72,7 +72,7 @@
 
 
 .arrow {
-  fill: #1501FF;
+  fill: #009D36;
   font-weight: bold;
   position: absolute;
   top: 0;
@@ -97,12 +97,12 @@
 }
 .btn-up:hover {
   border: 1px solid;
-  border-color: #1501FF;
-  box-shadow: 5px 10px #1501FF;
+  border-color: #009D36;
+  box-shadow: 5px 10px #009D36;
 }
 
 .btn-up span {
-  color: #1501FF;
+  color: #009D36;
   font-weight: bold;
   position: absolute;
   top: 80px;

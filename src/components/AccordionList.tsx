@@ -3,13 +3,12 @@ import AccordionItem from './AccordionItem'
 interface AccordionListProps {
   projects: {
     title: string
-    content: string
+    date: string
     link: string
     imageSrc: string
     images: { imgPath: string }[]
-    description: string
-    languages: string[]
-    number: number
+    lieu: string
+    artistes: string[]
   }[]
 }
 
@@ -21,12 +20,11 @@ const AccordionList: React.FC<AccordionListProps> = ({ projects }) => {
           key={index}
           title={project.title}
           link={project.link}
-          content={project.content}
+          date={project.date}
           imageSrc={project.imageSrc}
           images={project.images}
-          description={project.description}
-          languages={project.languages}
-          number={project.number}
+          lieu={project.lieu}
+          artistes={project.artistes}
         />
       ))}
     </div>

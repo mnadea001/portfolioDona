@@ -4,14 +4,13 @@ import { useContext } from 'react'
 import './AccordionContent.css'
 
 interface AccordionContentProps {
-  content: string
+  date: string
   link: string
-  description: string
-  number: number
-  languages: string[]
+  lieu: string
+  artistes: string[]
 }
 
-const AccordionContent: React.FC<AccordionContentProps> = ({ content, description, link, number, languages }) => {
+const AccordionContent: React.FC<AccordionContentProps> = ({ date, lieu, link, artistes }) => {
   const darkModeContext = useContext(DarkModeContext)
   const darkMode = darkModeContext?.darkMode || false
   const textStyle: React.CSSProperties = {
@@ -25,26 +24,22 @@ const AccordionContent: React.FC<AccordionContentProps> = ({ content, descriptio
         <div className="content-container flex-container">
           <div className="flex-item">
             <Typography style={textStyle}>
-              <strong>{content}</strong>
+              <strong>{date}</strong>
             </Typography>
             <br></br>
-            <Typography style={textStyle}>{description}</Typography>
+            <Typography style={textStyle}>Lieu: {lieu}</Typography>
             <br></br>
             <Typography style={textStyle}>
-              <strong>Taille équipe:</strong> {number}
-            </Typography>
-            <br></br>
-            <Typography style={textStyle}>
-              <strong>Compétences:</strong>
+              <strong>Artistes présents:</strong>
             </Typography>
             <div>
-              {languages.map((language, index) => (
+              {artistes.map((language, index) => (
                 <Chip key={index} label={language} style={textStyle} />
               ))}
             </div>
             <br></br>
             <a className="project-link" href={link} target="_blank">
-              Lien vers le projet
+              Lien vers l'évènement
             </a>
           </div>
         </div>

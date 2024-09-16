@@ -7,6 +7,7 @@ import DubSection from '../components/DubSection';
 import AboutSection from '../components/AboutSection';
 import DiskSection from '../components/DiskSection';
 import IntroSection from '../components/IntroSection';
+import DatesSection from '../components/DatesSection';
 
 
 import { useEffect, useState } from 'react';
@@ -50,7 +51,9 @@ const Home: React.FC = () => {
           <ReggaeSection />
           <DubSection />  
           <AboutSection /> 
-          <DiplomaComponent />                 
+          <DiplomaComponent />       
+          <DatesSection />
+          
           <DiskSection />
           {/* <ProjectsSection /> */}
           {/* <ExperiencesSection /> */}

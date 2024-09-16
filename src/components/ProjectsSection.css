@@ -1,6 +1,9 @@
-.projets-section {
+
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+
+.projets-content {
   height: 100%;
-  width: 100%;
+  width: 100% !important;
   margin: 0;
   padding: 0;
 }
@@ -11,8 +14,10 @@
 }
 
 
-.projets-section h1 {
-  padding-bottom: 40px;
-  color: #FFE7C2;
-  margin-left: 10px;
+.projets-content .projets h1, h1 {
+  font-family: "Bagel Fat One", system-ui !important;
+  font-size: 5em !important;
+  color: #D78C00 !important;
+  text-align: left;
+  margin-left: 80px;
 }
