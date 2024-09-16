@@ -8,7 +8,7 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { Route, Routes } from 'react-router'
-import SliderSection from './components/SliderSection'
+import RootsSection from './components/RootsSection'
 import NotFound from './pages/NotFound'
 import DarkModeProvider from './providers/DarkModeProvider';
 import DiplomaComponent from './components/DiplomaComponent';
@@ -36,7 +36,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Header />}>
               <Route index element={loading ? <Loading /> : <Home />} />
-              <Route path="/slider" element={<SliderSection />} />
+              <Route path="/slider" element={<RootsSection />} />
               <Route path="*" element={<NotFound />} />
               <Route path="/projects" element={<ProjectsSection />} />
               <Route path="/experiences" element={<ExperiencesSection />} />

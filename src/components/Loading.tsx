@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import lion from '../assets/images/7mbn.gif'
+// import lion from '../assets/images/7mbn.gif'
 
 const LoaderVariant = {
   initial: { left: '-100vw' },
@@ -36,7 +36,7 @@ const Loading: React.FC = () => {
           </motion.div>
           <p className="loader-text not-centered ">Diffusion de good vibes en cours</p>
 
-          <img className="lion-img" src={lion} />
+          {/* <img className="lion-img" src={lion} /> */}
 
           <motion.div className="loader-bar1" variants={LoaderVariant} initial="initial" animate="animate"></motion.div>
           <motion.div className="loader-bar2" variants={LoaderVariant} initial="initial" animate="animate"></motion.div>

@@ -1,15 +1,20 @@
 import './Home.css'
 import { useParallax } from "react-scroll-parallax";
-import ProjectsSection from '../components/ProjectsSection';
-import TopSection from '../components/TopSection';
-import ExperiencesSection from '../components/ExperiencesSection';
+// import ProjectsSection from '../components/ProjectsSection';
+// import TopSection from '../components/TopSection';
+// import ExperiencesSection from '../components/ExperiencesSection';
 import DiplomaComponent from '../components/DiplomaComponent';
-import SliderSection from '../components/SliderSection';
+import RootsSection from '../components/RootsSection';
+import ReggaeSection from '../components/ReggaeSection';
+import DubSection from '../components/DubSection';
+import AboutSection from '../components/AboutSection';
+
+
 import { DarkModeContext } from '../providers/DarkModeProvider';
 import { useEffect, useState, useContext } from 'react';
-import DiplomaMobileComponent from '../components/mobile/DiplomaMobileComponent';
-import ExperiencesMobile from '../components/mobile/ExperiencesMobile';
-import TopSectionMobile from '../components/mobile/TopSectionMobile';
+// import DiplomaMobileComponent from '../components/mobile/DiplomaMobileComponent';
+// import ExperiencesMobile from '../components/mobile/ExperiencesMobile';
+// import TopSectionMobile from '../components/mobile/TopSectionMobile';
 
 const Home: React.FC = () => {
   const darkModeContext = useContext(DarkModeContext);
@@ -29,16 +34,16 @@ const Home: React.FC = () => {
 
   const parallax = useParallax<HTMLDivElement>({
     easing: "easeOutQuad",
-    translateY: [70, 100],
+    // translateY: [-30, 90],
     rotate: [-150, 50]
   });
 
   return (
     <div>
 
-<div className="bg-container mx-auto">
+<div className="bg-container">
     {/* Image de la platine */}
-    <div className="turntable" />
+    <div className={darkMode ? 'turntable-dark' : 'turntable'} />
     
     {/* Vinyle qui tourne */}
     <div ref={parallax.ref} className={darkMode ? 'spinner spinner-style-dark' : 'spinner spinner-style'} />
@@ -48,18 +53,21 @@ const Home: React.FC = () => {
       {/* <div ref={parallax.ref} className={darkMode ? 'spinner spinner-style-dark' : 'spinner spinner-style'} /> */}
       {isMobile ? (
         <>
-          <TopSectionMobile />
-          <SliderSection />
-          <ProjectsSection />
+          {/* <TopSectionMobile /> */}
+          <RootsSection />
+          {/* <ProjectsSection />
           <ExperiencesMobile />
-          <DiplomaMobileComponent />
+          <DiplomaMobileComponent /> */}
         </>
       ) : (
         <>
-          <TopSection />
-          <SliderSection />
-          <ProjectsSection />
-          <ExperiencesSection />
+          {/* <TopSection /> */}
+          <RootsSection />
+          <ReggaeSection />
+          <DubSection />
+          <AboutSection />
+          {/* <ProjectsSection /> */}
+          {/* <ExperiencesSection /> */}
           <DiplomaComponent />
         </>
       )}

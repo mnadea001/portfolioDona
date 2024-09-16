@@ -1,0 +1,22 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+
+.title-roots {
+  font-family: "Bagel Fat One", system-ui !important;
+  font-size: 10em !important;
+  color: #D78C00 !important;
+
+}
+
+
+
+/* Slider section styles */
+.roots-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #CB0000 !important;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+

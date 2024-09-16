@@ -2,73 +2,10 @@
 .bg-container {
   position: relative;
   height: 100vh;
-  top: 40%; 
-  left: 40%; 
+
   margin-bottom: 100px;
 }
 
-.absolute-text {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #FFE7C2;
-}
-
-.colored-circle {
-  position: absolute;
-  border-radius: 50%;
-}
-
-.first-circle {
-  width: 300px;
-  height: 300px;
-  top: 20%;
-  left: 0%;
-  background-color: #1501FF;
-}
-
-.first-circle::after {
-  content: attr(data-text);
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%);
-  font-size: 1em; 
-  font-weight: bold;
-  color: #FFE7C2;
-  text-align: center;
-}
-
-.second-circle {
-  width: 300px;
-  height: 300px;
-  top: 20%;
-  left: 0%;
-  background-color: #D5FF3C;
-}
-.second-circle::after {
-  content: attr(data-text); 
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%);
-  font-size: 1em; 
-  font-weight: bold; 
-  color: #333333;
-  text-align: center; 
-}
-
-#homeImg {
-  transform: translate(0%, 100%);
-  border-radius: 50%;
-  height: 300px;
-  width: 300px;
-  position: absolute;
-  top: 20%;
-  left: 0%;
-  object-fit: cover;
-  z-index: 999;
-}
 
 .turntable {
   background-image: url('../assets/images/turnvinyl.png');
@@ -83,16 +20,29 @@
   /* transform: rotate(40deg); */
 }
 
+.turntable-dark {
+  background-image: url('../assets/images/platine-dark.png');
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 1; /* En dessous du vinyle */
+  top: 30%; 
+  left: 34%;
+  /* transform: rotate(40deg); */
+}
+
 .spinner-style {
-  background-image: url('../assets/images/icon-vinyl.png');
-  height: 200px;
-  width: 200px;
+  background-image: url('../assets/images/vinyl.png');
+  height: 300px;
+  width: 300px;
   background-size: cover;
   background-position: center;
   position: absolute;
   z-index: 2; /* Au-dessus de la platine */
-  top: 0%;
-  left: 40%;
+  top: 35%;
+  left: 35%;
 }
 
 .spinner-style-dark {
@@ -116,23 +66,4 @@
     height: 50vh;
   }
 
-  .absolute-text {
-    top: 90%;
-    left: 50%;
-    transform: translate(50%, 50%);
-  }
-
-  .first-circle,
-  .second-circle {
-    width: 150px; /* Adjust the value as needed */
-    height: 150px; /* Adjust the value as needed */
-    top: 10%;
-    left:0% /* Adjust the value as needed */
-  }
-
-  #homeImg {
-    height: 150px; /* Adjust the value as needed */
-    width: 150px; /* Adjust the value as needed */
-    top: 10%; /* Adjust the value as needed */
-  }
 }

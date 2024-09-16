@@ -1,12 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
 
 #root {
   max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
-  --background-color: #eef976;
+  --background-color: #D5C5B6;
   --text-color: #000000;
   box-sizing: border-box;
   overflow: hidden;
@@ -19,7 +20,7 @@ body {
 }
 
 body.dark-mode {
-  --background-color: #00652c;
+  --background-color: #2b2b2b;
   --text-color: #ffdca7;
 }
 
@@ -131,7 +132,7 @@ h1  {
   color: transparent !important;
   text-transform: lowercase;
   font-size: 2em;
-  font-family: "Calistoga", serif !important;
+  font-family: "Bagel Fat One", system-ui !important;
   font-weight: 400;
   font-style: normal;
   font-size: 1.5em !important;
@@ -150,7 +151,6 @@ h1  {
 h2 {
   background: linear-gradient(30deg, #848282, #000000);
   padding: 0 !important;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
