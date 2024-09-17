@@ -11,7 +11,7 @@ import IconSunFill from '../assets/icons/IconSunFill';
 import IconMoon from '../assets/icons/IconMoon';
 import { DarkModeContext, DarkModeContextProps } from '../providers/DarkModeProvider';
 
-import { Zoom, JackInTheBox, Slide, Bounce } from "react-awesome-reveal";
+import { Zoom, Bounce } from "react-awesome-reveal";
 
 const Header: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -48,7 +48,7 @@ const Header: React.FC = () => {
           style={{
             display: 'flex',
             justifyContent: 'center',
-            backgroundColor: darkMode ? '#333333' : '#C996FF',
+            backgroundColor: darkMode ? '#333333' : '#D5C5B6',
             color: '#fff',
             paddingTop: '50px'
           }}
@@ -63,37 +63,29 @@ const Header: React.FC = () => {
               style={{ paddingLeft: '15px' }} />
           </IconButton>
         </span>
-        <DialogContent sx={{   backgroundColor: darkMode ? '#333333' : '#C996FF', }}>
+        <DialogContent sx={{   backgroundColor: darkMode ? '#333333' : '#D5C5B6', }}>
            <List style={{ display: 'flex', textAlign: 'center', flexDirection: 'column' }}>
         <Zoom>
           <NavLink to="/" className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
             Accueil
           </NavLink>
         </Zoom>
-        <JackInTheBox>
-          <NavLink
-            to="/slider"
-            className={darkMode ? 'selected-dark' : 'selected'}
-            onClick={toggleModal}
-          >
-            Compétences
-          </NavLink>
-        </JackInTheBox>
         <Bounce>
-          <NavLink to="/projects" className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
-            Projets
+          <NavLink to="/about" className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
+            Bio
           </NavLink>
         </Bounce>
-        <Slide>
+        <Bounce>
+          <NavLink to="/projects" className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
+            Dates
+          </NavLink>
+        </Bounce>
+        {/* <Slide>
           <NavLink to={isMobile ? "/experiences-mobile" : "/experiences"} className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
             Expériences
           </NavLink>
-        </Slide>
-        <Zoom>
-          <NavLink to={isMobile ? "/diplomes-mobile" : "/diplomes"} className={darkMode ? 'selected-dark' : 'selected'} onClick={toggleModal}>
-            Diplomes
-          </NavLink>
-        </Zoom>
+        </Slide> */}
+
       </List>
         </DialogContent>
       </Dialog>

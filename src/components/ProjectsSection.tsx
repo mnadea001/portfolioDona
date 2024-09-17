@@ -1,8 +1,8 @@
 import AccordionList from './AccordionList'
 import './ProjectsSection.css'
 import { Zoom } from 'react-awesome-reveal'
-// import { useContext } from 'react'
-// import { DarkModeContext } from '../providers/DarkModeProvider'
+import { useContext } from 'react'
+import { DarkModeContext } from '../providers/DarkModeProvider'
 
 import dates2024 from '../assets/data/projects2024.js'
 import dates2023 from '../assets/data/projects2023.js'
@@ -12,37 +12,44 @@ import dates2020 from '../assets/data/projects2020.js'
 
 
 const ProjectsSection: React.FC = () => {
+  const darkModeContext = useContext(DarkModeContext);
+  const darkMode = darkModeContext?.darkMode || false;
+  const textStyle: React.CSSProperties = {
+    color: darkMode === true ? '#FFFFFF' : '#000000',
+    fontFamily: "Bagel Fat One", 
+    fontSize: '3em'
 
+  };
 
   return (
     <>
       <section className="projets-content">
         <section className="projets">
           <Zoom>
-            <h1>
+            <p className="dates-title">
               Dates
-            </h1>
+            </p>
           </Zoom>    
           </section>
-          <h1>
+          <p style={textStyle}>
               2024
-            </h1>
+            </p>
           <AccordionList projects={dates2024} />
-          <h1>
+          <p style={textStyle}>
               2023
-            </h1>
+            </p>
           <AccordionList projects={dates2023} />
-          <h1>
+          <p style={textStyle}>
               2022
-            </h1>
+            </p>
           <AccordionList projects={dates2022} />
-          <h1>
+          <p style={textStyle}>
               2021
-            </h1>
+            </p>
           <AccordionList projects={dates2021} />
-          <h1>
+          <p style={textStyle}>
               2020
-            </h1>
+            </p>
           <AccordionList projects={dates2020} />
       </section>
     </>

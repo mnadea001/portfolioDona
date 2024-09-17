@@ -1,6 +1,5 @@
 import './Home.css'
 
-import DiplomaComponent from '../components/DiplomaComponent';
 import RootsSection from '../components/RootsSection';
 import ReggaeSection from '../components/ReggaeSection';
 import DubSection from '../components/DubSection';
@@ -50,8 +49,7 @@ const Home: React.FC = () => {
           <RootsSection />
           <ReggaeSection />
           <DubSection />  
-          <AboutSection /> 
-          <DiplomaComponent />       
+          <AboutSection />   
           <DatesSection />
           
           <DiskSection />

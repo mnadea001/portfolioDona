@@ -20,31 +20,25 @@
 }
 
 .selected {
-  font-size: 3em;
-  font-weight: 100;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, cursive;
-  text-transform: uppercase;
-  -webkit-text-stroke: 1px white;
-  color: transparent;
+  font-family: "Bagel Fat One", system-ui !important;
+  font-size: 5em;
+  color: #000000 !important;
 }
 
 .selected-dark {
-  font-size: 3em;
-  font-weight: 100;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, cursive;
-  text-transform: uppercase;
-  -webkit-text-stroke: 1px white;
-  color: transparent;
+  font-family: "Bagel Fat One", system-ui !important;
+  font-size: 5em;
+  color: #ffffff !important;
 }
 
 .selected:hover {
-  color: #D5FF3C !important;
-  text-shadow: 5px 5px #fcfcfc;
+  color: #000000 !important;
+  text-shadow: 5px 5px #0a6130;
 }
 
 .selected-dark:hover {
-  color: #D5FF3C !important;
-  text-shadow: 5px 5px #C996FF;
+  color: #ffffff !important;
+  text-shadow: 5px 5px #f9eb2a;
 }
 
 .header-title {
@@ -67,4 +61,11 @@
 
 .btn-dark-mode {
   z-index: 3;
+}
+
+.nav-link {
+  font-family: "Bagel Fat One", system-ui !important;
+  font-size: 5em;
+  color: #ffffff !important;
+
 }

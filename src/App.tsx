@@ -14,6 +14,7 @@ import DarkModeProvider from './providers/DarkModeProvider';
 import DiplomaComponent from './components/DiplomaComponent';
 import DiplomaMobileComponent from './components/mobile/DiplomaMobileComponent'; 
 import ExperiencesMobile from './components/mobile/ExperiencesMobile';
+import AboutSection from './components/AboutSection';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
               <Route path="/slider" element={<RootsSection />} />
               <Route path="*" element={<NotFound />} />
               <Route path="/projects" element={<ProjectsSection />} />
+              <Route path="/about" element={<AboutSection />} />
               <Route path="/experiences" element={<ExperiencesSection />} />
               <Route path="/experiences-mobile" element={<ExperiencesMobile />} />
               <Route path="/diplomes" element={<DiplomaComponent />} />

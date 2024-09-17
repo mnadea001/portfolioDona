@@ -9,8 +9,11 @@ const DatesSection: React.FC = () => {
   const darkModeContext = useContext(DarkModeContext)
   const darkMode = darkModeContext?.darkMode || false
   const textStyle: React.CSSProperties = {
-    color: darkMode === true ? '#C996FF' : '#FFE7C2'
-  }
+    color: darkMode === true ? '#FFFFFF' : '#000000',
+    fontFamily: "Avenir", 
+    fontSize: '3em'
+
+  };
 
   const isMobile = window.innerWidth <= 768
 
@@ -22,7 +25,7 @@ const DatesSection: React.FC = () => {
             Dates
           </p>
         </Zoom>
-        <NavLink to="/projects" className="dates-link">
+        <NavLink to="/projects" style={textStyle}>
           Voir toutes les dates
         </NavLink>
       </div>
