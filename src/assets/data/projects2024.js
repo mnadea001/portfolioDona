@@ -14,32 +14,32 @@ import provencal from '../images/provencal.jpg'
 import melodub from '../images/melodub.jpg'
 
 const projects2024 = [
-    {
-        title: 'PLAY IT LOUD',
-        date: '5 Octobre 2024',
-        lieu: 'Nantes, France',
-        imageSrc: melodub
-      },
-    {
-        title: 'Provençal Dub Corner',
-        date: '21 Septembre 2024',
-        lieu: 'Aubagne, France',
-        imageSrc: provencal
-      },
-    {
-        title: 'OPEN AIR POLACABANA',
-        date: '7 Septembre 2024',
-        lieu: 'Bordeaux, France',
-        imageSrc: Polacabana
-      },
-    {
-        title: 'HIM DUB FEST',
-        date: '28 Aout 2024',
-        lieu: 'Rapoula de Coa, Portugal',
-        imageSrc: him
-      },
   {
-    title: 'CABARET VERT',
+    title: 'PLAY IT LOUD',
+    date: '5 Octobre 2024',
+    lieu: 'Nantes, France',
+    imageSrc: melodub
+  },
+  {
+    title: 'Provençal Dub Corner',
+    date: '21 Septembre 2024',
+    lieu: 'Aubagne, France',
+    imageSrc: provencal
+  },
+  {
+    title: 'OPEN AIR POLACABANA',
+    date: '7 Septembre 2024',
+    lieu: 'Bordeaux, France',
+    imageSrc: Polacabana
+  },
+  {
+    title: 'HIM DUB FEST',
+    date: '28 Aout 2024',
+    lieu: 'Rapoula de Coa, Portugal',
+    imageSrc: him
+  },
+  {
+    title: 'CABARET VERT FESTIVAL',
     date: '15 - 18 Aout 2024',
     lieu: 'Charleville-Mézières, France',
     imageSrc: cabaret24

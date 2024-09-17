@@ -5,6 +5,7 @@ import { Zoom } from 'react-awesome-reveal'
 // import { DarkModeContext } from '../providers/DarkModeProvider'
 
 import dates2024 from '../assets/data/projects2024.js'
+import dates2023 from '../assets/data/projects2023.js'
 
 const ProjectsSection: React.FC = () => {
 
@@ -23,7 +24,10 @@ const ProjectsSection: React.FC = () => {
               2024
             </h1>
           <AccordionList projects={dates2024} />
-    
+          <h1>
+              2023
+            </h1>
+          <AccordionList projects={dates2023} />
       </section>
     </>
   )

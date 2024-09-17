@@ -3,7 +3,7 @@ import './DatesSection.css'
 import { Zoom } from 'react-awesome-reveal'
 import { useContext } from 'react'
 import { DarkModeContext } from '../providers/DarkModeProvider'
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 
 const DatesSection: React.FC = () => {
   const darkModeContext = useContext(DarkModeContext)
@@ -22,9 +22,9 @@ const DatesSection: React.FC = () => {
             Dates
           </p>
         </Zoom>
-        <NavLink to="/projects" className={darkMode ? 'selected-dark' : 'selected'}>
-            Voir toutes les dates
-          </NavLink>
+        <NavLink to="/projects" className="dates-link">
+          Voir toutes les dates
+        </NavLink>
       </div>
     </>
   )
