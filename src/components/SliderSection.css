@@ -1,0 +1,31 @@
+
+/* General styles */
+
+ .container {
+  margin-top: 50px;
+  margin-bottom: 150px;
+ } 
+  /* Slider section styles */
+  .media-section {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    /* padding-left: 50px; */
+  }
+  
+  .slider-section h1 {
+    padding-bottom: 40px;
+    margin-left: 10px;
+  }
+  
+  .slide {
+    height: 100px;
+    width: 250px;
+    margin: 5px;
+    padding: 15px;
+  }
+
+  .slide-image {
+    height: 250px;
+   object-fit: scale-down;
+  }
+  
