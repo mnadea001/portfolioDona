@@ -1,80 +1,60 @@
-.accordion {
+.accordion-card {
+  position: relative;
+  width: 345px; /* Taille fixe pour que toutes les cartes aient la même largeur */
+  height: 350px; /* Hauteur fixe pour uniformiser */
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.accordion-card:hover {
+  transform: scale(1.05); /* Zoom léger au survol si vous voulez un effet */
+}
+
+.image-container {
+  position: relative;
   width: 100%;
+  height: 100%;
 }
 
-.hovered-image {
-  display: block !important;
-  /* height: 50px !important; */
-  max-height: 500px !important;
-  margin-top: 10px !important;
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important; /* Assure que l'image s'ajuste bien à la taille de la carte */
+  transition: opacity 0.3s ease;
+  background-color: black;
 }
 
-.titleText{
-  -webkit-text-stroke: 1px #333333;
-  color: transparent !important;
-  text-transform: lowercase;
-  font-size: 1.6em !important;
-  margin-left: 50px !important;
-}
-.titleText-dark {
-  -webkit-text-stroke: 1px #D5FF3C;
-  color: transparent !important;
-  text-transform: lowercase;
-  font-size: 1.6em !important;
-  margin-left: 50px !important;
-}
-.title-dark:hover .titleText-dark{
-  color: #D5FF3C !important;
-}
-
-
-.title:hover .titleText{
-  color: #333333 !important;
-}
-
-.content {
-
-  font-size: larger;
-}
-
-.iconDown {
-  fill: #D5FF3C;
-}
-
-.iconDowndark {
-  fill: #333333 !important;
-}
-
-.carouselstyle {
-  max-width: 400;
-  flex-grow: 1;
-}
-
-.flex-container {
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Fond noir transparent */
+  opacity: 0; /* Masquer par défaut */
+  transition: opacity 0.3s ease;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-.flex-item {
-  flex: 1;
-  padding: 10px;
-  text-align: start;
+.header-text, .content-text {
+  color: white;
+  z-index: 2;
 }
 
-@media screen and (min-width: 768px) {
-  .flex-container {
-    flex-direction: row;
-  }
+.accordion-card:hover .card-image {
+  opacity: 0; /* Masque l'image au survol */
 }
 
-.content-container {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
+.accordion-card:hover .overlay {
+  opacity: 1; /* Affiche le texte au survol */
 }
+
 
 .carousel-container {
   width: 100%;

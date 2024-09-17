@@ -132,7 +132,7 @@ h1  {
   color: transparent !important;
   text-transform: lowercase;
   font-size: 2em;
-  font-family: "Bagel Fat One", system-ui !important;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.5em !important;
