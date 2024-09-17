@@ -48,7 +48,8 @@
   color: #D5FF3C !important;
   font-size: 2em !important;
   align-items: center;
-  font-family: 'Calistoga', cursive;
+  font-family: "Bagel Fat One", system-ui !important;
+
   text-transform: lowercase;
 }
 
@@ -129,7 +130,6 @@
 }
 
 .footer-link:hover {
-  font-family: Inter;
   -webkit-text-stroke: 1px #D5FF3C;
   color: transparent !important;
 }

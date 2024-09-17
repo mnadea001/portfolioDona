@@ -1,8 +1,7 @@
 import './Footer.css';
 import ArrowUpIcon from '../assets/icons/ArrowUpIcon';
-import MailIcon from '../assets/icons/MailIcon';
-import IconGithub from '../assets/icons/IconGithub';
-import IconLinkedin from '../assets/icons/IconLinkedin';
+import IconInsta from '../assets/icons/IconInsta';
+import FbIcon from '../assets/icons/FbIcon';
 // import gsap from "gsap";
 // import { useEffect } from 'react';
 
@@ -32,18 +31,13 @@ const Footer: React.FC = () => {
       <div className="footer-content">
         <ul className="footer-links">
           <li>
-            <a className="footer-link" href="mailto:mathilde.nadeau@hotmail.fr" target="_blank">
-              MAIL <MailIcon className='mail' />
+            <a className="footer-link" href="https://www.facebook.com/matilda.dona.dub/" target="_blank">
+              Facebook <FbIcon className='facebook' />
             </a>
           </li>
           <li>
-            <a className="footer-link" href="https://www.linkedin.com/in/mathildenadeau" target="_blank">
-              Facebook <IconLinkedin className='lkd' />
-            </a>
-          </li>
-          <li>
-            <a className="footer-link" href="https://github.com/mnadea001" target="_blank">
-              Instagram <IconGithub className='github' />
+            <a className="footer-link" href="https://www.instagram.com/matildadona_/" target="_blank">
+              Instagram <IconInsta className='instagram' />
             </a>
           </li>
         </ul>
