@@ -7,6 +7,9 @@ import { Zoom } from 'react-awesome-reveal'
 import dates2024 from '../assets/data/projects2024.js'
 import dates2023 from '../assets/data/projects2023.js'
 import dates2022 from '../assets/data/projects2022.js'
+import dates2021 from '../assets/data/projects2021.js'
+import dates2020 from '../assets/data/projects2020.js'
+
 
 const ProjectsSection: React.FC = () => {
 
@@ -33,6 +36,14 @@ const ProjectsSection: React.FC = () => {
               2022
             </h1>
           <AccordionList projects={dates2022} />
+          <h1>
+              2021
+            </h1>
+          <AccordionList projects={dates2021} />
+          <h1>
+              2020
+            </h1>
+          <AccordionList projects={dates2020} />
       </section>
     </>
   )
