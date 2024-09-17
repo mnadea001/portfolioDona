@@ -4,6 +4,7 @@
   height: 350px; /* Hauteur fixe pour uniformiser */
   overflow: hidden;
   transition: transform 0.3s ease;
+
 }
 
 .accordion-card:hover {
@@ -21,7 +22,7 @@
   height: 100%;
   object-fit: contain !important; /* Assure que l'image s'ajuste bien à la taille de la carte */
   transition: opacity 0.3s ease;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .overlay {
@@ -45,6 +46,7 @@
 .header-text, .content-text {
   color: white;
   z-index: 2;
+  font-family: "Avenir", 
 }
 
 .accordion-card:hover .card-image {
@@ -64,28 +66,3 @@
   }
 }
 
-.accordion-content {
-  background-color: transparent !important;
-  border: none;
-
-}
-
-.accordion-content:hover {
-  background-color: #b269ff !important;
-  border: none;
-}
-
-.dark-mode .accordion-content:hover {
-  background-color: rgba(87, 87, 87, 0.748) !important;
-  border: none;
-}
-
-
-.accordion-expanded.dark-mode {
-  background-color: rgba(87, 87, 87, 0.748) !important;
-  border: none
-}
-
-.accordion-expanded {
-  background-color: #b269ff !important;
-}

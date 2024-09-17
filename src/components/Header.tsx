@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import { Outlet } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import IconButton from '@mui/material/IconButton';
@@ -16,21 +16,21 @@ import { Zoom, Bounce } from "react-awesome-reveal";
 const Header: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { darkMode, toggleDarkMode } = useContext<DarkModeContextProps>(DarkModeContext);
-  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 768);
+  // const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 768);
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsMobile(window.innerWidth <= 768);
+  //   };
+  //   handleResize();
+  //   window.addEventListener('resize', handleResize);
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // }, []);
 
   return (
     <>

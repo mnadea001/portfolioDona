@@ -25,10 +25,10 @@ const AboutSection: React.FC = () => {
         </Zoom>
         <div className="about-box">
           <div className="about-text">
-            {' '}
+    
             <Slide>
               <p>
-                {' '}
+   
                 Dub addict depuis plus d'une dizaine d’années, Matilda commence à collectionner les vinyls début 2020 à Paris. Encouragée
                 par ses ami.e.s (Meladub, Erinejah, Peeny Wally, Neboty Roots, Snoww Dub, Blissful Dub..) elle commence à sélecter durant le
                 confinement. Depuis elle a joué sur une 40aine d'événements en France, en Suisse et récemment au Portugal, soutenue par de
