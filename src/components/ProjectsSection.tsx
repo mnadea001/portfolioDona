@@ -10,47 +10,39 @@ import dates2022 from '../assets/data/projects2022.js'
 import dates2021 from '../assets/data/projects2021.js'
 import dates2020 from '../assets/data/projects2020.js'
 
-
 const ProjectsSection: React.FC = () => {
-  const darkModeContext = useContext(DarkModeContext);
-  const darkMode = darkModeContext?.darkMode || false;
+  const darkModeContext = useContext(DarkModeContext)
+  const darkMode = darkModeContext?.darkMode || false
   const textStyle: React.CSSProperties = {
     color: darkMode === true ? '#FFFFFF' : '#000000',
-    fontFamily: "Bagel Fat One", 
+    fontFamily: 'Bagel Fat One',
     fontSize: '3em'
-
-  };
+  }
 
   return (
     <>
       <section className="projets-content">
         <section className="projets">
           <Zoom>
-            <p className="dates-title">
-              Dates
-            </p>
-          </Zoom>    
-          </section>
-          <p style={textStyle}>
-              2024
-            </p>
-          <AccordionList projects={dates2024} />
-          <p style={textStyle}>
-              2023
-            </p>
-          <AccordionList projects={dates2023} />
-          <p style={textStyle}>
-              2022
-            </p>
-          <AccordionList projects={dates2022} />
-          <p style={textStyle}>
-              2021
-            </p>
-          <AccordionList projects={dates2021} />
-          <p style={textStyle}>
-              2020
-            </p>
-          <AccordionList projects={dates2020} />
+            <p className="dates-title">Dates</p>
+          </Zoom>
+        </section>
+        <p style={textStyle}>2024</p>
+        <AccordionList projects={dates2024} />
+        <p style={textStyle}>2023</p>
+        <AccordionList projects={dates2023} />
+        <p style={textStyle}>2022</p>
+        <AccordionList projects={dates2022} />
+        <p style={textStyle}>2021</p>
+        <p>
+          * <em>année covid / soirées privées</em>
+        </p>
+        <AccordionList projects={dates2021} />
+        <p style={textStyle}>2020</p>
+        <p>
+          * <em>année covid / soirées privées</em>
+        </p>
+        <AccordionList projects={dates2020} />
       </section>
     </>
   )

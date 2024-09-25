@@ -9,7 +9,7 @@
   /* Sur les écrans de taille moyenne et plus (tablettes et desktop) */
   @media (min-width: 768px) {
     .accordion-list-container {
-      grid-template-columns: repeat(2, 1fr); /* 2 cartes par ligne sur tablette */
+      grid-template-columns: repeat(1, 1fr); /* 2 cartes par ligne sur tablette */
     }
   }
   

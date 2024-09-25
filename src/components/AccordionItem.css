@@ -1,14 +1,14 @@
+
+
 .accordion-card {
   position: relative;
-  width: 345px; /* Taille fixe pour que toutes les cartes aient la même largeur */
-  height: 350px; /* Hauteur fixe pour uniformiser */
+  width: 350px; /* Taille fixe pour que toutes les cartes aient la même largeur */
   overflow: hidden;
   transition: transform 0.3s ease;
-
 }
 
 .accordion-card:hover {
-  transform: scale(1.05); /* Zoom léger au survol si vous voulez un effet */
+  transform: scale(1.05); /* Zoom léger au survol */
 }
 
 .image-container {
@@ -22,7 +22,7 @@
   height: 100%;
   object-fit: contain !important; /* Assure que l'image s'ajuste bien à la taille de la carte */
   transition: opacity 0.3s ease;
-  /* background-color: black; */
+  opacity: 0; /* Masque l'image par défaut */
 }
 
 .overlay {
@@ -35,35 +35,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8); /* Fond noir transparent */
-  opacity: 0; /* Masquer par défaut */
+  background-color: rgb(0, 0, 0); /* Fond noir transparent */
+  opacity: 1; /* Affiche le texte par défaut */
   transition: opacity 0.3s ease;
   color: white;
   text-align: center;
   padding: 20px;
 }
 
-
-.header-text, .content-text {
+.header-card{
+  text-transform: uppercase;
+}
+.content-text {
   color: white;
   z-index: 2;
-  font-family: "Avenir", 
+  font-family: 'Calistoga', cursive !important;
+
+  /* font-family: "Avenir" !important; */
 }
 
 .accordion-card:hover .card-image {
-  opacity: 0; /* Masque l'image au survol */
+  opacity: 1; /* Affiche l'image au survol */
 }
 
 .accordion-card:hover .overlay {
-  opacity: 1; /* Affiche le texte au survol */
+  opacity: 0; /* Masque le texte au survol */
 }
-
-
-.carousel-container {
-  width: 100%;
-
-  @media (min-width: 768px) {
-    width: 50%; /* Adjust as needed */
-  }
-}
-

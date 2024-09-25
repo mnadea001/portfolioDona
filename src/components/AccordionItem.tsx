@@ -1,12 +1,11 @@
-import React, { useContext, useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Card from '@mui/material/Card'
 import CardHeader from '@mui/material/CardHeader'
 import CardMedia from '@mui/material/CardMedia'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
-import { DarkModeContext } from '../providers/DarkModeProvider'
-import gsap from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './AccordionItem.css'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -19,10 +18,8 @@ interface AccordionItemProps {
 }
 
 const AccordionItem: React.FC<AccordionItemProps> = ({ title, date, imageSrc, lieu }) => {
-  const darkModeContext = useContext(DarkModeContext)
-  const darkMode = darkModeContext?.darkMode || false
   const bgStyle: React.CSSProperties = {
-    backgroundColor: darkMode === true ? '#2b2b2b' : '#D5C5B6'
+    backgroundColor: '#2b2b2b'
   }
 
   // Use useRef to reference the card element
@@ -31,7 +28,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, date, imageSrc, li
   useEffect(() => {
     // Initial setup for skew animation with GSAP
     const proxy = { skew: 0 }
-    const skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg")
+    const skewSetter = gsap.quickSetter('.skewElem', 'skewY', 'deg')
     const clamp = gsap.utils.clamp(-20, 20)
 
     ScrollTrigger.create({
@@ -42,7 +39,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, date, imageSrc, li
           gsap.to(proxy, {
             skew: 0,
             duration: 0.8,
-            ease: "power3",
+            ease: 'power3',
             overwrite: true,
             onUpdate: () => skewSetter(proxy.skew)
           })
@@ -52,7 +49,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, date, imageSrc, li
 
     // Apply force3D and transformOrigin for better performance
     if (cardRef.current) {
-      gsap.set(cardRef.current, { transformOrigin: "right center", force3D: true })
+      gsap.set(cardRef.current, { transformOrigin: 'right center', force3D: true })
     }
   }, [])
 
@@ -60,11 +57,12 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, date, imageSrc, li
     <Card className="accordion-card skewElem" ref={cardRef}>
       <div className="image-container">
         <CardMedia component="img" image={imageSrc} alt={title} className="card-image" style={bgStyle} />
+
         <div className="overlay">
-          <CardHeader title={title} className="header-text" />
           <CardContent className="content-text">
-            <Typography>{lieu}</Typography>
-            <Typography>{date}</Typography>
+            <Typography className="content-text header-card">{title}</Typography>
+            <Typography className="content-text">{lieu}</Typography>
+            <Typography className="content-text">{date}</Typography>
           </CardContent>
         </div>
       </div>

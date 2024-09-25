@@ -45,7 +45,7 @@
 }
 
 .footer-link {
-  color: #D5FF3C !important;
+  color: #000000 !important;
   font-size: 2em !important;
   align-items: center;
   font-family: "Bagel Fat One", system-ui !important;
@@ -54,11 +54,11 @@
 }
 
 .footer-hr {
-  border: 1px solid #D5FF3C;
+  border: 1px solid #000000;
 }
 
 .footer-text {
-  color: #D5FF3C !important;
+  color: #000000 !important;
 }
 
 .footer-content button {
@@ -73,7 +73,7 @@
 
 
 .arrow {
-  fill: #009D36;
+  fill: #000000;
   font-weight: bold;
   position: absolute;
   top: 0;
@@ -98,39 +98,23 @@
 }
 .btn-up:hover {
   border: 1px solid;
-  border-color: #009D36;
-  box-shadow: 5px 10px #009D36;
+  border-color: #000000;
+  box-shadow: 5px 10px #000000;
 }
 
 .btn-up span {
-  color: #009D36;
+  color: #000000;
   font-weight: bold;
   position: absolute;
   top: 80px;
   left: 20;
 }
 
-.mail {
-  fill: #D5FF3C;
-  margin-top: 20px;
-}
 
-.github {
-  fill: #D5FF3C;
-}
 
-.lkd {
-  fill: #D5FF3C;
-}
-
-.footer-links .mail,
-.footer-links .github,
-.footer-links .lkd {
-  visibility: visible;
-}
 
 .footer-link:hover {
-  -webkit-text-stroke: 1px #D5FF3C;
+  -webkit-text-stroke: 1px #000000;
   color: transparent !important;
 }
 
@@ -151,18 +135,7 @@
   text-transform: lowercase;
 }
 
-.ball {
-  background-color: #D5FF3C;
-  width: 40px;
-  height: 40px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  mix-blend-mode: difference;
-  display: block; 
-  pointer-events: none;
-}
+
 
 @media screen and (max-width: 768px) {
   .footer-content {
@@ -178,7 +151,5 @@
     margin-top: 10px;
   }
 
-  .ball {
-    display: none;
-  }
+
 }
