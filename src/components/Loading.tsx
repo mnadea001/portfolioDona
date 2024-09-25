@@ -34,7 +34,6 @@ const Loading: React.FC = () => {
             transition={{ duration: 2.3, ease: 'linear' }}>
             <p className="loader-text ms-5">({test && count})%</p>
           </motion.div>
-          <p className="loader-text not-centered ">Diffusion de good vibes en cours</p>
 
           {/* <img className="lion-img" src={lion} /> */}
 
