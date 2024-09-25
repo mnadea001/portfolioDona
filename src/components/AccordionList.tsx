@@ -20,6 +20,7 @@ const AccordionList: React.FC<AccordionListProps> = ({ projects }) => {
           date={project.date}
           imageSrc={project.imageSrc}
           lieu={project.lieu}
+     
         />
       ))}
     </div>

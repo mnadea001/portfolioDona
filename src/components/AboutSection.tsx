@@ -24,6 +24,11 @@ const AboutSection: React.FC = () => {
           </p>
         </Zoom>
         <div className="about-box">
+        <div className="about-img">
+            <Slide>
+              <img src={ImgBio} style={{ maxWidth: '100%', height: 'auto', maxHeight: '500px', marginTop: '10px', marginLeft: 'auto' }} />
+            </Slide>
+          </div>
           <div className="about-text">
     
             <Slide>
@@ -39,11 +44,7 @@ const AboutSection: React.FC = () => {
             </Slide>
           </div>
 
-          <div className="about-img">
-            <Slide>
-              <img src={ImgBio} style={{ maxWidth: '100%', height: 'auto', maxHeight: '500px', marginTop: '10px', marginLeft: 'auto' }} />
-            </Slide>
-          </div>
+
         </div>
       </div>
     <DiplomaComponent/>

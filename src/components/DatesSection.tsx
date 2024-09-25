@@ -15,19 +15,16 @@ const DatesSection: React.FC = () => {
 
   };
 
-  const isMobile = window.innerWidth <= 768
 
   return (
     <>
       <div className="dates-section">
         <Zoom>
-          <p className={isMobile ? 'not-centered title-dates' : 'title-dates'} style={textStyle}>
-            Dates
-          </p>
-        </Zoom>
-        <NavLink to="/projects" style={textStyle}>
+        <NavLink to="/projects" style={textStyle} className='title-dates' >
           Voir toutes les dates
         </NavLink>
+        </Zoom>
+
       </div>
     </>
   )

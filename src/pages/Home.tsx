@@ -1,8 +1,5 @@
 import './Home.css'
 
-import RootsSection from '../components/RootsSection';
-import ReggaeSection from '../components/ReggaeSection';
-import DubSection from '../components/DubSection';
 import AboutSection from '../components/AboutSection';
 import DiskSection from '../components/DiskSection';
 import IntroSection from '../components/IntroSection';
@@ -38,7 +35,7 @@ const Home: React.FC = () => {
       {isMobile ? (
         <>
           {/* <TopSectionMobile /> */}
-          <RootsSection />
+
           {/* <ProjectsSection />
           <ExperiencesMobile />
           <DiplomaMobileComponent /> */}
@@ -47,9 +44,7 @@ const Home: React.FC = () => {
         <>
           {/* <TopSection /> */}
           <IntroSection />
-          <RootsSection />
-          <ReggaeSection />
-          <DubSection />  
+
           <AboutSection />   
           <DatesSection />
           <SliderSection />
