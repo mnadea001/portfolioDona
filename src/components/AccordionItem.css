@@ -35,7 +35,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(0, 0, 0); /* Fond noir transparent */
+  background-color: #000000; /* Fond noir transparent */
   opacity: 1; /* Affiche le texte par défaut */
   transition: opacity 0.3s ease;
   color: white;

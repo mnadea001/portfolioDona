@@ -19,7 +19,7 @@ interface AccordionItemProps {
 
 const AccordionItem: React.FC<AccordionItemProps> = ({ title, date, imageSrc, lieu }) => {
   const bgStyle: React.CSSProperties = {
-    backgroundColor: '#2b2b2b'
+    backgroundColor: '#000000'
   }
 
   // Use useRef to reference the card element
