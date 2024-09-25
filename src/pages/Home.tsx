@@ -46,9 +46,9 @@ const Home: React.FC = () => {
           <IntroSection />
 
           <AboutSection />   
-          <DatesSection />
+ 
           <SliderSection />
-
+         <DatesSection />
           <DiskSection />
           {/* <ProjectsSection /> */}
           {/* <ExperiencesSection /> */}

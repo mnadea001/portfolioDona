@@ -23,22 +23,35 @@ const ProjectsSection: React.FC = () => {
     <>
       <section className="projets-content">
         <section className="projets">
-          <Zoom>
-            <p className="dates-title">Dates</p>
-          </Zoom>
+          <p className="dates-title">Dates</p>
         </section>
-        <p style={textStyle}>2024</p>
+        <Zoom>
+          <p style={textStyle}>2024</p>
+        </Zoom>
         <AccordionList projects={dates2024} />
-        <p style={textStyle}>2023</p>
+        <hr />
+        <Zoom>
+          <p style={textStyle}>2023</p>
+        </Zoom>
         <AccordionList projects={dates2023} />
-        <p style={textStyle}>2022</p>
+        <hr />
+        <Zoom>
+          <p style={textStyle}>2022</p>
+        </Zoom>
+
         <AccordionList projects={dates2022} />
-        <p style={textStyle}>2021</p>
+        <hr />
+        <Zoom>
+          <p style={textStyle}>2021</p>
+        </Zoom>
         <p>
           * <em>année covid / soirées privées</em>
         </p>
         <AccordionList projects={dates2021} />
-        <p style={textStyle}>2020</p>
+        <hr />
+        <Zoom>
+          <p style={textStyle}>2020</p>
+        </Zoom>
         <p>
           * <em>année covid / soirées privées</em>
         </p>

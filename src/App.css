@@ -169,3 +169,7 @@ h3 {
 .intro-section {
   margin-top: 100px;
 }
+
+hr {
+  border: 1px solid #0000009a;
+}
