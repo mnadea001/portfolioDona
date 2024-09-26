@@ -11,7 +11,7 @@ const DatesSection: React.FC = () => {
 
   return (
     <>
-      <div className="dates-section">
+      <div className='dates-box'>
         <Zoom>
         <NavLink to="/projects" className='title-dates' >
           Voir toutes les dates

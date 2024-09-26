@@ -1,13 +1,9 @@
-// import './DubSection.css';
 import { useParallax } from "react-scroll-parallax";
 
 const DiskSection: React.FC = () => {
 
-
-
   const parallax = useParallax<HTMLDivElement>({
     easing: "easeOutQuad",
-    // translateY: [-30, 90],
     rotate: [-150, 50]
   });
 
@@ -18,7 +14,7 @@ const DiskSection: React.FC = () => {
     <div className='turntable-dark' />
     
     {/* Vinyle qui tourne */}
-    <div ref={parallax.ref} className='spinner spinner-style-dark' />
+    <div ref={parallax.ref} className='spinner-style-dark' />
   </div>
 
     </>

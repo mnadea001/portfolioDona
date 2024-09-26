@@ -5,7 +5,6 @@
 #root {
   max-width: 100%;
   margin: 0 auto;
-  /* padding: 2rem; */
   text-align: center;
   --background-color: #D5C5B6;
   
@@ -15,7 +14,6 @@
 }
 
 body {
-  /* background-color: var(--background-color); */
   background: linear-gradient(to bottom,
     /* #c1ffc9, */
     #D5C5B6,
@@ -28,12 +26,6 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-body.dark-mode {
-  --background-color: #2b2b2b;
-  --text-color: #ffdca7;
-}
-
-
 h1  {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
@@ -43,16 +35,6 @@ h1  {
   -webkit-text-stroke: 1px #333333;
   color: transparent !important;
 }
-
-.dark-mode h1  {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-  text-transform: lowercase;
-  font-family: Inter;
-  color: #D5FF3C !important;
-  text-shadow: -3px -3px #C996FF !important;
-}
-
 
 .not-centered {
   text-align: left !important;
@@ -81,18 +63,13 @@ h1  {
   top: 56%;
 }
 
-.loader-container p {
-  font-size: 2em !important;
-  font-family: "Inter", sans-serif;
-  text-align: start !important;
-}
+
 
 .loader-bar1 {
   position: absolute;
   height: 15px;
   width: 100vw;
   background-color: #f92a2a;
-  /* border-radius: 100px; */
   top: 75%;
 }
 
@@ -101,7 +78,6 @@ h1  {
   height: 15px;
   width: 100vw;
   background-color: #f9eb2a;
-  /* border-radius: 100px; */
   top: 80%;
 }
 
@@ -110,15 +86,12 @@ h1  {
   height: 15px;
   width: 100vw;
   background-color: #6ff92a;
-  /* border-radius: 100px; */
   top: 85%;
 }
 
 .lion-img {
-  /* padding-top: 250px; */
   max-width: 400px; 
   max-height: 600px; 
-  /* border-radius: 450px; */
 }
 
 @media screen and (max-width: 400px) {
@@ -136,7 +109,7 @@ h1  {
   padding-bottom: 0 !important;
   margin-left: 10px;
   margin-top: 40px;
-  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  -webkit-text-stroke: 1px rgb(6, 6, 6);
   color: transparent !important;
   text-transform: lowercase;
   font-size: 2em;
@@ -146,15 +119,6 @@ h1  {
   font-size: 1.5em !important;
 }
 
-.error-text {
-  padding-bottom: 0 !important;
-  text-transform: lowercase;
-  font-family: Inter;
-  color: #D5FF3C !important;
-  text-shadow: -3px -3px #C996FF !important;
-  font-size: 5em !important;
-  font-weight: 900;
-}
 
 h2 {
   background: linear-gradient(30deg, #848282, #000000);

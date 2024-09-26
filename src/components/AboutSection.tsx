@@ -13,7 +13,7 @@ const AboutSection: React.FC = () => {
       <div className="about-section">
         <Zoom>
           <p className="title-about">
-            Bio
+            Histoire
           </p>
         </Zoom>
         <div className="about-box">

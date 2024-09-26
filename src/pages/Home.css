@@ -1,23 +1,6 @@
-
 .bg-container {
   position: relative;
   height: 100vh;
-
-  margin-bottom: 100px;
-}
-
-
-.turntable {
-  background-image: url('../assets/images/turnvinyl.png');
-  height: 400px;
-  width: 400px;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  z-index: 1; /* En dessous du vinyle */
-  top: 30%; 
-  left: 34%;
-  /* transform: rotate(40deg); */
 }
 
 .turntable-dark {
@@ -27,23 +10,13 @@
   background-size: cover;
   background-position: center;
   position: absolute;
-  z-index: 1; /* En dessous du vinyle */
-  top: 30%; 
+  z-index: 1;
+  /* En dessous du vinyle */
+  top: 30%;
   left: 34%;
-  /* transform: rotate(40deg); */
 }
 
-.spinner-style {
-  background-image: url('../assets/images/vinyl.png');
-  height: 300px;
-  width: 300px;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  z-index: 2; /* Au-dessus de la platine */
-  top: 35%;
-  left: 35%;
-}
+
 
 .spinner-style-dark {
   background-image: url('../assets/images/vinyl.png');
@@ -52,7 +25,8 @@
   background-size: cover;
   background-position: center;
   position: absolute;
-  z-index: 2; /* Au-dessus de la platine */
+  z-index: 2;
+  /* Au-dessus de la platine */
   top: 35%;
   left: 35%;
 }
@@ -61,8 +35,10 @@
 
 @media screen and (max-width: 768px) {
   .bg-container {
-    top: 50%;  /* Adjust the value as needed */
-    left: 50%;  /* Adjust the value as needed */
+    top: 50%;
+    /* Adjust the value as needed */
+    left: 50%;
+    /* Adjust the value as needed */
     height: 50vh;
   }
 
