@@ -5,25 +5,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-    padding: 2rem;
+  padding: 2rem;
 }
 
 
-.menu {
-  fill: rgb(255, 255, 255);
-  z-index: 4;
-}
+
 
 .menudark {
   fill: #333333;
   z-index: 4;
 }
 
-.selected {
-  font-family: "Bagel Fat One", system-ui !important;
-  font-size: 5em;
-  color: #000000 !important;
-}
+
 
 .selected-dark {
   font-family: "Bagel Fat One", system-ui !important;
@@ -31,10 +24,7 @@
   color: #ffffff !important;
 }
 
-.selected:hover {
-  color: #000000 !important;
-  text-shadow: 5px 5px #0a6130;
-}
+
 
 .selected-dark:hover {
   color: #ffffff !important;
@@ -47,21 +37,11 @@
   color: transparent !important;
   text-transform: lowercase;
   font-size: 2.2em !important;
-  margin-top: 0 !important
+  margin-top: 0 !important;
+  margin: auto;
 }
 
-.header-title-dark {
-  font-family: "Bagel Fat One", system-ui;
-  -webkit-text-stroke: 1px #ffffff;
-  color: transparent !important;
-  text-transform: lowercase;
-  font-size: 2.2em !important;
-  margin-top: 0 !important
-}
 
-.btn-dark-mode {
-  z-index: 3;
-}
 
 .nav-link {
   font-family: "Bagel Fat One", system-ui !important;

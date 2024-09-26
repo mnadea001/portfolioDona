@@ -21,3 +21,12 @@
   text-align: left;
   margin-left: 80px;
 }
+
+.year-title {
+  font-family: "Bagel Fat One", system-ui;
+  -webkit-text-stroke: 1px rgb(5, 5, 5);
+  color: transparent !important;
+  text-transform: lowercase;
+  font-size: 3em !important;
+  margin-top: 0 !important
+}

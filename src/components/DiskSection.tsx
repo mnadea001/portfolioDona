@@ -1,14 +1,7 @@
 // import './DubSection.css';
 import { useParallax } from "react-scroll-parallax";
 
-import { useContext } from 'react';
-
-import { DarkModeContext } from '../providers/DarkModeProvider';
-
 const DiskSection: React.FC = () => {
-
-  const darkModeContext = useContext(DarkModeContext);
-  const darkMode = darkModeContext?.darkMode || false;
 
 
 
@@ -22,10 +15,10 @@ const DiskSection: React.FC = () => {
     <>
 <div className="bg-container">
     {/* Image de la platine */}
-    <div className={darkMode ? 'turntable-dark' : 'turntable'} />
+    <div className='turntable-dark' />
     
     {/* Vinyle qui tourne */}
-    <div ref={parallax.ref} className={darkMode ? 'spinner spinner-style-dark' : 'spinner spinner-style'} />
+    <div ref={parallax.ref} className='spinner spinner-style-dark' />
   </div>
 
     </>

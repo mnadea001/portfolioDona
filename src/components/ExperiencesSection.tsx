@@ -16,10 +16,72 @@ import wdc2 from '../assets/images/wdc2.png';
 import wdc3 from '../assets/images/wdc3.png';
 
 import { Zoom } from "react-awesome-reveal";
-import { useContext} from 'react';
-import { DarkModeContext } from '../providers/DarkModeProvider';
+
 
 const experiencesData = [
+  {
+    imgSrc: thekub,
+    images: [
+      {
+        imgPath: kub2,
+      },
+      {
+        imgPath: kub3,
+      },
+      {
+        imgPath: kub4,
+      }
+    ],
+    title: 'THE KUB',
+    context: 'Agence de communication et évènementiel',
+    position: 'Développeuse web',
+    date: 'Janvier - Septembre 2022',
+    description: 'Développement et maintenance de sites pour des clients. Intégration à partir de maquettes.',
+    skills: ['SCSS', 'Javascript', 'WordPress', 'PrestaShop', 'PHP', 'AWS S3', 'Filezila'],
+    expImg: kub,
+  },
+  {
+    imgSrc: thekub,
+    images: [
+      {
+        imgPath: kub2,
+      },
+      {
+        imgPath: kub3,
+      },
+      {
+        imgPath: kub4,
+      }
+    ],
+    title: 'THE KUB',
+    context: 'Agence de communication et évènementiel',
+    position: 'Développeuse web',
+    date: 'Janvier - Septembre 2022',
+    description: 'Développement et maintenance de sites pour des clients. Intégration à partir de maquettes.',
+    skills: ['SCSS', 'Javascript', 'WordPress', 'PrestaShop', 'PHP', 'AWS S3', 'Filezila'],
+    expImg: kub,
+  },
+  {
+    imgSrc: thekub,
+    images: [
+      {
+        imgPath: kub2,
+      },
+      {
+        imgPath: kub3,
+      },
+      {
+        imgPath: kub4,
+      }
+    ],
+    title: 'THE KUB',
+    context: 'Agence de communication et évènementiel',
+    position: 'Développeuse web',
+    date: 'Janvier - Septembre 2022',
+    description: 'Développement et maintenance de sites pour des clients. Intégration à partir de maquettes.',
+    skills: ['SCSS', 'Javascript', 'WordPress', 'PrestaShop', 'PHP', 'AWS S3', 'Filezila'],
+    expImg: kub,
+  },
   {
     imgSrc: thekub,
     images: [
@@ -83,12 +145,8 @@ const experiencesData = [
 ];
 
 const ExperiencesSection: React.FC = () => {
-  const darkModeContext = useContext(DarkModeContext);
-  const darkMode = darkModeContext?.darkMode || false;
-  const textStyle: React.CSSProperties = {
-    color: darkMode === true ? '#C996FF' : '#FFE7C2',
 
-  };
+
 
   const parallaxEasingSecond = useParallax<HTMLDivElement>({
     easing: 'easeOutQuad',
@@ -106,15 +164,13 @@ const ExperiencesSection: React.FC = () => {
     translateY: [100, 0],
     speed: -20
   });
-  const calistogaStyle: React.CSSProperties = {
-    color: darkMode === true ? '#FFE7C2' : '#333333',
-  };
+
   return (
     <>
     <div className="experiences-section">
         <Zoom>
-          <h1 style={textStyle}>EXPERIENCES</h1>
-          <h3 style={calistogaStyle}>en développement</h3>
+          <h1 >EXPERIENCES</h1>
+          <h3 >en développement</h3>
 
         </Zoom>
         <section className="bg-container">

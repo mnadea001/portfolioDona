@@ -7,6 +7,7 @@ import DatesSection from '../components/DatesSection'
 import SliderSection from '../components/SliderSection'
 
 import { useEffect, useState } from 'react'
+import ExperiencesSection from '../components/ExperiencesSection'
 
 const Home: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 768)
@@ -30,7 +31,7 @@ const Home: React.FC = () => {
 
           {/* <ProjectsSection />
           <ExperiencesMobile />
-          <DiplomaMobileComponent /> */}
+          <BannerMobileComponent /> */}
         </>
       ) : (
         <>
@@ -43,7 +44,7 @@ const Home: React.FC = () => {
           <DatesSection />
 
           {/* <ProjectsSection /> */}
-          {/* <ExperiencesSection /> */}
+          <ExperiencesSection />
         </>
       )}
     </div>

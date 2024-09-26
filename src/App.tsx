@@ -9,10 +9,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import { Route, Routes } from 'react-router'
 import NotFound from './pages/NotFound'
-import DarkModeProvider from './providers/DarkModeProvider';
-import DiplomaComponent from './components/DiplomaComponent';
-import DiplomaMobileComponent from './components/mobile/DiplomaMobileComponent'; 
-import ExperiencesMobile from './components/mobile/ExperiencesMobile';
+import BannerComponent from './components/BannerComponent';
 import AboutSection from './components/AboutSection';
 
 
@@ -31,7 +28,6 @@ function App() {
 
   return (
     <>
-      <DarkModeProvider>
         <ParallaxProvider>
           <Routes>
             <Route path='/' element={<Header />}>
@@ -40,14 +36,11 @@ function App() {
               <Route path="/projects" element={<ProjectsSection />} />
               <Route path="/about" element={<AboutSection />} />
               <Route path="/experiences" element={<ExperiencesSection />} />
-              <Route path="/experiences-mobile" element={<ExperiencesMobile />} />
-              <Route path="/diplomes" element={<DiplomaComponent />} />
-              <Route path="/diplomes-mobile" element={<DiplomaMobileComponent />} />
+              <Route path="/diplomes" element={<BannerComponent />} />
             </Route >
           </Routes>
           <Footer />
         </ParallaxProvider>
-      </DarkModeProvider>
     </>
   )
 }
