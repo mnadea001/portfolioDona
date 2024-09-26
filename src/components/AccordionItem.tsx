@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react'
 import Card from '@mui/material/Card'
-import CardHeader from '@mui/material/CardHeader'
 import CardMedia from '@mui/material/CardMedia'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
@@ -38,7 +37,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, date, imageSrc, li
           proxy.skew = skew
           gsap.to(proxy, {
             skew: 0,
-            duration: 0.8,
+            // duration: 0.8,
             ease: 'power3',
             overwrite: true,
             onUpdate: () => skewSetter(proxy.skew)

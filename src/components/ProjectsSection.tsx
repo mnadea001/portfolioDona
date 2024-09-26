@@ -14,7 +14,7 @@ const ProjectsSection: React.FC = () => {
   const darkModeContext = useContext(DarkModeContext)
   const darkMode = darkModeContext?.darkMode || false
   const textStyle: React.CSSProperties = {
-    color: darkMode === true ? '#FFFFFF' : '#000000',
+    color: darkMode ? '#FFFFFF' : '#000000',
     fontFamily: 'Bagel Fat One',
     fontSize: '3em'
   }
