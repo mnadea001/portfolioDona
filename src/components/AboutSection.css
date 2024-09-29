@@ -1,12 +1,16 @@
 /* General styles */
 @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+
 
 .title-about {
-  /* font-family: "Bagel Fat One", system-ui !important; */
   font-size: 5em !important;
   color: #000000 !important;
+  font-family: "Amatic SC", sans-serif !important;
   text-align: left;
   margin-left: 80px;
+  font-weight: bold;
+
 }
 
 .about-section {
@@ -22,11 +26,9 @@
 }
 
 .about-text {
-  width: 60%;
-  text-align: left;
-}
-
-.about-text {
   width: 40%;
+  text-align: left;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 1.8em;
   color: #000000;
 }

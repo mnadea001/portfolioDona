@@ -1,14 +1,14 @@
 .footer-container {
-  background: linear-gradient(90deg, #D5C5B6 35%, #D5FF3C 100%);
+  background: linear-gradient(90deg, #D5C5B6 35%, #e9ba85 100%);
   color: #FFE7C2;
   padding: 20px 20px;
   text-align: center;
   border-radius: 20px;
-  margin-top: 20px; 
+  margin-top: 20px;
   position: relative;
   border: 1px solid black;
 
-  box-shadow: 5px 10px #D5FF3C;
+  box-shadow: 5px 10px #e9ba85;
   z-index: 1;
 }
 
@@ -18,8 +18,8 @@
   align-items: center;
   flex-direction: row;
   max-width: 1200px;
-  color: #FFE7C2;
-  margin-bottom: 20px; 
+  color: #D5C5B6;
+  margin-bottom: 20px;
 }
 
 .footer-links {
@@ -49,8 +49,7 @@
   color: #000000 !important;
   font-size: 2em !important;
   align-items: center;
-  font-family: "Bagel Fat One", system-ui !important;
-
+  font-family: "Amatic SC", sans-serif !important;
   text-transform: lowercase;
 }
 
@@ -84,7 +83,7 @@
 .btn-up {
   width: 150px;
   height: 150px;
-  background-color: #D5FF3C;
+  background-color: #e9ba85;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -96,11 +95,18 @@
   font-family: Inter;
   text-transform: lowercase;
   font-size: 1.4em;
+  font-family: "Amatic SC", sans-serif !important;
+
 }
+
 .btn-up:hover {
   border: 1px solid;
   border-color: #000000;
   box-shadow: 5px 10px #000000;
+  /* font-family: "Bagel Fat One", system-ui !important; */
+  font-family: "Amatic SC", sans-serif !important;
+
+
 }
 
 .btn-up span {
@@ -117,6 +123,9 @@
 .footer-link:hover {
   -webkit-text-stroke: 1px #000000;
   color: transparent !important;
+  font-family: "Amatic SC", sans-serif !important;
+
+  /* font-family: Inter !important; */
 }
 
 .footer-links li:hover .mail {
@@ -132,7 +141,9 @@
 }
 
 .btn-up:hover {
-  font-family: 'Calistoga', cursive;
+  font-family: "Amatic SC", sans-serif !important;
+
+  /* font-family: 'Calistoga', cursive; */
   text-transform: lowercase;
 }
 

@@ -37,10 +37,12 @@
 
 .m-scroll__title p {
   margin: 0;
-  font-size: 3em;
+  font-size: 4em !important;
   font-weight: 800;
   color: #333333;
   transition: all 8s ease;
+  font-family: "Amatic SC", sans-serif;
+
   /* font-family: "Bagel Fat One", system-ui !important; */
 
 }

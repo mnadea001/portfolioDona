@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 .icons {
   display: flex;
@@ -8,7 +7,9 @@
   padding: 2rem;
 }
 
-
+.close-btn {
+  font-family: "Amatic SC", sans-serif !important;
+}
 
 
 .menudark {
@@ -19,22 +20,24 @@
 
 
 .selected-dark {
-  font-family: "Bagel Fat One", system-ui !important;
   font-size: 5em;
   color: #ffffff !important;
+  font-family: "Amatic SC", sans-serif !important;
+font-style: normal;
 }
 
 
 
 .selected-dark:hover {
-  color: #ffffff !important;
-  text-shadow: 5px 5px #f9eb2a;
+  color: #fae92f !important;
+  text-decoration: underline;
+  /* font-style:italic !important; */
+
 }
 
 .header-title {
-  font-family: "Bagel Fat One", system-ui;
-  -webkit-text-stroke: 1px rgb(5, 5, 5);
-  color: transparent !important;
+  font-family: "Amatic SC", sans-serif;
+  color: black;
   text-transform: lowercase;
   font-size: 2.2em !important;
   margin-top: 0 !important;

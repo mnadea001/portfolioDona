@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 
 .accordion-card {
@@ -49,7 +50,9 @@
 .content-text {
   color: white;
   z-index: 2;
-  font-family: 'Calistoga', cursive !important;
+  /* font-family: 'Calistoga', cursive !important; */
+  font-family: "Amatic SC", sans-serif !important;
+  font-size: 1.5em !important;
 
   /* font-family: "Avenir" !important; */
 }

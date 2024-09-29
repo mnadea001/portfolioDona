@@ -1,12 +1,12 @@
-/* General styles */
-@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 .title-dates {
-  /* font-family: "Bagel Fat One", system-ui !important; */
   font-size: 5em !important;
   color: #000000 !important;
+  font-family: "Amatic SC", sans-serif !important;
   text-align: left;
   margin-left: 80px;
+  font-weight: bold;
 }
 
 .title-dates:hover {

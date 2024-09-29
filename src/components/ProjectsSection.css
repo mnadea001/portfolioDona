@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
 
 .projets-content {
   height: 100%;
@@ -15,18 +15,21 @@
 
 
 .dates-title {
-  font-family: "Bagel Fat One", system-ui !important;
+  font-family: "Bowlby One", sans-serif;
+
   font-size: 5em !important;
   color: #000000 !important;
   text-align: left;
+  font-weight: bold;
   margin-left: 80px;
 }
 
 .year-title {
-  font-family: "Bagel Fat One", system-ui;
-  -webkit-text-stroke: 1px rgb(5, 5, 5);
+  font-family: "Bowlby One", sans-serif !important;
+  -webkit-text-stroke: 1px rgb(5, 5, 5); 
   color: transparent !important;
-  text-transform: lowercase;
+  font-weight: bold;
   font-size: 3em !important;
-  margin-top: 0 !important
+  margin-top: 0 !important;
+
 }

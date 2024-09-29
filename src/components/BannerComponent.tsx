@@ -11,16 +11,22 @@ const BannerComponent: React.FC = () => {
                 <a href="#">Roots</a> <a href="#"></a> <a href="#">& </a> <a href="#">Culture - </a>
               </p>
               <p>
-                <a href="#">Roots</a> <a href="#"></a> <a href="#">& </a> <a href="#">Culture - </a> &nbsp;
+                <a href="#">Roots</a> <a href="#"></a> <a href="#">& </a> <a href="#">Culture - </a>
               </p>
               <p>
-                <a href="#">Roots</a> <a href="#"></a> <a href="#">& </a> <a href="#">Culture - </a> &nbsp;
+                <a href="#">Roots</a> <a href="#"></a> <a href="#">& </a> <a href="#">Culture - </a> 
               </p>
               <p>
-                <a href="#">Roots</a> <a href="#"></a> <a href="#">& </a> <a href="#">Culture - </a> &nbsp;
+                <a href="#">Roots</a> <a href="#"></a> <a href="#">& </a> <a href="#">Culture - </a> 
               </p>
               <p>
-                <a href="#">Roots</a> <a href="#"></a> <a href="#">& </a> <a href="#">Culture - </a> &nbsp;
+                <a href="#">Roots</a> <a href="#"></a> <a href="#">& </a> <a href="#">Culture - </a>
+              </p>
+              <p>
+                <a href="#">Roots</a> <a href="#"></a> <a href="#">& </a> <a href="#">Culture - </a>
+              </p>
+              <p>
+                <a href="#">Roots</a> <a href="#"></a> <a href="#">& </a> <a href="#">Culture - </a> 
               </p>
             </div>
           </div>

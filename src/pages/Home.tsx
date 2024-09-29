@@ -37,12 +37,12 @@ const Home: React.FC = () => {
         <>
           {/* <TopSection /> */}
           <IntroSection />
-          <SliderSection />
+       
           <AboutSection />
 
           <DiskSection />
           <DatesSection />
-
+   <SliderSection />
           {/* <ExperiencesSection /> */}
         </>
       )}

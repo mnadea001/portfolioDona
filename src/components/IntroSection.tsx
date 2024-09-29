@@ -11,11 +11,11 @@ const IntroSection: React.FC = () => {
 
     // Animation pour rétrécir la vidéo lors du scroll
     gsap.to('.video-player', {
-      scale: 0.7, // Échelle à laquelle la vidéo va rétrécir (50%)
+      scale: 0.4, // Échelle à laquelle la vidéo va rétrécir (50%)
       scrollTrigger: {
         trigger: '.intro-section', // Élément déclencheur
         start: 'top top', // Démarre lorsque le haut de la section atteint le haut de la page
-        end: '+=500', // Animation se déroule sur 1500px de scroll
+        end: '+=1500', // Animation se déroule sur 1500px de scroll
         scrub: true, // Permet à l'animation de suivre le scroll (effet fluide)
       },
     });

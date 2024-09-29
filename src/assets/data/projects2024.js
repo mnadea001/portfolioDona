@@ -12,6 +12,8 @@ import him from '../images/him.jpg'
 import Polacabana from '../images/Polacabana.png'
 import provencal from '../images/provencal.jpg'
 import melodub from '../images/melodub.jpg'
+import bieres from '../images/1001bieres.jpg'
+
 
 const projects2024 = [
   {
@@ -19,6 +21,12 @@ const projects2024 = [
     date: '5 Octobre 2024',
     lieu: 'Nantes, France',
     imageSrc: melodub
+  },
+  {
+    title: 'OPEN AIR',
+    date: '28 Septembre 2024',
+    lieu: 'Bordeaux, France',
+    imageSrc: bieres
   },
   {
     title: 'Provençal Dub Corner',

@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import './Header.css';
-import CloseIcon from '../assets/icons/CloseIcon';
 import { Dialog, DialogContent } from '@mui/material';
 
 
@@ -53,9 +52,9 @@ const Header: React.FC = () => {
             color="inherit"
             onClick={toggleModal}
             aria-label="close"
+            className="close-btn"
           > FERMER
-            <CloseIcon
-              style={{ paddingLeft: '15px' }} />
+   
           </IconButton>
         </span>
         <DialogContent sx={{   backgroundColor: '#333333' }}>
