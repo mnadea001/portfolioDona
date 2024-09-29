@@ -1,7 +1,7 @@
 import './Home.css'
 
 import AboutSection from '../components/AboutSection'
-import DiskSection from '../components/DiskSection'
+// import DiskSection from '../components/DiskSection'
 import IntroSection from '../components/IntroSection'
 import DatesSection from '../components/DatesSection'
 import SliderSection from '../components/SliderSection'
@@ -37,12 +37,12 @@ const Home: React.FC = () => {
         <>
           {/* <TopSection /> */}
           <IntroSection />
-       
+
           <AboutSection />
 
-          <DiskSection />
+          {/* <DiskSection /> */}
           <DatesSection />
-   <SliderSection />
+          <SliderSection />
           {/* <ExperiencesSection /> */}
         </>
       )}

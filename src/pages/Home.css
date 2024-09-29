@@ -4,16 +4,16 @@
 }
 
 .turntable-dark {
-  background-image: url('../assets/images/turnvinyl.png');
-  height: 400px;
-  width: 400px;
-  background-size: cover;
+  background-image: url('../assets/images/platyne.png');
+  height: 310px;
+  width: 680px;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   z-index: 1;
-  /* En dessous du vinyle */
-  top: 30%;
-  left: 34%;
+  top: 35%;
+  left: 24%;
 }
 
 
@@ -26,9 +26,8 @@
   background-position: center;
   position: absolute;
   z-index: 2;
-  /* Au-dessus de la platine */
   top: 35%;
-  left: 35%;
+  left: 46%;
 }
 
 
