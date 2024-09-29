@@ -1,7 +1,5 @@
 import './Footer.css';
 import ArrowUpIcon from '../assets/icons/ArrowUpIcon';
-import IconInsta from '../assets/icons/IconInsta';
-import FbIcon from '../assets/icons/FbIcon';
 // import gsap from "gsap";
 // import { useEffect } from 'react';
 
@@ -32,12 +30,12 @@ const Footer: React.FC = () => {
         <ul className="footer-links">
           <li>
             <a className="footer-link" href="https://www.facebook.com/matilda.dona.dub/" target="_blank">
-              Facebook <FbIcon className='facebook' />
+              Facebook 
             </a>
           </li>
           <li>
             <a className="footer-link" href="https://www.instagram.com/matildadona_/" target="_blank">
-              Instagram <IconInsta className='instagram' />
+              Instagram 
             </a>
           </li>
         </ul>

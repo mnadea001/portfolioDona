@@ -30,8 +30,6 @@ font-style: normal;
 
 .selected-dark:hover {
   color: #fae92f !important;
-  text-decoration: underline;
-  /* font-style:italic !important; */
 
 }
 
