@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+// import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 // import lion from '../assets/images/7mbn.gif'
 
@@ -10,19 +10,19 @@ const LoaderVariant = {
   }
 }
 const Loading: React.FC = () => {
-  const [count, setCount] = useState(0)
-  const [test, setTest] = useState(true)
+  // const [count, setCount] = useState(0)
+  // const [test, setTest] = useState(true)
 
-  useEffect(() => {
-    let counter = setInterval(() => {
-      setCount(count + 1)
-      if (count === 100) {
-        setCount(0)
-        setTest(false)
-      }
-    }, 20)
-    return () => clearInterval(counter)
-  })
+  // useEffect(() => {
+  //   let counter = setInterval(() => {
+  //     setCount(count + 1)
+  //     if (count === 100) {
+  //       setCount(0)
+  //       setTest(false)
+  //     }
+  //   }, 20)
+  //   return () => clearInterval(counter)
+  // })
   return (
     <>
       <div className="loader-container">
