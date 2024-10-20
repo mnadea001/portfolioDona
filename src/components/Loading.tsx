@@ -27,13 +27,13 @@ const Loading: React.FC = () => {
     <>
       <div className="loader-container">
         <div className="loader-wrap">          
-        <motion.div
+        {/* <motion.div
             className="counter"
             variants={LoaderVariant}
             initial={{ left: 0 }}
             transition={{ duration: 2.3, ease: 'linear' }}>
             <p className="loader-text ms-5">({test && count})%</p>
-          </motion.div>
+          </motion.div> */}
 
           {/* <img className="lion-img" src={lion} /> */}
 
