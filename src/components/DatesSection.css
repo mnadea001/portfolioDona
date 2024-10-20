@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 .title-dates {
-  font-size: 5em !important;
+  font-size: 4em !important;
   color: #000000 !important;
-  font-family: "Amatic SC", sans-serif !important;
+  font-family: "Rethink Sans", sans-serif;
   text-align: left;
   margin-left: 80px;
 
@@ -11,7 +10,6 @@
 
 .title-dates:hover {
   font-weight: bold;
-  /* text-decoration: underline; */
 }
 
 .dates-box {

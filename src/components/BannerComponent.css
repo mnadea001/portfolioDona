@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
-
 
 .diplomes-section {
   width : 100vw;
@@ -41,9 +39,7 @@
   font-weight: 800;
   color: #333333;
   transition: all 8s ease;
-  font-family: "Amatic SC", sans-serif;
-
-  /* font-family: "Bagel Fat One", system-ui !important; */
+  font-family: "Rethink Sans", sans-serif;
 
 }
 

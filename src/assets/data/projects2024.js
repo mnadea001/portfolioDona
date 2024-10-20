@@ -13,9 +13,17 @@ import Polacabana from '../images/Polacabana.png'
 import provencal from '../images/provencal.jpg'
 import melodub from '../images/melodub.jpg'
 import bieres from '../images/1001bieres.jpg'
+import festimut from '../images/festimut.jpg'
+
 
 
 const projects2024 = [
+  {
+    title: 'FESTIMUT',
+    date: '19 Octobre 2024',
+    lieu: 'Bordeaux, France',
+    imageSrc: festimut
+  },
   {
     title: 'PLAY IT LOUD',
     date: '5 Octobre 2024',

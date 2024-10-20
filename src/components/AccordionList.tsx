@@ -1,12 +1,7 @@
 import AccordionItem from './AccordionItem'
 import './AccordionList.css' // Ajouter un fichier CSS pour les styles
 import { Project } from '../assets/data/projects';
-// interface Project {
-//   title: string;
-//   date: string;
-//   lieu: string;
-//   imageSrc: string;
-// }
+
 
 interface AccordionListProps {
   projects: Project[];
