@@ -7,6 +7,7 @@ import DatesSection from '../components/DatesSection'
 import SliderSection from '../components/SliderSection'
 
 import { useEffect, useState } from 'react'
+import BannerComponent from '../components/BannerComponent'
 // import ExperiencesSection from '../components/ExperiencesSection'
 
 const Home: React.FC = () => {
@@ -43,6 +44,7 @@ const Home: React.FC = () => {
           {/* <DiskSection /> */}
           <DatesSection />
           <SliderSection />
+          <BannerComponent/>
           {/* <ExperiencesSection /> */}
         </>
       )}

@@ -13,12 +13,12 @@
 }
 
 .dates-box {
-  margin-bottom: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  /* justify-content: center;
+  align-items: center; */
 }
 
-.bloc-content {
+/* .bloc-content {
   width: 50%;
-}
+  margin: auto;
+} */

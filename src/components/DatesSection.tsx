@@ -9,9 +9,13 @@ const DatesSection: React.FC = () => {
   return (
     <>
       <div className="dates-box">
-        <div className="bloc-content">
-          <DiskSection />
+        <div className="vinyl-box">
+          {' '}
+          <div className="bloc-content">
+            <DiskSection />
+          </div>
         </div>
+
         <div className="bloc-content">
           {' '}
           <Zoom>

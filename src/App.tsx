@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 import { Route, Routes } from 'react-router'
 import NotFound from './pages/NotFound'
 import BannerComponent from './components/BannerComponent';
-import AboutSection from './components/AboutSection';
+import AboutPage from './pages/AboutPage';
 
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
               <Route index element={loading ? <Loading /> : <Home />} />
               <Route path="*" element={<NotFound />} />
               <Route path="/projects" element={<ProjectsSection />} />
-              <Route path="/about" element={<AboutSection />} />
+              <Route path="/about" element={<AboutPage />} />
               <Route path="/experiences" element={<ExperiencesSection />} />
               <Route path="/diplomes" element={<BannerComponent />} />
             </Route >

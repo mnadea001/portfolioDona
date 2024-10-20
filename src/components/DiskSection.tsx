@@ -9,7 +9,7 @@ const DiskSection: React.FC = () => {
 
   return (
     <>
-<div className="bg-container">
+<div className="disk-container">
     {/* Image de la platine */}
     <div className='turntable-dark' />
     
