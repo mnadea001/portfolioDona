@@ -7,10 +7,12 @@ const AboutPage: React.FC = () => {
 
   return (
     <>
-      <button className="retour-btn" onClick={() => navigate(-1)}>
-        <span>retour</span>
-      </button>
-      <AboutSection />
+ 
+        <button className="retour-btn" onClick={() => navigate(-1)}>
+          <span>retour</span>
+        </button>
+        <AboutSection />
+  
     </>
   )
 }

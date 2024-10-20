@@ -25,6 +25,7 @@ const Home: React.FC = () => {
   }, [])
 
   return (
+    <>
     <div>
       {isMobile ? (
         <>
@@ -49,6 +50,7 @@ const Home: React.FC = () => {
         </>
       )}
     </div>
+    </>
   )
 }
 

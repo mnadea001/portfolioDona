@@ -64,11 +64,11 @@ const Header: React.FC = () => {
             Accueil
           </NavLink>
         </Zoom>
-        <Bounce>
+        {/* <Bounce>
           <NavLink to="/about" className="selected-dark" onClick={toggleModal}>
             Bio
           </NavLink>
-        </Bounce>
+        </Bounce> */}
         <Bounce>
           <NavLink to="/projects" className="selected-dark" onClick={toggleModal}>
             Dates
