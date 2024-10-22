@@ -14,10 +14,24 @@ import provencal from '../images/provencal.jpg'
 import melodub from '../images/melodub.jpg'
 import bieres from '../images/1001bieres.jpg'
 import festimut from '../images/festimut.jpg'
+import grenoble from '../images/grenoble.jpg'
+import montde from '../images/montde.jpg'
 
 
 
 const projects2024 = [
+  {
+    title: 'DUB EXCURSION',
+    date: '21 Décembre 2024',
+    lieu: 'Mont de Marsan, France',
+    imageSrc: montde
+  },
+  {
+    title: 'SOUND SYSTEM THERAPY',
+    date: '18 Novembre 2024',
+    lieu: 'Grenoble, France',
+    imageSrc: grenoble
+  },
   {
     title: 'FESTIMUT',
     date: '19 Octobre 2024',

@@ -139,3 +139,7 @@ h3 {
 hr {
   border: 1px solid #0000009a;
 }
+
+.retour-btn {
+margin-left: auto;
+}

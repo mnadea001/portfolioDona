@@ -1,7 +1,6 @@
 import './App.css'
 import { useState, useEffect } from "react";
 import ProjectsSection from './components/ProjectsSection'
-import ExperiencesSection from './components/ExperiencesSection'
 import Loading from './components/Loading'
 import Home from './pages/Home'
 import { ParallaxProvider } from 'react-scroll-parallax'
@@ -35,7 +34,6 @@ function App() {
               <Route path="*" element={<NotFound />} />
               <Route path="/projects" element={<ProjectsSection />} />
               <Route path="/about" element={<AboutPage />} />
-              <Route path="/experiences" element={<ExperiencesSection />} />
               <Route path="/diplomes" element={<BannerComponent />} />
             </Route >
           </Routes>
