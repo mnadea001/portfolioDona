@@ -30,12 +30,11 @@ const Home: React.FC = () => {
         {isMobile ? (
           <>
             <IntroSection />
+            <AboutSection />
 
-           
             <DatesSection />
             <SliderSection />
-            <BannerComponent />
-            <AboutSection />
+            {/* <BannerComponent / */}
           </>
         ) : (
           <>
