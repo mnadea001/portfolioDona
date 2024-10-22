@@ -51,7 +51,7 @@
   }
 
   .title-about {
-    font-size: 3em; /* Diminuer la taille du titre sur mobile */
+    font-size: 2em; /* Diminuer la taille du titre sur mobile */
     text-align: center; /* Centrer le titre sur mobile */
     margin-left: 0; /* Supprimer la marge gauche sur mobile */
   }

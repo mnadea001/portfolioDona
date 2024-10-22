@@ -31,10 +31,11 @@ const Home: React.FC = () => {
           <>
             <IntroSection />
 
-            <AboutSection />
+           
             <DatesSection />
             <SliderSection />
             <BannerComponent />
+            <AboutSection />
           </>
         ) : (
           <>
