@@ -37,7 +37,7 @@ const Header: React.FC = () => {
       </div>
       <Dialog open={isModalOpen} onClose={toggleModal} fullScreen>
         <span
-          className="span-dialog"
+          className="span-header"
           style={{
             display: 'flex',
             justifyContent: 'center',

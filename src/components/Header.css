@@ -9,7 +9,7 @@
 
 .close-btn {
   font-family: "Rethink Sans", sans-serif;
-
+  color: white !important;
 }
 
 
@@ -25,13 +25,13 @@
   color: #000000 !important;
   font-family: "Rethink Sans", sans-serif;
 
-font-style: normal;
+  font-style: normal;
 }
 
 
 
 .selected-dark:hover {
-  color: #fae92f !important;
+  color: #ffffff !important;
 
 }
 
@@ -55,12 +55,17 @@ font-style: normal;
 
 }
 
-.span-dialog{
+.span-dialog {
   background: linear-gradient(to bottom,
-  /* #c1ffc9, */
-  #D5C5B6,
-  #e9ba85,
-  #dfd4a6,
-  #D5C5B6,
-  #ffbd91)
+      /* #c1ffc9, */
+      #D5C5B6,
+      #e9ba85,
+      #dfd4a6,
+      #D5C5B6,
+      #ffbd91)
+}
+
+.span-header {
+  background-color: #000000;
+  color: white;
 }
