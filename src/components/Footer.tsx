@@ -30,8 +30,7 @@ const Footer: React.FC = () => {
             retour en haut</span>
         </div>
       </div>
-      <hr className="footer-hr" />
-      <p className="footer-text">2024 - © Mathilde Nadeau</p>
+
     </footer>
   );
 };
