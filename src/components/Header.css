@@ -22,7 +22,7 @@
 
 .selected-dark {
   font-size: 5em;
-  color: #ffffff !important;
+  color: #000000 !important;
   font-family: "Rethink Sans", sans-serif;
 
 font-style: normal;
@@ -53,4 +53,14 @@ font-style: normal;
   font-size: 5em;
   color: #ffffff !important;
 
+}
+
+.span-dialog{
+  background: linear-gradient(to bottom,
+  /* #c1ffc9, */
+  #D5C5B6,
+  #e9ba85,
+  #dfd4a6,
+  #D5C5B6,
+  #ffbd91)
 }

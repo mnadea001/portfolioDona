@@ -1,18 +1,13 @@
 /* General styles */
 
-
 .title-about {
   font-size: 5em !important;
   -webkit-text-stroke: 1px rgb(5, 5, 5); 
   color: transparent !important;
   font-family: "Bowlby One", sans-serif;
-
-  /* color: #000000 !important; */
-  /* font-family: "Amatic SC", sans-serif !important; */
   text-align: left;
   margin-left: 80px;
   font-weight: bold;
-
 }
 
 .about-section {
@@ -25,6 +20,7 @@
   justify-content: space-around;
   align-items: center;
   display: flex;
+  flex-wrap: wrap; /* Permet à l'image et au texte de s'ajuster plus facilement */
 }
 
 .about-text {
@@ -33,4 +29,30 @@
   font-family: "Rethink Sans", sans-serif;
   font-size: 1.4em;
   color: #000000;
+}
+
+/* Media query pour les écrans plus petits */
+@media (max-width: 768px) {
+  .about-box {
+    flex-direction: column; /* Aligner verticalement l'image et le texte */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-img {
+    width: 100%;
+    margin-bottom: 20px; /* Espacement entre l'image et le texte */
+  }
+
+  .about-text {
+    width: 90%; /* Ajuster la largeur du texte pour être plus lisible sur mobile */
+    font-size: 1.2em; /* Réduire la taille de police sur mobile */
+  }
+
+  .title-about {
+    font-size: 3em; /* Diminuer la taille du titre sur mobile */
+    text-align: center; /* Centrer le titre sur mobile */
+    margin-left: 0; /* Supprimer la marge gauche sur mobile */
+  }
 }
