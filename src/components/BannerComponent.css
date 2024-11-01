@@ -45,12 +45,12 @@
 }
 
 .m-scroll__title a {
-  -webkit-text-stroke: 1px #333333;
+  -webkit-text-stroke: 1px #000000;
   color: transparent;
 }
 
 .m-scroll__title a:hover {
-  color: #333333;
+  color: #000000;
 }
 
 @keyframes scrollText {

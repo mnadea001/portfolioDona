@@ -15,10 +15,11 @@
 
 
 .dates-title {
-  font-family: "Bowlby One", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
   font-size: 5em !important;
-  -webkit-text-stroke: 1px rgb(5, 5, 5); 
-  color: transparent !important;
+  /* -webkit-text-stroke: 1px rgb(5, 5, 5); 
+  color: transparent !important; */
   text-align: left;
   font-weight: bold;
   margin-left: 80px;

@@ -11,7 +11,7 @@ const IntroSection: React.FC = () => {
 
     // Animation pour rétrécir la vidéo lors du scroll
     gsap.to('.video-player', {
-      scale: 0.4, // Échelle à laquelle la vidéo va rétrécir (50%)
+      scale: 0.3, // Échelle à laquelle la vidéo va rétrécir (50%)
       scrollTrigger: {
         trigger: '.intro-section', // Élément déclencheur
         start: 'top top', // Démarre lorsque le haut de la section atteint le haut de la page
@@ -23,6 +23,7 @@ const IntroSection: React.FC = () => {
 
   return (
     <>
+    <h1>Selectress Reggae Dub basée à Bordeaux</h1>
       <div className="intro-section">
         <video
           className="video-player"
