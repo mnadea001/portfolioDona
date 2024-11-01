@@ -5,9 +5,8 @@ import IconButton from '@mui/material/IconButton'
 import List from '@mui/material/List'
 import './Header.css'
 import { Dialog, DialogContent } from '@mui/material'
-
+import MenuSharpIcon from '@mui/icons-material/MenuSharp';
 import { Zoom, Bounce } from 'react-awesome-reveal'
-import IconMenu from '../assets/icons/IconMenu'
 
 const Header: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -32,7 +31,7 @@ const Header: React.FC = () => {
       <div className="icons">
         <h3 className="header-title">MATILDA DONA</h3>
         <IconButton onClick={toggleModal}>
-          <IconMenu className="menu-dark" />
+          <MenuSharpIcon />
         </IconButton>
       </div>
       <Dialog open={isModalOpen} onClose={toggleModal} fullScreen>

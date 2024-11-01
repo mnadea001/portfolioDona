@@ -2,10 +2,12 @@
 
 .title-about {
   font-size: 5em !important;
-  -webkit-text-stroke: 1px rgb(5, 5, 5); 
+  /* -webkit-text-stroke: 1px rgb(5, 5, 5); 
   color: transparent !important;
-  font-family: "Bowlby One", sans-serif;
+  font-family: "Bowlby One", sans-serif; */
   text-align: left;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
   margin-left: 80px;
   font-weight: bold;
 }
@@ -26,7 +28,8 @@
 .about-text {
   width: 40%;
   text-align: left;
-  font-family: "Rethink Sans", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
   font-size: 1.4em;
   color: #000000;
 }

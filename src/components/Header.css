@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Space+Grotesk:wght@300..700&display=swap');
 .icons {
   display: flex;
   justify-content: space-between;
@@ -36,7 +36,8 @@
 }
 
 .header-title {
-  font-family: "Rethink Sans", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
 
   color: black;
   text-transform: lowercase;
@@ -48,7 +49,7 @@
 
 
 .nav-link {
-  font-family: "Rethink Sans", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 
   font-size: 5em;
   color: #ffffff !important;

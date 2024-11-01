@@ -1,7 +1,7 @@
 import './AboutSection.css'
 
 import { Zoom, Slide } from 'react-awesome-reveal'
-import ImgBio from '../assets/images/imgBio.png'
+import ImgBio from '../assets/images/imgBio.jpg'
 
 const AboutSection: React.FC = () => {
 
