@@ -7,7 +7,8 @@ import './Header.css'
 import { Dialog, DialogContent } from '@mui/material'
 import MenuSharpIcon from '@mui/icons-material/MenuSharp'
 import { Zoom, Bounce } from 'react-awesome-reveal'
-
+import { useTheme } from '@mui/material/styles'
+import useMediaQuery from '@mui/material/useMediaQuery'
 import { TransitionProps } from '@mui/material/transitions'
 import Slide from '@mui/material/Slide'
 import React from 'react'
@@ -27,6 +28,10 @@ const Header: React.FC = () => {
     setIsModalOpen(!isModalOpen)
   }
 
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm')) // Vérifie si l'écran est de petite taille
+
+
   return (
     <>
       <div className="icons">
@@ -39,9 +44,10 @@ const Header: React.FC = () => {
         open={isModalOpen}
         onClose={toggleModal}
         TransitionComponent={Transition}
+        fullScreen={isMobile} // Active le mode plein écran uniquement en version mobile
         PaperProps={{
           style: {
-            width: '50%',
+            width: isMobile ? '100%' : '50%', // Utilise 50% pour les écrans plus grands
             maxWidth: 'none'
           }
         }}>
