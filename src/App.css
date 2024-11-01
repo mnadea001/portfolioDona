@@ -71,7 +71,7 @@ h1  {
   position: absolute;
   height: 15px;
   width: 100vw;
-  background-color: #f92a2a;
+  background-color: #000000;
   top: 75%;
 }
 
@@ -79,7 +79,7 @@ h1  {
   position: absolute;
   height: 15px;
   width: 100vw;
-  background-color: #f9eb2a;
+  background-color: #000000;
   top: 80%;
 }
 
@@ -87,7 +87,7 @@ h1  {
   position: absolute;
   height: 15px;
   width: 100vw;
-  background-color: #6ff92a;
+  background-color: #000000;
   top: 85%;
 }
 

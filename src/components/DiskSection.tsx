@@ -1,25 +1,30 @@
-import { useParallax } from "react-scroll-parallax";
+import { useLottie, useLottieInteractivity} from 'lottie-react';
+import Anim from '../assets/turntable.json'  
 
+const style = {
+    height: 200,
+  }
+  
+  const options = {
+    animationData: Anim,
+    autoplay: false,
+  }
 const DiskSection: React.FC = () => {
 
-  const parallax = useParallax<HTMLDivElement>({
-    easing: "easeOutQuad",
-    rotate: [-150, 50]
+  const lottieObj = useLottie(options, style);
+  const Animation = useLottieInteractivity({
+    lottieObj,
+    mode: "scroll",
+    actions: [
+      {
+        visibility: [0, 1],
+        type: "seek",
+        frames: [0, 51],
+      },
+    ],
   });
-
-  return (
-    <>
-<div className="disk-container">
-    {/* Image de la platine */}
-    <div className='turntable-dark' />
-    
-    {/* Vinyle qui tourne */}
-    <div ref={parallax.ref} className='spinner-style-dark' />
-  </div>
-
-    </>
-  );
-};
+  return Animation;
+}
 
 export default DiskSection
 ;
