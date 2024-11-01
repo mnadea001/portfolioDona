@@ -1,31 +1,18 @@
 
 .title-dates {
-  font-size: 4em !important;
+  font-size: 3.5em !important;
   color: #000000 !important;
   font-family: "Space Grotesk", sans-serif;
-  text-align: left;
-  margin-left: 80px;
-
+  text-align: center;
 }
 
 .title-dates:hover {
   font-weight: bold;
+  text-decoration: underline;
 }
 
-.dates-box {
-  display: block;
-  /* justify-content: center;
-  align-items: center; */
-}
 
 .bloc-content {
   margin-top: 80px;
   margin-bottom: 150px;
-}
-
-/* Media query pour les écrans plus petits */
-@media (max-width: 768px) {
-  .dates-box {
-    display: none; /* Rendre invisible le bloc dates-box sur les petits écrans */
-  }
 }
