@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Space+Grotesk:wght@300..700&display=swap');
 .icons {
   display: flex;
@@ -9,36 +8,27 @@
 
 .close-btn {
   font-family: "Rethink Sans", sans-serif;
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
 }
-
-
-.menudark {
-  fill: #333333;
-  z-index: 4;
-}
-
-
+.close-btn:hover {
+  font-weight: bolder;
+  }
 
 .selected-dark {
   font-size: 5em;
   color: #000000 !important;
   font-family: "Rethink Sans", sans-serif;
-
   font-style: normal;
 }
 
-
-
 .selected-dark:hover {
-  color: #ffffff !important;
-
+font-weight: bolder;
+text-decoration: underline;
 }
 
 .header-title {
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
-
   color: black;
   text-transform: lowercase;
   font-size: 2.2em !important;
@@ -46,27 +36,24 @@
   margin: auto;
 }
 
-
-
 .nav-link {
   font-family: "Space Grotesk", sans-serif;
-
   font-size: 5em;
-  color: #ffffff !important;
+  color: #000000 !important;
 
-}
-
-.span-dialog {
-  background: linear-gradient(to bottom,
-      /* #c1ffc9, */
-      #D5C5B6,
-      #e9ba85,
-      #dfd4a6,
-      #D5C5B6,
-      #ffbd91)
 }
 
 .span-header {
-  background-color: #000000;
+  background-color: transparent;
   color: white;
+  display: 'flex';
+  justify-content: center;
+  color: black;
+  padding-top: 50px;
+  margin: 20px 50px;
+}
+
+.dialog-menu {
+  width: 80%;
+  height: 100%;
 }

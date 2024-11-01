@@ -13,9 +13,10 @@
 }
 
 .about-section {
-  height: 100vh;
+  min-height: 100vh; /* Assure que la section occupe au moins toute la hauteur de l'écran */
+  overflow: hidden;
   width: 100%;
-  margin-bottom: 80px;
+  margin-bottom: 200px;
 }
 
 .about-box {
@@ -43,14 +44,15 @@
     text-align: center;
   }
 
-  .about-img {
-    width: 100%;
-    margin-bottom: 20px; /* Espacement entre l'image et le texte */
-  }
-
   .about-text {
     width: 90%; /* Ajuster la largeur du texte pour être plus lisible sur mobile */
     font-size: 1.2em; /* Réduire la taille de police sur mobile */
+    order: -1; /* Placer le texte avant l'image */
+  }
+
+  .about-img {
+    width: 100%; /* S'assurer que l'image prenne la largeur complète */
+    margin-bottom: 20px; /* Espacement entre l'image et le texte */
   }
 
   .title-about {
@@ -59,3 +61,4 @@
     margin-left: 0; /* Supprimer la marge gauche sur mobile */
   }
 }
+

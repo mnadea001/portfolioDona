@@ -1,42 +1,43 @@
-import './DubSection.css';
-import videoSrc from '../assets/videos/video.mov';
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect } from 'react';
+
+import videoSrc from '../assets/videos/video.mov'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useEffect } from 'react'
+import { Zoom } from 'react-awesome-reveal'
 
 const IntroSection: React.FC = () => {
   useEffect(() => {
     // Enregistrez le plugin ScrollTrigger dans GSAP
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger)
 
-    // Animation pour rétrécir la vidéo lors du scroll
-    gsap.to('.video-player', {
-      scale: 0.3, // Échelle à laquelle la vidéo va rétrécir (50%)
-      scrollTrigger: {
-        trigger: '.intro-section', // Élément déclencheur
-        start: 'top top', // Démarre lorsque le haut de la section atteint le haut de la page
-        end: '+=1500', // Animation se déroule sur 1500px de scroll
-        scrub: true, // Permet à l'animation de suivre le scroll (effet fluide)
-      },
-    });
-  }, []);
+    // Animation pour agrandir la vidéo lors du scroll
+    gsap.fromTo('.video-player',
+      { scale: 0.5 }, // État initial, vidéo petite
+      {
+        scale: 1, // État final, vidéo à taille normale
+        scrollTrigger: {
+          trigger: '.intro-section', // Élément déclencheur
+          start: 'top top', // Démarre lorsque le haut de la section atteint le haut de la page
+          end: '+=1500', // Animation se déroule sur 1500px de scroll
+          scrub: true // Permet à l'animation de suivre le scroll (effet fluide)
+        }
+      }
+    )
+  }, [])
 
   return (
     <>
-    <h1>Selectress Reggae Dub basée à Bordeaux</h1>
-      <div className="intro-section">
-        <video
-          className="video-player"
-          src={videoSrc}
-          autoPlay
-          loop
-          muted
-          width="100%"
-          height="auto"
-        />
+      <Zoom>
+        <h1>
+          selectress reggae dub <br></br> basée à Bordeaux
+        </h1>
+      </Zoom>
+
+      <div>
+        <video className="video-player" src={videoSrc} autoPlay loop muted width="100%" height="auto" />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default IntroSection;
+export default IntroSection

@@ -1,38 +1,39 @@
-import './Footer.css';
-import ArrowUpIcon from '../assets/icons/ArrowUpIcon';
-// import gsap from "gsap";
-// import { useEffect } from 'react';
+import './Footer.css'
+import Lottie from 'lottie-react'
+import Up from '../assets/up.json'
+
+const style = {
+  height: '50px',
+  width: '50px'
+}
 
 const Footer: React.FC = () => {
   const handleBackToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   return (
     <footer className="footer-container">
-
       <div className="footer-content">
         <ul className="footer-links">
           <li>
             <a className="footer-link" href="https://www.facebook.com/matilda.dona.dub/" target="_blank">
-              Facebook 
+              Facebook
             </a>
           </li>
           <li>
             <a className="footer-link" href="https://www.instagram.com/matildadona_/" target="_blank">
-              Instagram 
+              Instagram
             </a>
           </li>
         </ul>
         <div className="btn-up" onClick={handleBackToTop}>
-          <ArrowUpIcon className='arrow' />
-          <span>
-            retour en haut</span>
+          <span>retour en haut</span>
+          <Lottie animationData={Up} style={style} />
         </div>
       </div>
-
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
