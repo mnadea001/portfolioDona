@@ -51,7 +51,7 @@ const projects2024 = [
     imageSrc: bieres
   },
   {
-    title: 'Provençal Dub Corner',
+    title: 'PROVENÇAL DUB CORNER',
     date: '21 Septembre 2024',
     lieu: 'Aubagne, France',
     imageSrc: provencal
