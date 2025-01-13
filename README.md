@@ -23,3 +23,7 @@ Icons
 https://reactsvgicons.com/
 # Source
 
+
+PB GITHUB VSCODE PUSH
+
+git config http.postBuffer 524288000 git pull && git push
