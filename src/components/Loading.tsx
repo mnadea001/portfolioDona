@@ -12,7 +12,7 @@ const Loading: React.FC = () => {
     <>
       <div className="loader-container">
         <div className="loader-wrap">
-          <p className="loader-text">Chargement en cours</p>
+          <p className="loader-text">chargement en cours</p>
           <motion.div className="loader-bar1" variants={LoaderVariant} initial="initial" animate="animate"></motion.div>
           <motion.div className="loader-bar2" variants={LoaderVariant} initial="initial" animate="animate"></motion.div>
           <motion.div className="loader-bar3" variants={LoaderVariant} initial="initial" animate="animate"></motion.div>
