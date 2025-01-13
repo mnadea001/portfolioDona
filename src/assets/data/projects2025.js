@@ -20,7 +20,7 @@ const projects2025 = [
     title: 'DUB',
     date: '6 février 2025',
     lieu: 'Lyon, France',
-    imageSrc: bilbaobrutality
+    imageSrc: lyonfev
 
   },
   {
