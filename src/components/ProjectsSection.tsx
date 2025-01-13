@@ -6,6 +6,7 @@ import dates2023 from '../assets/data/projects2023.js'
 import dates2022 from '../assets/data/projects2022.js'
 import dates2021 from '../assets/data/projects2021.js'
 import dates2020 from '../assets/data/projects2020.js'
+import dates2025 from '../assets/data/projects2025.js'
 
 const ProjectsSection: React.FC = () => {
   const navigate = useNavigate()
@@ -18,6 +19,9 @@ const ProjectsSection: React.FC = () => {
         <section className="projets">
           <p className="dates-title">Dates</p>
         </section>
+        <p className="year-title">2025</p>
+        <AccordionList projects={dates2025} />
+        <hr />
         <p className="year-title">2024</p>
         <AccordionList projects={dates2024} />
         <hr />
