@@ -6,6 +6,7 @@ import pinata from '../images/PINATA.jpg'
 import abendigo from '../images/abendigo.jpg'
 import dubarena from '../images/dubarena.jpg'
 import hfd from '../images/HFD.jpg'
+import sekaseka from '../images/SEKA.jpg'
 
 
 const projects2025 = [
@@ -26,6 +27,12 @@ const projects2025 = [
     date: '1 mars 2025',
     lieu: 'La Boiserie de Mazan, France',
     imageSrc: hfd
+  },
+    {
+    title: 'SEKA SEKA',
+    date: '19 février 2025',
+    lieu: 'Montpellier, France',
+    imageSrc: sekaseka
   },
   {
     title: 'PINATA RADIO',
