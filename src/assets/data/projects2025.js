@@ -16,7 +16,7 @@ const projects2025 = [
     date: '26 avril 2025',
     lieu: 'Genève, Suisse',
     imageSrc: dubquake
-  },,
+  },
   {
     title: 'DUB ARENA',
     date: '5 avril 2025',
