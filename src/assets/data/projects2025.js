@@ -7,9 +7,16 @@ import abendigo from '../images/abendigo.jpg'
 import dubarena from '../images/dubarena.jpg'
 import hfd from '../images/HFD.jpg'
 import sekaseka from '../images/SEKA.jpg'
+import dubquake from '../images/dubquake.jpg'
 
 
 const projects2025 = [
+  {
+    title: 'DUBQUAKE',
+    date: '26 avril 2025',
+    lieu: 'Genève, Suisse',
+    imageSrc: dubquake
+  },,
   {
     title: 'DUB ARENA',
     date: '5 avril 2025',
