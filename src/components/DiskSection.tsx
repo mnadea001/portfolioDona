@@ -1,30 +1,20 @@
-import { useLottie, useLottieInteractivity} from 'lottie-react';
-import Anim from '../assets/turntable.json'  
+import { useLottie } from "lottie-react";
+import Anim from "../assets/turntable.json";
 
 const style = {
-    height: 200,
-  }
-  
-  const options = {
-    animationData: Anim,
-    autoplay: false,
-  }
+  height: 200,
+};
+
+const options = {
+  animationData: Anim,
+  autoplay: true,  // Activation de l'autoplay
+  loop: true,      // Permet de répéter l'animation en boucle
+};
+
 const DiskSection: React.FC = () => {
-
   const lottieObj = useLottie(options, style);
-  const Animation = useLottieInteractivity({
-    lottieObj,
-    mode: "scroll",
-    actions: [
-      {
-        visibility: [0, 1],
-        type: "seek",
-        frames: [0, 51],
-      },
-    ],
-  });
-  return Animation;
-}
 
-export default DiskSection
-;
+  return lottieObj.View; // Retourne directement l'animation
+};
+
+export default DiskSection;

@@ -1,7 +1,6 @@
 import './Home.css'
 
 import AboutSection from '../components/AboutSection'
-// import DiskSection from '../components/DiskSection'
 import IntroMobileSection from '../components/IntroMobileSection'
 import IntroSection from '../components/IntroSection'
 import DatesSection from '../components/DatesSection'
@@ -9,7 +8,6 @@ import SliderSection from '../components/SliderSection'
 
 import { useEffect, useState } from 'react'
 import BannerComponent from '../components/BannerComponent'
-// import ExperiencesSection from '../components/ExperiencesSection'
 
 const Home: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 768)
@@ -35,7 +33,6 @@ const Home: React.FC = () => {
 
             <DatesSection />
             <SliderSection />
-            {/* <BannerComponent / */}
           </>
         ) : (
           <>

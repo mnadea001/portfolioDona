@@ -45,6 +45,7 @@ h1 {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  margin-top: 50px;
 }
 
 .loader-text {
@@ -52,24 +53,9 @@ h1 {
   margin-left: 20px;
   padding-bottom: 0 !important;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 2em !important;
+  font-size: 1.5em !important;
 }
 
-.loader-bar1 {
-  position: absolute;
-  height: 15px;
-  width: 100vw;
-  background-color: #000000;
-  top: 75%;
-}
-
-.loader-bar2 {
-  position: absolute;
-  height: 15px;
-  width: 100vw;
-  background-color: #000000;
-  top: 80%;
-}
 
 .loader-bar3 {
   position: absolute;

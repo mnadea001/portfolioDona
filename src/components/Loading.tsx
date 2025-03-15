@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-
+import DiskSection from './DiskSection'
 const LoaderVariant = {
   initial: { left: '-100vw' },
   animate: {
@@ -12,9 +12,9 @@ const Loading: React.FC = () => {
     <>
       <div className="loader-container">
         <div className="loader-wrap">
+      
+          <DiskSection />
           <p className="loader-text">chargement en cours</p>
-          <motion.div className="loader-bar1" variants={LoaderVariant} initial="initial" animate="animate"></motion.div>
-          <motion.div className="loader-bar2" variants={LoaderVariant} initial="initial" animate="animate"></motion.div>
           <motion.div className="loader-bar3" variants={LoaderVariant} initial="initial" animate="animate"></motion.div>
         </div>
       </div>
