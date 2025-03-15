@@ -15,15 +15,8 @@
 }
 
 body {
-  background: linear-gradient(to bottom,
-      /* #c1ffc9, */
-      #D5C5B6,
-      #e9ba85,
-      #dfd4a6,
-      #D5C5B6,
-      #ffbd91);
-  color: var(--text-color);
-  transition: background-color 0.3s, color 0.3s;
+background-color: white;
+color: #000000;
 }
 
 h1 {

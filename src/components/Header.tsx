@@ -12,6 +12,7 @@ import useMediaQuery from '@mui/material/useMediaQuery'
 import { TransitionProps } from '@mui/material/transitions'
 import Slide from '@mui/material/Slide'
 import React from 'react'
+import logo from '../assets/images/logo.png'
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -35,7 +36,9 @@ const Header: React.FC = () => {
   return (
     <>
       <div className="icons">
-        <h3 className="header-title">MATILDA DONA</h3>
+      <img src={logo} style={{ maxWidth: '50%', height: 'auto', maxHeight: '50px', margin: 'auto' }} />
+
+        {/* <h3 className="header-title">MATILDA DONA</h3> */}
         <IconButton onClick={toggleModal}>
           <MenuSharpIcon />
         </IconButton>

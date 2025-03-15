@@ -35,7 +35,7 @@
 /* Media query pour les écrans plus petits */
 @media (max-width: 768px) {
   .about-box {
-    flex-direction: column; /* Aligner verticalement l'image et le texte */
+    flex-direction: column-reverse; /* Aligner verticalement l'image et le texte */
     justify-content: center;
     align-items: center;
     text-align: center;

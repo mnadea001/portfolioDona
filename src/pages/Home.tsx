@@ -2,6 +2,7 @@ import './Home.css'
 
 import AboutSection from '../components/AboutSection'
 // import DiskSection from '../components/DiskSection'
+import IntroMobileSection from '../components/IntroMobileSection'
 import IntroSection from '../components/IntroSection'
 import DatesSection from '../components/DatesSection'
 import SliderSection from '../components/SliderSection'
@@ -29,7 +30,7 @@ const Home: React.FC = () => {
       <div>
         {isMobile ? (
           <>
-            <IntroSection />
+         <IntroMobileSection />
             <AboutSection />
 
             <DatesSection />
@@ -38,8 +39,8 @@ const Home: React.FC = () => {
           </>
         ) : (
           <>
-            <IntroSection />
-
+          
+     <IntroSection />
             <AboutSection />
             <DatesSection />
             <SliderSection />

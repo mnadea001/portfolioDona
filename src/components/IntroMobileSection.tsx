@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useEffect } from 'react'
 import { Zoom } from 'react-awesome-reveal'
 
-const IntroSection: React.FC = () => {
+const IntroMobileSection: React.FC = () => {
   useEffect(() => {
     // Enregistrez le plugin ScrollTrigger dans GSAP
     gsap.registerPlugin(ScrollTrigger)
@@ -27,17 +27,17 @@ const IntroSection: React.FC = () => {
 
   return (
     <>
-      {/* <Zoom>
+      <Zoom>
         <h1>
           selectress reggae dub <br></br> basée à Bordeaux
         </h1>
-      </Zoom> */}
+      </Zoom>
 
-      <div>
+      {/* <div>
         <video className="video-player" src={videoSrc} autoPlay loop muted width="100%" height="auto" />
-      </div>
+      </div> */}
     </>
   )
 }
 
-export default IntroSection
+export default IntroMobileSection
