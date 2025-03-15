@@ -5,7 +5,7 @@ import { Zoom } from 'react-awesome-reveal'
 import { NavLink } from 'react-router-dom'
 import dates from '../assets/images/dates.png'
 import AccordionList from './AccordionList'
-import projectsnext2025 from '../assets/data/projectsnext2025.ts'
+import projectsnext2025 from '../assets/data/projectsnext2025'
 const DatesSection: React.FC = () => {
   return (
     <>
