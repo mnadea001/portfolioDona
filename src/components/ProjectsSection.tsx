@@ -8,6 +8,7 @@ import dates2021 from '../assets/data/projects2021.js'
 import dates2020 from '../assets/data/projects2020.js'
 import dates2025 from '../assets/data/projects2025.js'
 
+import dates from '../assets/images/dates.png'
 const ProjectsSection: React.FC = () => {
   const navigate = useNavigate()
   return (
@@ -17,6 +18,8 @@ const ProjectsSection: React.FC = () => {
       </button>
       <section className="projets-content">
         <section className="projets">
+        <img src={dates} style={{ maxWidth: '100%', height: 'auto', maxHeight: '500px', marginTop: '50px',marginBottom: '50px', marginLeft: 'auto' }} />
+
           <p className="dates-title">Dates</p>
         </section>
         <p className="year-title">2025</p>

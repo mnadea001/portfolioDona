@@ -6,6 +6,14 @@
   text-align: center;
 }
 
+.next-dates{
+  font-size: 3.5em !important;
+  color: #000000 !important;
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+  background-color: transparent !important;
+}
+
 .title-dates:hover {
   font-weight: bold;
   text-decoration: underline;

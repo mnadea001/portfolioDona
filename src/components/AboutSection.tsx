@@ -2,6 +2,7 @@ import './AboutSection.css'
 
 import { Zoom, Slide } from 'react-awesome-reveal'
 import ImgBio from '../assets/images/imgBio.jpg'
+import bio from '../assets/images/bio.png'
 
 const AboutSection: React.FC = () => {
 
@@ -12,9 +13,7 @@ const AboutSection: React.FC = () => {
     <div className="main">
       <div className="about-section">
         <Zoom>
-          <p className="title-about">
-            Histoire
-          </p>
+        <img src={bio} style={{ maxWidth: '100%', height: 'auto', maxHeight: '500px', marginTop: '50px',marginBottom: '50px', marginLeft: 'auto' }} />
         </Zoom>
         <div className="about-box">
         <div className="about-img">
