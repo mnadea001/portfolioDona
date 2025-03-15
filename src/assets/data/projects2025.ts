@@ -7,6 +7,8 @@ import dubarena from '../images/dubarena.jpg';
 import hfd from '../images/HFD.jpg';
 import sekaseka from '../images/SEKA.jpg';
 import dubquake from '../images/dubquake.jpg';
+import cafe_pompier from '../images/cafe_pompier.jpg';
+import subside from '../images/subside.jpg';
 
 interface Project {
   title: string;
@@ -16,6 +18,12 @@ interface Project {
 }
 
 const projects2025: Project[] = [
+  {
+    title: 'SubSide Festival',
+    date: '5-7 septembre 2025',
+    lieu: 'Ardèche, Suisse',
+    imageSrc: subside
+  },
   {
     title: 'DUBQUAKE',
     date: '26 avril 2025',
@@ -27,6 +35,12 @@ const projects2025: Project[] = [
     date: '5 avril 2025',
     lieu: 'Portet sur Garonne, France',
     imageSrc: dubarena
+  },
+  {
+    title: 'CAFE POMPIER',
+    date: '21 mars 2025',
+    lieu: 'Bordeaux, France',
+    imageSrc: cafe_pompier
   },
   {
     title: 'DAF',

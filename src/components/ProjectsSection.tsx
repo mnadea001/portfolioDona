@@ -24,7 +24,7 @@ const ProjectsSection: React.FC = () => {
   style={{ maxWidth: '100%', height: 'auto', maxHeight: '500px', marginTop: '50px', marginBottom: '50px', marginLeft: 'auto' }} 
 />
 
-          <p className="dates-title">Dates</p>
+   
         </section>
         <p className="year-title">2025</p>
         <AccordionList projects={dates2025} />
