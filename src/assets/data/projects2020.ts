@@ -1,9 +1,15 @@
-import cluster from '../images/cluster.jpg'
-import guetopen from '../images/guetopen.jpg'
-import neboty from '../images/neboty.jpeg'
+import cluster from '../images/cluster.jpg';
+import guetopen from '../images/guetopen.jpg';
+import neboty from '../images/neboty.jpeg';
 
+interface Project {
+  title: string;
+  date: string;
+  lieu: string;
+  imageSrc: string;
+}
 
-const projects2020 = [
+const projects2020: Project[] = [
   {
     title: 'NEBOTY ROOTS CORNER',
     date: '15 Aout 2020',
@@ -22,6 +28,6 @@ const projects2020 = [
     lieu: 'Mélamare, France',
     imageSrc: cluster
   }
-]
+];
 
-export default projects2020
+export default projects2020;

@@ -1,25 +1,30 @@
-import rootsfoundation from '../images/rootsfoundation.jpg'
-import cestasdubco from '../images/cestasdubco.webp'
-import wilddub from '../images/wilddub.jpg'
-import pinawood from '../images/pinawood.jpg'
-import hubert from '../images/hubert.png'
-import dubcruiser24 from '../images/dubcruiser24.jpg'
-import touko from '../images/touko.jpg'
-import inadi24 from '../images/inadi24.jpg'
-import zamzam from '../images/zamzam.jpg'
-import cabaret24 from '../images/cabaret24.jpg'
-import him from '../images/him.jpg'
-import Polacabana from '../images/Polacabana.png'
-import provencal from '../images/provencal.jpg'
-import melodub from '../images/melodub.jpg'
-import bieres from '../images/1001bieres.jpg'
-import festimut from '../images/festimut.jpg'
-import grenoble from '../images/grenoble.jpg'
-import montde from '../images/montde.jpg'
+import rootsfoundation from '../images/rootsfoundation.jpg';
+import cestasdubco from '../images/cestasdubco.webp';
+import wilddub from '../images/wilddub.jpg';
+import pinawood from '../images/pinawood.jpg';
+import hubert from '../images/hubert.png';
+import dubcruiser24 from '../images/dubcruiser24.jpg';
+import touko from '../images/touko.jpg';
+import inadi24 from '../images/inadi24.jpg';
+import zamzam from '../images/zamzam.jpg';
+import cabaret24 from '../images/cabaret24.jpg';
+import him from '../images/him.jpg';
+import polacabana from '../images/Polacabana.png';
+import provencal from '../images/provencal.jpg';
+import melodub from '../images/melodub.jpg';
+import bieres from '../images/1001bieres.jpg';
+import festimut from '../images/festimut.jpg';
+import grenoble from '../images/grenoble.jpg';
+import montde from '../images/montde.jpg';
 
+interface Project {
+  title: string;
+  date: string;
+  lieu: string;
+  imageSrc: string;
+}
 
-
-const projects2024 = [
+const projects2024: Project[] = [
   {
     title: 'DUB EXCURSION',
     date: '21 Décembre 2024',
@@ -60,7 +65,7 @@ const projects2024 = [
     title: 'OPEN AIR POLACABANA',
     date: '7 Septembre 2024',
     lieu: 'Bordeaux, France',
-    imageSrc: Polacabana
+    imageSrc: polacabana
   },
   {
     title: 'HIM DUB FEST',
@@ -128,6 +133,6 @@ const projects2024 = [
     lieu: 'Villars-sur-Ollon, Suisse',
     imageSrc: rootsfoundation
   }
-]
+];
 
-export default projects2024
+export default projects2024;

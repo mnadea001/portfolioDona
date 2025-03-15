@@ -1,16 +1,22 @@
-import blackcat from '../images/blackcat.jpg'
-import lapetitesession from '../images/lapetitesession.jpg'
-import decibell from '../images/decibell.jpg'
-import perlefest from '../images/perlefest.jpg'
-import sonoliort from '../images/sonoliort.jpg'
-import cabaret23 from '../images/cabaret23.jpg'
-import dirtyskank from '../images/dirtyskank.jpg'
-import ichbinbday from '../images/ichbinbday.jpg'
-import zigzag23 from '../images/zigzag23.jpg'
-import fontainebleau from '../images/fontainebleau.jpg'
+import blackcat from '../images/blackcat.jpg';
+import lapetitesession from '../images/lapetitesession.jpg';
+import decibell from '../images/decibell.jpg';
+import perlefest from '../images/perlefest.jpg';
+import sonoliort from '../images/sonoliort.jpg';
+import cabaret23 from '../images/cabaret23.jpg';
+import dirtyskank from '../images/dirtyskank.jpg';
+import ichbinbday from '../images/ichbinbday.jpg';
+import zigzag23 from '../images/zigzag23.jpg';
+import fontainebleau from '../images/fontainebleau.jpg';
 
+interface Project {
+  title: string;
+  date: string;
+  lieu: string;
+  imageSrc: string;
+}
 
-const projects2023 = [
+const projects2023: Project[] = [
   {
     title: 'DUB HIGH STORY',
     date: '25 Novembre 2023',
@@ -71,6 +77,6 @@ const projects2023 = [
     lieu: 'Bordeaux, France',
     imageSrc: blackcat
   }
-]
+];
 
-export default projects2023
+export default projects2023;

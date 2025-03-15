@@ -1,15 +1,21 @@
-import bilbaobrutality from '../images/bilbao-brutality.png'
-import winterdubcamp from '../images/winterdubcamp.jpg'
-import lyonfev from '../images/lyonfev.jpg'
-import dafvalencia from '../images/dafvalencia.png'
-import pinata from '../images/PINATA.jpg'
-import dubarena from '../images/dubarena.jpg'
-import hfd from '../images/HFD.jpg'
-import sekaseka from '../images/SEKA.jpg'
-import dubquake from '../images/dubquake.jpg'
+import bilbaobrutality from '../images/bilbao-brutality.png';
+import winterdubcamp from '../images/winterdubcamp.jpg';
+import lyonfev from '../images/lyonfev.jpg';
+import dafvalencia from '../images/dafvalencia.png';
+import pinata from '../images/PINATA.jpg';
+import dubarena from '../images/dubarena.jpg';
+import hfd from '../images/HFD.jpg';
+import sekaseka from '../images/SEKA.jpg';
+import dubquake from '../images/dubquake.jpg';
 
+interface Project {
+  title: string;
+  date: string;
+  lieu: string;
+  imageSrc: string;
+}
 
-const projects2025 = [
+const projects2025: Project[] = [
   {
     title: 'DUBQUAKE',
     date: '26 avril 2025',
@@ -34,7 +40,7 @@ const projects2025 = [
     lieu: 'La Boiserie de Mazan, France',
     imageSrc: hfd
   },
-    {
+  {
     title: 'SEKA SEKA',
     date: '19 février 2025',
     lieu: 'Montpellier, France',
@@ -57,7 +63,6 @@ const projects2025 = [
     date: '6 février 2025',
     lieu: 'Lyon, France',
     imageSrc: lyonfev
-
   },
   {
     title: 'DUB SHELTER',
@@ -65,6 +70,6 @@ const projects2025 = [
     lieu: 'Bilbao, Espagne',
     imageSrc: bilbaobrutality
   }
-]
+];
 
-export default projects2025
+export default projects2025;

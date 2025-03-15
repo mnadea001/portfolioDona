@@ -1,12 +1,12 @@
 import AccordionList from './AccordionList'
 import './ProjectsSection.css'
 import { useNavigate } from 'react-router'
-import dates2024 from '../assets/data/projects2024.js'
-import dates2023 from '../assets/data/projects2023.js'
-import dates2022 from '../assets/data/projects2022.js'
-import dates2021 from '../assets/data/projects2021.js'
-import dates2020 from '../assets/data/projects2020.js'
-import dates2025 from '../assets/data/projects2025.js'
+import dates2024 from '../assets/data/projects2024.ts'
+import dates2023 from '../assets/data/projects2023.ts'
+import dates2022 from '../assets/data/projects2022.ts'
+import dates2021 from '../assets/data/projects2021.ts'
+import dates2020 from '../assets/data/projects2020.ts'
+import dates2025 from '../assets/data/projects2025.ts'
 
 import dates from '../assets/images/dates.png'
 const ProjectsSection: React.FC = () => {
@@ -18,7 +18,11 @@ const ProjectsSection: React.FC = () => {
       </button>
       <section className="projets-content">
         <section className="projets">
-        <img src={dates} style={{ maxWidth: '100%', height: 'auto', maxHeight: '500px', marginTop: '50px',marginBottom: '50px', marginLeft: 'auto' }} />
+        <img 
+  src={dates} 
+  alt="Affiche des dates des événements" 
+  style={{ maxWidth: '100%', height: 'auto', maxHeight: '500px', marginTop: '50px', marginBottom: '50px', marginLeft: 'auto' }} 
+/>
 
           <p className="dates-title">Dates</p>
         </section>
