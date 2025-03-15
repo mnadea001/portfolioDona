@@ -36,3 +36,22 @@
   text-shadow: -3px -3px #000000 !important;
 
 }
+
+.year-box {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: rgb(245,255,180);
+  background: -moz-radial-gradient(circle, rgba(245,255,180,0.44441526610644255) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(245,255,180,0.44441526610644255) 0%, rgba(255,255,255,1) 100%);
+  background: radial-gradient(circle, rgba(245,255,180,0.44441526610644255) 0%, rgba(255,255,255,1) 100%);
+}
+.year-box-pink {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: rgb(255,180,246);
+  background: -moz-radial-gradient(circle, rgba(255,180,246,0.53125) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(255,180,246,0.53125) 0%, rgba(255,255,255,1) 100%);
+  background: radial-gradient(circle, rgba(255,180,246,0.53125) 0%, rgba(255,255,255,1) 100%);
+}

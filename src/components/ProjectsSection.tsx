@@ -17,6 +17,8 @@ const ProjectsSection: React.FC = () => {
         <span>retour</span>
       </button>
       <section className="projets-content">
+
+        <div className="year-box-pink">
         <section className="projets">
         <img 
   src={dates} 
@@ -28,28 +30,35 @@ const ProjectsSection: React.FC = () => {
         </section>
         <p className="year-title">2025</p>
         <AccordionList projects={dates2025} />
-        <hr />
+        </div>
+   
+        <div className="year-box">
         <p className="year-title">2024</p>
         <AccordionList projects={dates2024} />
-        <hr />
+        </div>
+        <div className="year-box-pink">
         <p className="year-title">2023</p>
         <AccordionList projects={dates2023} />
-        <hr />
+        </div>
+        <div className="year-box">
         <p className="year-title">2022</p>
 
         <AccordionList projects={dates2022} />
-        <hr />
+        </div>
+        <div className="year-box-pink">
         <p className="year-title">2021</p>
         <p>
           * <em>année covid / soirées privées</em>
         </p>
         <AccordionList projects={dates2021} />
-        <hr />
+        </div>
+        <div className="year-box">
         <p className="year-title">2020</p>
         <p>
           * <em>année covid / soirées privées</em>
         </p>
         <AccordionList projects={dates2020} />
+        </div>
       </section>
     </>
   )
