@@ -1,7 +1,6 @@
 import './Home.css'
 
 import AboutSection from '../components/AboutSection'
-import IntroMobileSection from '../components/IntroMobileSection'
 import IntroSection from '../components/IntroSection'
 import DatesSection from '../components/DatesSection'
 import SliderSection from '../components/SliderSection'
@@ -29,7 +28,6 @@ const Home: React.FC = () => {
       <div>
         {isMobile ? (
           <>
-         <IntroMobileSection />
             <AboutSection />
 
             <DatesSection />

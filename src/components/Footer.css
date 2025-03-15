@@ -68,12 +68,6 @@
 
 }
 
-.btn-up:hover {
-  box-shadow: 3px 3px #000000;
-    border-radius: 50px;
-  border: rgba(0, 0, 0, 0.498) 1px solid;
-
-}
 
 .btn-up span {
   color: #000000a7 !important;

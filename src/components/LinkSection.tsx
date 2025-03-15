@@ -12,7 +12,7 @@ const LinkSection: React.FC = () => {
     <div className="main">
       <div className="about-section">
         <Zoom>
-        <img alt='links' src={links} style={{ maxWidth: '100%', height: 'auto', maxHeight: '500px', marginTop: '50px',marginBottom: '50px', marginLeft: 'auto' }} />
+        <img alt='links' src={links} style={{ maxWidth: '80%', height: 'auto', maxHeight: '500px', marginTop: '50px',marginBottom: '50px', marginLeft: 'auto' }} />
         </Zoom>
         <ul className="footer-links">
           <li>
