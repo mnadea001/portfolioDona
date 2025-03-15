@@ -1,5 +1,5 @@
 
-import videoSrc from '../assets/videos/video.mov'
+
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useEffect } from 'react'
@@ -26,17 +26,13 @@ const IntroMobileSection: React.FC = () => {
   }, [])
 
   return (
-    <>
+
       <Zoom>
         <h1>
           selectress reggae dub <br></br> basée à Bordeaux
         </h1>
       </Zoom>
 
-      {/* <div>
-        <video className="video-player" src={videoSrc} autoPlay loop muted width="100%" height="auto" />
-      </div> */}
-    </>
   )
 }
 
