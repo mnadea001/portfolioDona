@@ -32,4 +32,51 @@ const projects2022: Project[] = [
   {
     title: 'CABARET VERT FESTIVAL',
     date: '17-18 Aout 2022',
-    lieu: 'Charleville-Mézières, France
+    lieu: 'Charleville-Mézières, France',
+    imageSrc: cabaretvert22
+  },
+  {
+    title: 'TOUS UNIS POUR L’ETHIOPIE',
+    date: '26 Juin 2022',
+    lieu: 'Vitry-Sur-Seine, France',
+    imageSrc: ethiopie
+  },
+  {
+    title: 'DUB CRUISER FINAL',
+    date: '25 Juin 2022',
+    lieu: 'Lyon, France',
+    imageSrc: dubcruiser
+  },
+  {
+    title: 'GARRIGUE CORNER',
+    date: '18 Juin 2022',
+    lieu: 'Garrigue, France',
+    imageSrc: garrigue
+  },
+  {
+    title: 'DUB & KULCHA AKADEMY',
+    date: '11 Juin 2022',
+    lieu: 'Mayenne, France',
+    imageSrc: dubnkulcha
+  },
+  {
+    title: 'DUB CRUISER #2',
+    date: '11 Mars 2022',
+    lieu: 'Lyon, France',
+    imageSrc: dubcruiz
+  },
+  {
+    title: 'SOIREE REGGAE DUB',
+    date: 'Février 2022',
+    lieu: 'Bordeaux, France',
+    imageSrc: zigzag2022
+  },
+  {
+    title: 'ANTIDOTE OF THE NATION',
+    date: '7 Janvier 2022',
+    lieu: 'Bordeaux, France',
+    imageSrc: antidote
+  }
+];
+
+export default projects2022;
