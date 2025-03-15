@@ -27,3 +27,6 @@ https://reactsvgicons.com/
 PB GITHUB VSCODE PUSH
 
 git config http.postBuffer 524288000 git pull && git push
+
+npm outdated
+npm update

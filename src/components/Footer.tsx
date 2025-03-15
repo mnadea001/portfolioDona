@@ -13,20 +13,9 @@ const Footer: React.FC = () => {
   }
 
   return (
-    <footer className="footer-container">
+    <footer >
       <div className="footer-content">
-        <ul className="footer-links">
-          <li>
-            <a className="footer-link" href="https://www.facebook.com/matilda.dona.dub/" target="_blank">
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a className="footer-link" href="https://www.instagram.com/matildadona_/" target="_blank">
-              Instagram
-            </a>
-          </li>
-        </ul>
+       
         <div className="btn-up" onClick={handleBackToTop}>
           <span>retour en haut</span>
           <Lottie animationData={Up} style={style} />

@@ -9,6 +9,7 @@
   display: block;
 }
 
+
 .next-dates{
   margin-top: 30px !important;
   margin-bottom: 80px !important;
@@ -21,7 +22,11 @@
 
 .title-dates:hover {
   font-weight: bold;
-  text-decoration: underline;
+  -webkit-text-decoration-stroke: 1px #000000;
+  -webkit-text-stroke: 1px #000000;
+  color: transparent !important;
+  font-family: "Space Grotesk", sans-serif;
+
 }
 
 
