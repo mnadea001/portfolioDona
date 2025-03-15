@@ -1,12 +1,12 @@
 import AccordionList from './AccordionList'
 import './ProjectsSection.css'
 import { useNavigate } from 'react-router'
-import dates2024 from '../assets/data/projects2024.ts'
-import dates2023 from '../assets/data/projects2023.ts'
-import dates2022 from '../assets/data/projects2022.ts'
-import dates2021 from '../assets/data/projects2021.ts'
-import dates2020 from '../assets/data/projects2020.ts'
-import dates2025 from '../assets/data/projects2025.ts'
+import dates2024 from '../assets/data/projects2024'
+import dates2023 from '../assets/data/projects2023'
+import dates2022 from '../assets/data/projects2022'
+import dates2021 from '../assets/data/projects2021'
+import dates2020 from '../assets/data/projects2020'
+import dates2025 from '../assets/data/projects2025'
 
 import dates from '../assets/images/dates.png'
 const ProjectsSection: React.FC = () => {
