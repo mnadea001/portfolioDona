@@ -13,11 +13,11 @@ import AboutPage from './pages/AboutPage';
 
 function App() {
 
-  const [loading, setLoding] = useState(true);
+  const [loading, setLoading] = useState(true);
  
   useEffect(() => {
     setTimeout(() => {
-      setLoding(false);
+      setLoading(false);
     }, 2500);
   }, []);
 

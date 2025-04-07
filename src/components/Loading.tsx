@@ -9,7 +9,6 @@ const LoaderVariant = {
 }
 const Loading: React.FC = () => {
   return (
-    <>
       <div className="loader-container">
         <div className="loader-wrap">
       
@@ -18,7 +17,6 @@ const Loading: React.FC = () => {
           <motion.div className="loader-bar3" variants={LoaderVariant} initial="initial" animate="animate"></motion.div>
         </div>
       </div>
-    </>
   )
 }
 

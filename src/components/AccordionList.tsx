@@ -12,7 +12,7 @@ const AccordionList: React.FC<AccordionListProps> = ({ projects }) => {
     <div className="accordion-list-container">
       {projects.map((project, index) => (
         <AccordionItem
-          key={index}
+        key={project.title}
           title={project.title}
           date={project.date}
           imageSrc={project.imageSrc}

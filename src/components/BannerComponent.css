@@ -46,12 +46,12 @@
 
 }
 
-.m-scroll__title a {
+.m-scroll__title span {
   -webkit-text-stroke: 1px #000000;
   color: transparent;
 }
 
-.m-scroll__title a:hover {
+.m-scroll__title span:hover {
   color: #000000;
 }
 

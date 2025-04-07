@@ -16,13 +16,14 @@ const SliderSection: React.FC = () => {
   const itemArray = Array.from({ length: 10 }, (_, index) => index + 1);
 
   return (
-    <>
+
       <div className="media-section">
 
         <ScrollCarousel >
           {itemArray.map((item) => (
             <div key={item} className='slide'>
               <img
+              alt="slide-image"
                 src={iconArray[item - 1]}
                 className='slide-image'
               />
@@ -30,7 +31,7 @@ const SliderSection: React.FC = () => {
           ))}
         </ScrollCarousel>
       </div>
-    </>
+
   );
 };
 

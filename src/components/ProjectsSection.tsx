@@ -7,8 +7,6 @@ import dates2022 from '../assets/data/projects2022'
 import dates2021 from '../assets/data/projects2021'
 import dates2020 from '../assets/data/projects2020'
 import dates2025 from '../assets/data/projects2025'
-
-import dates from '../assets/images/dates.png'
 const ProjectsSection: React.FC = () => {
   const navigate = useNavigate()
   return (

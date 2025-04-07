@@ -13,15 +13,15 @@ const Footer: React.FC = () => {
   }
 
   return (
-    <footer >
-      <div className="footer-content">
-       
-        <div className="btn-up" onClick={handleBackToTop}>
-          <span>retour en haut</span>
-          <Lottie animationData={Up} style={style} />
-        </div>
-      </div>
-    </footer>
+<footer>
+  <div className="footer-content">
+    <button className="btn-up" onClick={handleBackToTop}>
+      <span>retour en haut</span>
+      <Lottie animationData={Up} style={style} />
+    </button>
+  </div>
+</footer>
+
   )
 }
 
