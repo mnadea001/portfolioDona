@@ -8,12 +8,11 @@ import AccordionList from './AccordionList'
 import projectsnext2025 from '../assets/data/projectsnext2025'
 const DatesSection: React.FC = () => {
   return (
-    <>
  
       <div className="bloc-content">
 
                 <Zoom>
-        <img src={dates} style={{ maxWidth: '100%', height: 'auto', maxHeight: '500px', marginTop: '50px',marginBottom: '50px', marginLeft: 'auto' }} />
+                  <h1>Dates</h1>
      </Zoom>
  <h1 className="next-dates">   Prochaines dates</h1>
 
@@ -23,7 +22,7 @@ const DatesSection: React.FC = () => {
           </NavLink>
    
       </div>
-    </>
+    
   )
 }
 

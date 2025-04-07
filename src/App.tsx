@@ -26,7 +26,7 @@ function App() {
 
 
   return (
-    <>
+  
         <ParallaxProvider>
           <Routes>
             <Route path='/' element={<Header />}>
@@ -39,7 +39,7 @@ function App() {
           </Routes>
           <Footer />
         </ParallaxProvider>
-    </>
+
   )
 }
 

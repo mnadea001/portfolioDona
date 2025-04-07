@@ -5,6 +5,7 @@ import IntroSection from '../components/IntroSection'
 import DatesSection from '../components/DatesSection'
 import SliderSection from '../components/SliderSection'
 import LinkSection from '../components/LinkSection'
+import AudioSection from '../components/AudioSection'
 
 import { useEffect, useState } from 'react'
 import BannerComponent from '../components/BannerComponent'
@@ -24,7 +25,7 @@ const Home: React.FC = () => {
   }, [])
 
   return (
-    <>
+ 
       <div>
         {isMobile ? (
           <>
@@ -42,11 +43,13 @@ const Home: React.FC = () => {
             <DatesSection />
             <SliderSection />
             <BannerComponent />
+            <AudioSection/>
             <LinkSection />
+
           </>
         )}
       </div>
-    </>
+
   )
 }
 

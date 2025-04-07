@@ -1,6 +1,6 @@
-import dubarena from '../images/dubarena.jpg';
+
+import cabaret25 from '../images/cabaret25.png';
 import dubquake from '../images/dubquake.jpg';
-import cafe_pompier from '../images/cafe_pompier.jpg';
 import subside from '../images/subside.jpg';
 
 interface Project {
@@ -12,22 +12,16 @@ interface Project {
 
 const projectsnext2025: Project[] = [
   {
-    title: 'CAFE POMPIER',
-    date: '21 mars 2025',
-    lieu: 'Bordeaux, France',
-    imageSrc: cafe_pompier
-  },
-  {
-    title: 'DUB ARENA',
-    date: '5 avril 2025',
-    lieu: 'Portet sur Garonne, France',
-    imageSrc: dubarena
-  },
-  {
     title: 'DUBQUAKE',
     date: '26 avril 2025',
     lieu: 'Genève, Suisse',
     imageSrc: dubquake
+  },  
+  {
+    title: 'Cabaret Vert',
+    date: '14-17 Aout 2025',
+    lieu: 'Charleville-Mézières, France',
+    imageSrc: cabaret25
   },
   {
     title: 'SubSide Festival',

@@ -2,23 +2,22 @@ import './AboutSection.css'
 
 import { Zoom, Slide } from 'react-awesome-reveal'
 import ImgBio from '../assets/images/imgBio.jpg'
-import bio from '../assets/images/bio.png'
 
 const AboutSection: React.FC = () => {
 
 
 
   return (
-    <>
+
     <div className="main">
       <div className="about-section">
         <Zoom>
-        <img src={bio} style={{ maxWidth: '100%', height: 'auto', maxHeight: '500px', marginTop: '50px',marginBottom: '50px', marginLeft: 'auto' }} />
+          <h1>Bio</h1>
         </Zoom>
         <div className="about-box">
         <div className="about-img">
             <Slide>
-              <img src={ImgBio} style={{ maxWidth: '100%', height: 'auto', maxHeight: '500px', marginTop: '10px', marginLeft: 'auto' }} />
+              <img src={ImgBio} alt="image-matilda" style={{ maxWidth: '100%', height: 'auto', maxHeight: '500px', marginTop: '10px', marginLeft: 'auto' }} />
             </Slide>
           </div>
           <div className="about-text">
@@ -36,7 +35,7 @@ const AboutSection: React.FC = () => {
         </div>
       </div>
       </div>
-    </>
+
   )
 }
 

@@ -9,6 +9,7 @@ import sekaseka from '../images/SEKA.jpg';
 import dubquake from '../images/dubquake.jpg';
 import cafe_pompier from '../images/cafe_pompier.jpg';
 import subside from '../images/subside.jpg';
+import cabaret25 from '../images/cabaret25.png';
 
 interface Project {
   title: string;
@@ -25,13 +26,19 @@ const projects2025: Project[] = [
     imageSrc: subside
   },
   {
+    title: 'Cabaret Vert',
+    date: '14-17 Aout 2025',
+    lieu: 'Charleville-Mézières, France',
+    imageSrc: cabaret25
+  },
+  {
     title: 'DUBQUAKE',
     date: '26 avril 2025',
     lieu: 'Genève, Suisse',
     imageSrc: dubquake
   },
   {
-    title: 'DUB ARENA',
+    title: 'DUB AREA',
     date: '5 avril 2025',
     lieu: 'Portet sur Garonne, France',
     imageSrc: dubarena
