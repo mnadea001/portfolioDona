@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
+  flex-direction: row !important;
   max-width: 1200px;
   color: #D5C5B6;
   margin-bottom: 20px;
@@ -70,11 +70,17 @@
   margin-left: auto;
   cursor: pointer;
   text-transform: lowercase;
+  display: flex;
   font-size: 1.2em;
   font-family: "Space Grotesk", sans-serif;
 
 }
 
+.btn-up:hover {
+  border: 1px solid black !important;
+border-radius: 50% !important;
+
+}
 
 .btn-up span {
   color: #000000a7 !important;

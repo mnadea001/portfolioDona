@@ -6,6 +6,9 @@
   width: 100vw !important;
   margin: 0;
   padding: 0;
+  align-items: center; 
+  display: flex;
+  flex-direction: column;
 }
 
 .projets {
@@ -18,11 +21,17 @@
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-size: 5em !important;
-  /* -webkit-text-stroke: 1px rgb(5, 5, 5); 
-  color: transparent !important; */
   text-align: left;
   font-weight: bold;
   margin-left: 80px;
+}
+.year-box,
+.year-box-pink {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;  
 }
 
 .year-title {
@@ -32,7 +41,6 @@
   font-weight: bold;
   font-size: 4em !important;
   margin-top: 0 !important;
-  /* color: #D5FF3C !important; */
   text-shadow: -3px -3px #000000 !important;
 
 }

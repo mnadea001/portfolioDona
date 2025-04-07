@@ -5,6 +5,7 @@
   width: 350px; /* Taille fixe pour que toutes les cartes aient la même largeur */
   overflow: hidden;
   transition: transform 0.3s ease;
+  min-height: 500px; 
 }
 
 .accordion-card:hover {

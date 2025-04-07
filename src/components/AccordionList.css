@@ -1,23 +1,25 @@
 .accordion-list-container {
     display: grid;
-justify-content: center;
-    grid-template-columns: repeat(1, 1fr); /* Par défaut, une seule carte par ligne */
+grid-template-columns: repeat(1, 1fr);
     gap: 20px; /* Espace entre les cartes */
     padding: 20px; /* Optionnel : espacement autour du conteneur */
+    justify-content: center;    
+    margin: 0 auto; 
+
 
   }
   
-  /* Sur les écrans de taille moyenne et plus (tablettes et desktop) */
-  @media (min-width: 768px) {
-    .accordion-list-container {
-      grid-template-columns: repeat(1, 1fr); /* 2 cartes par ligne sur tablette */
-    }
+/* Tablette */
+@media (min-width: 768px) {
+  .accordion-list-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 par ligne */
   }
-  
-  /* Sur les grands écrans (desktop) */
-  @media (min-width: 1024px) {
-    .accordion-list-container {
-      grid-template-columns: repeat(3, 1fr); /* 3 cartes par ligne sur desktop */
-    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .accordion-list-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 par ligne */
   }
+}
   
