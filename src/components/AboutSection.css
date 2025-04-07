@@ -20,12 +20,12 @@
   justify-content: space-around;
   align-items: center;
   display: flex;
+  margin-top: 100px;
   flex-wrap: wrap; /* Permet à l'image et au texte de s'ajuster plus facilement */
 }
 
 .about-text {
-  width: 40%;
-  text-align: left;
+  width: 50%;
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-size: 1.4em;
@@ -35,27 +35,27 @@
 /* Media query pour les écrans plus petits */
 @media (max-width: 768px) {
   .about-box {
-    flex-direction: column-reverse; /* Aligner verticalement l'image et le texte */
+    flex-direction: column-reverse; 
     justify-content: center;
     align-items: center;
     text-align: center;
   }
 
   .about-text {
-    width: 90%; /* Ajuster la largeur du texte pour être plus lisible sur mobile */
-    font-size: 1.2em; /* Réduire la taille de police sur mobile */
-    order: -1; /* Placer le texte avant l'image */
+    width: 100% !important; 
+    font-size: 1.2em; 
+    order: -1; 
   }
 
   .about-img {
-    width: 100%; /* S'assurer que l'image prenne la largeur complète */
-    margin-bottom: 20px; /* Espacement entre l'image et le texte */
+    width: 100%; 
+    margin-bottom: 20px; 
   }
 
   .title-about {
-    font-size: 2em; /* Diminuer la taille du titre sur mobile */
-    text-align: center; /* Centrer le titre sur mobile */
-    margin-left: 0; /* Supprimer la marge gauche sur mobile */
+    font-size: 2em; 
+    text-align: center;
+    margin-left: 0; 
   }
 }
 

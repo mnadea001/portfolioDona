@@ -30,20 +30,19 @@ const Home: React.FC = () => {
         {isMobile ? (
           <>
             <AboutSection />
-
             <DatesSection />
             <SliderSection />
+            <AudioSection/>
             <LinkSection />
           </>
         ) : (
           <>
-          
      <IntroSection />
             <AboutSection />
             <DatesSection />
             <SliderSection />
-            <BannerComponent />
             <AudioSection/>
+            <BannerComponent />
             <LinkSection />
 
           </>

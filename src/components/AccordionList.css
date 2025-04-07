@@ -1,5 +1,6 @@
 .accordion-list-container {
     display: grid;
+justify-content: center;
     grid-template-columns: repeat(1, 1fr); /* Par défaut, une seule carte par ligne */
     gap: 20px; /* Espace entre les cartes */
     padding: 20px; /* Optionnel : espacement autour du conteneur */

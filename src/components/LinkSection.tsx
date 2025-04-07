@@ -1,4 +1,4 @@
-import './AboutSection.css'
+import './LinkSection.css'
 
 import { Zoom } from 'react-awesome-reveal'
 
@@ -9,18 +9,18 @@ const LinkSection: React.FC = () => {
   return (
 
     <div className="main">
-      <div className="about-section">
+      <div className="link-section">
         <Zoom>
           <h1>Links</h1>
         </Zoom>
-        <ul className="footer-links">
+        <ul className="links">
           <li>
-            <a className="footer-link" href="https://www.facebook.com/matilda.dona.dub/" target="_blank">
+            <a className="link" href="https://www.facebook.com/matilda.dona.dub/" target="_blank">
               Facebook
             </a>
           </li>
           <li>
-            <a className="footer-link" href="https://www.instagram.com/matildadona_/" target="_blank">
+            <a className="link" href="https://www.instagram.com/matildadona_/" target="_blank">
               Instagram
             </a>
           </li>

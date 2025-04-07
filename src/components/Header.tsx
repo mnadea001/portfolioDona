@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import { Outlet } from 'react-router'
 import { NavLink } from 'react-router-dom'
 import IconButton from '@mui/material/IconButton'
@@ -11,8 +11,7 @@ import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { TransitionProps } from '@mui/material/transitions'
 import Slide from '@mui/material/Slide'
-import React from 'react'
-import logo from '../assets/images/logo.png'
+import React, { useState }  from 'react'
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -36,9 +35,9 @@ const Header: React.FC = () => {
   return (
     <>
       <div className="icons">
-      <img src={logo} style={{ maxWidth: '50%', height: 'auto', maxHeight: '50px', margin: 'auto' }} />
+      {/* <img src={logo} style={{ maxWidth: '50%', height: 'auto', maxHeight: '50px', margin: 'auto' }} /> */}
 
-        {/* <h3 className="header-title">MATILDA DONA</h3> */}
+        <h3 className="header-title">MATILDA DONA</h3>
         <IconButton onClick={toggleModal}>
           <MenuSharpIcon />
         </IconButton>
@@ -68,7 +67,7 @@ const Header: React.FC = () => {
               </NavLink>
             </Zoom>
             <Bounce>
-              <NavLink to="/projects" className="selected-dark" onClick={toggleModal}>
+              <NavLink to="/dates" className="selected-dark" onClick={toggleModal}>
                 Dates
               </NavLink>
             </Bounce>

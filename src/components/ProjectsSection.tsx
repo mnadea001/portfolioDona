@@ -20,13 +20,7 @@ const ProjectsSection: React.FC = () => {
 
         <div className="year-box-pink">
         <section className="projets">
-        <img 
-  src={dates} 
-  alt="Affiche des dates des événements" 
-  style={{ maxWidth: '100%', height: 'auto', maxHeight: '500px', marginTop: '50px', marginBottom: '50px', marginLeft: 'auto' }} 
-/>
-
-   
+          <h1>Dates</h1>   
         </section>
         <p className="year-title">2025</p>
         <AccordionList projects={dates2025} />
