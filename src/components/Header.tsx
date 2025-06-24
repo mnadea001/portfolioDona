@@ -30,36 +30,32 @@ const Header: React.FC = () => {
         open={isModalOpen}
         onClose={toggleModal}
         fullScreen={isMobile}
-        slots={{ content: DialogContent }}
-        slotProps={{
-          paper: {
-            sx: {
-              width: isMobile ? '100%' : '50%',
-              maxWidth: 'none',
-            }
-          },
-          content: {
-            className: 'span-dialog'
+        PaperProps={{
+          sx: {
+            width: isMobile ? '100%' : '50%',
+            maxWidth: 'none',
           }
         }}
       >
-        <span className="span-header">
-          <IconButton edge="start" color="inherit" onClick={toggleModal} aria-label="close" className="close-btn">
-            FERMER
-          </IconButton>
-        </span>
-        <List sx={{ display: 'flex', textAlign: 'center', flexDirection: 'column' }}>
-          <Zoom>
-            <NavLink to="/" className="selected-dark" onClick={toggleModal}>
-              Accueil
-            </NavLink>
-          </Zoom>
-          <Bounce>
-            <NavLink to="/dates" className="selected-dark" onClick={toggleModal}>
-              Dates
-            </NavLink>
-          </Bounce>
-        </List>
+        <DialogContent className="span-dialog">
+          <span className="span-header">
+            <IconButton edge="start" color="inherit" onClick={toggleModal} aria-label="close" className="close-btn">
+              FERMER
+            </IconButton>
+          </span>
+          <List sx={{ display: 'flex', textAlign: 'center', flexDirection: 'column' }}>
+            <Zoom>
+              <NavLink to="/" className="selected-dark" onClick={toggleModal}>
+                Accueil
+              </NavLink>
+            </Zoom>
+            <Bounce>
+              <NavLink to="/dates" className="selected-dark" onClick={toggleModal}>
+                Dates
+              </NavLink>
+            </Bounce>
+          </List>
+        </DialogContent>
       </Dialog>
 
       <Outlet />
