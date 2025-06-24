@@ -33,7 +33,6 @@ border-radius: 5px;
   color: black;
   text-transform: lowercase;
   font-size: 2.2em !important;
-  margin-top: 0 !important;
   margin: auto;
 }
 
@@ -46,7 +45,6 @@ border-radius: 5px;
 
 .span-header {
   background-color: transparent;
-  color: white;
   display: 'flex';
   justify-content: center;
   color: black;
