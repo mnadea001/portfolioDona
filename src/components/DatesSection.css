@@ -4,15 +4,16 @@
   color: #000000 !important;
   font-family: "Space Grotesk", sans-serif;
   text-align: center;
-  margin-bottom: 30px !important;
-  padding-top: 180px !important;
+
   display: block;
 }
-
+.accordion-list {
+    margin-bottom: 180px !important;
+}
 
 .next-dates{
   margin-top: 30px !important;
-  margin-bottom: 80px !important;
+  margin-bottom: 180px !important;
   font-size: 3.5em !important;
   color: #000000 !important;
   font-family: "Space Grotesk", sans-serif;
@@ -26,6 +27,9 @@
   -webkit-text-stroke: 1px #000000;
   color: transparent !important;
   font-family: "Space Grotesk", sans-serif;
+    background-color: greenyellow;
+    border-radius: 5px;
+
 
 }
 

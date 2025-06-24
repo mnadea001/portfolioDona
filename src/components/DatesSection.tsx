@@ -14,8 +14,9 @@ const DatesSection: React.FC = () => {
                   <h1>Dates</h1>
      </Zoom>
  <h1 className="next-dates">   Prochaines dates</h1>
+<div className="accordion-list"> <AccordionList projects={projectsnext2025} /></div>
 
- <AccordionList projects={projectsnext2025} />
+
           <NavLink to="/dates" className="title-dates">
             Voir toutes les dates
           </NavLink>

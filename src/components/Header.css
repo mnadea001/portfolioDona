@@ -23,7 +23,8 @@
 
 .selected-dark:hover {
 font-weight: bolder;
-text-decoration: underline;
+background-color: greenyellow;
+border-radius: 5px;
 }
 
 .header-title {

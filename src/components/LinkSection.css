@@ -34,12 +34,14 @@ justify-content: space-around;
   align-items: center;
   font-family: "Space Grotesk", sans-serif;
   text-transform: lowercase;
+  border-radius: 5px;
 }
 
 .link:hover {
   -webkit-text-stroke: 1px #000000;
   color: transparent !important;
   font-family: "Space Grotesk", sans-serif;
+  background-color: greenyellow;
 }
 
 /* Media query pour les écrans plus petits */

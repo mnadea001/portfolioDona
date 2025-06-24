@@ -79,8 +79,8 @@
 
 .btn-up:hover {
   border: 1px solid black !important;
-
-background-color: violet;
+border-radius: 5px;
+background-color: greenyellow;
 
 }
 
