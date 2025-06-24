@@ -11,7 +11,7 @@ const LinkSection: React.FC = () => {
     <div className="main">
       <div className="link-section">
         <Zoom>
-          <h1>Links</h1>
+          <h1>Contact</h1>
         </Zoom>
         <ul className="links">
           <li>

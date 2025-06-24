@@ -63,7 +63,7 @@
 
 
 .btn-up {
-  background-color: transparent;
+  background-color: none;
   padding: 10px 20px;
   align-items: center;
   color: black;
@@ -72,13 +72,15 @@
   text-transform: lowercase;
   display: flex;
   font-size: 1.2em;
+  border-radius: 50% !important;
   font-family: "Space Grotesk", sans-serif;
 
 }
 
 .btn-up:hover {
   border: 1px solid black !important;
-border-radius: 50% !important;
+
+background-color: violet;
 
 }
 
