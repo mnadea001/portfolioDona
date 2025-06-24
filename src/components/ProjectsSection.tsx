@@ -14,7 +14,7 @@ const ProjectsSection: React.FC = () => {
       <button className="retour-btn" onClick={() => navigate(-1)}>
         <span>retour</span>
       </button>
-      <section className="projets-content">
+      <section className="projets-content year-box-pink">
 
         <div className="year-box-pink">
         <section className="projets">
