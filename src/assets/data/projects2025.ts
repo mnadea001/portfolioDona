@@ -18,6 +18,7 @@ import island_station from '../images/island_station.jpg';
 import vizara from '../images/vizara.jpg';
 import immmersif from '../images/immmersif.png';
 import palermo from '../images/palermo.jpeg';
+import pyrenees from '../images/PYRENEES.jpg';
 
 
 interface Project {
@@ -28,6 +29,12 @@ interface Project {
 }
 
 const projects2025: Project[] = [
+      {
+    title: 'Pyrénées Reggae Dub Fest',
+    date: '10 - 11 Octobre 2025',
+    lieu: 'Esbareich, France',
+    imageSrc: pyrenees
+  },
   {
     title: 'SubSide Festival',
     date: '5-7 septembre 2025',
