@@ -19,6 +19,7 @@ import vizara from '../images/vizara.jpg';
 import immmersif from '../images/immmersif.png';
 import palermo from '../images/palermo.jpeg';
 import pyrenees from '../images/PYRENEES.jpg';
+import DUBAROUND from '../images/DUBAROUND.png';
 
 
 interface Project {
@@ -29,6 +30,12 @@ interface Project {
 }
 
 const projects2025: Project[] = [
+        {
+    title: 'Dubaround',
+    date: '17 Octobre 2025',
+    lieu: 'Brest, France',
+    imageSrc: DUBAROUND
+  },
       {
     title: 'Pyrénées Reggae Dub Fest',
     date: '10 - 11 Octobre 2025',

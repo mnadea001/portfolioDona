@@ -1,7 +1,8 @@
 
 
 import pyrenees from '../images/PYRENEES.jpg';
-import subside from '../images/subside.jpg';
+import DUBAROUND from '../images/DUBAROUND.png';
+
 
 interface Project {
   title: string;
@@ -14,11 +15,11 @@ const projectsnext2025: Project[] = [
 
 
 
-    {
-    title: 'SubSide Festival',
-    date: '5-7 septembre 2025',
-    lieu: 'Ardèche, France',
-    imageSrc: subside
+        {
+    title: 'Dubaround',
+    date: '17 Octobre 2025',
+    lieu: 'Brest, France',
+    imageSrc: DUBAROUND
   },
     {
     title: 'Pyrénées Reggae Dub Fest',
