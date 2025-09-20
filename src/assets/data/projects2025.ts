@@ -20,6 +20,7 @@ import immmersif from '../images/immmersif.png';
 import palermo from '../images/palermo.jpeg';
 import pyrenees from '../images/PYRENEES.jpg';
 import DUBAROUND from '../images/DUBAROUND.png';
+import KULTURALMAQUIS from '../images/KULTURALMAQUIS.jpg';
 
 
 interface Project {
@@ -30,6 +31,12 @@ interface Project {
 }
 
 const projects2025: Project[] = [
+          {
+    title: 'KULTURAL MAQUIS',
+    date: '8 Novembre 2025',
+    lieu: 'Minerve, France',
+    imageSrc: KULTURALMAQUIS
+  },
         {
     title: 'Dubaround',
     date: '17 Octobre 2025',

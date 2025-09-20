@@ -1,5 +1,5 @@
 
-
+import KULTURALMAQUIS from '../images/KULTURALMAQUIS.jpg';
 import pyrenees from '../images/PYRENEES.jpg';
 import DUBAROUND from '../images/DUBAROUND.png';
 
@@ -13,7 +13,12 @@ interface Project {
 
 const projectsnext2025: Project[] = [
 
-
+        {
+    title: 'KULTURAL MAQUIS',
+    date: '8 Novembre 2025',
+    lieu: 'Minerve, France',
+    imageSrc: KULTURALMAQUIS
+  },
 
         {
     title: 'Dubaround',
