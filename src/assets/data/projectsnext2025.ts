@@ -1,7 +1,7 @@
 
 import KULTURALMAQUIS from '../images/KULTURALMAQUIS.jpg';
-import pyrenees from '../images/PYRENEES.jpg';
-import DUBAROUND from '../images/DUBAROUND.png';
+import united_rockers from '../images/united_rockers.jpg';
+import Ghent from '../images/ghent.jpg';
 
 
 interface Project {
@@ -21,16 +21,16 @@ const projectsnext2025: Project[] = [
   },
 
         {
-    title: 'Dubaround',
-    date: '17 Octobre 2025',
-    lieu: 'Brest, France',
-    imageSrc: DUBAROUND
+    title: 'United Rockers',
+    date: '14 Novembre 2025',
+    lieu: 'Opoul, France',
+    imageSrc: united_rockers
   },
     {
-    title: 'Pyrénées Reggae Dub Fest',
-    date: '10 - 11 Octobre 2025',
-    lieu: 'Esbareich, France',
-    imageSrc: pyrenees
+    title: 'Dub garden',
+    date: '21 Novembre 2025',
+    lieu: 'Ghent, Belgique',
+    imageSrc: Ghent
   },
 
 

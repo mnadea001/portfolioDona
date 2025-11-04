@@ -21,6 +21,8 @@ import palermo from '../images/palermo.jpeg';
 import pyrenees from '../images/PYRENEES.jpg';
 import DUBAROUND from '../images/DUBAROUND.png';
 import KULTURALMAQUIS from '../images/KULTURALMAQUIS.jpg';
+import united_rockers from '../images/united_rockers.jpg';
+import Ghent from '../images/ghent.jpg';
 
 
 interface Project {
@@ -31,6 +33,19 @@ interface Project {
 }
 
 const projects2025: Project[] = [
+      {
+    title: 'Dub garden',
+    date: '21 Novembre 2025',
+    lieu: 'Ghent, Belgique',
+    imageSrc: Ghent
+  },
+          {
+    title: 'United Rockers',
+    date: '14 Novembre 2025',
+    lieu: 'Opoul, France',
+    imageSrc: united_rockers
+  },
+
           {
     title: 'KULTURAL MAQUIS',
     date: '8 Novembre 2025',
