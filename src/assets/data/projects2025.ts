@@ -182,7 +182,7 @@ const projects2025: Project[] = [
     imageSrc: pinata
   },
   {
-    title: 'WINTER DUB WINTER',
+    title: 'WINTER DUB CAMP',
     date: '7 février 2025',
     lieu: 'Nantes, France',
     imageSrc: winterdubcamp
