@@ -25,6 +25,7 @@ import united_rockers from '../images/united_rockers.jpg';
 import Ghent from '../images/ghent.jpg';
 import tortuga from '../images/tortuga.jpg';
 import hibernum from '../images/hibernum.jpg';
+import castres from '../images/castres.jpeg';
 
 
 interface Project {
@@ -36,25 +37,30 @@ interface Project {
 
 const projects2025: Project[] = [
         {
-    title: 'Tortuga Dub Club',
+    title: 'TORTUGA DUB CLUB',
     date: '27 Décembre 2025',
     lieu: 'Quinto di Treviso, Italie',
     imageSrc: tortuga
   },
           {
-    title: 'Hibernum',
+    title: 'HIBERNUM',
     date: '21 Décembre 2025',
     lieu: 'Cornil, France',
     imageSrc: hibernum
+  },      {
+    title: 'DUB MOONTAIN PARTY',
+    date: '29 Novembre 2025',
+    lieu: 'Castres, France',
+    imageSrc: castres
   },
       {
-    title: 'Dub garden',
+    title: 'DUB GARDEN',
     date: '21 Novembre 2025',
     lieu: 'Ghent, Belgique',
     imageSrc: Ghent
   },
           {
-    title: 'United Rockers',
+    title: 'UNITED ROCKERS',
     date: '14 Novembre 2025',
     lieu: 'Opoul, France',
     imageSrc: united_rockers
@@ -67,74 +73,74 @@ const projects2025: Project[] = [
     imageSrc: KULTURALMAQUIS
   },
         {
-    title: 'Dubaround',
+    title: 'DUBAROUND',
     date: '17 Octobre 2025',
     lieu: 'Brest, France',
     imageSrc: DUBAROUND
   },
       {
-    title: 'Pyrénées Reggae Dub Fest',
+    title: 'PYRENEES REGGAE DUB FEST',
     date: '10 - 11 Octobre 2025',
     lieu: 'Esbareich, France',
     imageSrc: pyrenees
   },
   {
-    title: 'SubSide Festival',
-    date: '5-7 septembre 2025',
+    title: 'SUBSIDE FESTIVAL',
+    date: '5-7 Septembre 2025',
     lieu: 'Ardèche, France',
     imageSrc: subside
   },
     {
-    title: 'Palermo Dub Festival',
+    title: 'PALERMO DUB FESTIVAL',
     date: '30 aout 2025',
-    lieu: 'Palermo, Italie',
+    lieu: 'Palermo, Sicile',
     imageSrc: palermo
   },
     {
-    title: 'FEST.IMMERSIF',
-    date: '5-7 septembre 2025',
+    title: 'FESTIMMERSIF',
+    date: '22 Aout 2025',
     lieu: 'Blasimon, France',
     imageSrc: immmersif
   },
   {
-    title: 'Cabaret Vert',
+    title: 'CABARET VERT',
     date: '14-17 Aout 2025',
     lieu: 'Charleville-Mézières, France',
     imageSrc: cabaret25
   },   
           {
-    title: 'Vizara Festival',
+    title: 'VIZARA FESTIVAL',
     date: '8 Aout 2025',
     lieu: 'Montignac Lascaux, France',
     imageSrc: vizara
   },  
 
       {
-    title: 'Island Station',
+    title: 'ISLAND STATION',
     date: '25 juillet 2025',
     lieu: 'Belle-Ile-en-mer, France',
     imageSrc: island_station
   },  
     {
-    title: 'International Dub Gathering',
+    title: 'INTERNATIONAL DUB GATHERING',
     date: '20 juin 2025',
     lieu: 'Tarragona, Espagne',
     imageSrc: idg
   },  
   {
-    title: 'Aubergin Dub',
+    title: 'AUBERGIN DUB',
     date: '14 juin 2025',
     lieu: 'Malakoff, France',
     imageSrc: aubergin
   },
       {
-    title: 'Barri',
+    title: 'BARRI',
     date: '30 mai 2025',
     lieu: 'Montpellier, France',
     imageSrc: barri
   },
     {
-    title: 'Balterno Caravan Dub Tour',
+    title: 'BALTERNO CARAVAN DUB TOUR',
     date: '17 mai 2025',
     lieu: 'Bordeaux, France',
     imageSrc: balterno
