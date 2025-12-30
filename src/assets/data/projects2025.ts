@@ -44,7 +44,7 @@ const projects2025: Project[] = [
           {
     title: 'Hibernum',
     date: '21 Décembre 2025',
-    lieu: 'Le Corpil, France',
+    lieu: 'Cornil, France',
     imageSrc: hibernum
   },
       {
