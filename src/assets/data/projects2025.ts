@@ -37,7 +37,7 @@ interface Project {
 const projects2025: Project[] = [
         {
     title: 'Tortuga Dub Club',
-    date: '29 Décembre 2025',
+    date: '27 Décembre 2025',
     lieu: 'Quinto di Treviso, Italie',
     imageSrc: tortuga
   },
