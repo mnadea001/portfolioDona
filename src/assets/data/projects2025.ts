@@ -23,6 +23,8 @@ import DUBAROUND from '../images/DUBAROUND.png';
 import KULTURALMAQUIS from '../images/KULTURALMAQUIS.jpg';
 import united_rockers from '../images/united_rockers.jpg';
 import Ghent from '../images/ghent.jpg';
+import tortuga from '../images/tortuga.jpg';
+import hibernum from '../images/hibernum.jpg';
 
 
 interface Project {
@@ -33,6 +35,18 @@ interface Project {
 }
 
 const projects2025: Project[] = [
+        {
+    title: 'Tortuga Dub Club',
+    date: '29 Décembre 2025',
+    lieu: 'Quinto di Treviso, Italie',
+    imageSrc: tortuga
+  },
+          {
+    title: 'Hibernum',
+    date: '21 Décembre 2025',
+    lieu: 'Le Corpil, France',
+    imageSrc: hibernum
+  },
       {
     title: 'Dub garden',
     date: '21 Novembre 2025',

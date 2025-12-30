@@ -7,6 +7,7 @@ import dates2022 from '../assets/data/projects2022'
 import dates2021 from '../assets/data/projects2021'
 import dates2020 from '../assets/data/projects2020'
 import dates2025 from '../assets/data/projects2025'
+import dates2026 from '../assets/data/projects2026'
 const ProjectsSection: React.FC = () => {
   const navigate = useNavigate()
   return (
@@ -15,7 +16,10 @@ const ProjectsSection: React.FC = () => {
         <span>retour</span>
       </button>
       <section className="projets-content year-box-pink">
-
+        <div className="year-box">
+        <p className="year-title">2026</p>
+        <AccordionList projects={dates2026} />
+        </div>
         <div className="year-box-pink">
         <section className="projets">
           <h1>Dates</h1>   
