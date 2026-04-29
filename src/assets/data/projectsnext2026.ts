@@ -4,7 +4,7 @@ import dubcamp26 from '../images/dubcamp26.jpg';
 import touko26 from '../images/touko26.jpg';
 import fortdec from '../images/fort-dec.jpg';
 import ardeida from '../images/ardeida.jpg';
-import cabaret26 from '../images/cabaret2026.jpeg';
+import cabaret26 from '../images/cabaret2026.jpg';
 
 
 interface Project {
