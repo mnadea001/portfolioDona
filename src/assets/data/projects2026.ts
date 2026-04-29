@@ -7,7 +7,7 @@ import fortdec from '../images/fort-dec.jpg';
 import ardeida from '../images/ardeida.jpg';
 import dubexpress from '../images/dubexpress.jpg';
 import ilsalotto from '../images/ilsalotto.jpeg';
-import cabaret26 from '../images/cabaret26.jpeg';
+import cabaret26 from '../images/cabaret2026.jpeg';
 
 
 interface Project {
