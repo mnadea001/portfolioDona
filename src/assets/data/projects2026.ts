@@ -1,4 +1,3 @@
-
 import perigueux from '../images/perigueux.jpg';
 import dubtales from '../images/dub-tales.jpg';
 import dubcamp26 from '../images/dubcamp26.jpg';
@@ -8,6 +7,7 @@ import ardeida from '../images/ardeida.jpg';
 import dubexpress from '../images/dubexpress.jpg';
 import ilsalotto from '../images/ilsalotto.jpeg';
 import cabaret26 from '../images/cabaret2026.jpg';
+import resoco from '../images/resonanceco.jpg';
 
 
 interface Project {
@@ -31,6 +31,12 @@ const projectsnext2026: Project[] = [
     date: '7 Aout 2026',
     lieu: 'Cussac Fort Médoc, France',
     imageSrc: fortdec
+  },
+    {
+    title: 'Resonance Collective Festival',
+    date: '17 Juillet 2026',
+    lieu: 'Monnet la ville, France',
+    imageSrc: resoco
   },
   {
     title: 'Dub Camp',

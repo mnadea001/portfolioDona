@@ -1,9 +1,8 @@
 
 
 import dubcamp26 from '../images/dubcamp26.jpg';
-import touko26 from '../images/touko26.jpg';
+import resoco from '../images/resonanceco.jpg';
 import fortdec from '../images/fort-dec.jpg';
-import ardeida from '../images/ardeida.jpg';
 import cabaret26 from '../images/cabaret2026.jpg';
 
 
@@ -16,25 +15,19 @@ interface Project {
 
 const projectsnext2026: Project[] = [
 
-  {
-    title: 'Ardeida Festival',
-    date: '1 Mai 2026',
-    lieu: 'Vilamartin de Valdeorras, Espagne',
-    imageSrc: ardeida
-  },
-  {
-    title: 'Toukofest',
-    date: '30 Mai 2026',
-    lieu: 'St Aubin, France',
-    imageSrc: touko26
-  },
+
   {
     title: 'Dub Camp',
     date: '11 Juillet 2026',
     lieu: 'Joué-sur-Erdre, France',
     imageSrc: dubcamp26
   },
-
+  {
+    title: 'Resonance Collective Festival',
+    date: '17 Juillet 2026',
+    lieu: 'Monnet la ville, France',
+    imageSrc: resoco
+  },
   {
     title: 'Fort Décibel',
     date: '7 Aout 2026',
