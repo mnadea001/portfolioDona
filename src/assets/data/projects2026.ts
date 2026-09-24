@@ -24,31 +24,31 @@ interface Project {
 
 const projectsnext2026: Project[] = [
 
-           {
+  {
     title: 'Dub In Kaz',
     date: '19 Septembre 2026',
     lieu: 'Herault, France',
     imageSrc: dubkaz
   },
-       {
+  {
     title: 'Les ondes rurales',
     date: '12 Septembre 2026',
     lieu: 'Blaye, France',
     imageSrc: blaye
   },
-    {
+  {
     title: 'Fête de l humanité',
     date: '11 Septembre 2026',
     lieu: 'Brétigny, France',
     imageSrc: fetehuma
   },
-   {
+  {
     title: 'WOOD CORNER',
     date: '5 Septembre 2026',
     lieu: 'Redon, France',
     imageSrc: woodcorner
   },
-   {
+  {
     title: 'CABARET VERT',
     date: '20-23 Aout 2026',
     lieu: 'Charleville-Mézières, France',
@@ -66,7 +66,7 @@ const projectsnext2026: Project[] = [
     lieu: 'Jura, France',
     imageSrc: cocodub
   },
-    {
+  {
     title: 'Resonance Collective Festival',
     date: '17 Juillet 2026',
     lieu: 'Monnet la ville, France',
